@@ -47,6 +47,44 @@ client.on('ready' , () => {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
    }
  })
+    
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      client.on('message', message => {
+    if (message.content === 'hi') {
+       message.channel.send("hi there");
+   }
+ })
+          client.on('message', message => {
+    if (message.content === 'how are you') {
+       message.channel.send("iam fine thank you , how about you");
+   }
+ })
+              client.on('message', message => {
+    if (message.content === 'iam fine') {
+       message.channel.send("great");
+   }
+ })
+                 client.on('message', message => {
+    if (message.content === 'do you like brawlball') {
+       message.channel.send("ofc it the best mode");
+   }
+ }) 
+                  client.on('message', message => {
+    if (message.content === 'how old are you') {
+       message.channel.send("well iam robort i Manufactured in 2019/07/25 ");
+   }
+ })
+                     client.on('message', message => {
+    if (message.content === 'can you help me') {
+       message.channel.send("yes ofc anything");
+   }
+ })
+    
+    
+    
+    
+    
+    
   client.on('message', message => {
     if (!message.guild) return
     if (message.content.startsWith('!who')) {
