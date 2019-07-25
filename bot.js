@@ -53,101 +53,76 @@ client.on('ready' , () => {
     if (message.content === 'hi') {
        message.channel.send("hi there");
    }
- })
-          client.on('message', message => {
+
     if (message.content === 'how are you') {
        message.channel.send("iam fine thank you , how about you");
    }
- })
-              client.on('message', message => {
+
     if (message.content === 'iam fine') {
        message.channel.send("great");
    }
- })
-                 client.on('message', message => {
+
     if (message.content === 'do you like brawlball') {
        message.channel.send("ofc it the best mode");
    }
- }) 
-                  client.on('message', message => {
+
     if (message.content === 'how old are you') {
        message.channel.send("well iam robort i Manufactured in 2019/07/25 ");
    }
- })
-                     client.on('message', message => {
+
     if (message.content === 'can you help me') {
        message.channel.send("yes ofc anything");
    }
- })
-                     client.on('message', message => {
+
     if (message.content === 'fuck you') {
        message.channel.send("fuck you too :)");
    }
- })
-                        client.on('message', message => {
-    if (message.content.startswith === 'fk u') {
+
+    if (message.content === 'fk u') {
        message.channel.send("fuck you too :)");
    }
- })
-                     client.on('message', message => {
+
     if (message.content === 'noob') {
        message.channel.send("shut up noob");
    }
- })
-    
- client.on('message', message => {
+
     if (message.content === 'can you help me') {
        message.channel.send("sure, what's wrong?");
    }
- })
-    
-                     client.on('message', message => {
+
     if (message.content === 'do u like me') {
        message.channel.send("kinda");
    }
- })      
-    
-                         client.on('message', message => {
+
     if (message.content === 'who are u') {
        message.channel.send("I'm a robort");
    }
- })      
-    
-                             client.on('message', message => {
+
     if (message.content.startsWith === 'how dare you') {
        message.channel.send("do you want me to leave");
    }
    
- }) 
-                              client.on('message', message => {
     if (message.content === 'yes leave') {
        message.channel.send("ok bye");
        message.channel.send("@OS | BOT Has Left The Server ");
    }
    
- })  
-                                client.on('message', message => {
-    if (message.content.startsWith === 'nub') {
+    if (message.content=== 'nub') {
        message.channel.send("you are the one whos nub here");
    }
    
  }) 
     
-
-     
- 
-     })
-    
-                                     client.on('message', message => {
     if (message.content === 'tell me a joke') {
        message.channel.send("Why did the chicken cross the street?");
    }
- })   
-                                     client.on('message', message => {
     if (message.content === 'idk') {
        message.channel.send("to get to your house");
    }
  })   
+
+
+
     
     
     
