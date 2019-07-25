@@ -121,7 +121,7 @@ client.on('ready' , () => {
    }
  })   
                                      client.on('message', message => {
-    if (message.content === 'tell me a joke.') {
+    if (message.content === 'tell me a joke') {
        message.channel.send("Why did the chicken cross the street?");
    }
  })   
