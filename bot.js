@@ -133,7 +133,12 @@ client.on('ready' , () => {
    
  }) 
     
-
+                                client.on('message', message => {
+    if (message.content === 'tell me about yourself') {
+       message.channel.send("What do you want to know about me?");
+   }
+   
+ }) 
      
  
      })
@@ -146,6 +151,21 @@ client.on('ready' , () => {
                                      client.on('message', message => {
     if (message.content === 'idk') {
        message.channel.send("to get to your house");
+   }
+ })   
+                                     client.on('message', message => {
+    if (message.content === 'saying thank you in japanese') {
+       message.channel.send("arigatou");
+   }
+ })   
+                                     client.on('message', message => {
+    if (message.content === 'do u have problem with me') {
+       message.channel.send("Maybe I do maybe i don't");
+   }
+ })   
+                                     client.on('message', message => {
+    if (message.content === 'help') {
+       message.channel.send("What do you need help with?");
    }
  })   
     
