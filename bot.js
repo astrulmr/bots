@@ -140,9 +140,6 @@ client.on('ready' , () => {
    
  }) 
      
- 
-     })
-    
                                      client.on('message', message => {
     if (message.content === 'tell me a joke') {
        message.channel.send("Why did the chicken cross the street?");
@@ -168,7 +165,18 @@ client.on('ready' , () => {
        message.channel.send("What do you need help with?");
    }
  })   
-    
+                                       client.on('message', message => {
+    if (message.content === 'play with me') {
+       message.channel.send("Uhh I feel a little embarrassed to do that");
+   }
+ }) 
+                                           client.on('message', message => {
+    if (message.content === 'lol') {
+       message.channel.send("What are you laughing?");
+               message.channel.send("Hahaha?");
+
+   }
+ })  
     
     
   client.on('message', message => {
