@@ -113,6 +113,8 @@ client.on('ready' , () => {
        message.channel.send("do you want me to leave");
         if (message.content === 'yes') {
        message.channel.send("Ok bye");
+            else 
+              message.channel.send("nub");    
    }
    }
    
