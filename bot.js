@@ -43,7 +43,7 @@ client.on('ready' , () => {
 
 
   client.on('message', message => {
-    if (message.content === '!hii') {
+    if (message.content === '!hi') {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
    }
  })
@@ -80,8 +80,13 @@ client.on('ready' , () => {
    }
  })
                      client.on('message', message => {
-    if (message.content === 'nub') {
-       message.channel.send("no you the one whos nub here");
+    if (message.content === 'fuck you') {
+       message.channel.send("fuck you too :)");
+   }
+ })
+                        client.on('message', message => {
+    if (message.content.startswith === 'fk u') {
+       message.channel.send("fuck you too :)");
    }
  })
                      client.on('message', message => {
@@ -109,11 +114,11 @@ client.on('ready' , () => {
  })      
     
                              client.on('message', message => {
-    if (message.content === 'how dare you') {
+    if (message.content.startsWith === 'how dare you') {
        message.channel.send("do you want me to leave");
    }
    
- })    
+ }) 
                               client.on('message', message => {
     if (message.content === 'yes leave') {
        message.channel.send("ok bye");
@@ -121,6 +126,12 @@ client.on('ready' , () => {
    }
    
  })  
+                                client.on('message', message => {
+    if (message.content.startsWith === 'nub') {
+       message.channel.send("you are the one whos nub here");
+   }
+   
+ }) 
 
      
  
