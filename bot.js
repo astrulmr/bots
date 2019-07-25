@@ -114,6 +114,8 @@ client.on('ready' , () => {
          client.on('message', message => {
         if (message.content === 'yes') {
        message.channel.send("Ok bye");}
+             else(message.content === 'no') {
+       message.channel.send(":)");
               
          })
    }
