@@ -109,14 +109,10 @@ client.on('ready' , () => {
  })      
     
                              client.on('message', message => {
-    if (message.content === 'how dare u') {
+    if (message.content === 'how dare you') {
        message.channel.send("do you want me to leave");
    }
  })   
-    
-                                client.on('message', message => {
-    if (message.content === 'how dare u') {
-       message.channel.send("do you want me to leave");
    }
  })    
                                  client.on('message', message => {
