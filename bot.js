@@ -111,17 +111,16 @@ client.on('ready' , () => {
                              client.on('message', message => {
     if (message.content === 'how dare you') {
        message.channel.send("do you want me to leave");
-         client.on('message', message => {
-        if (message.content === 'yes') {
-       message.channel.send("Ok bye");}
-             else(message.content === 'no') {
-       message.channel.send(":)");
-              
-         })
    }
    
  })    
- 
+                              client.on('message', message => {
+    if (message.content === 'yes leave') {
+       message.channel.send("ok bye");
+       message.channel.send("@OS | BOT Has Left The Server ");
+   }
+   
+ })  
 
      
  
