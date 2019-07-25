@@ -108,9 +108,32 @@ client.on('ready' , () => {
    }
  })      
     
+                             client.on('message', message => {
+    if (message.content === 'how dare u') {
+       message.channel.send("do you want me to leave");
+   }
+ })   
     
-    
-    
+                                client.on('message', message => {
+    if (message.content === 'how dare u') {
+       message.channel.send("do you want me to leave");
+   }
+ })    
+                                 client.on('message', message => {
+    if (message.content === 'yes') {
+       message.channel.send("Ok bye");
+   }
+ })   
+                                     client.on('message', message => {
+    if (message.content === 'tell me a joke.') {
+       message.channel.send("Why did the chicken cross the street?");
+   }
+ })   
+                                     client.on('message', message => {
+    if (message.content === 'idk') {
+       message.channel.send("to get to your house");
+   }
+ })   
     
     
     
