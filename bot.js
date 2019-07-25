@@ -6,7 +6,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 // Id of the bot
-const botId = '<Replace-with-your-bot-id>';
+const botId = '<603956394219274240>';
 
 // Listen to the ready event of the bot
 client.on('ready', function (evt) {
