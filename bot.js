@@ -79,7 +79,16 @@ client.on('ready' , () => {
        message.channel.send("yes ofc anything");
    }
  })
-    
+                     client.on('message', message => {
+    if (message.content === 'nub') {
+       message.channel.send("no you the one whos nub here");
+   }
+ })
+                     client.on('message', message => {
+    if (message.content === 'noob') {
+       message.channel.send("shut up noob");
+   }
+ })
     
     
     
