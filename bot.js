@@ -1,10 +1,47 @@
+var apiaiApp = require('apiai')(process.env.API_AI);
 const  Discord = require('discord.js');
 const { Client, RichEmbed } = require('discord.js');
 const client = new Discord.Client()
+const botId = '603956394219274240';
+client.on('ready', function (evt) {
+    console.log(evt, 'Connected');
+});
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
+    
+    
+client.on('message', message => {
 
+    // Avoid the bot to reply to itself
+    if (message.author.bot) return;
+    
+    // Check if the message starts with the !
+    if (message.content.indexOf('!') === 0) {
+        // Get a substring to exclude the ! from the message
+        var text = message.content.substring(1);
+        
+        // Parse the text to the API.ai
+        var request = apiaiApp.textRequest(text, {
+            sessionId: '<any-unique-name>'
+        });
+
+        // Listen to a response from API.ai
+        request.on('response', (response) => {
+            // Reply the user with the given response
+            message.reply(response.result.fulfillment.speech);
+        });
+    
+        // Listen for any errors in the response
+        request.on('error', (error) => {
+            // Tell the user that an error happened
+            message.reply("Oops! There is an error in our end")
+        });
+
+        // End the request to avoid wasting memory
+        request.end();
+    }
+});
 
     client.user.setActivity("BrawlBall")
     client.guilds.forEach((guild) => {
@@ -54,6 +91,8 @@ client.on('ready' , () => {
        message.channel.send("hi there");
    }
  })
+    
+ 
           client.on('message', message => {
     if (message.content === 'how are you') {
        message.channel.send("iam fine thank you , how about you");
@@ -132,6 +171,7 @@ client.on('ready' , () => {
    }
    
  }) 
+    
 
      
  
