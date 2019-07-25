@@ -114,7 +114,7 @@ client.on('ready' , () => {
    }
  })   
    }
- })    
+ )    
                                  client.on('message', message => {
     if (message.content === 'yes') {
        message.channel.send("Ok bye");
@@ -148,7 +148,7 @@ client.on('ready' , () => {
  
 
 
-  })
+  
  
   client.on('message', message => {
     if (message.content.startsWith('!avatar')) {
