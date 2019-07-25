@@ -116,8 +116,7 @@ client.on('ready' , () => {
    }
    }
  })   
-   }
- )    
+     
   
                                      client.on('message', message => {
     if (message.content === 'tell me a joke') {
