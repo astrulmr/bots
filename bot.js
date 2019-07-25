@@ -110,11 +110,11 @@ client.on('ready' , () => {
     
                              client.on('message', message => {
     if (message.content === 'how dare you') {
-       message.channel.send("do you want me to leave");
+       message.channel.send("do you want me to leave");}
 else (message.content === 'yes') {
        message.channel.send("Ok bye");
    }
-   }
+   
  })   
      
   
