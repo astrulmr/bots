@@ -111,15 +111,14 @@ client.on('ready' , () => {
                              client.on('message', message => {
     if (message.content === 'how dare you') {
        message.channel.send("do you want me to leave");
+            if (message.content === 'yes') {
+       message.channel.send("Ok bye");
+   }
    }
  })   
    }
  )    
-                                 client.on('message', message => {
-    if (message.content === 'yes') {
-       message.channel.send("Ok bye");
-   }
- })   
+  
                                      client.on('message', message => {
     if (message.content === 'tell me a joke') {
        message.channel.send("Why did the chicken cross the street?");
