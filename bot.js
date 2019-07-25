@@ -178,7 +178,7 @@ client.on('ready' , () => {
    }
  })  
     
-    
+})
   client.on('message', message => {
     if (!message.guild) return
     if (message.content.startsWith('!who')) {
@@ -270,4 +270,3 @@ client.on('ready' , () => {
 
 
 client.login(process.env.BOT_TOKEN)
-
