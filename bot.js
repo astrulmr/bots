@@ -91,7 +91,7 @@ client.on('ready' , () => {
     if (!channel) return 
       number = 10
   imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
-      channel.send({files:["./image/"+imagenumber+".png"]}  )
+      channel.send({files:[imagenumber+".png"]}  )
 
       function getRandomInt(min, max) {
         min = Math.ceil(min);
