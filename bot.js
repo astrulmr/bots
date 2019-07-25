@@ -90,6 +90,26 @@ client.on('ready' , () => {
    }
  })
     
+ client.on('message', message => {
+    if (message.content === 'can you help me') {
+       message.channel.send("sure, what's wrong?");
+   }
+ })
+    
+                     client.on('message', message => {
+    if (message.content === 'do u like me') {
+       message.channel.send("kinda");
+   }
+ })      
+    
+                         client.on('message', message => {
+    if (message.content === 'who are u') {
+       message.channel.send("I'm a human");
+   }
+ })      
+    
+    
+    
     
     
     
