@@ -170,13 +170,23 @@ client.on('ready' , () => {
        message.channel.send("Uhh I feel a little embarrassed to do that");
    }
  }) 
-                                           client.on('message', message => {
+      client.on('message', message => {
     if (message.content === 'lol') {
        message.channel.send("What are you laughing?");
                message.channel.send("Hahaha?");
 
    }
  })  
+ client.on('message', message => {
+  if (message.content === 'how dare'){
+  var person = prompt("Please enter your name", "Harry Potter");
+
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+})  
     
 })
   client.on('message', message => {
