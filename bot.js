@@ -196,7 +196,7 @@ client.on('message', message => {
   const member = message.guild.member(user)
   if (member) {
   
-  message.channel.send("s")
+  message.channel.send(s)
  }}}
 })
 
