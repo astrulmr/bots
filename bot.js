@@ -231,7 +231,7 @@ client.on('message', message => {
     }
     if (message.content === '!add'){
         // console.log(msg.author);
-        if(message.auther.username=pugMembers)
+        if(author.username)
         message.channel.send("power not set")
         else {
         checkPugSize();
