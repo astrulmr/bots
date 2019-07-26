@@ -178,6 +178,7 @@ client.on('ready' , () => {
    }
  })  
  var s;
+ var a;
  client.on('message', message => {
   if (!message.guild) return
   if (message.content.startsWith('!Rrunner')) {
@@ -187,6 +188,8 @@ client.on('ready' , () => {
   if (member) {
 s=s+1;
  s= "He Is A Runner";
+s=a;
+message.channel.send("All set")
  }}}
 })
 client.on('message', message => {
@@ -196,7 +199,7 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if (member) {
-  
+  if 
   message.channel.send(s)
  }
 else 
