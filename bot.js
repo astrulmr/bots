@@ -177,16 +177,29 @@ client.on('ready' , () => {
 
    }
  })  
+ var s;
  client.on('message', message => {
-  if (message.content === 'how dare'){
-  var person = prompt(message.channel.send("Please enter your name", "Harry Potter"));
+  if (!message.guild) return
+  if (message.content.startsWith('!Rrunner')) {
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if (member) {
+    member = s;
+    s=   message.channel.send("Power is RUNNER")
+ }}}
+})
+client.on('message', message => {
+  if (!message.guild) return
+  if (message.content.startsWith('!power')) {
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if (member) {
+    message.channel.send(s)
+ }}}
+})
 
-  if (person != null) {
- message.channel.send =("Hello " + person + "! How are you today?");
-  }
-}
-})  
-    
 })
   client.on('message', message => {
     if (!message.guild) return
