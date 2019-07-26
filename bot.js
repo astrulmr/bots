@@ -198,7 +198,11 @@ client.on('message', message => {
   if (member) {
   
   message.channel.send(s)
- }}}
+ }
+else 
+message.channel.send("power not set")
+
+}}
 })
 
 })
