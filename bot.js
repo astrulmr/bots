@@ -114,6 +114,48 @@ client.on('ready' , () => {
        message.channel.send("I'm not your "baby"");
    }
  })
+                                         client.on('message', message => {
+    if (message.content === 'stop') {
+       message.channel.send("I'm not doing anything");
+   }
+ })
+                                     client.on('message', message => {
+    if (message.content === 'i hate you') {
+       message.channel.send("Everyone do");
+   }
+ })
+                                         client.on('message', message => {
+    if (message.content === 'bot') {
+       message.channel.send("What do you think of yourself?");
+   }
+ })
+                                             client.on('message', message => {
+    if (message.content === 'me') {
+       message.channel.send("You are evil?");
+   }
+ })
+                                                 client.on('message', message => {
+    if (message.content === 'you are my friend') {
+       message.channel.send("Thank you you to");
+       message.channel.send("I love you");
+   }
+ })
+                                                 client.on('message', message => {
+    if (message.content === 'i'm sad') {
+       message.channel.send("I shouldn't have done that");
+   }
+ })
+                                                     client.on('message', message => {
+    if (message.content === 'sing for me') {
+       message.channel.send("You can't hear the tone, I'm typing");
+   }
+ })
+                                                         client.on('message', message => {
+    if (message.content === 'shut up') {
+       message.channel.send("Oh sorry. Did I say something wrong?");
+   }
+ })
+    
     
     
  client.on('message', message => {
