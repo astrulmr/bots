@@ -199,11 +199,12 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if (member) {
-  if 
+  if(s=a)
   message.channel.send(s)
- }
-else 
+  else 
 message.channel.send("power not set")
+ }
+
 
 }}
 })
