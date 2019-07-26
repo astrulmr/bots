@@ -185,7 +185,8 @@ client.on('ready' , () => {
   if (user) {
   const member = message.guild.member(user)
   if (member) {
-  let s="He Is A Runner";
+s=s+1;
+ s = "He Is A Runner";
  }}}
 })
 client.on('message', message => {
