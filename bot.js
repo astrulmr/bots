@@ -179,11 +179,11 @@ client.on('ready' , () => {
  })  
  client.on('message', message => {
   if (message.content === 'how dare'){
-  var person = prompt("Please enter your name", "Harry Potter");
+ var i= prompt.message.channel.send("Please enter your name", "Harry Potter");
 
-  if (person != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello " + person + "! How are you today?";
+  if (message.content!= null) {
+    document.getElementById("demo").innerHTML.message.channel.send =
+    "Hello " + i+ "! How are you today?";
   }
 }
 })  
