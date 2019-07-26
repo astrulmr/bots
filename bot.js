@@ -184,7 +184,7 @@ client.on('ready' , () => {
   if (message.content.startsWith('!Rrunner')) {
   const user = message.mentions.users.first()
   if (user) {
-  const member1 = message.guild.member(user)
+  const member = message.guild.member(user)
   if (member) {
 s=s+1;
  s= "He Is A Runner";
