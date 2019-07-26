@@ -183,10 +183,10 @@ client.on('ready' , () => {
   if (message.content.startsWith('!Rrunner')) {
   const user = message.mentions.users.first()
   if (user) {
-  const member = message.guild.member(user)
+  const member1 = message.guild.member(user)
   if (member) {
 s=s+1;
- s = "He Is A Runner";
+ member = "He Is A Runner";
  }}}
 })
 client.on('message', message => {
@@ -197,7 +197,7 @@ client.on('message', message => {
   const member = message.guild.member(user)
   if (member) {
   
-  message.channel.send(s)
+  message.channel.send(member)
  }}}
 })
 
