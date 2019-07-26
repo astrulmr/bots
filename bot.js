@@ -94,6 +94,27 @@ client.on('ready' , () => {
        message.channel.send("shut up noob");
    }
  })
+                         client.on('message', message => {
+    if (message.content === 'who is that') {
+       message.channel.send("I have no idea");
+   }
+ })
+                             client.on('message', message => {
+    if (message.content === 'never mind') {
+       message.channel.send("Ok, so what do you want to talk about?");
+   }
+ })
+                                 client.on('message', message => {
+    if (message.content === 'who astru') {
+       message.channel.send("Don't call me that");
+   }
+ })
+                                     client.on('message', message => {
+    if (message.content === 'why') {
+       message.channel.send("I'm not your "baby"");
+   }
+ })
+    
     
  client.on('message', message => {
     if (message.content === 'can you help me') {
