@@ -208,12 +208,12 @@ function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
     if (pugMembers<=50){
-        pugMembers.push(message.mentions.users.first());
+        pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.mentions.users.first()} added to queue ${pugMembers.length}/50.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.author} added to queue ${pugMembers.length}/50.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMembers))
@@ -225,20 +225,15 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content == '!size'){
-      message.channel.send(`Current PUG size: ${pugMembers.length}`);
-  }
-    if (!message.guild) return
-    if (message.content.startsWith('!who')) {
-    const user = message.mentions.users.first()
-    if (user) {
-    const member = message.guild.member(user)
-    if ( member) {
-      checkPugSize();
-      addUserPug(message);
-   }}}
- })
-
+    if (message.content == '!size'){
+        message.channel.send(`Current PUG size: ${pugMembers.length}`);
+    }
+    if (message.content === '!add'){
+        // console.log(msg.author);
+        checkPugSize();
+        addUserPug(message);
+    }
+});
 client.on('message', message => {
   if (!message.guild) return
   if (message.content.startsWith('!power')) {
