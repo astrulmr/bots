@@ -225,15 +225,20 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!size'){
-        message.channel.send(`Current PUG size: ${pugMembers.length}`);
-    }
-    if (message.content === '!add'){
-        // console.log(msg.author);
-        checkPugSize();
-        addUserPug(message);
-    }
-});
+  if (message.content == '!size'){
+      message.channel.send(`Current PUG size: ${pugMembers.length}`);
+  }
+    if (!message.guild) return
+    if (message.content.startsWith('!who')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+      checkPugSize();
+      addUserPug(message);
+   }}}
+ })
+
 client.on('message', message => {
   if (!message.guild) return
   if (message.content.startsWith('!power')) {
