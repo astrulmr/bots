@@ -196,7 +196,7 @@ const pugSize = 50; // Maximum amount of players in the PUG
 const pugMembers = []; // Array to hold the members in the PUG
 
 function checkPugSize(){
-    if (pugMembers.length == 50){
+    if (pugMembers.length <= 50){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
