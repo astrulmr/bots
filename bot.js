@@ -208,6 +208,7 @@ function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
     if (pugMembers.length <= 50){
+      
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
@@ -230,8 +231,11 @@ client.on('message', message => {
     }
     if (message.content === '!add'){
         // console.log(msg.author);
+        if(message.auther.username=pugMembers)
+        message.channel.send("power not set")
+        else {
         checkPugSize();
-        addUserPug(message);
+        addUserPug(message);}
     }
 });
 client.on('message', message => {
