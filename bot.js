@@ -188,7 +188,7 @@ client.on('ready' , () => {
   if (member) {
 s=s+1;
  s= "He Is A Runner";
-s=a;
+s!=a
 message.channel.send("All set")
  }}}
 })
@@ -199,7 +199,7 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if (member) {
-  if(s=a)
+  if(s!=a)
   message.channel.send(s)
   else 
 message.channel.send("power not set")
