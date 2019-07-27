@@ -51,7 +51,7 @@ client.on('ready' , () => {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       client.on('message', message => {
     if (message.content === 'hi') {
-       message.channel.send(message.author.username);
+       message.channel.send("hi there" + message.author.username);
        const attachment = new Attachment('./ok.jpg');
        message.channel.send(attachment);
    
