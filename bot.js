@@ -1,5 +1,5 @@
 const  Discord = require('discord.js');
-const { Client, RichEmbed } = require('discord.js');
+const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
 client.on('ready' , () => {
@@ -52,7 +52,10 @@ client.on('ready' , () => {
       client.on('message', message => {
     if (message.content === 'hi') {
        message.channel.send("hi there");
-       channel.send({files:[ok+".png"]}  )
+       const attachment = new Attachment('./ok.png');
+       message.channel.send(`${message.author},`, attachment);
+   
+
    }
  })
           client.on('message', message => {
