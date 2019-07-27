@@ -222,9 +222,13 @@ client.on('ready' , () => {
        message.channel.send("You can't hear the tone, I'm typing");
    }
  })
-                                                         client.on('message', message => {
+                      client.on('message', message => {
     if (message.content === 'shut up') {
        message.channel.send("Oh sorry. Did I say something wrong?");
+        const attachment = new Attachment('./ok.png');
+        message.channel.send(`${message.author},`, attachment);
+    
+
    }
  })
                                                              client.on('message', message => {
@@ -357,4 +361,3 @@ message.channel.send("power not set")
          
         })
 client.login(process.env.BOT_TOKEN)
-
