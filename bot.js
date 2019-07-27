@@ -52,6 +52,8 @@ client.on('ready' , () => {
       client.on('message', message => {
     if (message.content === 'hi') {
        message.channel.send("hi there");
+       const attachment = new Attachment('./ok.jpg');
+       message.channel.send(`${message.author},`, attachment);
    }
  })
           client.on('message', message => {
@@ -225,8 +227,7 @@ client.on('ready' , () => {
                       client.on('message', message => {
     if (message.content === 'shut up') {
        message.channel.send("Oh sorry. Did I say something wrong?");
-        const attachment = new Attachment('./ok.png');
-        message.channel.send(`${message.author},`, attachment);
+    
     
 
    }
