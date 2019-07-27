@@ -246,18 +246,7 @@ client.on('ready' , () => {
     if (message.content === 'play with me') {
        message.channel.send("Uhh I feel a little embarrassed to do that");
    }
- }) 
-client.on('message', message => {
-
-    if (message.content === '=eid mubarak') {
-
-        const attachment = new Attachment('https://images.app.goo.gl/64gCHZNupKcioXpNA');
-
-        message.channel.send(${message.author},, attachment);
-    }
-})
-    
-    
+ })     
       client.on('message', message => {
     if (message.content === 'lol') {
        message.channel.send("What are you laughing?");
