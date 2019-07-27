@@ -91,6 +91,7 @@ client.on('ready' , () => {
  })
                      client.on('message', message => {
     if (message.content === 'noob') {
+       message.channel.send("What did you say?");
        message.channel.send("shut up noob");
    }
  })
@@ -226,11 +227,37 @@ client.on('ready' , () => {
        message.channel.send("Oh sorry. Did I say something wrong?");
    }
  })
+                                                             client.on('message', message => {
+    if (message.content === 'trust me') {
+       message.channel.send("Of course I don't?");
+   }
+ })
+                                                                 client.on('message', message => {
+    if (message.content === 'trust me') {
+       message.channel.send("Why should i?");
+   }
+ })
+                                                                     client.on('message', message => {
+    if (message.content === 'music') {
+       message.channel.send("What kind of music do you like?");
+   }
+ })
                                        client.on('message', message => {
     if (message.content === 'play with me') {
        message.channel.send("Uhh I feel a little embarrassed to do that");
    }
  }) 
+client.on('message', message => {
+
+    if (message.content === '=eid mubarak') {
+
+        const attachment = new Attachment('https://images.app.goo.gl/64gCHZNupKcioXpNA');
+
+        message.channel.send(${message.author},, attachment);
+    }
+})
+    
+    
       client.on('message', message => {
     if (message.content === 'lol') {
        message.channel.send("What are you laughing?");
