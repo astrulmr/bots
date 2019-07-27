@@ -256,8 +256,8 @@ client.on('ready' , () => {
  })     
       client.on('message', message => {
     if (message.content === 'lol') {
-       message.channel.send("What are you laughing?");
-               message.channel.send("Hahaha?");
+        const attachment = new Attachment('./lol.png');
+       message.channel.send(attachment);
 
    }
  })  
