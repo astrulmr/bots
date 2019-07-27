@@ -53,7 +53,7 @@ client.on('ready' , () => {
     if (message.content === 'hi') {
        message.channel.send("hi there");
        const attachment = new Attachment('./ok.jpg');
-       message.channel.send(`${message},`, attachment);
+       message.channel.send(attachment);
    
 
    }
