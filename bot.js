@@ -52,7 +52,7 @@ client.on('ready' , () => {
       client.on('message', message => {
     if (message.content === 'hi') {
        message.channel.send("hi there " + message.author.username);
-       const attachment = new Attachment('./ok.jpg');
+       const attachment = new Attachment('./giphy.gif');
        message.channel.send(attachment);
    
 
