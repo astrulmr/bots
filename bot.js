@@ -74,6 +74,22 @@ client.on('ready' , () => {
 
    }
  })
+                  client.on('message', message => {
+    if (message.content === 'cat') {
+       const attachment = new Attachment('https://media.giphy.com/media/MWSRkVoNaC30A/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+                      client.on('message', message => {
+    if (message.content === 'bye') {
+       const attachment = new Attachment('https://media.giphy.com/media/KRxcgvd5fLiWk/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
          client.on('message', message => {
     if (message.content === 'hello') {
        message.channel.send("hello there " + message.author.username);
@@ -114,6 +130,19 @@ client.on('ready' , () => {
           client.on('message', message => {
     if (message.content === 'how are you') {
        message.channel.send("iam fine thank you , how about you");
+       
+   }
+ })
+              client.on('message', message => {
+    if (message.content === 'stupid') {
+       message.channel.send("I know you are, but what am I?");
+       
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'respect me') {
+       message.channel.send("No I will not");
+        message.channel.send("Only if you do the same to me");
        
    }
  })
