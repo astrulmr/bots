@@ -67,6 +67,14 @@ client.on('ready' , () => {
    }
  })
               client.on('message', message => {
+    if (message.content === 'love you') {
+       const attachment = new Attachment('https://media.giphy.com/media/l0K43fUFmSm0cxz56/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+              client.on('message', message => {
     if (message.content === 'excuse me') {
        const attachment = new Attachment('https://media.giphy.com/media/3o6EhWIq6jUrtmBIFa/giphy.gif');
        message.channel.send(attachment);
@@ -85,6 +93,14 @@ client.on('ready' , () => {
                       client.on('message', message => {
     if (message.content === 'bye') {
        const attachment = new Attachment('https://media.giphy.com/media/KRxcgvd5fLiWk/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+                          client.on('message', message => {
+    if (message.content === 'bad') {
+       const attachment = new Attachment('https://media.giphy.com/media/l396QUa4k8rFVK2xW/giphy.mp4');
        message.channel.send(attachment);
 
 
@@ -160,8 +176,13 @@ client.on('ready' , () => {
  })
                           client.on('message', message => {
     if (message.content === 'cya') {
-       message.channel.send("I love you but I must leave this place");
-       message.channel.send("I love you! Goodbye");
+       message.channel.send("Where are you going");
+       
+   }
+ })
+                              client.on('message', message => {
+    if (message.content === 'to hell') {
+       message.channel.send("Oh, see ya there");
        
    }
  })
