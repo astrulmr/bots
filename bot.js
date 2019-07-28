@@ -54,10 +54,20 @@ client.on('ready' , () => {
        message.channel.send("hi there " + message.author.username);
        const attachment = new Attachment('./giphy.gif');
        message.channel.send(attachment);
-   
+   https://media.giphy.com/media/26vUTlnHulTgAU7le/giphy.gif
 
    }
  })
+     client.on('message', message => {
+    if (message.content === 'hi girl') {
+       message.channel.send("hi there " + message.author.username);
+       const attachment = new Attachment('https://media.giphy.com/media/26vUTlnHulTgAU7le/giphy.gif');
+       message.channel.send(attachment);
+ 
+
+   }
+ })
+ 
           client.on('message', message => {
     if (message.content === 'how are you') {
        message.channel.send("iam fine thank you , how about you");
