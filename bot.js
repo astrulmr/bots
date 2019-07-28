@@ -78,8 +78,8 @@ client.on('ready' , () => {
  })
                 client.on('message', message => {
     if (message.content === 'how to be pro on brawlball') {
-       message.channel.send("hi there " + message.author.username);
-       const attachment = new Attachment(' https://media.giphy.com/media/pYQkayr0zVNkY/giphy.gif');
+       message.channel.send("ez " + message.author.username);
+       const attachment = new Attachment('https://media.giphy.com/media/pYQkayr0zVNkY/giphy.gif');
        message.channel.send(attachment);
 
 
