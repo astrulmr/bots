@@ -52,9 +52,18 @@ client.on('ready' , () => {
       client.on('message', message => {
     if (message.content === 'hi') {
        message.channel.send("hi there " + message.author.username);
-       const attachment = new Attachment('./wave.gif');
+       const attachment = new Attachment('https://media.giphy.com/media/1gRsJSbmejU9pxsfd0/giphy.gif');
        message.channel.send(attachment);
- 
+
+
+   }
+ })
+         client.on('message', message => {
+    if (message.content === 'hello') {
+       message.channel.send("hello there " + message.author.username);
+       const attachment = new Attachment('https://media.giphy.com/media/1gRsJSbmejU9pxsfd0/giphy.gif');
+       message.channel.send(attachment);
+
 
    }
  })
@@ -64,6 +73,15 @@ client.on('ready' , () => {
        const attachment = new Attachment('https://media.giphy.com/media/26vUTlnHulTgAU7le/giphy.gif');
        message.channel.send(attachment);
  
+
+   }
+ })
+                client.on('message', message => {
+    if (message.content === 'how to be pro on brawlball') {
+       message.channel.send("hi there " + message.author.username);
+       const attachment = new Attachment(' https://media.giphy.com/media/pYQkayr0zVNkY/giphy.gif');
+       message.channel.send(attachment);
+
 
    }
  })
