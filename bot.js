@@ -58,6 +58,22 @@ client.on('ready' , () => {
 
    }
  })
+          client.on('message', message => {
+    if (message.content === 'damn') {
+       const attachment = new Attachment('https://media.giphy.com/media/11q8qiwWSkGzrW/giphy.gif');
+       message.channel.send(attachment);
+
+
+   }
+ })
+              client.on('message', message => {
+    if (message.content === 'excuse me') {
+       const attachment = new Attachment('https://media.giphy.com/media/3o6EhWIq6jUrtmBIFa/giphy.gif');
+       message.channel.send(attachment);
+
+
+   }
+ })
          client.on('message', message => {
     if (message.content === 'hello') {
        message.channel.send("hello there " + message.author.username);
