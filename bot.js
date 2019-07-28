@@ -54,7 +54,7 @@ client.on('ready' , () => {
        message.channel.send("hi there " + message.author.username);
        const attachment = new Attachment('./giphy.gif');
        message.channel.send(attachment);
-   https://media.giphy.com/media/26vUTlnHulTgAU7le/giphy.gif
+ 
 
    }
  })
