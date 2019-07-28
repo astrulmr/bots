@@ -146,6 +146,25 @@ client.on('ready' , () => {
        
    }
  })
+                      client.on('message', message => {
+    if (message.content === 'i'm sad') {
+       message.channel.send("What happened? You can tell me everything...");
+       
+   }
+ })
+                          client.on('message', message => {
+    if (message.content === 'pls') {
+       message.channel.send("I'm starting to like you, is that ok or no");
+       
+   }
+ })
+                          client.on('message', message => {
+    if (message.content === 'cya') {
+       message.channel.send("I love you but I must leave this place");
+       message.channel.send("I love you! Goodbye");
+       
+   }
+ })
               client.on('message', message => {
     if (message.content === 'iam fine') {
        message.channel.send("great");
