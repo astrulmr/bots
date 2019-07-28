@@ -88,7 +88,7 @@ client.on('ready' , () => {
                     client.on('message', message => {
     if (message.content === 'lets dance') {
        message.channel.send("oh ya oh ya");
-       const attachment = new Attachment(' https://i.imgur.com/7i9S826.mp4');
+       const attachment = new Attachment('https://i.imgur.com/7i9S826.mp4');
        message.channel.send(attachment);
 
 
