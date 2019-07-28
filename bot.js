@@ -147,7 +147,7 @@ client.on('ready' , () => {
    }
  })
                       client.on('message', message => {
-    if (message.content === 'i'm sad') {
+    if (message.content === 'im sad') {
        message.channel.send("What happened? You can tell me everything...");
        
    }
