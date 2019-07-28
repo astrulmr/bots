@@ -78,8 +78,17 @@ client.on('ready' , () => {
  })
                 client.on('message', message => {
     if (message.content === 'how to be pro on brawlball') {
-       message.channel.send("ez " + message.author.username);
+       message.channel.send("ez ");
        const attachment = new Attachment('https://media.giphy.com/media/pYQkayr0zVNkY/giphy.gif');
+       message.channel.send(attachment);
+
+
+   }
+ })
+                    client.on('message', message => {
+    if (message.content === 'lets dance') {
+       message.channel.send("oh ya oh ya");
+       const attachment = new Attachment(' https://i.imgur.com/7i9S826.mp4');
        message.channel.send(attachment);
 
 
@@ -89,6 +98,7 @@ client.on('ready' , () => {
           client.on('message', message => {
     if (message.content === 'how are you') {
        message.channel.send("iam fine thank you , how about you");
+       
    }
  })
               client.on('message', message => {
