@@ -67,6 +67,22 @@ client.on('ready' , () => {
    }
  })
               client.on('message', message => {
+    if (message.content === 'what') {
+       const attachment = new Attachment('https://media.giphy.com/media/pPhyAv5t9V8djyRFJH/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'wow') {
+       const attachment = new Attachment('https://media.giphy.com/media/PUBxelwT57jsQ/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+              client.on('message', message => {
     if (message.content === 'love you') {
        const attachment = new Attachment('https://media.giphy.com/media/l0K43fUFmSm0cxz56/giphy.mp4');
        message.channel.send(attachment);
@@ -109,7 +125,7 @@ client.on('ready' , () => {
          client.on('message', message => {
     if (message.content === 'hello') {
        message.channel.send("hello there " + message.author.username);
-       const attachment = new Attachment('https://media.giphy.com/media/1gRsJSbmejU9pxsfd0/giphy.gif');
+       const attachment = new Attachment('https://media.giphy.com/media/kW8mnYSNkUYKc/giphy.mp4');
        message.channel.send(attachment);
 
 
