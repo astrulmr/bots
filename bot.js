@@ -67,6 +67,14 @@ client.on('ready' , () => {
    }
  })
               client.on('message', message => {
+    if (message.content === 'i dont have time') {
+       const attachment = new Attachment('https://media.giphy.com/media/wlaBIjRPan0vS/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+              client.on('message', message => {
     if (message.content === 'what') {
        const attachment = new Attachment('https://media.giphy.com/media/pPhyAv5t9V8djyRFJH/giphy.mp4');
        message.channel.send(attachment);
@@ -77,6 +85,14 @@ client.on('ready' , () => {
                   client.on('message', message => {
     if (message.content === 'wow') {
        const attachment = new Attachment('https://media.giphy.com/media/PUBxelwT57jsQ/giphy.mp4');
+       message.channel.send(attachment);
+
+
+   }
+ })
+                      client.on('message', message => {
+    if (message.content === 'oh yeah') {
+       const attachment = new Attachment('https://media.giphy.com/media/xT4uQkpdmRXh4iIxTG/giphy.mp4');
        message.channel.send(attachment);
 
 
@@ -187,6 +203,19 @@ client.on('ready' , () => {
                           client.on('message', message => {
     if (message.content === 'pls') {
        message.channel.send("I'm starting to like you, is that ok or no");
+       
+   }
+ })
+                              client.on('message', message => {
+    if (message.content === 'iam sorry') {
+       message.channel.send("It's not your fault");
+        message.channel.send("Its fine I still love you.");
+       
+   }
+ })
+                              client.on('message', message => {
+    if (message.content === 'where are you from') {
+       message.channel.send("None of your business");
        
    }
  })
