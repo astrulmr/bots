@@ -15,7 +15,6 @@ client.on('ready' , () => {
         // welcome is 535515917518372886
     })
 
-
     let welcomeChannel = client.channels.get("535534516945682462")
      welcomeChannel.send("Hello")
 
@@ -485,6 +484,31 @@ message.channel.send("power not set")
   }
     
 })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+    if (message.content === 'brawlball') {
+       
+            const embed = new RichEmbed()
+            
+            .setTitle(' IT Bot For our style clan And it For Brawlball information And Here His Work : ')
+            .setColor(0xFF0000)
+            .setDescription('1.Down Pass Move \n\n 2. Tags Moves \n\n 3. Up Move \n\n 4. Tricks \n\n 5. Others\n\n Designed By OS Team :)')
+            message.channel.send(embed)
+          
+        if (message.content === '1'){
+            message.channel.send("working on it");}
+            else {
+
+                message.channel.send("Try again and pick number u want from list of brawlball");
+            }
+        
+     
+
+   }
+ })
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     
   client.on('guildMemberAdd', member => {
