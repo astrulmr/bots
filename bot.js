@@ -494,7 +494,7 @@ client.on('message', message => {
             .setColor(0xFF0000)
             .setDescription('1.Down Pass Move \n\n 2. Tags Moves \n\n 3. Up Move \n\n 4. Tricks \n\n 5. Others\n\n Designed By OS Team :)')
             message.channel.send(embed)
-          
+            client.on('message', message => {  
         if (message.content === '1'){
             message.channel.send("working on it");}
             else {
@@ -502,7 +502,7 @@ client.on('message', message => {
                 message.channel.send("Try again and pick number u want from list of brawlball");
             }
         
-     
+        })
 
    }
  })
