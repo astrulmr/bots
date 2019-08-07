@@ -495,7 +495,7 @@ client.on('message', message => {
             .setDescription('1.Down Pass Move \n\n 2. Tags Moves \n\n 3. Up Move \n\n 4. Tricks \n\n 5. Others\n\n Designed By OS Team :)')
             message.channel.send(embed)
           
-        if (message.channel.content === '1'){
+        if (message.channel.send === '1'){
             message.channel.send("working on it");}
            
         
