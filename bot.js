@@ -497,10 +497,7 @@ client.on('message', message => {
           
         if (message.content === '1'){
             message.channel.send("working on it");}
-            else {
-
-                message.channel.send("Try again and pick number u want from list of brawlball");
-            }
+           
         
         
 
