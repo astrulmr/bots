@@ -48,7 +48,7 @@ client.on('ready' , () => {
  })
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    let bChannel = client.channels.get("535534516945682462")
+    let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
     if (message.content === 'hi') {
       bChannel.send("hi there " + message.author.username);
