@@ -425,7 +425,7 @@ client.on('ready' , () => {
       client.on('message', message => {
     if (message.content === 'lol') {
         const attachment = new Attachment('./lol.png');
-        message.bchannel.send(attachment);
+        message.channel.send(attachment);
 
    }
  })  
