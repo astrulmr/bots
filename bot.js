@@ -107,7 +107,7 @@ client.on('message', message => {
    }
  })
  client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.get("603982769495998464")
+  const channel = member.guild.channels.get("613324333221412864")
   if (!channel) return 
 
   client.on('message', message => {
