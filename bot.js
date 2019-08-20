@@ -90,7 +90,7 @@ client.on('ready' , () => {
    }
  })
                       client.on('message', message => {
-    if (message.content === 'oh yeah') {
+    if (message.content === 'oh yea') {
        const attachment = new Attachment('https://media.giphy.com/media/xT4uQkpdmRXh4iIxTG/giphy.mp4');
        message.channel.send(attachment);
 
