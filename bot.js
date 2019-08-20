@@ -510,7 +510,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
   if (!channel2) return
-  channel2.send('${member} Has Join To our style Server')
+  channel2.send(`${member} Has Join To our style Server`)
 })
   client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
@@ -525,8 +525,8 @@ client.on('guildMemberAdd', member => {
         return Math.floor(Math.random() * (max - min)) + min;
       }
           var msg1 = Array(5); 
-          msg1[1] = 'OMG !!! Is That You  ${member} Welcome Dude \n\n ${member} Has Joined To our style server';
-          msg1[2] = 'Hey  ${member} Welcome To Our Style \n\n ${member} Has Joined To our style server';
+          msg1[1] = `OMG !!! Is That You  ${member} Welcome Dude \n\n ${member} Has Joined To our style server`;
+          msg1[2] = `Hey  ${member} Welcome To Our Style \n\n ${member} Has Joined To our style server`;
           msg1[3] = `Great We'er Glad You Came  ${member} :wink: \n\n ${member} Has Joined To our style server`;
           msg1[4] = `Well Well Well Look Who is Here Guys  ${member} \n\n ${member} Has Joined To our style server`;
           msg1[5] = `I Have To Tell You Something Come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} Has Joined To our style server`
