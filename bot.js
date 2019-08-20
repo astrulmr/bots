@@ -35,9 +35,7 @@ client.on('ready' , () => {
           message.channel.send(embed)
         }
       })
-      client.on('guildMemberAdd', member => {
-        const channel = member.guild.channels.get("556806228144291861")
-        if (!channel) return 
+    
       
         client.on('message', message => {
           if (message.content === '!hi') {
@@ -426,7 +424,7 @@ client.on('ready' , () => {
       
          }
        }) 
-       })
+       
 
  
 
