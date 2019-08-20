@@ -546,4 +546,4 @@ client.on('message', message => {
           }
          
         })
-client.login("NjAzOTU2Mzk0MjE5Mjc0MjQw.XTm8QA.peTxKdKsNyTU_QlpL13qD4TPz18")
+client.login(process.env.BOT_TOKEN)
