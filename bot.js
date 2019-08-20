@@ -508,9 +508,9 @@ client.on('message', message => {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.get("535540529379672074")
-  if (!channel) return
-  channel.send('${member} Has Join To our style Server')
+  const channel2 = member.guild.channels.get("535540529379672074")
+  if (!channel2) return
+  channel2.send('${member} Has Join To our style Server')
 })
   client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
