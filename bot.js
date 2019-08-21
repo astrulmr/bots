@@ -36,7 +36,7 @@ client.on('ready' , () => {
     client.on('message', message => {
       if (message.content === 'a') {
             const embed = new RichEmbed()
-            .setTitle('There Is No Leader We Are All Leaders In OS')
+            .setTitle('There Is No Leader , We Are All Leaders In OS')
             .setColor(0xff0000)
             welchannel.send(embed)
       }
@@ -45,7 +45,7 @@ client.on('ready' , () => {
       if (message.content === 'a') {
             const embed = new RichEmbed()
             .setTitle('We Are a Small Clan With a Lot Of Pride')
-            .setColor(0x008000)
+            .setColor(0xeee8aa)
             welchannel.send(embed)
       }
     })
@@ -59,10 +59,9 @@ client.on('ready' , () => {
     })
     client.on('message', message => {
       if (message.content === 'a') {
-            const embed = new RichEmbed()
-            .setTitle('https://discord.gg/aMTafbd')
-            .setColor(0x000000)
-            welchannel.send(embed)
+            
+        welchannel.send  ('https://discord.gg/aMTafbd')
+      
       }
     })
  
@@ -631,6 +630,7 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+
 
 
 
