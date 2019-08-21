@@ -16,7 +16,28 @@ client.on('ready' , () => {
     })
 
     let welcomeChannel = client.channels.get("535534516945682462")
+    let welchannel = client.channels.get("556806228144291861")
+
+            const embed = new RichEmbed()
+              .setTitle('Welcome To our style Server')
+              .setColor(0xFFFFFF)
+              .setDescription(' ')
+              welchannel.send(embed)
+              
+            const embed = new RichEmbed()
+            .setTitle('Brawball Clan That You Cant Beat')
+            .setColor(0xFFFF00)
+            .setDescription(' ')
+            welchannel.send(embed)
+            
+            const embed = new RichEmbed()
+            .setTitle('There Is No Leader Here We All Leaders')
+            .setColor(0x00BFFF)
+            .setDescription(' ')
+            welchannel.send(embed)
+
      welcomeChannel.send("Hello")
+     
 
      client.on('message', message => {
       if (message.content === '!help') {
@@ -47,6 +68,7 @@ client.on('ready' , () => {
    }
  })
  let channel3 = client.channels.get("613662955522752516")
+
 
   
 
@@ -582,4 +604,4 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.login(process.env.BOT_TOKEN)
+client.login("NjAzOTU2Mzk0MjE5Mjc0MjQw.XV00Bg.CVsrVJwTDD3qavHtomZhxvJPJ5E")
