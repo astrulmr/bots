@@ -487,12 +487,11 @@ message.channel.send("power not set")
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- client.on('message', member => {
+ 
   const channel3 = member.guild.channels.get("613662955522752516")
-  if (!channel3) return{
-    
-  }
+  if (!channel3) return
   
+  client.on('message', message => {
     if (message.content === 'brawlball') {
        
             const embed = new RichEmbed()
@@ -504,8 +503,8 @@ message.channel.send("power not set")
 
     
    }
- 
-
+ })
+ client.on('message', message => {
   if (message.content === '!@') {
      
           const embed = new RichEmbed()
@@ -517,7 +516,6 @@ message.channel.send("power not set")
 
   
  }
-
   
 })
 
