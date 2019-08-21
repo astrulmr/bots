@@ -17,25 +17,36 @@ client.on('ready' , () => {
 
     let welcomeChannel = client.channels.get("535534516945682462")
     let welchannel = client.channels.get("556806228144291861")
-
+    client.on('message', message => {
+      if (message.content === 'b') {
+        
             const embed = new RichEmbed()
               .setTitle('Welcome To our style Server')
               .setColor(0xFFFFFF)
               .setDescription(' ')
               welchannel.send(embed)
-              
+      }
+    })
+    client.on('message', message => {
+      if (message.content === 'b') {
+        
             const embed = new RichEmbed()
             .setTitle('Brawball Clan That You Cant Beat')
             .setColor(0xFFFF00)
             .setDescription(' ')
             welchannel.send(embed)
-            
+      }
+    })
+    client.on('message', message => {
+      if (message.content === 'b') {
+        
             const embed = new RichEmbed()
             .setTitle('There Is No Leader Here We All Leaders')
             .setColor(0x00BFFF)
             .setDescription(' ')
             welchannel.send(embed)
-
+      }
+      })
      welcomeChannel.send("Hello")
      
 
