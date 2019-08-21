@@ -491,7 +491,7 @@ message.channel.send("power not set")
   const channel2 = member.guild.channels.get("613662955522752516")
   if (!channel2) return
   client.on('message', message => {
-    if (message.channel2.content === 'brawlball') {
+    if (message.content === 'brawlball') {
        
             const embed = new RichEmbed()
             
