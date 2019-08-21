@@ -51,7 +51,7 @@ client.on('ready' , () => {
   
 
  client.on('message', message => {
-   if (message.content === 'brawlball') {
+   if (message.channel3.content === 'brawlball') {
       
            const embed = new RichEmbed()
            
@@ -64,7 +64,7 @@ client.on('ready' , () => {
   }
 })
 client.on('message', message => {
- if (message.content === '!@') {
+ if (message.channel3.content === '!@') {
     
          const embed = new RichEmbed()
          
@@ -75,7 +75,7 @@ client.on('message', message => {
 }
 })
 client.on('message', message => {
-  if (message.content === '!#') {
+  if (message.channel3.content === '!#') {
      
           const embed = new RichEmbed()
           
