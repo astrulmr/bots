@@ -70,7 +70,7 @@ client.on('message', message => {
          
          .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
          .setColor(0xFF0000)
-         .setDescription('1. leave wall and dodge Left OR Right (debend on which side u play)   \n\n 2. Throw the ball up (with jumping just throw button and aim up)\n\n 3. punch up on heavy button attack to catch the ball \n\n 4. jump 2 times slowly \n\n 5. dodge up to touch wall \n\n Designed By OS Team :)')
+         .setDescription('\n\n 1. leave wall and dodge Left Or Right (depend on which side u play) \n\n 2. Throw the ball up (with jumping just throw button and aim up)\n\n 3. punch up on heavy button attack to catch the ball \n\n 4. jump 2 times slowly \n\n 5. dodge up to touch the wall \n\n Designed By OS Team :)')
          channel3.send(embed)
 
  
