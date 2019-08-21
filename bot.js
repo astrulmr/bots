@@ -22,7 +22,6 @@ client.on('ready' , () => {
             const embed = new RichEmbed()
               .setTitle('Welcome To our style Server')
               .setColor(0xFFFFFF)
-              .setDescription(' ')
               welchannel.send(embed)
       }
     })
@@ -31,7 +30,6 @@ client.on('ready' , () => {
             const embed = new RichEmbed()
             .setTitle('Brawball Clan That You Cant Beat')
             .setColor(0xFFFF00)
-            .setDescription(' ')
             welchannel.send(embed)
       }
     })
@@ -40,7 +38,6 @@ client.on('ready' , () => {
             const embed = new RichEmbed()
             .setTitle('There Is No Leader Here We All Leaders')
             .setColor(0x00BFFF)
-            .setDescription(' ')
             welchannel.send(embed)
       }
     })
@@ -609,7 +606,6 @@ client.on('guildMemberAdd', member => {
           }
          
         })
-
 
 
 
