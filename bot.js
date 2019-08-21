@@ -487,7 +487,7 @@ message.channel.send("power not set")
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- client.on('guildMemberAdd', member => {
+ client.on('message', member => {
   const channel3 = member.guild.channels.get("613662955522752516")
   if (!channel3) return
   client.on('message', message => {
