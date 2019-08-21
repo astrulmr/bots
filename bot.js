@@ -488,8 +488,8 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  client.on('guildMemberAdd', member => {
-  const channel2 = member.guild.channels.get("613662955522752516")
-  if (!channel2) return
+  const channel3 = member.guild.channels.get("613662955522752516")
+  if (!channel3) return
   client.on('message', message => {
     if (message.content === 'brawlball') {
        
@@ -498,20 +498,20 @@ message.channel.send("power not set")
             .setTitle(' Whcich Move You Wan Try To Learn ? : ')
             .setColor(0xFF0000)
             .setDescription('1.Down Pass Move = !@ \n\n 2. Tags Moves = !#\n\n 3. Up Pass Move = !$  \n\n 4. Tricks = !% \n\n 5. Others = !^ \n\n Designed By OS Team :)')
-            channel2.send(embed)
+            channel3.send(embed)
 
     
    }
  })
  client.on('message', message => {
-  if (message.channel2.content === '!@') {
+  if (message.content === '!@') {
      
           const embed = new RichEmbed()
           
           .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
           .setColor(0xFF0000)
           .setDescription('1. leave wall and dodge Left OR Right (debend on which side u play)   \n\n 2. Throw the ball up (with jumping just throw button and aim up)\n\n 3. punch up on heavy button attack to catch the ball \n\n 4. jump 2 times slowly \n\n 5. dodge up to touch wall \n\n Designed By OS Team :)')
-          channel2.send(embed)
+          channel3.send(embed)
 
   
  }
