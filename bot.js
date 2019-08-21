@@ -26,7 +26,7 @@ client.on('ready' , () => {
       }
     })
     client.on('message', message => {
-      if (message.content === 'b') {
+      if (message.content === 'a') {
             const embed = new RichEmbed()
             .setTitle('Brawball Clan That You Cant Beat')
             .setColor(0xFFFF00)
@@ -34,7 +34,7 @@ client.on('ready' , () => {
       }
     })
     client.on('message', message => {
-      if (message.content === 'c') {
+      if (message.content === 'a') {
             const embed = new RichEmbed()
             .setTitle('There Is No Leader Here We All Leaders')
             .setColor(0x0000ff)
@@ -42,13 +42,22 @@ client.on('ready' , () => {
       }
     })
     client.on('message', message => {
-      if (message.content === 'e') {
+      if (message.content === 'a') {
             const embed = new RichEmbed()
-            .setTitle('NBS = EZPZ')
-            .setColor(0x0000ff)
+            .setTitle('We Are a Small Clan With a Lot Of Pride')
+            .setColor(0x008000)
             welchannel.send(embed)
       }
     })
+    client.on('message', message => {
+      if (message.content === 'a') {
+            const embed = new RichEmbed()
+            .setTitle('NBS = EZPZ')
+            .setColor(0xff0000)
+            welchannel.send(embed)
+      }
+    })
+ 
      welcomeChannel.send("Hello")
      
 
@@ -614,6 +623,8 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+
+
 
 
 client.login(process.env.BOT_TOKEN)
