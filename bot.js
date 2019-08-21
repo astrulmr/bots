@@ -488,8 +488,8 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  
-  const channel3 = client.channels.get("613662955522752516")
-  
+  let channel3 = client.channels.get("613662955522752516")
+ 
 
   client.on('message', message => {
     if (message.content === 'brawlball') {
