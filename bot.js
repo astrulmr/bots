@@ -69,7 +69,7 @@ client.on('message', message => {
          const embed = new RichEmbed()
          
          .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
-         .setColor(0xFFFFFF)
+         .setColor(0xFFFF00)
          .setDescription('\n\n 1. Leave The Wall And Dodge Left Or Right (depend on which side u play) \n\n 2. Throw The Ball Up ( Without Jumping Just Throw Button And Aim Up ) \n\n 3. Punch Up On Heavy Button Attack To Catch The Ball \n\n 4. Jump 2 Times Slowly \n\n 5. Dodge Up To Touch The Wall \n\n Designed By OS Team :)')
          channel3.send(embed)
 }
@@ -80,7 +80,7 @@ client.on('message', message => {
           const embed = new RichEmbed()
           
           .setTitle('Up Pass Brawlball Move it Consists of five steps : ')
-          .setColor(0xFFFFFF)
+          .setColor(0x00BFFF)
           .setDescription('\n\n 1. Go Top Of Ur Base Tower And Jump Up And Left Or Right (depend on which side u play) \n\n 2. Dodge Aiming Up + Left Or Right  \n\n 3. Throw The Ball Up  ( Without Jumping Just Throw Button And Aim Up ) \n\n 4. Punch Up On Heavy Button Attack To Catch The Ball  \n\n 5. Jump 1 Time  \n\n 6. And Dodge One Time \n\n Designed By OS Team :)')
           channel3.send(embed)
  }
