@@ -46,6 +46,37 @@ client.on('ready' , () => {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
    }
  })
+ let channel3 = client.channels.get("613662955522752516")
+
+  
+
+ client.on('message', message => {
+   if (message.content === 'brawlball') {
+      
+           const embed = new RichEmbed()
+           
+           .setTitle(' Whcich Move You Wan Try To Learn ? : ')
+           .setColor(0xFF0000)
+           .setDescription('1.Down Pass Move = !@ \n\n 2. Tags Moves = !#\n\n 3. Up Pass Move = !$  \n\n 4. Tricks = !% \n\n 5. Others = !^ \n\n Designed By OS Team :)')
+           channel3.send(embed)
+
+   
+  }
+})
+client.on('message', message => {
+ if (message.content === '!@') {
+    
+         const embed = new RichEmbed()
+         
+         .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
+         .setColor(0xFF0000)
+         .setDescription('1. leave wall and dodge Left OR Right (debend on which side u play)   \n\n 2. Throw the ball up (with jumping just throw button and aim up)\n\n 3. punch up on heavy button attack to catch the ball \n\n 4. jump 2 times slowly \n\n 5. dodge up to touch wall \n\n Designed By OS Team :)')
+         channel3.send(embed)
+
+ 
+}
+ 
+})
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
@@ -488,36 +519,7 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  
-  let channel3 = client.channels.get("613662955522752516")
  
-
-  client.on('message', message => {
-    if (message.content === 'brawlball') {
-       
-            const embed = new RichEmbed()
-            
-            .setTitle(' Whcich Move You Wan Try To Learn ? : ')
-            .setColor(0xFF0000)
-            .setDescription('1.Down Pass Move = !@ \n\n 2. Tags Moves = !#\n\n 3. Up Pass Move = !$  \n\n 4. Tricks = !% \n\n 5. Others = !^ \n\n Designed By OS Team :)')
-            channel3.send(embed)
-
-    
-   }
- })
- client.on('message', message => {
-  if (message.content === '!@') {
-     
-          const embed = new RichEmbed()
-          
-          .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
-          .setColor(0xFF0000)
-          .setDescription('1. leave wall and dodge Left OR Right (debend on which side u play)   \n\n 2. Throw the ball up (with jumping just throw button and aim up)\n\n 3. punch up on heavy button attack to catch the ball \n\n 4. jump 2 times slowly \n\n 5. dodge up to touch wall \n\n Designed By OS Team :)')
-          channel3.send(embed)
-
-  
- }
-  
-})
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
