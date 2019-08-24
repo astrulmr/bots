@@ -469,7 +469,11 @@ client.on('message', message => {
    }
  })
     
-    
+                                       client.on('message', message => {
+    if (message.content === 'sup') {
+      bChannel.send("Nothing much buddy.");
+   }
+ })  
                                      client.on('message', message => {
     if (message.content === 'why') {
       bChannel.send("I'm not your baby");
