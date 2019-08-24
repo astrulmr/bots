@@ -137,6 +137,18 @@ client.on('message', message => {
  }
  })
     
+     client.on('message', message => {
+      if (message.content === '!add') {
+
+        const embed = new RichEmbed()
+      .setColor(0x1d4b63)
+      .setTitle('User Information :')
+      .setDescription('you can add anything about yourself ')
+      .setThumbnail('message.author.avatarURL')
+      channel3.send(embed)
+}
+})
+    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
@@ -543,17 +555,6 @@ client.on('message', message => {
       bChannel.send("Uhh I feel a little embarrassed to do that");
    }
  })     
-         client.on('message', message => {
-      if (message.content === '!add') {
-
-        const embed = new RichEmbed()
-      .setColor(0x1d4b63)
-      .setTitle('User Information :')
-      .setDescription('you can add anything about yourself ')
-      .setThumbnail('message.author.avatarURL')
-       channel3.send(embed)
-}
-})
       client.on('message', message => {
     if (message.content === 'lol') {
         const attachment = new Attachment('./lol.png');
