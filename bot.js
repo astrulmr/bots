@@ -444,6 +444,33 @@ client.on('message', message => {
    }
  })
                                      client.on('message', message => {
+    if (message.content === 'xD') {
+      bChannel.send("Laughing Is Good for Your Health");
+   }
+ })
+                                         client.on('message', message => {
+    if (message.content === 'Salty') {
+      bChannel.send("Yes, your sweet tears are my nourishment, give me more");
+   }
+ })
+                                             client.on('message', message => {
+    if (message.content === 'how is it going') {
+      bChannel.send("Yeah, Im good");
+   }
+ })
+                                                 client.on('message', message => {
+    if (message.content === 'what is your favorite anime') {
+      bChannel.send("Pokemon.You?");
+   }
+ })
+                                                     client.on('message', message => {
+    if (message.content === 'how to say hello in korean') {
+      bChannel.send("안녕하세요 (Annyeong Haseyo)");
+   }
+ })
+    
+    
+                                     client.on('message', message => {
     if (message.content === 'why') {
       bChannel.send("I'm not your baby");
    }
