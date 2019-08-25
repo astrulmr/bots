@@ -136,6 +136,7 @@ if (message.embeds){
               .then(reaction => reaction.message.react('615156590504574976'))
               .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('615204452215029760'))
+              .then(reaction => reaction.message.react('615213146809958410'))
               .then(reaction => reaction.message.delete(20000))
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
@@ -152,7 +153,7 @@ if (message.embeds){
       embed.setDescription("<:koji:615204451778560021> - koji\n" +
        "<:hattouri:615156590504574976> - hattouri\n"+
        "<:scarlet:615204451875160104> - scarlet\n" +
-       "<:vraxx:615204452215029760> - vraxx\n");
+       "<:vraxx:615204452215029760> - vraxx\n" + "<:brawlball:615213146809958410> - brawlball\n" );
       message.channel.send(embed);
   }
 });
