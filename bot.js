@@ -140,17 +140,17 @@ client.on('message', message => {
 
            }
      }
-    
+     return;
   
   if(message.content.toLowerCase() ==='roles?')
   {
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:Snapchat: 533898655204245505> - Snapchat\n" + "<:Facebook: 533898655326011392> - Facebook\n" );
-      message.channel.send(embed);
+      embed.setDescription("<Snapchat : 533898655204245505> - Snapchat\n" + "<:Facebook : '533898655326011392'> - Facebook\n" );
+      message.channel.send*(embed);
   }
-
+})
 
 client.on('messageReactionAdd',(reaction,user) => {
    if(user.bot)
@@ -172,7 +172,6 @@ client.on('messageReactionAdd',(reaction,user) => {
       }).catch(err => console.error);
   }
 
-})
 })
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
