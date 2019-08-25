@@ -133,8 +133,8 @@ if (message.embeds){
            if(embedMsg)
            {
               message.react('615156590504574976')
-              .then(reaction => reaction.message.react('533898655326011392'))
-              .then(reaction => reaction.message.react('533898655456034816'))
+              .then(reaction => reaction.message.react('615156590504574976'))
+              .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('533898655304908810'))
               .then(reaction => reaction.message.delete(20000))
               .then(msg => console.log("Deleted message"))
@@ -151,7 +151,7 @@ if (message.embeds){
       embed.setColor("BLUE");
       embed.setDescription("<:Snapchat:imgbinbrawlhallabluemammothgames> - Snapchat\n" +
        "<:Facebook:615156590504574976> - Facebook\n"+
-       "<:Twitter:533898655456034816> - Twitter\n" +
+       "<:Twitter:615204451875160104> - Twitter\n" +
        "<:YouTube:533898655304908810> - YouTube\n");
       message.channel.send(embed);
   }
