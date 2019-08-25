@@ -125,30 +125,30 @@ client.on('message', message => {
          channel3.send(embed)
 }
 })
- client.on('message', message => {
-  if (message.author.bot)
+client.on('message', message => {
+  if(message.author.bot)
       {
-
+if (message.embeds){
           const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
            if(embedMsg)
            {
               message.react('533898655204245505')
               .then(reaction => reaction.message.react('533898655326011392'))
-              .then(reaction => reaction.message.delete(20000) )
+              .then(reaction => reaction.message.delete(20000))
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
 
            }
      }
-     
-  
-  if(message.content.toLowerCase() ==='roles?')
+     return
+  }
+  if(message.content.toLowerCase() ==='?roles')
   {
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<Snapchat : 533898655204245505> - Snapchat\n" + "<:Facebook : '533898655326011392'> - Facebook\n" );
-      message.channel.send*(embed);
+      embed.setDescription(":Snapchat: - Snapchat\n" + ":Facebook: - Facebook\n" );
+      message.channel.send(embed);
   }
 })
 
