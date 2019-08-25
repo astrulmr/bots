@@ -140,7 +140,7 @@ client.on('message', message => {
 
            }
      }
-     return;
+     
   
   if(message.content.toLowerCase() ==='roles?')
   {
