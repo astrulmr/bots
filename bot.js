@@ -148,7 +148,7 @@ if (message.embeds){
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
       embed.setDescription("<:Snapchat:533898655204245505> - Snapchat\n" +
-       "<:Facebook:>533898655326011392 - Facebook\n" );
+       "<:Facebook:533898655326011392> - Facebook\n" );
       message.channel.send(embed);
   }
 });
@@ -157,7 +157,7 @@ client.on('messageReactionAdd',(reaction,user) => {
    if(user.bot)
       return;
 
-   var roleName = reaction.emoji.Name;
+   var roleName = reaction.emoji.name;
    var role = reaction.message.guild.roles.find(role =>role.name.toLowerCase() === roleName.toLowerCase());
    var member = reaction.message.guild.members.find(member => member.id === user.id);
 
