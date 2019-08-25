@@ -149,9 +149,9 @@ if (message.embeds){
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:Snapchat:imgbinbrawlhallabluemammothgames> - Snapchat\n" +
-       "<:Facebook:615156590504574976> - Facebook\n"+
-       "<:Twitter:615204451875160104> - Twitter\n" +
+      embed.setDescription("<:imgbinbrawlhallavideogamebluemam:615204451778560021> - imgbinbrawlhallavideogamebluemam\n" +
+       "<:imgbinbrawlhallabluemammothgames:615156590504574976> - imgbinbrawlhallabluemammothgames\n"+
+       "<:imgbinbrawlhallascarletbluemammo:615204451875160104> - imgbinbrawlhallascarletbluemammo\n" +
        "<:YouTube:533898655304908810> - YouTube\n");
       message.channel.send(embed);
   }
