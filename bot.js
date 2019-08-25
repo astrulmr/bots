@@ -148,6 +148,36 @@ client.on('message', message => {
 
 }
 })
+    client.on('message', message ==> {
+    if (message.author.bot)
+        {
+
+             const embedMsg = message.embeds.find => msg.title ==='Server Roles');
+             if(embedMsg)
+             {
+                embedMsg.message.react('533898655204245505')
+                .then(reaction ==> reaction.message.react('53389655326011392'))
+                .then(msg ==> console.log("Deleted message"))
+                .catch(err ==> console.error);
+
+             }
+       }
+       return;
+    }
+    if(message.content.toLowerCase() ==='?roles')
+    {
+        const embed - new RichEmbed();
+        embed.setTitle("Server Roles");
+        embed.setColor("BLUE");
+        embed.setDescription("<Snapchat : 533898655204245505> - Snapchat\n" + "<:Facebook : 53389655326011392> - Facebook\n" );
+        message.channel.send*(embed);
+    }
+}):
+
+client.on('messageReactionAdd',(reaction,user) => {
+     var roleName = reaction.emoji.roleName;
+     console.log(roleName);
+}):
 
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
