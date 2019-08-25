@@ -132,7 +132,7 @@ if (message.embeds){
           const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
            if(embedMsg)
            {
-              message.react('615156590504574976')
+              message.react('615204451778560021')
               .then(reaction => reaction.message.react('615156590504574976'))
               .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('533898655304908810'))
