@@ -148,15 +148,16 @@ client.on('message', message => {
 
 }
 })
-  client.on('message', message => {
+   client.on('message', message => {
   if (message.author.bot)
       {
 
-        const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
+          const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
            if(embedMsg)
            {
-              embedMsg.message.react('533898655204245505')
+              message.react('533898655204245505')
               .then(reaction => reaction.message.react('53389655326011392'))
+              .then(reaction => reaction.message.delete(20000) )
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
 
@@ -164,7 +165,7 @@ client.on('message', message => {
      }
      return;
   
-  if(message.content.toLowerCase() ==='?roles')
+  if(message.content.toLowerCase() ==='roles?')
   {
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
@@ -175,8 +176,25 @@ client.on('message', message => {
 })
 
 client.on('messageReactionAdd',(reaction,user) => {
+   if(user.bot)
+      return;
+
    var roleName = reaction.emoji.roleName;
-   console.log(roleName);
+   var role = reaction.message.guild.roles.find(role =>role.name.toLowerCase() === roleName.toLowerCase());
+   var member = reaction.message.guild.member.find(member => member.id === user.id);
+
+  if(member.role.has(role.id))
+  {
+      member.romoveRole(role.id).then(member => {
+          console.log("Romoved" + member.user.username + " from the " + role.name + "role.");
+      }).catch(err => console.error);
+  } 
+  else {
+      member.addRole(role.id).then(member => {
+          console.log("Added " + member.user.username+ " to the " + role.name + " role.");
+      }).catch(err => console.error);
+  }
+
 })
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
