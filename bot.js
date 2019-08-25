@@ -136,18 +136,20 @@ client.on('message', message => {
           channel3.send(embed)
  }
  })
-    
-     client.on('message', message => {
+         client.on('message', message => {
       if (message.content === '!add') {
 
         const embed = new RichEmbed()
       .setColor(0x1d4b63)
       .setTitle('User Information :')
+      .setField('Ratings')
       .setDescription('you can add anything about yourself ')
-      .setThumbnail('message.author.avatarURL')
-      channel3.send(embed)
+      .setThumbnail(message.author.avatarURL)
+                   message.channel.send(embed)
+
 }
 })
+
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
