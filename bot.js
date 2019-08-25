@@ -148,11 +148,11 @@ client.on('message', message => {
 
 }
 })
-    client.on('message', message => {
+  client.on('message', message => {
   if (message.author.bot)
       {
 
-           const embedMsg = message.embeds.find = msg.title ==='Server Roles';
+        const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
            if(embedMsg)
            {
               embedMsg.message.react('533898655204245505')
@@ -178,7 +178,6 @@ client.on('messageReactionAdd',(reaction,user) => {
    var roleName = reaction.emoji.roleName;
    console.log(roleName);
 })
-    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
