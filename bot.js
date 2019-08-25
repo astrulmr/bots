@@ -135,7 +135,7 @@ if (message.embeds){
               message.react('615204451778560021')
               .then(reaction => reaction.message.react('615156590504574976'))
               .then(reaction => reaction.message.react('615204451875160104'))
-              .then(reaction => reaction.message.react('533898655304908810'))
+              .then(reaction => reaction.message.react('615204452215029760'))
               .then(reaction => reaction.message.delete(20000))
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
@@ -149,10 +149,10 @@ if (message.embeds){
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:imgbinbrawlhallavideogamebluemam:615204451778560021> - imgbinbrawlhallavideogamebluemam\n" +
-       "<:imgbinbrawlhallabluemammothgames:615156590504574976> - imgbinbrawlhallabluemammothgames\n"+
-       "<:imgbinbrawlhallascarletbluemammo:615204451875160104> - imgbinbrawlhallascarletbluemammo\n" +
-       "<:YouTube:533898655304908810> - YouTube\n");
+      embed.setDescription("<:koji:615204451778560021> - koji\n" +
+       "<:hattouri:615156590504574976> - hattouri\n"+
+       "<:scarlet:615204451875160104> - scarlet\n" +
+       "<:vraxx:615204452215029760> - vraxx\n");
       message.channel.send(embed);
   }
 });
