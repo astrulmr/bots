@@ -148,7 +148,7 @@ client.on('message', message => {
 
 }
 })
-   client.on('message', message => {
+client.on('message', message => {
   if (message.author.bot)
       {
 
@@ -163,7 +163,7 @@ client.on('message', message => {
 
            }
      }
-     return;
+    
   
   if(message.content.toLowerCase() ==='roles?')
   {
@@ -171,7 +171,7 @@ client.on('message', message => {
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
       embed.setDescription("<Snapchat : 533898655204245505> - Snapchat\n" + "<:Facebook : 53389655326011392> - Facebook\n" );
-      message.channel.send*(embed);
+      message.channel.send(embed);
   }
 })
 
