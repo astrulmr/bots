@@ -150,15 +150,15 @@ if (message.embeds){
       embed.setDescription(":Snapchat: - Snapchat\n" + ":Facebook: - Facebook\n" );
       message.channel.send(embed);
   }
-})
+});
 
 client.on('messageReactionAdd',(reaction,user) => {
    if(user.bot)
       return;
 
-   var roleName = reaction.emoji.roleName;
+   var roleName = reaction.emoji.Name;
    var role = reaction.message.guild.roles.find(role =>role.name.toLowerCase() === roleName.toLowerCase());
-   var member = reaction.message.guild.member.find(member => member.id === user.id);
+   var member = reaction.message.guild.members.find(member => member.id === user.id);
 
   if(member.role.has(role.id))
   {
@@ -168,7 +168,7 @@ client.on('messageReactionAdd',(reaction,user) => {
   } 
   else {
       member.addRole(role.id).then(member => {
-          console.log("Added " + member.user.username+ " to the " + role.name + " role.");
+          console.log("Added " + member.user.username+ " to a role.");
       }).catch(err => console.error);
   }
 
