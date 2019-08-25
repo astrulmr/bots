@@ -89,6 +89,20 @@ client.on('ready' , () => {
           message.channel.send(embed)
         }
       })
+    
+           client.on('message', message => {
+      if (message.content === '!add') {
+
+        let embed = new Discord.RichEmbed()
+       .setTitle('User Information :')
+      .setColor(0x1d4b63)
+      .setField('Ratings')
+      .setDescription('you can add anything about yourself ')
+      .setImage(message.author.avatarURL)
+                   message.channel.send(embed)
+
+}
+})
 
 
   client.on('message', message => {
@@ -608,19 +622,7 @@ message.channel.send("power not set")
   }
     
 })
-       client.on('message', message => {
-      if (message.content === '!add') {
 
-        const embed = new RichEmbed()
-      .setColor(0x1d4b63)
-      .setTitle('User Information :')
-      .setField('Ratings')
-      .setDescription('you can add anything about yourself ')
-      .setThumbnail(message.author.avatarURL)
-                   message.channel.send(embed)
-
-}
-})
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  
