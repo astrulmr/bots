@@ -149,16 +149,16 @@ if (message.embeds){
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:Snapchat:533898655204245505> - Snapchat\n" +
-       "<:Facebook:533898655326011392> - Facebook\n"+
-       "<:Twitter:533898655456034816> - Twitter\n" +
-       "<:YouTube:533898655304908810> - YouTube\n");
+      embed.setDescription('<:Snapchat:533898655204245505> - Snapchat\n' +
+       '<:Facebook:533898655326011392> - Facebook\n'+
+       '<:Twitter:533898655456034816> - Twitter\n' +
+       '<:YouTube:533898655304908810> - YouTube\n');
       message.channel.send(embed);
   }
 });
 
-client.on('messageReactionAdd',(reaction,user) => {
-   if(user.bot)
+client.on('messageReactionAdd', (reaction,user) => {
+   if(user.bot)bb
       return;
 
    var roleName = reaction.emoji.name;
