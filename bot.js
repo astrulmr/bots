@@ -147,7 +147,8 @@ if (message.embeds){
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:Snapchat:533898655326011392> - Snapchat\n" + "<:Facebook:533898655204245505> - Facebook\n" );
+      embed.setDescription("<:Snapchat:533898655204245505> - Snapchat\n" +
+       "<:Facebook:>533898655326011392 - Facebook\n" );
       message.channel.send(embed);
   }
 });
