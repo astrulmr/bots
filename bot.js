@@ -94,10 +94,7 @@ client.on('ready' , () => {
       if (message.content === '!add') {
 
         let embed = new Discord.RichEmbed()
-       .setTitle('User Information :')
       .setColor(0x1d4b63)
-      .setField('Ratings')
-      .setDescription('you can add anything about yourself ')
       .setImage(message.author.avatarURL)
                    message.channel.send(embed)
 
