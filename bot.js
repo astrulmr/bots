@@ -125,30 +125,7 @@ client.on('message', message => {
          channel3.send(embed)
 }
 })
-client.on('message', message => {
-  if (message.content === '!#') {
-     
-          const embed = new RichEmbed()
-          
-          .setTitle('Up Pass Brawlball Move it Consists of five steps : ')
-          .setColor(0x00BFFF)
-          .setDescription('\n\n 1. Go Top Of Ur Base Tower And Jump Up And Left Or Right (depend on which side u play) \n\n 2. Dodge Aiming Up + Left Or Right  \n\n 3. Throw The Ball Up  ( Without Jumping Just Throw Button And Aim Up ) \n\n 4. Punch Up On Heavy Button Attack To Catch The Ball  \n\n 5. Jump 1 Time  \n\n 6. And Dodge One Time \n\n Designed By OS Team :)')
-          channel3.send(embed)
- }
- })
-        client.on('message', message => {
-      if (message.content === '!add') {
-
-        const embed = new RichEmbed()
-      .setColor(0x1d4b63)
-      .setTitle('User Information :')
-      .setDescription('you can add anything about yourself ')
-      .setThumbnail(message.author.avatarURL)
-                   message.channel.send(embed)
-
-}
-})
-client.on('message', message => {
+ client.on('message', message => {
   if (message.author.bot)
       {
 
@@ -156,7 +133,7 @@ client.on('message', message => {
            if(embedMsg)
            {
               message.react('533898655204245505')
-              .then(reaction => reaction.message.react('53389655326011392'))
+              .then(reaction => reaction.message.react('533898655326011392'))
               .then(reaction => reaction.message.delete(20000) )
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
@@ -170,7 +147,7 @@ client.on('message', message => {
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<Snapchat : 533898655204245505> - Snapchat\n" + "<:Facebook : 53389655326011392> - Facebook\n" );
+      embed.setDescription("<:Snapchat: 533898655204245505> - Snapchat\n" + "<:Facebook: 533898655326011392> - Facebook\n" );
       message.channel.send(embed);
   }
 
