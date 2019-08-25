@@ -134,13 +134,15 @@ if (message.embeds){
            {
               message.react('533898655204245505')
               .then(reaction => reaction.message.react('533898655326011392'))
+              .then(reaction => reaction.message.react('533898655456034816'))
+              .then(reaction => reaction.message.react('533898655304908810'))
               .then(reaction => reaction.message.delete(20000))
               .then(msg => console.log("Deleted message"))
               .catch(err => console.error);
 
            }
      }
-     return
+     return;
   }
   if(message.content.toLowerCase() ==='?roles')
   {
@@ -148,7 +150,9 @@ if (message.embeds){
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
       embed.setDescription("<:Snapchat:533898655204245505> - Snapchat\n" +
-       "<:Facebook:533898655326011392> - Facebook\n" );
+       "<:Facebook:533898655326011392> - Facebook\n"+
+       "<:Twitter:533898655456034816> - Twitter\n" +
+       "<:YouTube:533898655304908810> - YouTube\n");
       message.channel.send(embed);
   }
 });
