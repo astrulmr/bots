@@ -189,9 +189,7 @@ client.on('messageReactionAdd', (reaction,user) => {
       .setDescription('you can add anything about yourself ')
       .setThumbnail(message.author.avatarURL)
       .addField("Name:",`${message.author.username}`, true)
-      .addField("special:",'(!a)', true)
-        
-       .addField("Current Teams:",``, true)
+       .addField("Current Teams:",)
                    message.channel.send(embed)
 
 }
