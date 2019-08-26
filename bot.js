@@ -684,7 +684,7 @@ exports.run = async (client, message, args, ops) => {
   if (!message.member.hasPermission('ADMINSTRATOR')) return message.channel.send('This requires the permission: ADMINSTRATOR');
 
   // First, we want to check if the user had input
-  if (!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
+  if (!args[0]) return message.channel.send('Proper Usage: poll question');
 
   // Then, create the embed
   const embed = new Discord.RichEmbed()
