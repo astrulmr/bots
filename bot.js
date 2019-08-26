@@ -673,32 +673,33 @@ message.channel.send("power not set")
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const prefix = '=';
-
-// Listener Events
 client.on('message', message => {
-
-    // Variables
-    let args = message.content.slice(prefix.length).trim().split(' ');
+  let args = message.content.slice(prefix.length).trim().split(' ');
     let cmd = args.shift().toLowerCase();
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+  if (!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
 
-    // Return Statements
-    if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
+  // Then, create the embed
+  const embed = new Discord.RichEmbed()
+    .setColor(0xffffff)
+    .setFooter('React to vote')
+    .setDescription(args.join(' '))
+    .setTitle(`Poll Created By ${message.author.username}`);
 
-    // Command Handler
-    try {
+  // Finally, using await send the message
+  let msg = await message.channel.send(embed);
+  // The sent message will now be stored in the msg variable
 
-        // Options
-   
-        
-        let commandFile = require(`./commands/${cmd}.js`);
-        commandFile.run(client, message, args, ops);
+  // React to the message
+  await msg.react('✅'); // Using await here will make sure the first one runs before the second
+  await msg.react('⛔');
 
-    } catch (e) {
-        console.log(e.stack)
-    }
+  // Make sure you delete the original message
+  message.delete({timeout: 1000});
+}
 
-});
+)
 
 
 
