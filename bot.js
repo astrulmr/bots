@@ -201,7 +201,6 @@ client.on('messageReactionAdd', (reaction,user) => {
 }
 })
 exports.run = async(client, message, args, ops)=> {
-if(!message.member.hasPermission('ADMINSTRATOR'))return message.channel.send('this requires the permission : ADMINSTRATOR')
 
 if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
 
