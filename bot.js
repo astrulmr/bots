@@ -672,31 +672,17 @@ message.channel.send("power not set")
 })
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('message', message => {
-  if(message.content=='!who')
-  // Then, create the embed
-  const embed = new Discord.RichEmbed()
-    .setColor(0xffffff)
-    .setFooter('React to vote')
-    .setDescription(message.content)
-    .setTitle(`Poll Created By ${message.author.username}`);
-
-  // Finally, using await send the message
-  let msg = await message.channel.send(embed);
-  // The sent message will now be stored in the msg variable
-
-  // React to the message
-  await msg.react('✅'); // Using await here will make sure the first one runs before the second
-  await msg.react('⛔');
-
-  // Make sure you delete the original message
-  message.delete({timeout: 1000});
-}
-
-)
-
-
-
+const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  if(command === "say") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o=>{}); 
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
+  }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
