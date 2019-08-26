@@ -191,11 +191,25 @@ client.on('messageReactionAdd', (reaction,user) => {
       .setDescription('you can add anything about yourself ')
       .setThumbnail(message.author.avatarURL)
       .addField("Name:",`${message.author.username}`, true)
-       .addField("special:",'(message.author.username)', true)
+       .addField("special:",'(!a)', true)
                    message.channel.send(embed)
 
 }
 })  
+       client.on('message', message => {
+      if (message.content === '!a') {
+
+        const embed = new RichEmbed()
+         if(usedCommandRecently.has(message.author.id)){
+             message.reply("You cannot use that command just yet!");
+         } else{
+             message.reply("you are not  on !a"); 
+
+             usedCommandRecently.add(message.author.id);
+             setTimeout(() => {
+                 usedCommandRecently.delete(message.author.id) 
+             }, 30000);
+         }   
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
