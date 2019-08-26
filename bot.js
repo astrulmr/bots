@@ -133,7 +133,7 @@ if (message.embeds){
            if(embedMsg)
            {
               message.react('615204451778560021')
-              .then(reaction => reaction.message.react('615156590504574976'))
+              .then(reaction => reaction.message.react('615450946234875904'))
               .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('615204452215029760'))
               .then(reaction => reaction.message.react('615213146809958410'))
@@ -150,7 +150,7 @@ if (message.embeds){
       const embed = new RichEmbed();
       embed.setTitle("Server Roles");
       embed.setColor("BLUE");
-      embed.setDescription("<:koji:615204451778560021> - koji\n" +
+      embed.setDescription("<:Facebook:615450946234875904> - Facebook\n" +
        "<:hattouri:615156590504574976> - hattouri\n"+
        "<:scarlet:615204451875160104> - scarlet\n" +
        "<:vraxx:615204452215029760> - vraxx\n" + "<:brawlball:615213146809958410> - brawlball\n" );
