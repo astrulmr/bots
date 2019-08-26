@@ -672,38 +672,49 @@ message.channel.send("power not set")
 })
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const prefix = '=';
 
-exports.run = async (client, message, args, ops) => {
+const serverStats = { // Change the ID's to your channel ID's
+    guildID: '556806228144291861',
+    totalUsersID: '556806228144291861',
+    memberCountID: '556806228144291861',
+    botCountID: '556806228144291861'
+};
 
-  // This will contain some extra things
+const botStats = { // Change the ID's to your channel ID's
+    totalGuildsID: '556806228144291861',
+    totalUsersID: '556806228144291861',
+    totalChannelsID: '556806228144291861'
+};
 
-  // Role Verification -- This will only run if a user has a specific role (optional)
-  if (!message.author.roles.find(r => r.name === "clan os")) return message.channel.send('This requires the role: clan os');
+// Listener Events
+client.on('message', message => {
 
-  // Permission Verification -- This will only run if a user has a specific permission (optional)
-  if (!message.member.hasPermission('ADMINSTRATOR')) return message.channel.send('This requires the permission: ADMINSTRATOR');
+    // Variables
+    let args = message.content.slice(prefix.length).trim().split(' ');
+    let cmd = args.shift().toLowerCase();
 
-  // First, we want to check if the user had input
-  if (!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
+    // Return Statements
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
 
-  // Then, create the embed
-  const embed = new Discord.RichEmbed()
-    .setColor(0xffffff)
-    .setFooter('React to vote')
-    .setDescription(args.join(' '))
-    .setTitle(`Poll Created By ${message.author.username}`);
+    // Command Handler
+    try {
 
-  // Finally, using await send the message
-  let msg = await message.channel.send(embed);
-  // The sent message will now be stored in the msg variable
+        // Options
+   
+        
+        let commandFile = require(`./commands/${cmd}.js`);
+        commandFile.run(client, message, args, ops);
 
-  // React to the message
-  await msg.react('✅'); // Using await here will make sure the first one runs before the second
-  await msg.react('⛔');
+    } catch (e) {
+        console.log(e.stack)
+    }
 
-  // Make sure you delete the original message
-  message.delete({timeout: 1000});
-}
+});
+
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
