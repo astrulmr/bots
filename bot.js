@@ -200,6 +200,8 @@ client.on('messageReactionAdd', (reaction,user) => {
 
 }
 })
+exports.run = async(client, message, args, ops)=> {
+if(!message.member.hasPermission('ADMINSTRATOR'))return message.channel.send('this requires the permission : ADMINSTRATOR')
 
 if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
 
@@ -216,7 +218,7 @@ const embed = new Discord.RichEmbed()
  await msg.react(':negative_squared_cross_mark: ')
 
  message.delete({timeout : 1000});
-
+}
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
