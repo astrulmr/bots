@@ -133,6 +133,8 @@ if (message.embeds){
            if(embedMsg)
            {
               message.react('615204451778560021')
+               message.react('615450946234875904')
+               message.react('615204451875160104')
               .then(reaction => reaction.message.react('615450946234875904'))
               .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('615204452215029760'))
