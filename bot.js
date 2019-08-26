@@ -188,15 +188,11 @@ client.on('messageReactionAdd', (reaction,user) => {
       .setTitle('User Information :')
       .setDescription('you can add anything about yourself ')
       .setThumbnail(message.author.avatarURL)
+      .addField("Name:",'$(message.author.username)', true)
                    message.channel.send(embed)
 
 }
 })  
-    if (message.content === '!fruits') {
-	message.react('🍎');
-	message.react('🍊');
-	message.react('🍇');
-}
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
