@@ -194,26 +194,6 @@ client.on('messageReactionAdd', (reaction,user) => {
 
 }
 })  
-       client.on('message', message => {
-      if (message.content === '!a') {
-
-        const embed = new RichEmbed()
-         if(usedCommandRecently.has(message.author.id)){
-             message.reply("You cannot use that command just yet!");
-         } else{
-             message.reply("you are not  on !a"); 
-
-             usedCommandRecently.add(message.author.id);
-             setTimeout(() => {
-                 usedCommandRecently.delete(message.author.id) 
-             }, 30000);
-         } 
-         break;
-      } 
-         
-
-});
-    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
