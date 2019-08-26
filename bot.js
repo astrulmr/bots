@@ -674,7 +674,7 @@ message.channel.send("power not set")
 
 module.exports.run = async (bot, message, args) => {
 
-  if(!message.member.hasPermission("ADMINISTRATOR")) return;
+  if(!message.member.hasPermission("MANAGE_MESSAGE")) return;
   const sayMessage = args.join(" ");
   message.delete().catch();
   message.channel.send(sayMessage);
