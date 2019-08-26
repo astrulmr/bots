@@ -200,9 +200,23 @@ client.on('messageReactionAdd', (reaction,user) => {
 
 }
 })
-client.on("message", async message => {
-  console.log(`${message.content}`);
-})  
+
+if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
+
+const embed = new Discord.RichEmbed()
+
+   .setColor(0xffffff)
+   .setFooter('React to vote')
+   .setDescription(args.join(' '))
+   .setTitle('Poll Created By $(message.author.username}');
+
+ let msg = await message.channel.send(embed);
+
+ await msg.react(':white_check_mark: ')
+ await msg.react(':negative_squared_cross_mark: ')
+
+ message.delete({timeout : 1000});
+
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
