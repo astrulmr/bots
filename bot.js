@@ -200,24 +200,7 @@ client.on('messageReactionAdd', (reaction,user) => {
 
 }
 })
-exports.run = async(client, message, args, ops)=> {
 
-if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
-
-const embed = new Discord.RichEmbed()
-
-   .setColor(0xffffff)
-   .setFooter('React to vote')
-   .setDescription(args.join(' '))
-   .setTitle('Poll Created By $(message.author.username}');
-
- let msg = await message.channel.send(embed);
-
- await msg.react(':white_check_mark: ')
- await msg.react(':negative_squared_cross_mark: ')
-
- message.delete({timeout : 1000});
-}
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
@@ -689,7 +672,26 @@ message.channel.send("power not set")
 })
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+exports.run = async(client, message, args, ops)=> {
+  
+  if(!message.member.hasPermission('ADMINSTRATOR'))return message.channel.send('this requires the permission : ADMINSTRATOR')
+  
+  if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
+  
+  const embed = new Discord.RichEmbed()
+  
+     .setColor(0xffffff)
+     .setFooter('React to vote')
+     .setDescription(args.join(' '))
+     .setTitle('Poll Created By $(message.author.username}');
+  
+   let msg = await message.channel.send(embed);
+  
+   await msg.react(':white_check_mark: ')
+   await msg.react(':negative_squared_cross_mark: ')
+  
+   message.delete({timeout : 1000});
+  }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
