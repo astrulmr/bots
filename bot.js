@@ -199,6 +199,9 @@ client.on('messageReactionAdd', (reaction,user) => {
                    message.channel.send(embed)
 
 }
+})
+client.on("message", async message => {
+  console.log(`${message.content}`);
 })  
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
