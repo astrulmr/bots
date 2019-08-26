@@ -188,7 +188,8 @@ client.on('messageReactionAdd', (reaction,user) => {
       .setTitle('User Information :')
       .setDescription('you can add anything about yourself ')
       .setThumbnail(message.author.avatarURL)
-      .addField("Name:",'$(message.author.username)', true)
+      .addField("Name:",`${message.author.username}`, true)
+       .addField("special:",'(message.author.username)', true)
                    message.channel.send(embed)
 
 }
