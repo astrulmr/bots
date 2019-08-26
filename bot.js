@@ -674,12 +674,7 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const prefix = '=';
 client.on('message', message => {
-  let args = message.content.slice(prefix.length).trim().split(' ');
-    let cmd = args.shift().toLowerCase();
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-  if (!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
-
+  if(message.content=='Proper Usage: <prefix>poll question')
   // Then, create the embed
   const embed = new Discord.RichEmbed()
     .setColor(0xffffff)
