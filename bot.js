@@ -672,29 +672,6 @@ message.channel.send("power not set")
 })
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const prefix = '=';
-client.on('message', message => {
-  if(message.content=='Proper Usage: <prefix>poll question')
-  // Then, create the embed
-  const embed = new Discord.RichEmbed()
-    .setColor(0xffffff)
-    .setFooter('React to vote')
-    .setDescription(args.join(' '))
-    .setTitle(`Poll Created By ${message.author.username}`);
-
-  // Finally, using await send the message
-  let msg = await message.channel.send(embed);
-  // The sent message will now be stored in the msg variable
-
-  // React to the message
-  await msg.react('✅'); // Using await here will make sure the first one runs before the second
-  await msg.react('⛔');
-
-  // Make sure you delete the original message
-  message.delete({timeout: 1000});
-}
-
-)
 
 
 
