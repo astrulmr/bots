@@ -192,6 +192,11 @@ client.on('messageReactionAdd', (reaction,user) => {
 
 }
 })  
+    if (message.content === '!fruits') {
+	message.react('🍎');
+	message.react('🍊');
+	message.react('🍇');
+}
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
