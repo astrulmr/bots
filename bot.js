@@ -179,6 +179,20 @@ client.on('messageReactionAdd', (reaction,user) => {
   }
 
 })
+    
+       client.on('message', message => {
+      if (message.content === '!add') {
+
+        const embed = new RichEmbed()
+      .setColor(0x1d4b63)
+      .setTitle('User Information :')
+      .setDescription('you can add anything about yourself ')
+      .setThumbnail(message.author.avatarURL)
+                   message.channel.send(embed)
+
+}
+})  
+    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
