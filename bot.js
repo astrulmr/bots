@@ -678,7 +678,7 @@ exports.run = async (client, message, args, ops) => {
   // This will contain some extra things
 
   // Role Verification -- This will only run if a user has a specific role (optional)
-  if (!message.author.roles.find(r => r.name === "os clan")) return message.channel.send('This requires the role: os clan');
+  if (!message.author.roles.find(r => r.name === "clan os")) return message.channel.send('This requires the role: clan os');
 
   // Permission Verification -- This will only run if a user has a specific permission (optional)
   if (!message.member.hasPermission('ADMINSTRATOR')) return message.channel.send('This requires the permission: ADMINSTRATOR');
