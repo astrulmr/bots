@@ -190,6 +190,8 @@ client.on('messageReactionAdd', (reaction,user) => {
       .setThumbnail(message.author.avatarURL)
       .addField("Name:",`${message.author.username}`, true)
        .addField("Current Teams:",)
+       .setFooter("Thanks for reading. I hope you learned a little, or a lot about me :wink:")
+        
                    message.channel.send(embed)
 
 }
