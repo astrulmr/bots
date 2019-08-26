@@ -133,8 +133,6 @@ if (message.embeds){
            if(embedMsg)
            {
               message.react('615204451778560021')
-               message.react('615450946234875904')
-               message.react('615204451875160104')
               .then(reaction => reaction.message.react('615450946234875904'))
               .then(reaction => reaction.message.react('615204451875160104'))
               .then(reaction => reaction.message.react('615204452215029760'))
@@ -209,7 +207,12 @@ client.on('messageReactionAdd', (reaction,user) => {
              setTimeout(() => {
                  usedCommandRecently.delete(message.author.id) 
              }, 30000);
-         }   
+         } 
+         break;
+      } 
+         
+
+});
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
