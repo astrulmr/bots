@@ -676,7 +676,7 @@ exports.run = async(client, message, args, ops)=> {
   
   if(!message.member.hasPermission('ADMINSTRATOR'))return message.channel.send('this requires the permission : ADMINSTRATOR')
   
-  if(!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
+  if (!args[0]) return message.channel.send('Proper Usage: <prefix>poll question');
   
   const embed = new Discord.RichEmbed()
   
@@ -687,8 +687,8 @@ exports.run = async(client, message, args, ops)=> {
   
    let msg = await message.channel.send(embed);
   
-   await msg.react(':white_check_mark: ')
-   await msg.react(':negative_squared_cross_mark: ')
+   await msg.react('✅')
+   await msg.react('❎')
   
    message.delete({timeout : 1000});
   }
