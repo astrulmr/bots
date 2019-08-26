@@ -674,19 +674,6 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const prefix = '=';
 
-const serverStats = { // Change the ID's to your channel ID's
-    guildID: '556806228144291861',
-    totalUsersID: '556806228144291861',
-    memberCountID: '556806228144291861',
-    botCountID: '556806228144291861'
-};
-
-const botStats = { // Change the ID's to your channel ID's
-    totalGuildsID: '556806228144291861',
-    totalUsersID: '556806228144291861',
-    totalChannelsID: '556806228144291861'
-};
-
 // Listener Events
 client.on('message', message => {
 
