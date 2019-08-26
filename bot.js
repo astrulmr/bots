@@ -672,11 +672,10 @@ message.channel.send("power not set")
 })
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const prefix = '+'
+
 client.on("message", async message => {
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  if(command === "ping") {
+
+  if(message.content === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Ping?");
