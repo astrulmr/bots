@@ -126,64 +126,6 @@ client.on('message', message => {
 }
 })
     
-
-    
-    
-client.on('message', message => {
-  if(message.author.bot)
-      {
-if (message.embeds){
-          const embedMsg = message.embeds.find(msg =>  msg.title === 'Server Roles');
-           if(embedMsg)
-           {
-              message.react('615204451778560021')
-              .then(reaction => reaction.message.react('615450946234875904'))
-              .then(reaction => reaction.message.react('615204451875160104'))
-              .then(reaction => reaction.message.react('615204452215029760'))
-              .then(reaction => reaction.message.react('615213146809958410'))
-              .then(reaction => reaction.message.delete(20000))
-              .then(msg => console.log("Deleted message"))
-              .catch(err => console.error);
-
-           }
-     }
-     return;
-  }
-  if(message.content.toLowerCase() ==='?roles')
-  {
-      const embed = new RichEmbed();
-      embed.setTitle("Server Roles");
-      embed.setColor("BLUE");
-      embed.setDescription("<:Facebook:615450946234875904> - Facebook\n" +
-       "<:hattouri:615156590504574976> - hattouri\n"+
-       "<:scarlet:615204451875160104> - scarlet\n" +
-       "<:vraxx:615204452215029760> - vraxx\n" + "<:brawlball:615213146809958410> - brawlball\n" );
-      message.channel.send(embed);
-  }
-});
-
-client.on('messageReactionAdd', (reaction,user) => {
-   if(user.bot)bb
-      return;
-
-   var roleName = reaction.emoji.name;
-   var role = reaction.message.guild.roles.find(role =>role.name.toLowerCase() === roleName.toLowerCase());
-   var member = reaction.message.guild.members.find(member => member.id === user.id);
-
-  if(member.role.has(role.id))
-  {
-      member.romoveRole(role.id).then(member => {
-          console.log("Romoved" + member.user.username + " from the " + role.name + "role.");
-      }).catch(err => console.error);
-  } 
-  else {
-      member.addRole(role.id).then(member => {
-          console.log("Added " + member.user.username+ " to a role.");
-      }).catch(err => console.error);
-  }
-
-})
-    
        client.on('message', message => {
       if (message.content === '!add') {
 
