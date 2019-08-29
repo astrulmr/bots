@@ -125,24 +125,18 @@ client.on('message', message => {
          channel3.send(embed)
 }
 })
+client.on('message', message => {
+  if (message.content === '!#') {
+     
+          const embed = new RichEmbed()
+          
+          .setTitle('Up Pass Brawlball Move it Consists of five steps : ')
+          .setColor(0x00BFFF)
+          .setDescription('\n\n 1. Go Top Of Ur Base Tower And Jump Up And Left Or Right (depend on which side u play) \n\n 2. Dodge Aiming Up + Left Or Right  \n\n 3. Throw The Ball Up  ( Without Jumping Just Throw Button And Aim Up ) \n\n 4. Punch Up On Heavy Button Attack To Catch The Ball  \n\n 5. Jump 1 Time  \n\n 6. And Dodge One Time \n\n Designed By OS Team :)')
+          channel3.send(embed)
+ }
+ })
     
-       client.on('message', message => {
-      if (message.content === '!add') {
-
-        const embed = new RichEmbed()
-      .setColor(0x1d4b63)
-      .setTitle('User Information :')
-      .setDescription('you can add anything about yourself ')
-      .setThumbnail(message.author.avatarURL)
-      .addField("Name:",`${message.author.username}`, true)
-       .addField("Current Teams:",)
-       .setFooter("Thanks for reading. I hope you learned a little, or a lot about me :wink:")
-        
-                   message.channel.send(embed)
-
-}
-})
-
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
@@ -450,37 +444,6 @@ client.on('message', message => {
    }
  })
                                      client.on('message', message => {
-    if (message.content === 'xD') {
-      bChannel.send("Laughing Is Good for Your Health");
-   }
- })
-                                         client.on('message', message => {
-    if (message.content === 'Salty') {
-      bChannel.send("Yes, your sweet tears are my nourishment, give me more");
-   }
- })
-                                             client.on('message', message => {
-    if (message.content === 'how is it going') {
-      bChannel.send("Yeah, Im good");
-   }
- })
-                                                 client.on('message', message => {
-    if (message.content === 'what is your favorite anime') {
-      bChannel.send("Pokemon.You?");
-   }
- })
-                                                     client.on('message', message => {
-    if (message.content === 'how to say hello in korean') {
-      bChannel.send("안녕하세요 (Annyeong Haseyo)");
-   }
- })
-    
-                                       client.on('message', message => {
-    if (message.content === 'sup') {
-      bChannel.send("Nothing much buddy.");
-   }
- })  
-                                     client.on('message', message => {
     if (message.content === 'why') {
       bChannel.send("I'm not your baby");
    }
@@ -612,9 +575,10 @@ message.channel.send("power not set")
   }
     
 })
- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ 
+ 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
