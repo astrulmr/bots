@@ -274,10 +274,7 @@ client.on('message', message => {
           channel3.send(embed)
  }
  })
- client.on('message', message => {
-  message.channel.send(message.content)
-  })
-  
+ 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
