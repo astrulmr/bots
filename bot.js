@@ -137,11 +137,20 @@ client.on('message', message => {
  }
  })
  client.on('message', message => {
-  if(message.contant === "ping") {
-      // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
-      // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
-      const m = await message.channel.send("Ping?");
-      m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+  if(message.contant === "purge") {
+      // This command removes all messages from all users in the channel, up to 100.
+      
+      // get the delete count, as an actual number.
+      const deleteCount = parseInt(args[0], 10);
+      
+      // Ooooh nice, combined conditions. <3
+      if(!deleteCount || deleteCount < 2 || deleteCount > 100)
+        return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+      
+      // So we get our messages, and delete them. Simple enough, right?
+      const fetched = await message.channel.fetchMessages({limit: deleteCount});
+      message.channel.bulkDelete(fetched)
+        .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
     }
    
   })
