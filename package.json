@@ -1,7 +1,7 @@
 {
-  "name":"Test",
 "description":"Test",
 "main":"bot.js",
+"prefix" : "+",
 "scripts":{
   "start":"node bot.js"},
      "dependencies":{
