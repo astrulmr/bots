@@ -294,8 +294,11 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setTitle('Use This Commend To See Your Legend')
       .setColor('#ffffff')
-      .setDescription(' \n\n !astru https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png  ,  !styleken  , !kenshiro  ,  !sweetmiguel  \n\n !danzodon  ,  !kevin1185  ,  !jimm25  ,  !kaeptnkook  \n\n !jinleehurb  ,  !junusbiaz  ,  !iknes  , !panosboa \n\n !|os| tmis kun  ,   !sugarfree    ')
-        message.channel.send(embed)
+      .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setDescription(' \n\n !astru   ,  !styleken  , !kenshiro  ,  !sweetmiguel  \n\n !danzodon  ,  !kevin1185  ,  !jimm25  ,  !kaeptnkook  \n\n !jinleehurb  ,  !junusbiaz  ,  !iknes  , !panosboa \n\n !|os| tmis kun  ,   !sugarfree    ')
+      .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setDescription(' !styleken ') 
+      message.channel.send(embed)
 
       }
     })
