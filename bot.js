@@ -290,13 +290,13 @@ client.on('message', message => {
       }
     })
     client.on('message', message => {
-      if (message.content === '!Legends') {
+      if (message.content === '!legends') {
         let embed = new Discord.RichEmbed()
         .setTitle('Use This Commend To See Your Legend')
       .setColor('#ffffff')
       .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setDescription(' \n\n !astru   ,  !styleken  , !kenshiro  ,  !sweetmiguel  \n\n !danzodon  ,  !kevin1185  ,  !jimm25  ,  !kaeptnkook  \n\n !jinleehurb  ,  !junusbiaz  ,  !iknes  , !panosboa \n\n !|os| tmis kun  ,   !sugarfree    ')
-      . seticon_url('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png') 
+      .setAuthor("Kenshiro",'https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       message.channel.send(embed)
 
       }
