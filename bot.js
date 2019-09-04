@@ -292,7 +292,7 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '!our style') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------------EVERYONE--------------------')
+        .setTitle('------------------------------------------------------------EVERYONE--------------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setColor('#ffffff')
