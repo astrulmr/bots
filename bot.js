@@ -163,17 +163,67 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setTitle('------------STYLEKEN------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
-      .setColor('#000000')
+      .setColor('#ffffff')
         message.channel.send(embed)
 
       }
     })
-        client.on('message', message => {
-      if (message.content === '!sweermiguel') {
+    client.on('message', message => {
+      if (message.content === '!danzodon') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------STYLEKEN------------')
+        .setTitle('------------DANZODON------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+        sweermiguel
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!kevin1185') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------KEVIN1185------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!sweeTmiguel') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------SWEETMIGUEL------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Rayman.png')
-      .setColor('#000000')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!jimm25') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------JIMM25------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ember.png')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!junusbiaz') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------JUNUSBIAZ------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Mordex.png')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!jinleehurb') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------JINLEEHURB------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
+      .setColor('#ffffff')
         message.channel.send(embed)
 
       }
