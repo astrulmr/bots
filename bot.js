@@ -138,29 +138,16 @@ client.on('message', message => {
  })
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    client.on('message', message => { 
+    client.on('message', message => {
+      if (message.content === '!kenshiro') {
+        let embed = new Discord.RichEmbed()
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
 
-      if (message.content === '@kenshiro#3009 ') {
-         const attachment = new Attachment('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png');
-         bChannel.send(attachment);
-    
-    
-     }
+      }
     })
-      if (message.content === '@styleken#2650') {
-     const attachment = new Attachment('https://i.pinimg.com/originals/6f/ba/60/6fba6005e3e6cce14bdbc554a92fa6d6.png');
-     bChannel.send(attachment);
 
- }
-})
-
-  if (message.content === '@kevin1185#5213') {
-     const attachment = new Attachment('https://i.pinimg.com/originals/27/ce/01/27ce0170a2ee9ef00c48e2d9bea6daeb.png');
-     bChannel.send(attachment);
-
- }
-})
-    
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
     if (message.content === 'hi') {
