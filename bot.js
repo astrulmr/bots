@@ -141,8 +141,18 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '!kenshiro') {
         let embed = new Discord.RichEmbed()
-        .setTitle('--------------KENSHIRO--------------')
+        .setTitle('------------KENSHIRO------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!astru') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
