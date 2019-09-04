@@ -84,8 +84,25 @@ client.on('ready' , () => {
     
             .setTitle(' This Our Style Clan We All Leader Here And Friends :)')
             .setColor(0xFF0000)
-            .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285  \n\n =====n\n \b Astru® \b \n\n He is a great Runner And Good In Supporter And Defender  (Runner)\n\n Legends \n\n[ Hattori , Brynn , Ada ]\n\n =====n\n \b DanzoDon \b \n\n He is a Godzila Runner And Cool In Defender And Supporter (Runner)\n\n Legends \n\n[ Val , Hattori , Orion ]\n\n =====n\n \b Iknes \b \n\n He is a Legend Defender And Great In Runner And Supporter (Defender)\n\n Legends \n\n[ Lucian  ]\n\n =====n\n \b jimm25 \b \n\n He is a So Good Defender And Surly In Runner And Supporter  (Defender)\n\n Legends \n\n[ Ember , Kaya ] \n\n =====n\n \b jinleehurb \b \n\n He is unbelievable defence and Supporter (Defender)\n\n Legends \n\n[ Sir Roland , Orion ]\n\n =====n\n \b KaeptnKook \b \n\n He is The best in Defence and Smart at Runner (Defender)\n\n Legends \n\n[ Bodvar ] \n\n =====n\n \b Kenshiro \b \n\n He is a The Best on Runner And Wild in  Defender And Supporter (Supporter)\n\n Legends \n\n[ Brynn ,  Lord Vraxx ]\n\n =====n\n \b kevin1185 \b \n\n He is a So Coool on Runner And Fantastic in  Defender And Supporter (Runner)\n\n Legends \n\n[ Hattori , Yumiko ]\n\n =====n\n \b nani \b \n\n He is a Brilliant on Supporter And Indestructible in Runner And Defender (Supporter)\n\n Legends \n\n[ Sir Roland , Lord Vraxx ]\n\n =====\n\n \b Sanmaay \b \n\n She is a not merciful on Defender And Great in Runner And Defender\n\n Legends \n\n[ Thatch , Asuri ]\n\n =====n\n \b Sugarfree \b \n\n  He is a just cooler on Defender And  GREAT in Runner And Supporter  (Supporter)\n\n Legends \n\n[ Orion , Sidra ] \n\n =====n\n \b styleken \b \n\n He is a unbeaten on Defender And Intangible in Runner And Supporter (Defender)\n\n Legends \n\n[ Lord Vraxx , Ada ]\n\n =====n\n \b |OS| Tmis Kun \b \n\n He is a just so good on Supporter And so GREAT in Runner And Defender  (Supporter)\n\n Legends \n\n[ Hattori ]\n\n =====\n\n *** For Notes Must Of Os Clan Can Plays all positions')
-      
+            .setThumbnail(client.user.avatarURL)
+            .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
+            .addField('Astru® ', ' He is a great Runner And Good In Supporter And Defender  (Runner)', true)
+            .addField('DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter (Runner)', true)
+            .addField('Iknes ', '  He is a Legend Defender And Great In Runner And Supporter (Defender)', true)
+            .addField('jimm25  ', '   He  So Good Defender And Surly In Runner And Supporter  (Defender)', true)
+            .addField('jinleehurb ', ' He is unbelievable defence and Supporter (Defender)', true)
+            .addField('Junusbiaz ', 'He  just super on Defender And GREATS in Runner And Supporter  (Defender)', true)
+            .addField('KaeptnKook', ' He is The best in Defence and Smart at Runner (Defender)', true)
+            .addField('Kenshiro', ' He is  The Best on Runner And Wild in  Defender And Supporter (Supporter)', true)
+            .addField('kevin1185', ' He So Coool on Runner And Fantastic in  Defender And Supporter (Runner)', true)
+            .addField('nani', ' He is a Brilliant on Supporter And Indestructible in Runner And Defender (Supporter)', true)
+            .addField('PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter (Defender)', true)
+            .addField('Sanmaay', ' She is  not merciful on Defender And Great in Runner And (Defender)', true)
+            .addField('Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter  (Supporter)', true)
+            .addField('styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter (Defender)', true)
+            .addField('|OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender  (Supporter)', true)
+            .setFooter('For Notes Must Of Os Clan Can Plays all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
+           
           message.channel.send(embed)
         }
       })
