@@ -290,17 +290,16 @@ client.on('message', message => {
       }
     })
     client.on('message', message => {
-      if (message.content === '!our style') {
+      if (message.content === '!Legends') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------------------------------------------------------EVERYONE--------------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+        .setTitle('Use This Commend To See Your Legend')
       .setColor('#ffffff')
+      .setDescription('!astru  ,  !styleken  , !kenshiro  ,  !sweetmiguel  \n\n !danzodon  ,  !kevin1185  ,  !jimm25  ,  !kaeptnkook  \n\n !jinleehurb  ,  !junusbiaz  ,  !iknes  , !panosboa \n\n !|os| tmis kun  ,   !sugarfree    ')
         message.channel.send(embed)
 
       }
     })
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
     if (message.content === 'hi') {
