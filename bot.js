@@ -250,7 +250,7 @@ client.on('message', message => {
       }
     })
     client.on('message', message => {
-      if (message.content === '!Sugarfree') {
+      if (message.content === '!sugarfree') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------SUGARFREE------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Sidra.png')
@@ -284,6 +284,16 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setTitle('------------PANOSBOA------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setColor('#ffffff')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!our style') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------------EVERYONE------------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png' + 'https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png'+'https://www.brawlhalla.com/c/uploads/2018/11/Sidra.png'+ 'https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png' )
       .setColor('#ffffff')
         message.channel.send(embed)
 
