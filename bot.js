@@ -138,6 +138,16 @@ client.on('message', message => {
  })
     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    client.on('message', message => { 
+
+      if (message.content === '@kenshiro') {
+         const attachment = new Attachment('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png');
+         bChannel.send(attachment);
+    
+    
+     }
+    })
+    
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
     if (message.content === 'hi') {
@@ -148,15 +158,6 @@ client.on('message', message => {
 
    }
  })
- client.on('message', message => {
-
-  if (message.content === '!kenshiro') {
-     const attachment = new Attachment('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png');
-     bChannel.send(attachment);
-
-
- }
-})
           client.on('message', message => {
     if (message.content === 'damn') {
        const attachment = new Attachment('https://media.giphy.com/media/11q8qiwWSkGzrW/giphy.gif');
