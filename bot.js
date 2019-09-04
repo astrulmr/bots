@@ -189,7 +189,7 @@ client.on('message', message => {
       }
     })
     client.on('message', message => {
-      if (message.content === '!sweeTmiguel') {
+      if (message.content === '!sweetmiguel') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------SWEETMIGUEL------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Rayman.png')
