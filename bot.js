@@ -175,7 +175,7 @@ client.on('message', message => {
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
       .setColor('#ffffff')
         message.channel.send(embed)
-        sweermiguel
+        
       }
     })
     client.on('message', message => {
