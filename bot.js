@@ -307,7 +307,10 @@ client.on('message', message => {
       .setAuthor("!iknes",'https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png')
       .setAuthor("!panosboa",'https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setAuthor("!sugarfree",'https://www.brawlhalla.com/c/uploads/2018/11/Sidra.png')
-      .setAuthor("!kaeptnkook \n\n !kenshiro ",'https://www.brawlhalla.com/c/uploads/2018/11/Bodvar.png' , 'https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png' )
+      .setAuthor("!kaeptnkook \n\n !kenshiro ",'https://www.brawlhalla.com/c/uploads/2018/11/Bodvar.png')
+      .addField('Inline field title', 'Some value here', true)
+      .addField('Inline field title', 'Some value here', true)
+      .addField('Inline field title', 'Some value here', true)
       message.channel.send(embed)
 
       }
