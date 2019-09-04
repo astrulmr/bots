@@ -295,7 +295,7 @@ client.on('message', message => {
       if (message.content === '!legends') {
         let embed = new Discord.RichEmbed()
       .setColor('#ffffff')
-      .setAuthor("!kenshiro",client.user.avatarURL)
+      .setAuthor("!kenshiro",'https://cdn.discordapp.com/avatars/505751422449614878/e05ec0dc1ce8a30deab6c522cfa9efe2.png?size=2048')
       .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
               message.channel.send(embed)
 
