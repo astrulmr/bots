@@ -140,7 +140,7 @@ client.on('message', message => {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     client.on('message', message => { 
 
-      if (message.content === '@kenshiro') {
+      if (message.content === '@kenshiro#3009 ') {
          const attachment = new Attachment('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png');
          bChannel.send(attachment);
     
