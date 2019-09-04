@@ -262,7 +262,7 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '!|os| tmis kun') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------SUGARFREE------------')
+        .setTitle('------------|OS| TMIS KUN ------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setColor('#ffffff')
         message.channel.send(embed)
