@@ -292,10 +292,8 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '!legends') {
         let embed = new Discord.RichEmbed()
-        .setTitle('Use This Commend To See Your Legend')
       .setColor('#ffffff')
       .setThumbnail('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjXu7SosrfkAhWD5-AKHS77A7QQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fpngtree.com%252Ffreepng%252Fcircular-letter-s-os-ss-gs-vector-logo-design_4177814.html%26psig%3DAOvVaw3rIPgPX0g2OY5GqmOi0ph1%26ust%3D1567694238587809&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
-      .setDescription(' \n\n !astru   ,  !styleken  , !kenshiro  ,  !sweetmiguel  \n\n !danzodon  ,  !kevin1185  ,  !jimm25  ,  !kaeptnkook  \n\n !jinleehurb  ,  !junusbiaz  ,  !iknes  , !panosboa \n\n !|os| tmis kun  ,   !sugarfree    ')
       .setAuthor("!kenshiro",'https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
       .setAuthor("!astru",'https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
       .setAuthor("!styleken",'https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
