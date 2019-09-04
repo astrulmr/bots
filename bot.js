@@ -147,14 +147,14 @@ client.on('message', message => {
     
      }
     })
-      if (message.content === '!styleken') {
+      if (message.content === '@styleken#2650') {
      const attachment = new Attachment('https://i.pinimg.com/originals/6f/ba/60/6fba6005e3e6cce14bdbc554a92fa6d6.png');
      bChannel.send(attachment);
 
  }
 })
 
-  if (message.content === '!kevin1185') {
+  if (message.content === '@kevin1185#5213') {
      const attachment = new Attachment('https://i.pinimg.com/originals/27/ce/01/27ce0170a2ee9ef00c48e2d9bea6daeb.png');
      bChannel.send(attachment);
 
