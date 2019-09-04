@@ -168,6 +168,16 @@ client.on('message', message => {
 
       }
     })
+        client.on('message', message => {
+      if (message.content === '!sweermiguel') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------STYLEKEN------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Rayman.png')
+      .setColor('#000000')
+        message.channel.send(embed)
+
+      }
+    })
 
     let bChannel = client.channels.get("613364249615532072")
     client.on('message', message => {
