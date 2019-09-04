@@ -292,8 +292,9 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '!our style') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------------EVERYONE------------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png' + 'https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png'+'https://www.brawlhalla.com/c/uploads/2018/11/Sidra.png'+ 'https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png' )
+        .setTitle('------------------EVERYONE--------------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
       .setColor('#ffffff')
         message.channel.send(embed)
 
