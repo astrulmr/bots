@@ -960,14 +960,6 @@ message.channel.send("power not set")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var list = Array(50); 
-for (let i = 0; i < list.length; i++) {
-  console.log(list[i])
-  console.log(i) 
-  if(message.content === "add")
-  list.push(message.auther)
-}
-message.channel.send(list)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
