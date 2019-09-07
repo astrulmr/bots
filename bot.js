@@ -993,13 +993,19 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!size'){
+   
+     
       message.channel.send(`Current PUG size: ${pugMembers}`);
     }
     if (message.content === '!add'){
-        // console.log(msg.author);
+       
+        if(message.auther ==`${pugMembers}`){
+          message.channel.send("you already in")
+        }
+        else {
         checkPugSize();
         addUserPug(message);
-    }
+    }}
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
