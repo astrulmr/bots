@@ -1029,7 +1029,7 @@ client.on('message', message => {
         addUserPug(message);
        }
         else if (message.auther.username ===`${pugMembers}`)
-          return(!message.auther.username) ;
+          return;
         
 
         else {
