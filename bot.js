@@ -999,9 +999,10 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-
+   
     if (pugMembers.length<=20){
         pugMembers.push(message.mentions.users.first());
+        pugMembers.push( message.mentions.users.size);
     }
     
     else{ // Create a new pug and pass the user into the array
@@ -1024,7 +1025,7 @@ client.on('message', message => {
 
     if (message.content == '!runner'){           
 
-     message.channel.send( ` \n ${pugMembers[0].displayAvatarURL}`+ ` \n ${pugMembers[1].displayAvatarURL}` + ` \n ${pugMembers[2].displayAvatarURL}`)
+     message.channel.send( ` \n ${pugMembers[0].avatarURL}`+ ` \n ${pugMembers[1].avatarURL}` + ` \n ${pugMembers[2].avatarURL}`)
     
     }
 
