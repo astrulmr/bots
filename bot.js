@@ -1021,10 +1021,15 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!runner'){
+    if (message.content == '!runner'){           
+    const embed = new RichEmbed()
+    .setTitle('Defender Player ')
+    .addField(`${pugMembers}`, ' ', true)
+    .setColor(0x0000ff)
+    welchannel.send(embed)
+
    
      
-      message.channel.send(` Runner Players : \n ${pugMembers[0]} \n ${pugMembers[1]} \n ${pugMembers[2]} \n ${pugMembers[3]} \n ${pugMembers[4]} \n ${pugMembers[5]} \n ${pugMembers[6]} \n ${pugMembers[7]} \n ${pugMembers[8]} \n ${pugMembers[9]} \n ${pugMembers[10]} \n ${pugMembers[11]} \n ${pugMembers[12]} \n ${pugMembers[13]} \n ${pugMembers[14]} `);
     }
 
     if (!message.guild) return
@@ -1110,9 +1115,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!defender'){
-   
-     
-      message.channel.send(`Defender Players: ${pugMemberss} \n`);
+           
+      message.channel.send(`Defender Players: ${pugMemberss} `);
     }
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
@@ -1121,9 +1125,10 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
 
-       if (pugMemberss.length == 0){
+      
         checkPugSizes();
         addUserPugs(message);}
+
           else if ( message.mentions.users.first().includes(pugMemberss[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(pugMemberss[1])) {
@@ -1157,11 +1162,8 @@ client.on('message', message => {
                                     else if ( message.mentions.users.first().includes(pugMemberss[15])) {
                                       message.channel.send("u already in")}
           
-          else {
-          checkPugSizes();
-          addUserPugs(message);
-        }
-      }
+         
+      
     }}
        
 
