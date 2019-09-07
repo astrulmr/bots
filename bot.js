@@ -957,11 +957,11 @@ message.channel.send("power not set")
     
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const pugSizes = 20; // Maximum amount of players in the PUG
+const pugSize = 20; // Maximum amount of players in the PUG
 const pugMembers = []; // Array to hold the members in the PUG
 
-function checkPugSizes(){
-    if (pugMembers.length == 6){
+function checkPugSize(){
+    if (pugMembers.length == 20){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
@@ -972,13 +972,13 @@ function checkPugSizes(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-    if (pugMembers.length<=6){
+    if (pugMembers.length<=20){
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.author} added to defender ${pugMembers.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMembers))
@@ -990,21 +990,25 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!Sdefend'){
-      message.channel.send(`Current PUG size: ${pugMembers.length}`);
+    if (message.content == '!Sdefender'){
+      message.channel.send(`Defender players: ${pugMembers.length}`);
     }
     if (message.content === '!defender'){
         // console.log(msg.author);
-        checkPugSizes();
+        checkPugSize();
         addUserPug(message);
     }
 });
 
-const pugSize = 6; // Maximum amount of players in the PUG
+
+
+
+
+const pugSize = 20; // Maximum amount of players in the PUG
 const pugMembers = []; // Array to hold the members in the PUG
 
 function checkPugSize(){
-    if (pugMembers.length == 6){
+    if (pugMembers.length == 20){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
@@ -1015,13 +1019,13 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-    if (pugMembers.length<=6){
+    if (pugMembers.length<=20){
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.author} added to Runner ${pugMembers.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMembers))
@@ -1034,7 +1038,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!Srunner'){
-      message.channel.send(`Current PUG size: ${pugMembers.length}`);
+      message.channel.send(`Runner Players: ${pugMembers.length}`);
     }
     if (message.content === '!runner'){
         // console.log(msg.author);
