@@ -1024,21 +1024,22 @@ client.on('message', message => {
     }
     if (message.content === '!add'){
     
-       
-     
-          if (pugMembers.indexOf(message.auther.username) != -1){
-            message.delete();
-            console.log(colors.red(`Removed ${message.author.username}'s Message as it had a forbidden word in it.`));
-       }
+      for (var i = 0; i < pugMembers.length; i++) {
+  if (message.author.username.includes(pugMembers[i])) {
+    // message.content contains a forbidden word;
+    // delete message, log, etc.
+    message.channel.send("u already in")
+  }
+      
         
-        }
       
         
     
       else {
         checkPugSize();
-        addUserPug(message);
+        addUserPug(message);}
     }
+  }
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
