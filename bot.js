@@ -999,10 +999,9 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-   
+
     if (pugMembers.length<=20){
         pugMembers.push(message.mentions.users.first());
-        pugMembers.push( message.mentions.users.size);
     }
     
     else{ // Create a new pug and pass the user into the array
@@ -1022,11 +1021,20 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-
     if (message.content == '!runner'){           
+    const embed = new RichEmbed()
+    .setTitle('Runner Players')
+    .setColor(0x0000ff)
+    .setThumbnail('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.designhill.com%2Fstore%2Fimage%2Fdata%2F70988_qemqavi5ibps8m2270qpastfn1_d8d1699fe2a5db64666a7b1cb2948655.svg&imgrefurl=https%3A%2F%2Fwww.designhill.com%2Fstore%2Frun-logo-for-sports-amp-fhysical-fitness-company-70988&docid=o_BAvjx9I1T9ZM&tbnid=0L37g53OHZOqYM%3A&vet=10ahUKEwi2sJ_Uzr_kAhXq8KYKHaAsAHIQMwiBASgGMAY..i&w=1000&h=1000&bih=578&biw=1280&q=run%20logo&ved=0ahUKEwi2sJ_Uzr_kAhXq8KYKHaAsAHIQMwiBASgGMAY&iact=mrc&uact=8')
+    .addField(`${pugMembers[0]}`,' ',ture)
+    .addField(`${pugMembers[1]}`,' ',ture)
+    .addField(`${pugMembers[2]}`,' ',ture)
 
-     message.channel.send( ` \n ${pugMembers[0].displayAvatarURL}`+ ` \n ${pugMembers[1].displayAvatarURL}` + ` \n ${pugMembers[2].displayAvatarURL}`)
-    
+    .setDescription(`\n${pugMembers[3]} \n ${pugMembers[4]} \n ${pugMembers[5]} \n ${pugMembers[6]} \n ${pugMembers[7]} \n ${pugMembers[8]} \n ${pugMembers[9]} \n ${pugMembers[10]} \n ${pugMembers[11]} \n ${pugMembers[12]} \n ${pugMembers[13]} \n ${pugMembers[14]} \n ${pugMembers[15]} \n ${pugMembers[16]} \n ${pugMembers[17]} \n ${pugMembers[18]} \n ${pugMembers[19]} \n ${pugMembers.length} players`)
+    message.channel.send(embed)
+
+   
+     
     }
 
     if (!message.guild) return
@@ -1119,8 +1127,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!defender'){
-                
+    if (message.content == '!defender'){          
         const embed = new RichEmbed()
         .setTitle('Defender Players')
         .setColor(0x0000ff)
@@ -1132,7 +1139,7 @@ client.on('message', message => {
        
          
         }
-   
+  
     
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
