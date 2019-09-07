@@ -1032,7 +1032,7 @@ client.on('message', message => {
    
      
     }
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
+    if(message.channel.permission(message.member).hasPermission("MANAGE_MESSAGES")){
 
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
@@ -1087,7 +1087,7 @@ client.on('message', message => {
        
       }
        
-    
+    }
   }
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1141,7 +1141,8 @@ client.on('message', message => {
    
      
     }                    
-if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
+    if(message.channel.permission(message.member).hasPermission("MANAGE_MESSAGES")){
+
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
     const user = message.mentions.users.first()
@@ -1195,7 +1196,7 @@ if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send
        
       }
        
-    }
+    }}
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const pugSizes = 20; // Maximum amount of players in the PUG
@@ -1245,8 +1246,7 @@ client.on('message', message => {
          
         }
   
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
-
+if(message.channel.permission(message.member).hasPermission("MANAGE_MESSAGES")){
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
@@ -1303,7 +1303,7 @@ client.on('message', message => {
       
                                             }
        
-                                          }
+                                          }}
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
