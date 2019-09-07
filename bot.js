@@ -1025,7 +1025,7 @@ client.on('message', message => {
 
     if (message.content == '!runner'){           
 
-     message.channel.send( ` \n ${pugMembers[0].avatarURL}`+ ` \n ${pugMembers[1].avatarURL}` + ` \n ${pugMembers[2].avatarURL}`)
+     message.channel.send( ` \n ${pugMembers[0].displayAvatarURL}`+ ` \n ${pugMembers[1].displayAvatarURL}` + ` \n ${pugMembers[2].displayAvatarURL}`)
     
     }
 
