@@ -1001,11 +1001,14 @@ function addUserPug(message){
     // Add user to the pugMembers Array if the array is not full
 
     if (pugMembers.length<=14){
-        pugMembers.push( message.mentions.users.first());
-    }else{ // Create a new pug and pass the user into the array
+        pugMembers.push(message.mentions.users.first());
+    }
+    
+    else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
+  
     message.channel.send(`${message.mentions.users.first()} added to Runner ${pugMembers.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
@@ -1031,12 +1034,9 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
      
-   
-    
-       if (pugMembers.length == 0){
-         
         checkPugSize();
         addUserPug(message);}
+
           else if ( message.mentions.users.first().includes(pugMembers[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(pugMembers[1])) {
@@ -1069,14 +1069,10 @@ client.on('message', message => {
                                     message.channel.send("u already in")}
                                     else if ( message.mentions.users.first().includes(pugMembers[15])) {
                                       message.channel.send("u already in")}
-          
-          else {
-          checkPugSize();
-          addUserPug(message);
-        }
+       
       }
        
-    }}
+    }
 });
 ///////////////////////////////////////////////////////////////////
 const pugSizes = 14; // Maximum amount of players in the PUG
