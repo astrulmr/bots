@@ -1023,8 +1023,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content == '!runner'){           
     const embed = new RichEmbed()
-    .setTitle('${pugMembers}')
+    .setTitle('runners')
     .setColor(0x0000ff)
+    .setDescription(`${pugMembers}`)
     message.channel.send(embed)
 
    
