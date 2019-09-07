@@ -1026,8 +1026,15 @@ client.on('message', message => {
     if (message.content === '!add'){
        if (pugMembers.length == 0){
         checkPugSize();
-        addUserPug(message);
-       }}
+        addUserPug(message);}
+          else if (message.author.username.includes(forbidenWords[0])) {
+         message.channel.send("u already in")
+          }
+          else {
+          checkPugSize();
+          addUserPug(message);
+        }
+      }
        
 
 });
