@@ -1120,7 +1120,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!defender'){
-      if (message.content == '!runner'){           
+                
         const embed = new RichEmbed()
         .setTitle('Defender Players')
         .setColor(0x0000ff)
@@ -1132,8 +1132,8 @@ client.on('message', message => {
        
          
         }
-      message.channel.send(`: ${pugMemberss} `);
-    }
+   
+    
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
