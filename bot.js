@@ -974,6 +974,7 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
+
     if (pugMembers.length<=6){
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
@@ -999,7 +1000,7 @@ client.on('message', message => {
     }
     if (message.content === '!add'){
        
-        if(message.auther ==`${pugMembers}`){
+        if(message.auther.username ==`${pugMembers}`){
           message.channel.send("you already in")
         }
         else {
