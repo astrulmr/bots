@@ -1024,7 +1024,7 @@ client.on('message', message => {
     if (message.content == '!runner'){
    
      
-      message.channel.send(` Current PUG size: \n ${pugMembers} `);
+      message.channel.send(` Runner Players :  ${pugMembers[0]} \n ${pugMembers[1]} `);
     }
 
     if (!message.guild) return
