@@ -128,27 +128,17 @@ client.on('ready' , () => {
             
             .addField('\n PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter', true)
       
-        
+            .addField('(Defender)','-', true)
             
             .addField('\n Sanmaay', ' She is  not merciful on Defender And Great in Runner And Supporter', true)
             
-    
+            .addField('(Defender)','-', true)
             
             .addField('\n Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter  ', true)
             
-       
+            .addField('(Supporter)','-', true)
             
-            .addField('\n styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter', true)
-            
-         
-            
-            .addField('\n SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter ', true)
-            
-          
-            
-            .addField('\n |OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender  ', true)
-            
-            
+ 
             
             .setFooter('For Notes Must Of Os Clan Can Plays all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
            
