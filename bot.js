@@ -1024,7 +1024,7 @@ client.on('message', message => {
     if (message.content == '!runner'){           
     const embed = new RichEmbed()
     .setTitle('Defender Player ')
-    .addField(`${pugMembers}`, ' ', true)
+    .addField(`${pugMembers}`, '--', true)
     .setColor(0x0000ff)
     welchannel.send(embed)
 
