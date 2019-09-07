@@ -1023,7 +1023,7 @@ client.on('message', message => {
     if (message.content === '!add'){
     
        
-       for (var i = 0; i < pugMembers.length; i++) {
+       for (var i = 0; i < 6; i++) {
        if   (message.auther.username.includes(pugMembers[i])) {
           // message.content contains a forbidden word;
           // delete message, log, etc.
