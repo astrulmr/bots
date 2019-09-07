@@ -1002,7 +1002,6 @@ function addUserPug(message){
 
     if (pugMembers.length<=20){
         pugMembers.push(message.mentions.users.first());
-        pugMembers.push(message.mentions.users.size);
     }
     
     else{ // Create a new pug and pass the user into the array
@@ -1025,7 +1024,7 @@ client.on('message', message => {
 
     if (message.content == '!runner'){           
 
-     message.channel.send( `${pugMembers[0].displayAvatarURL}`+ `${pugMembers[1]}` + `${pugMembers[2]}`)
+     message.channel.send( ` \n ${pugMembers[0].displayAvatarURL}`+ ` \n ${pugMembers[1].displayAvatarURL}` + ` \n ${pugMembers[2].displayAvatarURL}`)
     
     }
 
