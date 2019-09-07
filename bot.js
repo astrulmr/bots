@@ -1001,7 +1001,7 @@ function addUserPug(message){
     // Add user to the pugMembers Array if the array is not full
 
     if (pugMembers.length<=14){
-        pugMembers.push(message.author.username);
+        pugMembers.push( message.mentions.users.first());
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
