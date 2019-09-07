@@ -134,12 +134,7 @@ client.on('ready' , () => {
             
             .addField('(Defender)','-', true)
             
-            .addField('\n Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter  ', true)
-            
-            .addField('(Supporter)','-', true)
-            
- 
-            
+         
             .setFooter('For Notes Must Of Os Clan Can Plays all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
            
           message.channel.send(embed)
