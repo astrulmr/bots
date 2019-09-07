@@ -1008,9 +1008,7 @@ function addUserPug(message){
     }
     message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
-    message.delete()
-    .then(message => console.log(pugMembers))
-    .catch(console.error);
+ 
 }
 
 client.on('ready', () => {
