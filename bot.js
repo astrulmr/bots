@@ -959,7 +959,7 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
 if(message.content=="!Runner")
-  const teams=[];
+  var teams=[];
   teams.push(message.auther)
   message.channel.send(teams);
 })
