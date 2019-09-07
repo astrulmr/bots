@@ -1026,7 +1026,7 @@ client.on('message', message => {
     .setTitle('Runner Players')
     .setColor(0x0000ff)
     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-    .setDescription(`\n\n\n ${pugMembers[3]} \n\n ${pugMembers[4]} \n\n ${pugMembers[5]} \n\n ${pugMembers[6]} \n\n ${pugMembers[7]} \n\n ${pugMembers[8]} \n\n ${pugMembers[9]} \n\n ${pugMembers[10]} \n\n ${pugMembers[11]} \n\n ${pugMembers[12]} \n\n ${pugMembers[13]} \n\n ${pugMembers[14]} \n\n ${pugMembers[15]} \n\n ${pugMembers[16]} \n\n ${pugMembers[17]} \n\n ${pugMembers[18]} \n\n ${pugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
+    .setDescription(`\n \n\n ${pugMembers[0]}\n\n ${pugMembers[1]} \n\n ${pugMembers[2]}\n\n ${pugMembers[3]} \n\n ${pugMembers[4]} \n\n ${pugMembers[5]} \n\n ${pugMembers[6]} \n\n ${pugMembers[7]} \n\n ${pugMembers[8]} \n\n ${pugMembers[9]} \n\n ${pugMembers[10]} \n\n ${pugMembers[11]} \n\n ${pugMembers[12]} \n\n ${pugMembers[13]} \n\n ${pugMembers[14]} \n\n ${pugMembers[15]} \n\n ${pugMembers[16]} \n\n ${pugMembers[17]} \n\n ${pugMembers[18]} \n\n ${pugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
     message.channel.send(embed)
 
    
