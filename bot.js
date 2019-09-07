@@ -1027,7 +1027,7 @@ client.on('message', message => {
     
        
        for (var i = 0; i < pugMembers.length; i++) {
-       if   (message.content.includes(pugMembers[i])) {
+       if   (message.auther.username.includes(pugMembers[i])) {
           // message.content contains a forbidden word;
           // delete message, log, etc.
           message.channel.send("u already in")
