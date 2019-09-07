@@ -962,6 +962,7 @@ client.on('message', message => {
 let roleID = "612579702158131210";
 let membersWithRole = message.guild.roles.get(roleID).members;
 console.log(`Got ${membersWithRole.size} members with that role.`)}
+message.channel.send(`${membersWithRole.size}`)
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
