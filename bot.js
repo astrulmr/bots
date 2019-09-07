@@ -86,22 +86,38 @@ client.on('ready' , () => {
             .setColor(0xFF0000)
             .setThumbnail(client.user.avatarURL)
             .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
-            .addField('Astru® ', ' He is a great Runner And Good In Supporter And Defender  (Runner)', true)
-            .addField('DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter (Runner)', true)
-            .addField('Iknes ', '  He is a Legend Defender And Great In Runner And Supporter (Defender)', true)
-            .addField('jimm25  ', '   He  So Good Defender And Surly In Runner And Supporter  (Defender)', true)
-            .addField('jinleehurb ', ' He is unbelievable defence and Supporter (Defender)', true)
-            .addField('Junusbiaz ', 'He  just super on Defender And GREATS in Runner And Supporter  (Defender)', true)
-            .addField('KaeptnKook', ' He is The best in Defence and Smart at Runner (Defender)', true)
-            .addField('Kenshiro', ' He is  The Best on Runner And Wild in  Defender And Supporter (Supporter)', true)
-            .addField('kevin1185', ' He So Coool on Runner And Fantastic in  Defender And Supporter (Runner)', true)
-            .addField('nani', ' He is a Brilliant on Supporter And Indestructible in Runner And Defender (Supporter)', true)
-            .addField('PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter (Defender)', true)
-            .addField('Sanmaay', ' She is  not merciful on Defender And Great in Runner And (Defender)', true)
-            .addField('Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter  (Supporter)', true)
-            .addField('styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter (Defender)', true)
-            .addField('SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter (Runner)', true)
-            .addField('|OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender  (Supporter)', true)
+            .addField('Astru® ', ' He is a great Runner And Good In Supporter And Defender  ', true)
+            .addField('(Runner)', true)
+            .addField('\n DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter ', true)
+            .addField('(Runner)', true)
+            .addField('\n Iknes ', '  He is a Legend Defender And Great In Runner And Supporter ', true)
+            .addField('(Defender)', true)
+            .addField('\n jimm25  ', '   He  So Good Defender And Surly In Runner And Supporter  ', true)
+            .addField('(Runner)', true)
+            .addField('\n jinleehurb ', ' He is unbelievable defence and Supporter ', true)
+          .addField('(Defender)', true)
+            .addField('\n Junusbiaz ', 'He  just super on Defender And GREATS in Runner And Supporter  ', true)
+          .addField('(Defender)', true)
+            .addField('\n KaeptnKook', ' He is The best in Defence and Smart at Runner ', true)
+          .addField('(Defender)', true)
+            .addField('\n Kenshiro', ' He is  The Best on Runner And Wild in  Defender And Supporter ', true)
+          .addField('(Supporter)', true)
+            .addField('\n kevin1185', ' He So Coool on Runner And Fantastic in  Defender And Supporter ', true)
+          .addField('(Runner)', true)
+            .addField('\n nani', ' He is a Brilliant on Supporter And Indestructible in Runner And Defender ', true)
+          .addField('(Supporter)', true)
+            .addField('\n PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter', true)
+          .addField('(Defender)', true)
+            .addField('\n Sanmaay', ' She is  not merciful on Defender And Great in Runner And Supporter', true)
+          .addField('(Defender)', true)
+            .addField('\n Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter  ', true)
+          .addField('(Supporter)', true)
+            .addField('\n styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter', true)
+          .addField('(Defender)', true)
+            .addField('\n SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter ', true)
+          .addField('(Runner)', true)
+            .addField('\n |OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender  ', true)
+          .addField('(Supporter)', true)
             .setFooter('For Notes Must Of Os Clan Can Plays all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
            
           message.channel.send(embed)
@@ -307,7 +323,36 @@ client.on('message', message => {
 
       }
     })
+ client.on('message', message => {
+      if (message.content === '!thomaserena') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------THOMASERENA------------')
+      .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/f/f4/ClassyRoland.png/revision/latest/scale-to-width-down/404?cb=20180215191845')
+      .setColor('#275BF0')
+        message.channel.send(embed)
 
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!bluedragon') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------BLUEDRAGON------------')
+      .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/e/e5/DarkMatterVraxx.png/revision/latest/scale-to-width-down/294?cb=20180215181636')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+    client.on('message', message => {
+      if (message.content === '!lordcroissant') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------LORDCROISSANT------------')
+      .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/3/31/Kill_Thrill_Hattori.png/revision/latest?cb=20190522222609')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     client.on('message', message => {
       if (message.content === '!legends') {
