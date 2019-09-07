@@ -957,31 +957,31 @@ message.channel.send("power not set")
     
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const pugSize = 20; // Maximum amount of players in the PUG
-const pugMembers = []; // Array to hold the members in the PUG
+const pugSizes = 20; // Maximum amount of players in the PUG
+const pugMemberss = []; // Array to hold the members in the PUG
 
-function checkPugSize(){
-    if (pugMembers.length == 20){
+function checkPugSizes(){
+    if (pugMemberss.length == 20){
         //TODO Create the two teams
-        console.log(`PUG IS FULL: ${pugMembers.length}`);
+        console.log(`PUG IS FULL: ${pugMemberss.length}`);
     }else{
-        console.log(`THE PUG IS NOT FULL: ${pugMembers.length}`);
+        console.log(`THE PUG IS NOT FULL: ${pugMemberss.length}`);
     }
 }
 
-function addUserPug(message){
+function addUsersPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-    if (pugMembers.length<=20){
-        pugMembers.push(message.author.username);
+    if (pugMemberss.length<=20){
+        pugMemberss.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.author} added to defender ${pugMembers.length}.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.author} added to defender ${pugMemberss.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
-    .then(message => console.log(pugMembers))
+    .then(message => console.log(pugMemberss))
     .catch(console.error);
 }
 
@@ -991,12 +991,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!Sdefender'){
-      message.channel.send(`Defender players: ${pugMembers.length}`);
+      message.channel.send(`Defender players: ${pugMemberss.length}`);
     }
     if (message.content === '!defender'){
         // console.log(msg.author);
-        checkPugSize();
-        addUserPug(message);
+        checkPugSizes();
+        addUsersPug(message);
     }
 });
 
