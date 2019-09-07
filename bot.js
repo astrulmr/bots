@@ -1027,7 +1027,7 @@ client.on('message', message => {
     .setColor(0x0000ff)
     .setThumbnail('https://cdn1.designhill.com/store/image/data/70988_qemqavi5ibps8m2270qpastfn1_d8d1699fe2a5db64666a7b1cb2948655.svg')
     .setDescription(`\n\n ${pugMembers[0]} \n ${pugMembers[1]} \n ${pugMembers[2]} \n ${pugMembers[3]} \n ${pugMembers[4]} \n ${pugMembers[5]} \n ${pugMembers[6]} \n ${pugMembers[7]} \n ${pugMembers[8]} \n ${pugMembers[9]} \n ${pugMembers[10]} \n ${pugMembers[11]} \n ${pugMembers[12]} \n ${pugMembers[13]} \n ${pugMembers[14]} \n ${pugMembers[15]} \n ${pugMembers[16]} \n ${pugMembers[17]} \n ${pugMembers[18]} \n ${pugMembers[19]} \n ${pugMembers.length} players`)
-    welchannel.send(embed)
+    message.channel.send(embed)
 
    
      
@@ -1130,7 +1130,7 @@ client.on('message', message => {
         .setColor(0x0000ff)
         .setThumbnail('https://cdn1.iconfinder.com/data/icons/unigrid-military/61/002_military_defense_defend_swords_shield-512.png')
         .setDescription(`\n\n ${pugMemberss[0]} \n ${pugMemberss[1]} \n ${pugMemberss[2]} \n ${pugMemberss[3]} \n ${pugMemberss[4]} \n ${pugMemberss[5]} \n ${pugMemberss[6]} \n ${pugMemberss[7]} \n ${pugMemberss[8]} \n ${pugMemberss[9]} \n ${pugMemberss[10]} \n ${pugMemberss[11]} \n ${pugMemberss[12]} \n ${pugMemberss[13]} \n ${pugMemberss[14]} \n ${pugMemberss[15]} \n ${pugMemberss[16]} \n ${pugMemberss[17]} \n ${pugMemberss[18]} \n ${pugMemberss[19]} \n ${pugMemberss.length} Players`)
-        welchannel.send(embed)
+        message.channel.send(embed)
     
        
          
