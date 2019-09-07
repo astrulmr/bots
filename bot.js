@@ -957,6 +957,49 @@ message.channel.send("power not set")
     
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const pugSizes = 20; // Maximum amount of players in the PUG
+const pugMembers = []; // Array to hold the members in the PUG
+
+function checkPugSizes(){
+    if (pugMembers.length == 6){
+        //TODO Create the two teams
+        console.log(`PUG IS FULL: ${pugMembers.length}`);
+    }else{
+        console.log(`THE PUG IS NOT FULL: ${pugMembers.length}`);
+    }
+}
+
+function addUserPug(message){
+    // console.log(msg.author);
+    // Add user to the pugMembers Array if the array is not full
+    if (pugMembers.length<=6){
+        pugMembers.push(message.author.username);
+    }else{ // Create a new pug and pass the user into the array
+        console.log("TODO: Create a new pug when current array is filled");
+        // createNewPug(msg.author.username);
+    }
+    message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
+    // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
+    message.delete()
+    .then(message => console.log(pugMembers))
+    .catch(console.error);
+}
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', message => {
+    if (message.content == '!Sdefend'){
+      message.channel.send(`Current PUG size: ${pugMembers.length}`);
+    }
+    if (message.content === '!defender'){
+        // console.log(msg.author);
+        checkPugSizes();
+        addUserPug(message);
+    }
+});
+
 const pugSize = 6; // Maximum amount of players in the PUG
 const pugMembers = []; // Array to hold the members in the PUG
 
@@ -990,10 +1033,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!size'){
+    if (message.content == '!Srunner'){
       message.channel.send(`Current PUG size: ${pugMembers.length}`);
     }
-    if (message.content === '!add'){
+    if (message.content === '!runner'){
         // console.log(msg.author);
         checkPugSize();
         addUserPug(message);
