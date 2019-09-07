@@ -1025,9 +1025,8 @@ client.on('message', message => {
     const embed = new RichEmbed()
     .setTitle('Runner Players')
     .setColor(0x0000ff)
-    .addField(`${pugMembers[0]}`,'- ',ture)
-    .addField(`${pugMembers[1]}`,'- ',ture)
-    .addField(`${pugMembers[2]}`,'- ',ture)
+    .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
+    .setDescription(`\n\n\n ${pugMembers[3]} \n\n ${pugMembers[4]} \n\n ${pugMembers[5]} \n\n ${pugMembers[6]} \n\n ${pugMembers[7]} \n\n ${pugMembers[8]} \n\n ${pugMembers[9]} \n\n ${pugMembers[10]} \n\n ${pugMembers[11]} \n\n ${pugMembers[12]} \n\n ${pugMembers[13]} \n\n ${pugMembers[14]} \n\n ${pugMembers[15]} \n\n ${pugMembers[16]} \n\n ${pugMembers[17]} \n\n ${pugMembers[18]} \n\n ${pugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
     message.channel.send(embed)
 
    
@@ -1126,10 +1125,10 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content == '!defender'){          
         const embed = new RichEmbed()
-        .setTitle('Defender Players')
+        .setTitle('----- Defender Players -----')
         .setColor(0x0000ff)
-        .setDescription(`\n\n ${pugMemberss[0]} \n ${pugMemberss[1]} \n ${pugMemberss[2]} \n ${pugMemberss[3]} \n ${pugMemberss[4]} \n ${pugMemberss[5]} \n ${pugMemberss[6]} \n ${pugMemberss[7]} \n ${pugMemberss[8]} \n ${pugMemberss[9]} \n ${pugMemberss[10]} \n ${pugMemberss[11]} \n ${pugMemberss[12]} \n ${pugMemberss[13]} \n ${pugMemberss[14]} \n ${pugMemberss[15]} \n ${pugMemberss[16]} \n ${pugMemberss[17]} \n ${pugMemberss[18]} \n ${pugMemberss[19]} \n ${pugMemberss.length} Players`)
-        .setThumbnail('https://cdn1.iconfinder.com/data/icons/unigrid-military/61/002_military_defense_defend_swords_shield-512.png')
+        .setDescription(`\n\n\n ${pugMemberss[0]} \n\n ${pugMemberss[1]} \n\n ${pugMemberss[2]} \n\n ${pugMemberss[3]} \n\n ${pugMemberss[4]} \n\n ${pugMemberss[5]} \n\n ${pugMemberss[6]} \n\n ${pugMemberss[7]} \n\n ${pugMemberss[8]} \n\n ${pugMemberss[9]} \n\n ${pugMemberss[10]} \n\n ${pugMemberss[11]} \n\n ${pugMemberss[12]} \n\n ${pugMemberss[13]} \n\n ${pugMemberss[14]} \n\n ${pugMemberss[15]} \n\n ${pugMemberss[16]} \n\n ${pugMemberss[17]} \n\n ${pugMemberss[18]} \n\n ${pugMemberss[19]} \n\n\n ------------ ${pugMemberss.length} Players ------------`)
+        .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
 
         message.channel.send(embed)
     
@@ -1192,10 +1191,10 @@ client.on('message', message => {
           
          
       
-    }}
+                                            }
        
-
-});
+                                          }
+})
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
