@@ -993,7 +993,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!size'){
-      message.channel.send(`Current PUG size: ${pugMembers.username}`);
+      message.channel.send(`Current PUG size: ${pugMembers.auther}`);
     }
     if (message.content === '!add'){
         // console.log(msg.author);
