@@ -958,10 +958,10 @@ message.channel.send("power not set")
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
-if(message.content=="!Runner")
-  var teams=[];
-  teams.push(message.auther)
-  message.channel.send(teams);
+  if(message.content=="rol"){
+let roleID = "612579702158131210";
+let membersWithRole = message.guild.roles.get(roleID).members;
+console.log(`Got ${membersWithRole.size} members with that role.`)}
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
