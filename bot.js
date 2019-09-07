@@ -984,11 +984,11 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-const pugSize = 6; // Maximum amount of players in the PUG
+const pugSize = 14; // Maximum amount of players in the PUG
 var pugMembers = []; // Array to hold the members in the PUG
 
 function checkPugSize(){
-    if (pugMembers.length == 6){
+    if (pugMembers.length == 14){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
@@ -1000,13 +1000,13 @@ function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
 
-    if (pugMembers.length<=6){
+    if (pugMembers.length<=14){
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.author} added to Runner ${pugMembers.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMembers))
@@ -1028,8 +1028,38 @@ client.on('message', message => {
         checkPugSize();
         addUserPug(message);}
           else if (message.author.username.includes(pugMembers[0])) {
-         message.channel.send("u already in")
-          }
+         message.channel.send("u already in")}
+         else if (message.author.username.includes(pugMembers[1])) {
+          message.channel.send("u already in")}
+          else if (message.author.username.includes(pugMembers[2])) {
+            message.channel.send("u already in")}
+            else if (message.author.username.includes(pugMembers[3])) {
+              message.channel.send("u already in")}
+              else if (message.author.username.includes(pugMembers[4])) {
+                message.channel.send("u already in")}
+                else if (message.author.username.includes(pugMembers[5])) {
+                  message.channel.send("u already in")}
+                  else if (message.author.username.includes(pugMembers[6])) {
+                    message.channel.send("u already in")}
+                    else if (message.author.username.includes(pugMembers[7])) {
+                      message.channel.send("u already in")}
+                      else if (message.author.username.includes(pugMembers[8])) {
+                        message.channel.send("u already in")}
+                        else if (message.author.username.includes(pugMembers[9])) {
+                          message.channel.send("u already in")}
+                          else if (message.author.username.includes(pugMembers[10])) {
+                            message.channel.send("u already in")}
+                            else if (message.author.username.includes(pugMembers[11])) {
+                              message.channel.send("u already in")}
+                              else if (message.author.username.includes(pugMembers[12])) {
+                                message.channel.send("u already in")}
+                                else if (message.author.username.includes(pugMembers[13])) {
+                                  message.channel.send("u already in")}
+                                  else if (message.author.username.includes(pugMembers[14])) {
+                                    message.channel.send("u already in")}
+                                    else if (message.author.username.includes(pugMembers[15])) {
+                                      message.channel.send("u already in")}
+          
           else {
           checkPugSize();
           addUserPug(message);
@@ -1038,7 +1068,91 @@ client.on('message', message => {
        
 
 });
+///////////////////////////////////////////////////////////////////
+const pugSizes = 14; // Maximum amount of players in the PUG
+var pugMemberss = []; // Array to hold the members in the PUG
 
+function checkPugSizes(){
+    if (pugMemberss.length == 14){
+        //TODO Create the two teams
+        console.log(`PUG IS FULL: ${pugMemberss.length}`);
+    }else{
+        console.log(`THE PUG IS NOT FULL: ${pugMemberss.length}`);
+    }
+}
+
+function addUserPugs(message){
+    // console.log(msg.author);
+    // Add user to the pugMembers Array if the array is not full
+
+    if (pugMemberss.length<=14){
+        pugMemberss.push(message.author.username);
+    }else{ // Create a new pug and pass the user into the array
+        console.log("TODO: Create a new pug when current array is filled");
+        // createNewPug(msg.author.username);
+    }
+    message.channel.send(`${message.author} added to Defender ${pugMemberss.length}.`); // Mention the user that they are added into the queue
+    // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
+    message.delete()
+    .then(message => console.log(pugMemberss))
+    .catch(console.error);
+}
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', message => {
+    if (message.content == '!size'){
+   
+     
+      message.channel.send(`Defender Players: ${pugMemberss} \n`);
+    }
+    if (message.content === '!add'){
+       if (pugMemberss.length == 0){
+        checkPugSizes();
+        addUserPugs(message);}
+          else if (message.author.username.includes(pugMemberss[0])) {
+         message.channel.send("u already in")}
+         else if (message.author.username.includes(pugMemberss[1])) {
+          message.channel.send("u already in")}
+          else if (message.author.username.includes(pugMemberss[2])) {
+            message.channel.send("u already in")}
+            else if (message.author.username.includes(pugMemberss[3])) {
+              message.channel.send("u already in")}
+              else if (message.author.username.includes(pugMemberss[4])) {
+                message.channel.send("u already in")}
+                else if (message.author.username.includes(pugMemberss[5])) {
+                  message.channel.send("u already in")}
+                  else if (message.author.username.includes(pugMemberss[6])) {
+                    message.channel.send("u already in")}
+                    else if (message.author.username.includes(pugMemberss[7])) {
+                      message.channel.send("u already in")}
+                      else if (message.author.username.includes(pugMemberss[8])) {
+                        message.channel.send("u already in")}
+                        else if (message.author.username.includes(pugMemberss[9])) {
+                          message.channel.send("u already in")}
+                          else if (message.author.username.includes(pugMemberss[10])) {
+                            message.channel.send("u already in")}
+                            else if (message.author.username.includes(pugMemberss[11])) {
+                              message.channel.send("u already in")}
+                              else if (message.author.username.includes(pugMemberss[12])) {
+                                message.channel.send("u already in")}
+                                else if (message.author.username.includes(pugMemberss[13])) {
+                                  message.channel.send("u already in")}
+                                  else if (message.author.username.includes(pugMemberss[14])) {
+                                    message.channel.send("u already in")}
+                                    else if (message.author.username.includes(pugMemberss[15])) {
+                                      message.channel.send("u already in")}
+          
+          else {
+          checkPugSizes();
+          addUserPugs(message);
+        }
+      }
+       
+
+});
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
