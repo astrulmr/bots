@@ -1025,7 +1025,6 @@ client.on('message', message => {
     const embed = new RichEmbed()
     .setTitle('Runner Players')
     .setColor(0x0000ff)
-    .setThumbnail('https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.designhill.com%2Fstore%2Fimage%2Fdata%2F70988_qemqavi5ibps8m2270qpastfn1_d8d1699fe2a5db64666a7b1cb2948655.svg&imgrefurl=https%3A%2F%2Fwww.designhill.com%2Fstore%2Frun-logo-for-sports-amp-fhysical-fitness-company-70988&docid=o_BAvjx9I1T9ZM&tbnid=0L37g53OHZOqYM%3A&vet=10ahUKEwi2sJ_Uzr_kAhXq8KYKHaAsAHIQMwiBASgGMAY..i&w=1000&h=1000&bih=578&biw=1280&q=run%20logo&ved=0ahUKEwi2sJ_Uzr_kAhXq8KYKHaAsAHIQMwiBASgGMAY&iact=mrc&uact=8')
     .addField(`${pugMembers[0]}`,'- ',ture)
     .addField(`${pugMembers[1]}`,'- ',ture)
     .addField(`${pugMembers[2]}`,'- ',ture)
