@@ -1024,7 +1024,7 @@ client.on('message', message => {
     if (message.content == '!runner'){
    
      
-      message.channel.send(` Runner Players :  ${pugMembers[0]} \n ${pugMembers[1]} `);
+      message.channel.send(` Runner Players : \n ${pugMembers[0]} \n ${pugMembers[1]} \n ${pugMembers[2]} \n ${pugMembers[3]} \n ${pugMembers[4]} \n ${pugMembers[5]} \n ${pugMembers[6]} \n ${pugMembers[7]} \n ${pugMembers[8]} \n ${pugMembers[9]} \n ${pugMembers[10]} \n ${pugMembers[11]} \n ${pugMembers[12]} \n ${pugMembers[13]} \n ${pugMembers[14]} `);
     }
 
     if (!message.guild) return
