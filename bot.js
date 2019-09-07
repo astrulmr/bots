@@ -984,11 +984,11 @@ message.channel.send("power not set")
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-const pugSize = 14; // Maximum amount of players in the PUG
+const pugSize = 20; // Maximum amount of players in the PUG
 var pugMembers = []; // Array to hold the members in the PUG
 
 function checkPugSize(){
-    if (pugMembers.length == 14){
+    if (pugMembers.length == 20){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
@@ -1000,7 +1000,7 @@ function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
 
-    if (pugMembers.length<=14){
+    if (pugMembers.length<=20){
         pugMembers.push(message.mentions.users.first());
     }
     
@@ -1023,10 +1023,11 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content == '!runner'){           
     const embed = new RichEmbed()
-    .setTitle('runners')
+    .setTitle('Runner Players')
     .setColor(0x0000ff)
-    .setDescription(`${pugMembers}`)
-    message.channel.send(embed)
+    .setThumbnail('https://cdn1.designhill.com/store/image/data/70988_qemqavi5ibps8m2270qpastfn1_d8d1699fe2a5db64666a7b1cb2948655.svg')
+    .setDescription(`\n\n ${pugMembers[0]} \n ${pugMembers[1]} \n ${pugMembers[2]} \n ${pugMembers[3]} \n ${pugMembers[4]} \n ${pugMembers[5]} \n ${pugMembers[6]} \n ${pugMembers[7]} \n ${pugMembers[8]} \n ${pugMembers[9]} \n ${pugMembers[10]} \n ${pugMembers[11]} \n ${pugMembers[12]} \n ${pugMembers[13]} \n ${pugMembers[14]} \n ${pugMembers[15]} \n ${pugMembers[16]} \n ${pugMembers[17]} \n ${pugMembers[18]} \n ${pugMembers[19]} \n ${pugMembers.length} players`)
+    welchannel.send(embed)
 
    
      
@@ -1074,17 +1075,25 @@ client.on('message', message => {
                                     message.channel.send("u already in")}
                                     else if ( message.mentions.users.first().includes(pugMembers[15])) {
                                       message.channel.send("u already in")}
+                                      else if ( message.mentions.users.first().includes(pugMembers[16])) {
+                                        message.channel.send("u already in")}
+                                        else if ( message.mentions.users.first().includes(pugMembers[17])) {
+                                          message.channel.send("u already in")}
+                                          else if ( message.mentions.users.first().includes(pugMembers[18])) {
+                                            message.channel.send("u already in")}
+                                            else if ( message.mentions.users.first().includes(pugMembers[19])) {
+                                              message.channel.send("u already in")}
        
       }
        
     }
 });
 ///////////////////////////////////////////////////////////////////
-const pugSizes = 14; // Maximum amount of players in the PUG
+const pugSizes = 20; // Maximum amount of players in the PUG
 var pugMemberss = []; // Array to hold the members in the PUG
 
 function checkPugSizes(){
-    if (pugMemberss.length == 14){
+    if (pugMemberss.length == 20){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMemberss.length}`);
     }else{
@@ -1096,13 +1105,13 @@ function addUserPugs(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
 
-    if (pugMemberss.length<=14){
+    if (pugMemberss.length<=20){
         pugMemberss.push( message.mentions.users.first());
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
         // createNewPug(msg.author.username);
     }
-    message.channel.send(`${message.author} added to Defender ${pugMemberss.length}.`); // Mention the user that they are added into the queue
+    message.channel.send(`${message.mentions.users.first()} added to Defender ${pugMemberss.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMemberss))
@@ -1115,8 +1124,18 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!defender'){
-           
-      message.channel.send(`Defender Players: ${pugMemberss} `);
+      if (message.content == '!runner'){           
+        const embed = new RichEmbed()
+        .setTitle('Defender Players')
+        .setColor(0x0000ff)
+        .setThumbnail('https://cdn1.iconfinder.com/data/icons/unigrid-military/61/002_military_defense_defend_swords_shield-512.png')
+        .setDescription(`\n\n ${pugMemberss[0]} \n ${pugMemberss[1]} \n ${pugMemberss[2]} \n ${pugMemberss[3]} \n ${pugMemberss[4]} \n ${pugMemberss[5]} \n ${pugMemberss[6]} \n ${pugMemberss[7]} \n ${pugMemberss[8]} \n ${pugMemberss[9]} \n ${pugMemberss[10]} \n ${pugMemberss[11]} \n ${pugMemberss[12]} \n ${pugMemberss[13]} \n ${pugMemberss[14]} \n ${pugMemberss[15]} \n ${pugMemberss[16]} \n ${pugMemberss[17]} \n ${pugMemberss[18]} \n ${pugMemberss[19]} \n ${pugMemberss.length} Players`)
+        welchannel.send(embed)
+    
+       
+         
+        }
+      message.channel.send(`: ${pugMemberss} `);
     }
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
@@ -1161,6 +1180,14 @@ client.on('message', message => {
                                     message.channel.send("u already in")}
                                     else if ( message.mentions.users.first().includes(pugMemberss[15])) {
                                       message.channel.send("u already in")}
+                                      else if ( message.mentions.users.first().includes(pugMemberss[16])) {
+                                        message.channel.send("u already in")}
+                                        else if ( message.mentions.users.first().includes(pugMemberss[17])) {
+                                          message.channel.send("u already in")}
+                                          else if ( message.mentions.users.first().includes(pugMemberss[18])) {
+                                            message.channel.send("u already in")}
+                                            else if ( message.mentions.users.first().includes(pugMemberss[19])) {
+                                              message.channel.send("u already in")}
           
          
       
