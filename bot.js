@@ -1024,13 +1024,13 @@ client.on('message', message => {
       message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
     if (message.content === '!add'){
-       if (pugMembers.length ==0){
+       if (pugMembers.length == 0){
         checkPugSize();
         addUserPug(message);
        }
-        else if (message.auther.username ===`${pugMembers}`){
-          message.channel.send("you already in")
-        }
+        else if (message.auther.username ===`${pugMembers}`)
+          return(!message.auther.username) ;
+        
 
         else {
         checkPugSize();
