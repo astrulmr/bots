@@ -1032,7 +1032,8 @@ client.on('message', message => {
    
      
     }
-   if(member.roles.has('535533524539932672'));{
+    if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
+
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
     const user = message.mentions.users.first()
@@ -1086,7 +1087,7 @@ client.on('message', message => {
        
       }
        
-    }
+    
   }
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1140,9 +1141,7 @@ client.on('message', message => {
    
      
     }                    
-if(!message.member.hasPermission("ADMINISTRATOR")) 
-return message.channel.sendmessage("you Dont Have permission")
-member.roles.some(role => role.name === 'ADMIN');
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
     const user = message.mentions.users.first()
@@ -1246,7 +1245,7 @@ client.on('message', message => {
          
         }
   
-        if(member.roles.has('535533524539932672'));{
+        if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
 
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
@@ -1304,7 +1303,7 @@ client.on('message', message => {
       
                                             }
        
-                                          }}
+                                          }
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
