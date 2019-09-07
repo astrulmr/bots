@@ -1023,11 +1023,11 @@ client.on('message', message => {
       message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
     if (message.content === '!add'){
-      if(pugMembers.length === 0){
+      if(pugMembers.length == 0){
 
        checkPugSize();
         addUserPug(message);}
-        
+
         else{
       for (var i = 0; i < pugMembers.length; i++) {
    if (message.author.username.includes(pugMembers[i])) {
