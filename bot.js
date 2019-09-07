@@ -961,7 +961,7 @@ const pugSize = 6; // Maximum amount of players in the PUG
 const pugMembers = []; // Array to hold the members in the PUG
 
 function checkPugSize(){
-    if (pugMembers.length <= 6){
+    if (pugMembers.length == 6){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${pugMembers.length}`);
     }else{
@@ -972,7 +972,7 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-    if (pugMembers<=6){
+    if (pugMembers.length<=6){
         pugMembers.push(message.author.username);
     }else{ // Create a new pug and pass the user into the array
         console.log("TODO: Create a new pug when current array is filled");
