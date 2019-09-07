@@ -1023,16 +1023,16 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content == '!runner'){           
     const embed = new RichEmbed()
-    .setTitle('Runner Players')
+    .setTitle('Runner Players \n\n')
     .setColor(0x0000ff)
     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-    .setDescription(`\n \n\n ${pugMembers[0]}\n\n ${pugMembers[1]} \n\n ${pugMembers[2]}\n\n ${pugMembers[3]} \n\n ${pugMembers[4]} \n\n ${pugMembers[5]} \n\n ${pugMembers[6]} \n\n ${pugMembers[7]} \n\n ${pugMembers[8]} \n\n ${pugMembers[9]} \n\n ${pugMembers[10]} \n\n ${pugMembers[11]} \n\n ${pugMembers[12]} \n\n ${pugMembers[13]} \n\n ${pugMembers[14]} \n\n ${pugMembers[15]} \n\n ${pugMembers[16]} \n\n ${pugMembers[17]} \n\n ${pugMembers[18]} \n\n ${pugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
+    .setDescription(`\n\n\n ${pugMembers[0]}\n\n ${pugMembers[1]} \n\n ${pugMembers[2]}\n\n ${pugMembers[3]} \n\n ${pugMembers[4]} \n\n ${pugMembers[5]} \n\n ${pugMembers[6]} \n\n ${pugMembers[7]} \n\n ${pugMembers[8]} \n\n ${pugMembers[9]} \n\n ${pugMembers[10]} \n\n ${pugMembers[11]} \n\n ${pugMembers[12]} \n\n ${pugMembers[13]} \n\n ${pugMembers[14]} \n\n ${pugMembers[15]} \n\n ${pugMembers[16]} \n\n ${pugMembers[17]} \n\n ${pugMembers[18]} \n\n ${pugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
     message.channel.send(embed)
 
    
      
     }
-
+   if(member.roles.has('535533524539932672'));{
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
     const user = message.mentions.users.first()
@@ -1087,8 +1087,116 @@ client.on('message', message => {
       }
        
     }
+  }
 });
-///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const spugSize = 20; // Maximum amount of players in the PUG
+var spugMembers = []; // Array to hold the members in the PUG
+
+function scheckPugSize(){
+    if (spugMembers.length == 20){
+        //TODO Create the two teams
+        console.log(`PUG IS FULL: ${spugMembers.length}`);
+    }else{
+        console.log(`THE PUG IS NOT FULL: ${spugMembers.length}`);
+    }
+}
+
+function saddUserPug(message){
+    // console.log(msg.author);
+    // Add user to the pugMembers Array if the array is not full
+
+    if (spugMembers.length<=20){
+        spugMembers.push(message.mentions.users.first());
+    }
+    
+    else{ // Create a new pug and pass the user into the array
+        console.log("TODO: Create a new pug when current array is filled");
+        // createNewPug(msg.author.username);
+    }
+  
+    message.channel.send(`${message.mentions.users.first()} added to Runner ${spugMembers.length}.`); // Mention the user that they are added into the queue
+    // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
+    message.delete()
+    .then(message => console.log(spugMembers))
+    .catch(console.error);
+}
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', message => {
+    if (message.content == '!sup'){           
+    const embed = new RichEmbed()
+    .setTitle('Runner Players \n\n')
+    .setColor(0x0000ff)
+    .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
+    .setDescription(`\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
+    message.channel.send(embed)
+
+   
+     
+    }
+    if(member.roles.has('535533524539932672'));{
+    if (!message.guild) return
+    if (message.content.startsWith('!Asupporter')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+     
+        scheckPugSize();
+        saddUserPug(message);}
+
+          else if ( message.mentions.users.first().includes(spugMembers[0])) {
+         message.channel.send("u already in")}
+         else if ( message.mentions.users.first().includes(spugMembers[1])) {
+          message.channel.send("u already in")}
+          else if ( message.mentions.users.first().includes(spugMembers[2])) {
+            message.channel.send("u already in")}
+            else if ( message.mentions.users.first().includes(spugMembers[3])) {
+              message.channel.send("u already in")}
+              else if ( message.mentions.users.first().includes(spugMembers[4])) {
+                message.channel.send("u already in")}
+                else if ( message.mentions.users.first().includes(spugMembers[5])) {
+                  message.channel.send("u already in")}
+                  else if ( message.mentions.users.first().includes(spugMembers[6])) {
+                    message.channel.send("u already in")}
+                    else if ( message.mentions.users.first().includes(spugMembers[7])) {
+                      message.channel.send("u already in")}
+                      else if ( message.mentions.users.first().includes(spugMembers[8])) {
+                        message.channel.send("u already in")}
+                        else if ( message.mentions.users.first().includes(spugMembers[9])) {
+                          message.channel.send("u already in")}
+                          else if ( message.mentions.users.first().includes(spugMembers[10])) {
+                            message.channel.send("u already in")}
+                            else if ( message.mentions.users.first().includes(spugMembers[11])) {
+                              message.channel.send("u already in")}
+                              else if ( message.mentions.users.first().includes(spugMembers[12])) {
+                                message.channel.send("u already in")}
+                                else if ( message.mentions.users.first().includes(spugMembers[13])) {
+                                  message.channel.send("u already in")}
+                                  else if ( message.mentions.users.first().includes(spugMembers[14])) {
+                                    message.channel.send("u already in")}
+                                    else if ( message.mentions.users.first().includes(spugMembers[15])) {
+                                      message.channel.send("u already in")}
+                                      else if ( message.mentions.users.first().includes(spugMembers[16])) {
+                                        message.channel.send("u already in")}
+                                        else if ( message.mentions.users.first().includes(spugMembers[17])) {
+                                          message.channel.send("u already in")}
+                                          else if ( message.mentions.users.first().includes(spugMembers[18])) {
+                                            message.channel.send("u already in")}
+                                            else if ( message.mentions.users.first().includes(spugMembers[19])) {
+                                              message.channel.send("u already in")}
+       
+      }
+       
+    }}
+});
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const pugSizes = 20; // Maximum amount of players in the PUG
 var pugMemberss = []; // Array to hold the members in the PUG
 
@@ -1136,7 +1244,8 @@ client.on('message', message => {
          
         }
   
-    
+        if(member.roles.has('535533524539932672'));{
+
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
@@ -1193,7 +1302,7 @@ client.on('message', message => {
       
                                             }
        
-                                          }
+                                          }}
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
