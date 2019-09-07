@@ -1096,7 +1096,7 @@ client.on('message', message => {
 const spugSize = 20; // Maximum amount of players in the PUG
 var spugMembers = []; // Array to hold the members in the PUG
 
-function scheckPugSize(){
+function checksPugSize(){
     if (spugMembers.length == 20){
         //TODO Create the two teams
         console.log(`PUG IS FULL: ${spugMembers.length}`);
@@ -1135,7 +1135,7 @@ client.on('message', message => {
     .setTitle('Runner Players \n\n')
     .setColor(0x0000ff)
     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-    .setDescription(`\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${pugMembers.length} players -----------`)
+    .setDescription(`\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${spugMembers.length} players -----------`)
     message.channel.send(embed)
 
    
@@ -1149,7 +1149,7 @@ if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendme
     const member = message.guild.member(user)
     if ( member) {
      
-        scheckPugSize();
+       checksPugSize();
         saddUserPug(message);}
 
           else if ( message.mentions.users.first().includes(spugMembers[0])) {
