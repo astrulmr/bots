@@ -138,11 +138,11 @@ client.on('ready' , () => {
             
             .addField('(Supporter)','-', true)
             
-            .addField('\n styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter', true)
+      
+            .addField('\n SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter ', true)
             
-            .addField('(Defender)','-', true)
+            .addField('(Runner)','-', true)
             
-         
             .addField('\n |OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender  ', true)
             
             .addField('(Supporter)','-', true)
