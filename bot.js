@@ -1032,7 +1032,7 @@ client.on('message', message => {
    
      
     }
-    if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
 
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
@@ -1141,7 +1141,7 @@ client.on('message', message => {
    
      
     }                    
-if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
     const user = message.mentions.users.first()
@@ -1245,7 +1245,7 @@ client.on('message', message => {
          
         }
   
-        if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendmessage("you Dont Have permission")
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("you Dont Have permission")
 
     if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
