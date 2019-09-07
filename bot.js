@@ -1023,8 +1023,18 @@ client.on('message', message => {
      
       message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
-    if (message.content === '!add'){
+
+    if (!message.guild) return
+    if (message.content.startsWith('!Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+     
+   
+    
        if (pugMembers.length == 0){
+         
         checkPugSize();
         addUserPug(message);}
           else if (message.author.username.includes(pugMembers[0])) {
@@ -1066,7 +1076,7 @@ client.on('message', message => {
         }
       }
        
-
+    }}
 });
 ///////////////////////////////////////////////////////////////////
 const pugSizes = 14; // Maximum amount of players in the PUG
@@ -1108,7 +1118,7 @@ client.on('message', message => {
      
       message.channel.send(`Defender Players: ${pugMemberss} \n`);
     }
-    if (message.content === '!add'){
+    if (message.content === '!Adefender'){
        if (pugMemberss.length == 0){
         checkPugSizes();
         addUserPugs(message);}
