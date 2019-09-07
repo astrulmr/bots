@@ -88,7 +88,7 @@ client.on('ready' , () => {
             .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
             .addField('Astru® ', ' He is a great Runner And Good In Supporter And Defender (Runner) ', true)
 
-            .
+            
 
             .addField('\n DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter (Runner)', true)
 
