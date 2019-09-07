@@ -958,15 +958,22 @@ message.channel.send("power not set")
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
-  if(message.content === "rol"){
+  if(message.content === "rol")
 let roleID = "612579702158131210";
 let membersWithRole = message.guild.roles.get(roleID).members;
-console.log(`Got ${membersWithRole.size} members with that role.`)}
+console.log(`Got ${membersWithRole.size} members with that role.`)
 message.channel.send(`${membersWithRole.size}`)
 })
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+var list = Array(50); 
+for (let i = 0; i < list.length; i++) {
+  console.log(list[i])
+  console.log(i) 
+  if(message.content === "add")
+  list.push(message.auther)
+}
+message.channel.send(list)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
