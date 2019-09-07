@@ -1021,11 +1021,11 @@ client.on('message', message => {
     if (message.content == '!size'){
    
      
-      message.channel.send(`Current PUG size: ${pugMembers}`);
+      message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
     if (message.content === '!add'){
        
-        if(message.auther.username ==`${pugMembers}`){
+        if(message.auther.username ===`${pugMembers}`){
           message.channel.send("you already in")
         }
         else {
