@@ -1008,8 +1008,8 @@ function addUserPug(message){
     }
     message.channel.send(`${message.author} added to queue ${pugMembers.length}/6.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
-    msg.delete()
-    .then(msg => console.log(pugMembers))
+    message.delete()
+    .then(message => console.log(pugMembers))
     .catch(console.error);
 }
 
@@ -1019,17 +1019,17 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!size'){
-      
+   
+     
       message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
     if (message.content === '!add'){
-      if(pugMembers.length == 0){
-
-       checkPugSize();
-        addUserPug(message);}
-
+       if (pugMembers.length == 0){
+        checkPugSize();
+        addUserPug(message);
+       }}
        
-  }
+
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
