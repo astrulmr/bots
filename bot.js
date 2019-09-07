@@ -1017,8 +1017,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content == '!size'){
-   
-     
+      
       message.channel.send(`Current PUG size: ${pugMembers} \n`);
     }
     if (message.content === '!add'){
@@ -1028,6 +1027,7 @@ client.on('message', message => {
        if   (message.auther.username.includes(pugMembers[i])) {
           // message.content contains a forbidden word;
           // delete message, log, etc.
+          break;
           message.channel.send("u already in")
         }
       }
