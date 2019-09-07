@@ -1023,16 +1023,16 @@ client.on('message', message => {
     if (message.content === '!add'){
     
        
-       for (var i = 0; i < 6; i++) {
-       if   (message.auther.username.includes(pugMembers[i])) {
-          // message.content contains a forbidden word;
-          // delete message, log, etc.
-          break;
-          message.channel.send("u already in")
-        }
-      }
+     
+          if (pugMembers.indexOf(message.auther.username) != -1){
+            message.delete();
+            console.log(colors.red(`Removed ${message.author.username}'s Message as it had a forbidden word in it.`));
+       }
         
-    }
+        }
+      
+        
+    
       else {
         checkPugSize();
         addUserPug(message);
