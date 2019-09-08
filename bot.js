@@ -1278,7 +1278,7 @@ client.on('message', message => {
         const embed = new RichEmbed()
         .setTitle(message.mentions.users.first())
         .setColor(0x0000ff)
-        .setThumbnail(message.mentions.users.avatarURL)
+        .setThumbnail(message.mentions.avatarURL)
         .setDescription(message.mentions.users.first()+`  is a Supporter`)}
          
         else if ( message.content.includes(spugMembers[1])) {
