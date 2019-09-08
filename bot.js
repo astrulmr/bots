@@ -1001,7 +1001,10 @@ function addUserPug(message){
     // Add user to the pugMembers Array if the array is not full
   
      if (pugMembers.length<=20){
-      if ( message.mentions.users.first().includes(pugMembers[0])) {
+       if(pugMembers.length==0)
+       pugMembers.push(message.mentions.users.first());
+
+      else if ( message.mentions.users.first().includes(pugMembers[0])) {
         message.channel.send("u already in")}
                     
                                              else 
