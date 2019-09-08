@@ -1079,7 +1079,7 @@ client.on('message', message => {
                                             message.channel.send("u already in")}
                                             else if ( message.mentions.users.first().includes(pugMembers[19])) {
                                               message.channel.send("u already in")}
-       else   if ( member) {
+       else  {
      
         checkPugSize();
         addUserPug(message);}
