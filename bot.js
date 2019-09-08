@@ -1041,9 +1041,11 @@ client.on('message', message => {
     if ( member) {
 
       
-    
+    if(pugMembers.length == 0){
+    checkPugSize();
+    addUserPug(message);}
        
-           if ( message.mentions.users.first().includes(pugMembers[0])) {
+          else if ( message.mentions.users.first().includes(pugMembers[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(pugMembers[1])) {
           message.channel.send("u already in")}
@@ -1151,10 +1153,12 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
      
-  
+      if(pugMembers.length == 0){
+        checkPugSize();
+        addUserPug(message);}
      
 
-          if ( message.mentions.users.first().includes(spugMembers[0])) {
+       else if ( message.mentions.users.first().includes(spugMembers[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(spugMembers[1])) {
           message.channel.send("u already in")}
@@ -1256,8 +1260,11 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
 
+      if(pugMembers.length == 0){
+        checkPugSize();
+        addUserPug(message);}
 
-         if ( message.mentions.users.first().includes(pugMemberss[0])) {
+        else if ( message.mentions.users.first().includes(pugMemberss[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(pugMemberss[1])) {
           message.channel.send("u already in")}
