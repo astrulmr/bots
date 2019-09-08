@@ -1032,8 +1032,8 @@ client.on('message', message => {
    
      
     }
-    if(message.channel.permissionFor(message.member).hasPermission("MANAGE_MESSAGES")){
-
+    if (member.hasPermission('ADMINISTRATOR')) {
+     
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
     const user = message.mentions.users.first()
@@ -1141,7 +1141,7 @@ client.on('message', message => {
    
      
     }                    
-    if(message.channel.permissionFor(message.member).hasPermission("MANAGE_MESSAGES")){
+    if (member.hasPermission('ADMINISTRATOR')) {
 
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
@@ -1246,8 +1246,8 @@ client.on('message', message => {
          
         }
   
-if(message.channel.permissionFor(message.member).hasPermission("MANAGE_MESSAGES")){
-    if (!message.guild) return
+        if (member.hasPermission('ADMINISTRATOR')) {
+          if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
     if (user) {
