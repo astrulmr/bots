@@ -1032,14 +1032,16 @@ client.on('message', message => {
    
      
     }
-    if (message.member.hasPermission('ADMINISTRATOR')) {
-     
+
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
+
+      if(!message.member.haspermission("message.member")) return message.channel.sendMessage("u dont have permission")
+
      
         checkPugSize();
         addUserPug(message);}
@@ -1088,9 +1090,7 @@ client.on('message', message => {
       }
        
     }
-  }
-  else { message.channel.send("u dont have permission")}
-
+  
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1143,7 +1143,6 @@ client.on('message', message => {
    
      
     }                    
-    if (message.member.hasPermission('ADMINISTRATOR')) {
 
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
@@ -1152,6 +1151,9 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
      
+      if(!message.member.haspermission("message.member")) return message.channel.sendMessage("u dont have permission")
+
+
        checksPugSize();
         saddUserPug(message);}
 
@@ -1198,8 +1200,7 @@ client.on('message', message => {
        
       }
        
-    }}
-    else { message.channel.send("u dont have permission")}
+    }
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const pugSizes = 20; // Maximum amount of players in the PUG
@@ -1249,14 +1250,14 @@ client.on('message', message => {
          
         }
   
-        if (message.member.hasPermission('ADMINISTRATOR')) {
-
-          if (!message.guild) return
+    if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
+
+      if(!message.member.haspermission("message.member")) return message.channel.sendMessage("u dont have permission")
 
       
         checkPugSizes();
@@ -1307,9 +1308,7 @@ client.on('message', message => {
       
                                             }
        
-                                          }}
-                                          else { message.channel.send("u dont have permission")}
-
+                                          }
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
