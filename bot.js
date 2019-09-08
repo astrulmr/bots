@@ -1445,7 +1445,7 @@ client.on('message', message => {
          const embed = new RichEmbed()
          .setTitle('----- Defender Players -----')
          .setColor(0x0000ff)
-         .addField(`${pugMemberss.username}`,`${pugMemberss[0]}`,true)
+         .addField(`${pugMemberss[0].username}`,`${pugMemberss[0]}`,true)
          .addField(`${pugMemberss.username}`,`${pugMemberss[1]}`,true)
          .addField(`${pugMemberss.username}`,`${pugMemberss[2]}`,true)
          .addField(`${pugMemberss.username}`,`${pugMemberss[3]}`,true)
