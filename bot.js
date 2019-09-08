@@ -1021,12 +1021,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content == '!runner'){           
+    if (message.content == '!run'){           
     const embed = new RichEmbed()
-    .setTitle('Runner Players \n\n')
+    .setTitle('------------------ Runner Players ------------------ \n\n')
     .setColor(0xFF0000	)
     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-    .addField(`${pugMembers.name}`,`${pugMembers[0]}`,true)
+    .addField('-------',`${pugMembers[0]}`,true)
     .addField('-------',`${pugMembers[1]}`,true)
     .addField('-------',`${pugMembers[2]}`,true)
     .addField('-------',`${pugMembers[3]}`,true)
@@ -1235,7 +1235,7 @@ client.on('message', message => {
  client.on('message', message => {
      if (message.content == '!sup'){           
      const embed = new RichEmbed()
-     .setTitle('---------Supporter Players--------- \n\n')
+     .setTitle('------------------ Supporter Players ------------------ \n\n')
      .setColor(0x0000ff)
      .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D \n\n')
      .addField('-------',`${spugMembers[0]}`,true)
@@ -1260,10 +1260,148 @@ client.on('message', message => {
      .addField('-------',`${spugMembers[19]}`,true)
      message.channel.send(embed)
  
+     
     
       
      }    
-     
+
+
+
+     if (!message.guild) return
+     if (message.content.startsWith('!')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+     if ( member) {
+
+       if ( message.content.includes(spugMembers[0])) {
+        message.channel.send("Hes Supporter")}
+        else if ( message.content.includes(spugMembers[1])) {
+         message.channel.send("Hes Supporter")}
+         else if ( message.content.includes(spugMembers[2])) {
+           message.channel.send("Hes Supporter")}
+           else if ( message.content.includes(spugMembers[3])) {
+             message.channel.send("Hes Supporter")}
+             else if ( message.content.includes(spugMembers[4])) {
+               message.channel.send("Hes Supporter")}
+               else if ( message.content.includes(spugMembers[5])) {
+                 message.channel.send("Hes Supporter")}
+                 else if ( message.content.includes(spugMembers[6])) {
+                   message.channel.send("Hes Supporter")}
+                   else if ( message.content.includes(spugMembers[7])) {
+                     message.channel.send("Hes Supporter")}
+                     else if ( message.content.includes(spugMembers[8])) {
+                       message.channel.send("Hes Supporter")}
+                       else if ( message.content.includes(spugMembers[9])) {
+                         message.channel.send("Hes Supporter")}
+                         else if ( message.content.includes(spugMembers[10])) {
+                           message.channel.send("Hes Supporter")}
+                           else if ( message.content.includes(spugMembers[11])) {
+                             message.channel.send("Hes Supporter")}
+                             else if ( message.content.includes(spugMembers[12])) {
+                               message.channel.send("Hes Supporter")}
+                               else if ( message.content.includes(spugMembers[13])) {
+                                 message.channel.send("Hes Supporter")}
+                                 else if ( message.content.includes(spugMembers[14])) {
+                                   message.channel.send("Hes Supporter")}
+                                   else if ( message.content.includes(spugMembers[15])) {
+                                     message.channel.send("Hes Supporter")}
+                                     else if ( message.content.includes(spugMembers[16])) {
+                                       message.channel.send("Hes Supporter")}
+                                       else if ( message.content.includes(spugMembers[17])) {
+                                         message.channel.send("Hes Supporter")}
+                                         else if ( message.content.includes(spugMembers[18])) {
+                                           message.channel.send("Hes Supporter")}
+                                           else if ( message.content.includes(spugMembers[19])) {
+                                             message.channel.send("Hes Supporter")}
+
+                                             else if ( message.content.includes(pugMembers[0])) {
+                                              message.channel.send("Hes Runner")}
+                                              else if ( message.content.includes(pugMembers[1])) {
+                                               message.channel.send("Hes Runner")}
+                                               else if ( message.content.includes(pugMembers[2])) {
+                                                 message.channel.send("Hes Runner")}
+                                                 else if ( message.content.includes(pugMembers[3])) {
+                                                   message.channel.send("Hes Runner")}
+                                                   else if ( message.content.includes(pugMembers[4])) {
+                                                     message.channel.send("Hes Runner")}
+                                                     else if ( message.content.includes(pugMembers[5])) {
+                                                       message.channel.send("Hes Runner")}
+                                                       else if ( message.content.includes(pugMembers[6])) {
+                                                         message.channel.send("Hes Runner")}
+                                                         else if ( message.content.includes(pugMembers[7])) {
+                                                           message.channel.send("Hes Runner")}
+                                                           else if ( message.content.includes(pugMembers[8])) {
+                                                             message.channel.send("Hes Runner")}
+                                                             else if ( message.content.includes(pugMembers[9])) {
+                                                               message.channel.send("Hes Runner")}
+                                                               else if ( message.content.includes(pugMembers[10])) {
+                                                                 message.channel.send("Hes Runner")}
+                                                                 else if ( message.content.includes(pugMembers[11])) {
+                                                                   message.channel.send("Hes Runner")}
+                                                                   else if ( message.content.includes(pugMembers[12])) {
+                                                                     message.channel.send("Hes Runner")}
+                                                                     else if ( message.content.includes(pugMembers[13])) {
+                                                                       message.channel.send("Hes Runner")}
+                                                                       else if ( message.content.includes(pugMembers[14])) {
+                                                                         message.channel.send("Hes Runner")}
+                                                                         else if ( message.content.includes(pugMembers[15])) {
+                                                                           message.channel.send("Hes Runner")}
+                                                                           else if ( message.content.includes(pugMembers[16])) {
+                                                                             message.channel.send("Hes Runner")}
+                                                                             else if ( message.content.includes(pugMembers[17])) {
+                                                                               message.channel.send("Hes Runner")}
+                                                                               else if ( message.content.includes(pugMembers[18])) {
+                                                                                 message.channel.send("Hes Runner")}
+                                                                                 else if ( message.content.includes(pugMembers[19])) {
+                                                                                   message.channel.send("Hes Runner")}
+
+                                                                                   else if ( message.content.includes(pugMemberss[0])) {
+                                                                                    message.channel.send("Hes Defender")}
+                                                                                    else if ( message.content.includes(pugMemberss[1])) {
+                                                                                     message.channel.send("Hes Defender")}
+                                                                                     else if ( message.content.includes(pugMemberss[2])) {
+                                                                                       message.channel.send("Hes Defender")}
+                                                                                       else if ( message.content.includes(pugMemberss[3])) {
+                                                                                         message.channel.send("Hes Defender")}
+                                                                                         else if ( message.content.includes(pugMemberss[4])) {
+                                                                                           message.channel.send("Hes Defender")}
+                                                                                           else if ( message.content.includes(pugMemberss[5])) {
+                                                                                             message.channel.send("Hes Defender")}
+                                                                                             else if ( message.content.includes(pugMemberss[6])) {
+                                                                                               message.channel.send("Hes Defender")}
+                                                                                               else if ( message.content.includes(pugMemberss[7])) {
+                                                                                                 message.channel.send("Hes Defender")}
+                                                                                                 else if ( message.content.includes(pugMemberss[8])) {
+                                                                                                   message.channel.send("Hes Defender")}
+                                                                                                   else if ( message.content.includes(pugMemberss[9])) {
+                                                                                                     message.channel.send("Hes Defender")}
+                                                                                                     else if ( message.content.includes(pugMemberss[10])) {
+                                                                                                       message.channel.send("Hes Defender")}
+                                                                                                       else if ( message.content.includes(pugMemberss[11])) {
+                                                                                                         message.channel.send("Hes Defender")}
+                                                                                                         else if ( message.content.includes(pugMemberss[12])) {
+                                                                                                           message.channel.send("Hes Defender")}
+                                                                                                           else if ( message.content.includes(pugMemberss[13])) {
+                                                                                                             message.channel.send("Hes Defender")}
+                                                                                                             else if ( message.content.includes(pugMemberss[14])) {
+                                                                                                               message.channel.send("Hes Defender")}
+                                                                                                               else if ( message.content.includes(pugMemberss[15])) {
+                                                                                                                 message.channel.send("Hes Defender")}
+                                                                                                                 else if ( message.content.includes(pugMemberss[16])) {
+                                                                                                                   message.channel.send("Hes Defender")}
+                                                                                                                   else if ( message.content.includes(pugMemberss[17])) {
+                                                                                                                     message.channel.send("Hes Defender")}
+                                                                                                                     else if ( message.content.includes(pugMemberss[18])) {
+                                                                                                                       message.channel.send("Hes Defender")}
+                                                                                                                       else if ( message.content.includes(pugMemberss[19])) {
+                                                                                                                         message.channel.send("Hes Defender")}
+                                                                                                                         else {
+
+                                                                                                                          message.channel.send("power not set")
+                                                                                                                         }
+      
+     }}}
 
      if (!message.guild) return
      if (message.content.startsWith('!Asupporter')) {
@@ -1441,9 +1579,9 @@ client.on('message', message => {
  });
  
  client.on('message', message => {
-     if (message.content == '!defender'){          
+     if (message.content == '!def'){          
          const embed = new RichEmbed()
-         .setTitle('----- Defender Players -----')
+         .setTitle('------------------ Defender Players ------------------')
          .setColor(0x0000ff)
          .addField('-------',`${pugMemberss[0]}`,true)
          .addField('-------',`${pugMemberss[1]}`,true)
