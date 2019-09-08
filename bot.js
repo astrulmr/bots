@@ -1003,23 +1003,7 @@ function addUserPug(message){
      if (pugMembers.length<=20){
       if ( message.mentions.users.first().includes(pugMembers[0])) {
         message.channel.send("u already in")}
-        else if ( message.mentions.users.first().includes(pugMembers[1])) {
-         message.channel.send("u already in")}
-         else if ( message.mentions.users.first().includes(pugMembers[2])) {
-           message.channel.send("u already in")}
-           else if ( message.mentions.users.first().includes(pugMembers[3])) {
-             message.channel.send("u already in")}
-             else if ( message.mentions.users.first().includes(pugMembers[4])) {
-               message.channel.send("u already in")}
-               else if ( message.mentions.users.first().includes(pugMembers[5])) {
-                 message.channel.send("u already in")}
-                 else if ( message.mentions.users.first().includes(pugMembers[6])) {
-                   message.channel.send("u already in")}
-                   else if ( message.mentions.users.first().includes(pugMembers[7])) {
-                     message.channel.send("u already in")}
-                     else if ( message.mentions.users.first().includes(pugMembers[8])) {
-                       message.channel.send("u already in")}
-                       
+                    
                                              else 
         pugMembers.push(message.mentions.users.first());
     }
