@@ -1057,10 +1057,10 @@ client.on('message', message => {
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
-     
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
       
 
-        if ( message.content.includes(pugMembers[0])) {
+        else if ( message.content.includes(pugMembers[0])) {
           message.channel.send("u already in")}
           else if ( message.content.includes(pugMembers[1])) {
            message.channel.send("u already in")}
@@ -1272,8 +1272,9 @@ client.on('message', message => {
      const member = message.guild.member(user)
      if ( member) {
       
-       
-           if ( message.content.includes(spugMembers[0])) {
+      if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+
+         else if ( message.content.includes(spugMembers[0])) {
           message.channel.send("u already in")}
           else if ( message.content.includes(spugMembers[1])) {
            message.channel.send("u already in")}
@@ -1479,9 +1480,10 @@ client.on('message', message => {
      const member = message.guild.member(user)
      if ( member) {
  
-       
+      if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+
          
-          if ( message.content.includes(pugMemberss[0])) {
+         else if ( message.content.includes(pugMemberss[0])) {
           message.channel.send("u already in")}
           else if ( message.content.includes(pugMemberss[1])) {
            message.channel.send("u already in")}
