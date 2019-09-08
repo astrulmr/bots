@@ -1083,8 +1083,8 @@ client.on('message', message => {
                                              else if ( message.content.includes(pugMembers[19])) {
                                                message.channel.send("u already in")}
         else {
-          checkPugSizes();
-          addUserPugs(message);}
+          checkPugSize();
+          addUserPug(message);}
   }
        
         
@@ -1119,7 +1119,7 @@ client.on('message', message => {
          // createNewPug(msg.author.username);
      }
    
-     message.channel.send(`${message.mentions.users.first()} added to Runner ${spugMembers.length}.`); // Mention the user that they are added into the queue
+     message.channel.send(`${message.mentions.users.first()} added to Supporter ${spugMembers.length}.`); // Mention the user that they are added into the queue
      // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
      message.delete()
      .then(message => console.log(spugMembers))
@@ -1133,7 +1133,7 @@ client.on('message', message => {
  client.on('message', message => {
      if (message.content == '!sup'){           
      const embed = new RichEmbed()
-     .setTitle('Runner Players \n\n')
+     .setTitle('---------Supporter Players--------- \n\n')
      .setColor(0x0000ff)
      .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
      .setDescription(`\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${spugMembers.length} players -----------`)
@@ -1192,8 +1192,8 @@ client.on('message', message => {
                                              else if ( message.content.includes(spugMembers[19])) {
                                                message.channel.send("u already in")}
         else {
-          checkPugSizes();
-         addUserPugs(message);}
+          checksPugSize();
+         saddUserPugs(message);}
  
         }
        }
