@@ -1275,45 +1275,50 @@ client.on('message', message => {
      if ( member) {
 
        if ( message.content.includes(spugMembers[0])) {
-        message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+        const embed = new RichEmbed()
+        .setTitle(message.mentions.users.first())
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.avatarURL)
+        .setDescription(message.mentions.users.first()+`  is a Supporter`)}
+         
         else if ( message.content.includes(spugMembers[1])) {
-         message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
          else if ( message.content.includes(spugMembers[2])) {
-           message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
            else if ( message.content.includes(spugMembers[3])) {
-             message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
              else if ( message.content.includes(spugMembers[4])) {
-               message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+               message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                else if ( message.content.includes(spugMembers[5])) {
-                 message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                 message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                  else if ( message.content.includes(spugMembers[6])) {
-                   message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                   message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                    else if ( message.content.includes(spugMembers[7])) {
-                     message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                     message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                      else if ( message.content.includes(spugMembers[8])) {
-                       message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                       message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                        else if ( message.content.includes(spugMembers[9])) {
-                         message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                          else if ( message.content.includes(spugMembers[10])) {
-                           message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                            else if ( message.content.includes(spugMembers[11])) {
-                             message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                              else if ( message.content.includes(spugMembers[12])) {
-                               message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                               message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                else if ( message.content.includes(spugMembers[13])) {
-                                 message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                 message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                  else if ( message.content.includes(spugMembers[14])) {
-                                   message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                   message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                    else if ( message.content.includes(spugMembers[15])) {
-                                     message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                     message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                      else if ( message.content.includes(spugMembers[16])) {
-                                       message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                       message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                        else if ( message.content.includes(spugMembers[17])) {
-                                         message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                          else if ( message.content.includes(spugMembers[18])) {
-                                           message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
                                            else if ( message.content.includes(spugMembers[19])) {
-                                             message.channel.send(message.mentions.users.first()+`  Hes Supporter`)}
+                                             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
 
                                              else if ( message.content.includes(pugMembers[0])) {
                                               message.channel.send(`Hes Runner`)}
