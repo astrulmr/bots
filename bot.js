@@ -1040,12 +1040,13 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
      
-        checkPugSize();
-        addUserPug(message);}
-
+     
            if ( message.content.includes(pugMembers[0])) {
          message.channel.send("u already in")}
-         
+         else {
+            checkPugSize();
+         addUserPug(message);}}
+ 
        
       
        
