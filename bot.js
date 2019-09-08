@@ -1032,7 +1032,7 @@ client.on('message', message => {
    
      
     }
-    if (member.hasPermission('ADMINISTRATOR')) {
+    if (message.member.hasPermission('ADMINISTRATOR')) {
      
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
@@ -1143,7 +1143,7 @@ client.on('message', message => {
    
      
     }                    
-    if (member.hasPermission('ADMINISTRATOR')) {
+    if (message.member.hasPermission('ADMINISTRATOR')) {
 
     if (!message.guild) return
     if (message.content.startsWith('!Asupporter')) {
@@ -1249,7 +1249,8 @@ client.on('message', message => {
          
         }
   
-        if (member.hasPermission('ADMINISTRATOR')) {
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+
           if (!message.guild) return
     if (message.content.startsWith('!Adefender')) {
     const user = message.mentions.users.first()
