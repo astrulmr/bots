@@ -1082,6 +1082,90 @@ client.on('message', message => {
                                              message.channel.send("u already in")}
                                              else if ( message.content.includes(pugMembers[19])) {
                                                message.channel.send("u already in")}
+
+                                               else if ( message.content.includes(spugMembers[0])) {
+                                                message.channel.send("u already in")}
+                                                else if ( message.content.includes(spugMembers[1])) {
+                                                 message.channel.send("u already in")}
+                                                 else if ( message.content.includes(spugMembers[2])) {
+                                                   message.channel.send("u already in")}
+                                                   else if ( message.content.includes(spugMembers[3])) {
+                                                     message.channel.send("u already in")}
+                                                     else if ( message.content.includes(spugMembers[4])) {
+                                                       message.channel.send("u already in")}
+                                                       else if ( message.content.includes(spugMembers[5])) {
+                                                         message.channel.send("u already in")}
+                                                         else if ( message.content.includes(spugMembers[6])) {
+                                                           message.channel.send("u already in")}
+                                                           else if ( message.content.includes(spugMembers[7])) {
+                                                             message.channel.send("u already in")}
+                                                             else if ( message.content.includes(spugMembers[8])) {
+                                                               message.channel.send("u already in")}
+                                                               else if ( message.content.includes(spugMembers[9])) {
+                                                                 message.channel.send("u already in")}
+                                                                 else if ( message.content.includes(spugMembers[10])) {
+                                                                   message.channel.send("u already in")}
+                                                                   else if ( message.content.includes(spugMembers[11])) {
+                                                                     message.channel.send("u already in")}
+                                                                     else if ( message.content.includes(spugMembers[12])) {
+                                                                       message.channel.send("u already in")}
+                                                                       else if ( message.content.includes(spugMembers[13])) {
+                                                                         message.channel.send("u already in")}
+                                                                         else if ( message.content.includes(spugMembers[14])) {
+                                                                           message.channel.send("u already in")}
+                                                                           else if ( message.content.includes(spugMembers[15])) {
+                                                                             message.channel.send("u already in")}
+                                                                             else if ( message.content.includes(spugMembers[16])) {
+                                                                               message.channel.send("u already in")}
+                                                                               else if ( message.content.includes(spugMembers[17])) {
+                                                                                 message.channel.send("u already in")}
+                                                                                 else if ( message.content.includes(spugMembers[18])) {
+                                                                                   message.channel.send("u already in")}
+                                                                                   else if ( message.content.includes(spugMembers[19])) {
+                                                                                     message.channel.send("u already in")}
+
+                                                                                     else if ( message.content.includes(pugMemberss[0])) {
+                                                                                      message.channel.send("u already in")}
+                                                                                      else if ( message.content.includes(pugMemberss[1])) {
+                                                                                       message.channel.send("u already in")}
+                                                                                       else if ( message.content.includes(pugMemberss[2])) {
+                                                                                         message.channel.send("u already in")}
+                                                                                         else if ( message.content.includes(pugMemberss[3])) {
+                                                                                           message.channel.send("u already in")}
+                                                                                           else if ( message.content.includes(pugMemberss[4])) {
+                                                                                             message.channel.send("u already in")}
+                                                                                             else if ( message.content.includes(pugMemberss[5])) {
+                                                                                               message.channel.send("u already in")}
+                                                                                               else if ( message.content.includes(pugMemberss[6])) {
+                                                                                                 message.channel.send("u already in")}
+                                                                                                 else if ( message.content.includes(pugMemberss[7])) {
+                                                                                                   message.channel.send("u already in")}
+                                                                                                   else if ( message.content.includes(pugMemberss[8])) {
+                                                                                                     message.channel.send("u already in")}
+                                                                                                     else if ( message.content.includes(pugMemberss[9])) {
+                                                                                                       message.channel.send("u already in")}
+                                                                                                       else if ( message.content.includes(pugMemberss[10])) {
+                                                                                                         message.channel.send("u already in")}
+                                                                                                         else if ( message.content.includes(pugMemberss[11])) {
+                                                                                                           message.channel.send("u already in")}
+                                                                                                           else if ( message.content.includes(pugMemberss[12])) {
+                                                                                                             message.channel.send("u already in")}
+                                                                                                             else if ( message.content.includes(pugMemberss[13])) {
+                                                                                                               message.channel.send("u already in")}
+                                                                                                               else if ( message.content.includes(pugMemberss[14])) {
+                                                                                                                 message.channel.send("u already in")}
+                                                                                                                 else if ( message.content.includes(pugMemberss[15])) {
+                                                                                                                   message.channel.send("u already in")}
+                                                                                                                   else if ( message.content.includes(pugMemberss[16])) {
+                                                                                                                     message.channel.send("u already in")}
+                                                                                                                     else if ( message.content.includes(pugMemberss[17])) {
+                                                                                                                       message.channel.send("u already in")}
+                                                                                                                       else if ( message.content.includes(pugMemberss[18])) {
+                                                                                                                         message.channel.send("u already in")}
+                                                                                                                         else if ( message.content.includes(pugMemberss[19])) {
+                                                                                                                           message.channel.send("u already in")}
+                                                                            
+                                                                                    
         else {
           checkPugSize();
           addUserPug(message);}
@@ -1135,83 +1219,14 @@ client.on('message', message => {
      const embed = new RichEmbed()
      .setTitle('---------Supporter Players--------- \n\n')
      .setColor(0x0000ff)
-     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png \n\n')
+     .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D \n\n')
      .setDescription(`\n\n\n\n\n\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${spugMembers.length} players -----------`)
      message.channel.send(embed)
  
     
       
      }    
-     if (!message.guild) return
-     if (message.content.startsWith('!delete')) {
-     const user = message.mentions.users.first()
-     if (user) {
-     const member = message.guild.member(user)
-     if ( member) {                
-
-      if ( message.content.includes(spugMembers[0])) {
-        delete spugMembers[0]
-        spugMembers.length = spugMembers.length-1;}
-        else if ( message.content.includes(spugMembers[1])) {
-         delete spugMembers[1]
-        spugMembers.length = spugMembers.length-1;}
-         else if ( message.content.includes(spugMembers[2])) {
-           delete spugMembers[2]
-           spugMembers.length = spugMembers.length-1;}
-           else if ( message.content.includes(spugMembers[3])) {
-             delete spugMembers[3]
-             spugMembers.length = spugMembers.length-1;}
-             else if ( message.content.includes(spugMembers[4])) {
-               delete spugMembers[4]
-               spugMembers.length = spugMembers.length-1;}
-               else if ( message.content.includes(spugMembers[5])) {
-                 delete spugMembers[5]
-                 spugMembers.length = spugMembers.length-1;}
-                 else if ( message.content.includes(spugMembers[6])) {
-                   delete spugMembers[6]
-                   spugMembers.length = spugMembers.length-1;}
-                   else if ( message.content.includes(spugMembers[7])) {
-                     delete spugMembers[7]
-                     spugMembers.length = spugMembers.length-1;}
-                     else if ( message.content.includes(spugMembers[8])) {
-                       delete spugMembers[8]
-                       spugMembers.length = spugMembers.length-1;}
-                       else if ( message.content.includes(spugMembers[9])) {
-                         delete spugMembers[9]
-                         spugMembers.length = spugMembers.length-1;}
-                         else if ( message.content.includes(spugMembers[10])) {
-                           delete spugMembers[10]
-                           spugMembers.length = spugMembers.length-1;}
-                           else if ( message.content.includes(spugMembers[11])) {
-                             delete spugMembers[11]
-                             spugMembers.length = spugMembers.length-1;}
-                             else if ( message.content.includes(spugMembers[12])) {
-                               delete spugMembers[12]
-                               spugMembers.length = spugMembers.length-1;}
-                               else if ( message.content.includes(spugMembers[13])) {
-                                 delete spugMembers[13]
-                                 spugMembers.length = spugMembers.length-1;}
-                                 else if ( message.content.includes(spugMembers[14])) {
-                                   delete spugMembers[14]
-                                   spugMembers.length = spugMembers.length-1;}
-                                   else if ( message.content.includes(spugMembers[15])) {
-                                     delete spugMembers[15]
-                                     spugMembers.length = spugMembers.length-1;}
-                                     else if ( message.content.includes(spugMembers[16])) {
-                                       delete spugMembers[16]
-                                       spugMembers.length = spugMembers.length-1;}
-                                       else if ( message.content.includes(spugMembers[17])) {
-                                         delete spugMembers[17]
-                                         spugMembers.length = spugMembers.length-1;}
-                                         else if ( message.content.includes(spugMembers[18])) {
-                                           delete spugMembers[18]
-                                           spugMembers.length = spugMembers.length-1;}
-                                           else if ( message.content.includes(spugMembers[19])) {
-                                             delete spugMembers[19]
-                                             spugMembers.length = spugMembers.length-1;}
-
-     }}}
-  
+     
 
      if (!message.guild) return
      if (message.content.startsWith('!Asupporter')) {
@@ -1261,6 +1276,89 @@ client.on('message', message => {
                                              message.channel.send("u already in")}
                                              else if ( message.content.includes(spugMembers[19])) {
                                                message.channel.send("u already in")}
+
+                                               else if ( message.content.includes(pugMembers[0])) {
+                                                message.channel.send("u already in")}
+                                                else if ( message.content.includes(pugMembers[1])) {
+                                                 message.channel.send("u already in")}
+                                                 else if ( message.content.includes(pugMembers[2])) {
+                                                   message.channel.send("u already in")}
+                                                   else if ( message.content.includes(pugMembers[3])) {
+                                                     message.channel.send("u already in")}
+                                                     else if ( message.content.includes(pugMembers[4])) {
+                                                       message.channel.send("u already in")}
+                                                       else if ( message.content.includes(pugMembers[5])) {
+                                                         message.channel.send("u already in")}
+                                                         else if ( message.content.includes(pugMembers[6])) {
+                                                           message.channel.send("u already in")}
+                                                           else if ( message.content.includes(pugMembers[7])) {
+                                                             message.channel.send("u already in")}
+                                                             else if ( message.content.includes(pugMembers[8])) {
+                                                               message.channel.send("u already in")}
+                                                               else if ( message.content.includes(pugMembers[9])) {
+                                                                 message.channel.send("u already in")}
+                                                                 else if ( message.content.includes(pugMembers[10])) {
+                                                                   message.channel.send("u already in")}
+                                                                   else if ( message.content.includes(pugMembers[11])) {
+                                                                     message.channel.send("u already in")}
+                                                                     else if ( message.content.includes(pugMembers[12])) {
+                                                                       message.channel.send("u already in")}
+                                                                       else if ( message.content.includes(pugMembers[13])) {
+                                                                         message.channel.send("u already in")}
+                                                                         else if ( message.content.includes(pugMembers[14])) {
+                                                                           message.channel.send("u already in")}
+                                                                           else if ( message.content.includes(pugMembers[15])) {
+                                                                             message.channel.send("u already in")}
+                                                                             else if ( message.content.includes(pugMembers[16])) {
+                                                                               message.channel.send("u already in")}
+                                                                               else if ( message.content.includes(pugMembers[17])) {
+                                                                                 message.channel.send("u already in")}
+                                                                                 else if ( message.content.includes(pugMembers[18])) {
+                                                                                   message.channel.send("u already in")}
+                                                                                   else if ( message.content.includes(pugMembers[19])) {
+                                                                                     message.channel.send("u already in")}
+
+                                                                                     else if ( message.content.includes(pugMemberss[0])) {
+                                                                                      message.channel.send("u already in")}
+                                                                                      else if ( message.content.includes(pugMemberss[1])) {
+                                                                                       message.channel.send("u already in")}
+                                                                                       else if ( message.content.includes(pugMemberss[2])) {
+                                                                                         message.channel.send("u already in")}
+                                                                                         else if ( message.content.includes(pugMemberss[3])) {
+                                                                                           message.channel.send("u already in")}
+                                                                                           else if ( message.content.includes(pugMemberss[4])) {
+                                                                                             message.channel.send("u already in")}
+                                                                                             else if ( message.content.includes(pugMemberss[5])) {
+                                                                                               message.channel.send("u already in")}
+                                                                                               else if ( message.content.includes(pugMemberss[6])) {
+                                                                                                 message.channel.send("u already in")}
+                                                                                                 else if ( message.content.includes(pugMemberss[7])) {
+                                                                                                   message.channel.send("u already in")}
+                                                                                                   else if ( message.content.includes(pugMemberss[8])) {
+                                                                                                     message.channel.send("u already in")}
+                                                                                                     else if ( message.content.includes(pugMemberss[9])) {
+                                                                                                       message.channel.send("u already in")}
+                                                                                                       else if ( message.content.includes(pugMemberss[10])) {
+                                                                                                         message.channel.send("u already in")}
+                                                                                                         else if ( message.content.includes(pugMemberss[11])) {
+                                                                                                           message.channel.send("u already in")}
+                                                                                                           else if ( message.content.includes(pugMemberss[12])) {
+                                                                                                             message.channel.send("u already in")}
+                                                                                                             else if ( message.content.includes(pugMemberss[13])) {
+                                                                                                               message.channel.send("u already in")}
+                                                                                                               else if ( message.content.includes(pugMemberss[14])) {
+                                                                                                                 message.channel.send("u already in")}
+                                                                                                                 else if ( message.content.includes(pugMemberss[15])) {
+                                                                                                                   message.channel.send("u already in")}
+                                                                                                                   else if ( message.content.includes(pugMemberss[16])) {
+                                                                                                                     message.channel.send("u already in")}
+                                                                                                                     else if ( message.content.includes(pugMemberss[17])) {
+                                                                                                                       message.channel.send("u already in")}
+                                                                                                                       else if ( message.content.includes(pugMemberss[18])) {
+                                                                                                                         message.channel.send("u already in")}
+                                                                                                                         else if ( message.content.includes(pugMemberss[19])) {
+                                                                                                                           message.channel.send("u already in")}
+                                                                            
         else {
           checksPugSize();
           saddUserPug(message);}
@@ -1367,6 +1465,88 @@ client.on('message', message => {
                                              message.channel.send("u already in")}
                                              else if ( message.content.includes(pugMemberss[19])) {
                                                message.channel.send("u already in")}
+
+                                               else if ( message.content.includes(pugMembers[0])) {
+                                                message.channel.send("u already in")}
+                                                else if ( message.content.includes(pugMembers[1])) {
+                                                 message.channel.send("u already in")}
+                                                 else if ( message.content.includes(pugMembers[2])) {
+                                                   message.channel.send("u already in")}
+                                                   else if ( message.content.includes(pugMembers[3])) {
+                                                     message.channel.send("u already in")}
+                                                     else if ( message.content.includes(pugMembers[4])) {
+                                                       message.channel.send("u already in")}
+                                                       else if ( message.content.includes(pugMembers[5])) {
+                                                         message.channel.send("u already in")}
+                                                         else if ( message.content.includes(pugMembers[6])) {
+                                                           message.channel.send("u already in")}
+                                                           else if ( message.content.includes(pugMembers[7])) {
+                                                             message.channel.send("u already in")}
+                                                             else if ( message.content.includes(pugMembers[8])) {
+                                                               message.channel.send("u already in")}
+                                                               else if ( message.content.includes(pugMembers[9])) {
+                                                                 message.channel.send("u already in")}
+                                                                 else if ( message.content.includes(pugMembers[10])) {
+                                                                   message.channel.send("u already in")}
+                                                                   else if ( message.content.includes(pugMembers[11])) {
+                                                                     message.channel.send("u already in")}
+                                                                     else if ( message.content.includes(pugMembers[12])) {
+                                                                       message.channel.send("u already in")}
+                                                                       else if ( message.content.includes(pugMembers[13])) {
+                                                                         message.channel.send("u already in")}
+                                                                         else if ( message.content.includes(pugMembers[14])) {
+                                                                           message.channel.send("u already in")}
+                                                                           else if ( message.content.includes(pugMembers[15])) {
+                                                                             message.channel.send("u already in")}
+                                                                             else if ( message.content.includes(pugMembers[16])) {
+                                                                               message.channel.send("u already in")}
+                                                                               else if ( message.content.includes(pugMembers[17])) {
+                                                                                 message.channel.send("u already in")}
+                                                                                 else if ( message.content.includes(pugMembers[18])) {
+                                                                                   message.channel.send("u already in")}
+                                                                                   else if ( message.content.includes(pugMembers[19])) {
+                                                                                     message.channel.send("u already in")}
+                                      
+                                                                                     else if ( message.content.includes(spugMembers[0])) {
+                                                                                      message.channel.send("u already in")}
+                                                                                      else if ( message.content.includes(spugMembers[1])) {
+                                                                                       message.channel.send("u already in")}
+                                                                                       else if ( message.content.includes(spugMembers[2])) {
+                                                                                         message.channel.send("u already in")}
+                                                                                         else if ( message.content.includes(spugMembers[3])) {
+                                                                                           message.channel.send("u already in")}
+                                                                                           else if ( message.content.includes(spugMembers[4])) {
+                                                                                             message.channel.send("u already in")}
+                                                                                             else if ( message.content.includes(spugMembers[5])) {
+                                                                                               message.channel.send("u already in")}
+                                                                                               else if ( message.content.includes(spugMembers[6])) {
+                                                                                                 message.channel.send("u already in")}
+                                                                                                 else if ( message.content.includes(spugMembers[7])) {
+                                                                                                   message.channel.send("u already in")}
+                                                                                                   else if ( message.content.includes(spugMembers[8])) {
+                                                                                                     message.channel.send("u already in")}
+                                                                                                     else if ( message.content.includes(spugMembers[9])) {
+                                                                                                       message.channel.send("u already in")}
+                                                                                                       else if ( message.content.includes(spugMembers[10])) {
+                                                                                                         message.channel.send("u already in")}
+                                                                                                         else if ( message.content.includes(spugMembers[11])) {
+                                                                                                           message.channel.send("u already in")}
+                                                                                                           else if ( message.content.includes(spugMembers[12])) {
+                                                                                                             message.channel.send("u already in")}
+                                                                                                             else if ( message.content.includes(spugMembers[13])) {
+                                                                                                               message.channel.send("u already in")}
+                                                                                                               else if ( message.content.includes(spugMembers[14])) {
+                                                                                                                 message.channel.send("u already in")}
+                                                                                                                 else if ( message.content.includes(spugMembers[15])) {
+                                                                                                                   message.channel.send("u already in")}
+                                                                                                                   else if ( message.content.includes(spugMembers[16])) {
+                                                                                                                     message.channel.send("u already in")}
+                                                                                                                     else if ( message.content.includes(spugMembers[17])) {
+                                                                                                                       message.channel.send("u already in")}
+                                                                                                                       else if ( message.content.includes(spugMembers[18])) {
+                                                                                                                         message.channel.send("u already in")}
+                                                                                                                         else if ( message.content.includes(spugMembers[19])) {
+                                                                                                                           message.channel.send("u already in")}
            else {
              checkPugSizes();
             addUserPugs(message);}
