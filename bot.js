@@ -1043,9 +1043,7 @@ client.on('message', message => {
       if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("u dont have permission")
 
     
-        checkPugSize();
-        addUserPug(message);}
-
+       
           else if ( message.mentions.users.first().includes(pugMembers[0])) {
          message.channel.send("u already in")}
          else if ( message.mentions.users.first().includes(pugMembers[1])) {
@@ -1086,6 +1084,10 @@ client.on('message', message => {
                                             message.channel.send("u already in")}
                                             else if ( message.mentions.users.first().includes(pugMembers[19])) {
                                               message.channel.send("u already in")}
+                                               else {
+                                               checkPugSize();
+                                               addUserPug(message);}}
+                                       
        
       }
     
@@ -1154,8 +1156,7 @@ client.on('message', message => {
       if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("u dont have permission")
 
 
-       checksPugSize();
-        saddUserPug(message);}
+     
 
           else if ( message.mentions.users.first().includes(spugMembers[0])) {
          message.channel.send("u already in")}
@@ -1197,7 +1198,10 @@ client.on('message', message => {
                                             message.channel.send("u already in")}
                                             else if ( message.mentions.users.first().includes(spugMembers[19])) {
                                               message.channel.send("u already in")}
-       
+                                              else {
+                                                checkPugSize();
+                                                addUserPug(message);}}
+
       }
        
     }
@@ -1260,8 +1264,7 @@ client.on('message', message => {
       if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("u dont have permission")
 
       
-        checkPugSizes();
-        addUserPugs(message);}
+      
 
           else if ( message.mentions.users.first().includes(pugMemberss[0])) {
          message.channel.send("u already in")}
@@ -1303,7 +1306,9 @@ client.on('message', message => {
                                             message.channel.send("u already in")}
                                             else if ( message.mentions.users.first().includes(pugMemberss[19])) {
                                               message.channel.send("u already in")}
-          
+                                              else {
+                                                checkPugSize();
+                                                addUserPug(message);}}
          
       
                                             }
