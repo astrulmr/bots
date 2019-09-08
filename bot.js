@@ -1089,6 +1089,8 @@ client.on('message', message => {
        
     }
   }
+  else { message.channel.send("u dont have permission")}
+
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1197,6 +1199,7 @@ client.on('message', message => {
       }
        
     }}
+    else { message.channel.send("u dont have permission")}
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const pugSizes = 20; // Maximum amount of players in the PUG
@@ -1304,6 +1307,8 @@ client.on('message', message => {
                                             }
        
                                           }}
+                                          else { message.channel.send("u dont have permission")}
+
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
