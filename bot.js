@@ -1026,7 +1026,7 @@ client.on('message', message => {
     .setTitle('Runner Players \n\n')
     .setColor(0xFF0000	)
     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-    .addField(`${pugMembers[0].name}`,`${pugMembers[0]}`,true)
+    .addField(`${pugMembers.name}`,`${pugMembers[0]}`,true)
     .addField('-------',`${pugMembers[1]}`,true)
     .addField('-------',`${pugMembers[2]}`,true)
     .addField('-------',`${pugMembers[3]}`,true)
