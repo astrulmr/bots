@@ -1040,7 +1040,7 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
 
-      if(!message.member.haspermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
+      if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
 
      else {
         checkPugSize();
@@ -1151,7 +1151,7 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
      
-      if(!message.member.haspermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
+      if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
 
 else{
        checksPugSize();
@@ -1257,7 +1257,7 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
 
-      if(!message.member.haspermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
+      if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("u dont have permission")
 
       else{
         checkPugSizes();
