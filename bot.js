@@ -1193,7 +1193,7 @@ client.on('message', message => {
                                                message.channel.send("u already in")}
         else {
           checksPugSize();
-         saddUserPugs(message);}
+          saddUserPug(message);}
  
         }
        }
