@@ -1135,14 +1135,26 @@ client.on('message', message => {
      const embed = new RichEmbed()
      .setTitle('---------Supporter Players--------- \n\n')
      .setColor(0x0000ff)
-     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
+     .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png \n\n')
      .setDescription(`\n\n\n\n\n\n\n\n ${spugMembers[0]}\n\n ${spugMembers[1]} \n\n ${spugMembers[2]}\n\n ${spugMembers[3]} \n\n ${spugMembers[4]} \n\n ${spugMembers[5]} \n\n ${spugMembers[6]} \n\n ${spugMembers[7]} \n\n ${spugMembers[8]} \n\n ${spugMembers[9]} \n\n ${spugMembers[10]} \n\n ${spugMembers[11]} \n\n ${spugMembers[12]} \n\n ${spugMembers[13]} \n\n ${spugMembers[14]} \n\n ${spugMembers[15]} \n\n ${spugMembers[16]} \n\n ${spugMembers[17]} \n\n ${spugMembers[18]} \n\n ${spugMembers[19]} \n\n\n ----------- ${spugMembers.length} players -----------`)
      message.channel.send(embed)
  
     
       
-     }                    
- 
+     }    
+     if (!message.guild) return
+     if (message.content.startsWith('!delete')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+     if ( member) {                
+
+      if ( message.content.includes(spugMembers[0])) {
+        delete spugMembers[0]
+ }
+     }}}
+  
+
      if (!message.guild) return
      if (message.content.startsWith('!Asupporter')) {
      const user = message.mentions.users.first()
