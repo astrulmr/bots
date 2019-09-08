@@ -1004,9 +1004,7 @@ function addUserPug(message){
      
        pugMembers.push(message.mentions.users.first());
 
-      if ( message.mentions.users.first().includes(pugMembers[0])) {
-        message.channel.send("u already in")}
-                    
+      
                                             
        
     }
