@@ -999,8 +999,47 @@ function checkPugSize(){
 function addUserPug(message){
     // console.log(msg.author);
     // Add user to the pugMembers Array if the array is not full
-
-    if (pugMembers.length<=20){
+    if ( message.mentions.users.first().includes(pugMembers[0])) {
+      message.channel.send("u already in")}
+      else if ( message.mentions.users.first().includes(pugMembers[1])) {
+       message.channel.send("u already in")}
+       else if ( message.mentions.users.first().includes(pugMembers[2])) {
+         message.channel.send("u already in")}
+         else if ( message.mentions.users.first().includes(pugMembers[3])) {
+           message.channel.send("u already in")}
+           else if ( message.mentions.users.first().includes(pugMembers[4])) {
+             message.channel.send("u already in")}
+             else if ( message.mentions.users.first().includes(pugMembers[5])) {
+               message.channel.send("u already in")}
+               else if ( message.mentions.users.first().includes(pugMembers[6])) {
+                 message.channel.send("u already in")}
+                 else if ( message.mentions.users.first().includes(pugMembers[7])) {
+                   message.channel.send("u already in")}
+                   else if ( message.mentions.users.first().includes(pugMembers[8])) {
+                     message.channel.send("u already in")}
+                     else if ( message.mentions.users.first().includes(pugMembers[9])) {
+                       message.channel.send("u already in")}
+                       else if ( message.mentions.users.first().includes(pugMembers[10])) {
+                         message.channel.send("u already in")}
+                         else if ( message.mentions.users.first().includes(pugMembers[11])) {
+                           message.channel.send("u already in")}
+                           else if ( message.mentions.users.first().includes(pugMembers[12])) {
+                             message.channel.send("u already in")}
+                             else if ( message.mentions.users.first().includes(pugMembers[13])) {
+                               message.channel.send("u already in")}
+                               else if ( message.mentions.users.first().includes(pugMembers[14])) {
+                                 message.channel.send("u already in")}
+                                 else if ( message.mentions.users.first().includes(pugMembers[15])) {
+                                   message.channel.send("u already in")}
+                                   else if ( message.mentions.users.first().includes(pugMembers[16])) {
+                                     message.channel.send("u already in")}
+                                     else if ( message.mentions.users.first().includes(pugMembers[17])) {
+                                       message.channel.send("u already in")}
+                                       else if ( message.mentions.users.first().includes(pugMembers[18])) {
+                                         message.channel.send("u already in")}
+                                         else if ( message.mentions.users.first().includes(pugMembers[19])) {
+                                           message.channel.send("u already in")}
+    else if (pugMembers.length<=20){
         pugMembers.push(message.mentions.users.first());
     }
     
@@ -1038,52 +1077,13 @@ client.on('message', message => {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
-  
-           if ( message.mentions.users.first().includes(pugMembers[0])) {
-         message.channel.send("u already in")}
-         else if ( message.mentions.users.first().includes(pugMembers[1])) {
-          message.channel.send("u already in")}
-          else if ( message.mentions.users.first().includes(pugMembers[2])) {
-            message.channel.send("u already in")}
-            else if ( message.mentions.users.first().includes(pugMembers[3])) {
-              message.channel.send("u already in")}
-              else if ( message.mentions.users.first().includes(pugMembers[4])) {
-                message.channel.send("u already in")}
-                else if ( message.mentions.users.first().includes(pugMembers[5])) {
-                  message.channel.send("u already in")}
-                  else if ( message.mentions.users.first().includes(pugMembers[6])) {
-                    message.channel.send("u already in")}
-                    else if ( message.mentions.users.first().includes(pugMembers[7])) {
-                      message.channel.send("u already in")}
-                      else if ( message.mentions.users.first().includes(pugMembers[8])) {
-                        message.channel.send("u already in")}
-                        else if ( message.mentions.users.first().includes(pugMembers[9])) {
-                          message.channel.send("u already in")}
-                          else if ( message.mentions.users.first().includes(pugMembers[10])) {
-                            message.channel.send("u already in")}
-                            else if ( message.mentions.users.first().includes(pugMembers[11])) {
-                              message.channel.send("u already in")}
-                              else if ( message.mentions.users.first().includes(pugMembers[12])) {
-                                message.channel.send("u already in")}
-                                else if ( message.mentions.users.first().includes(pugMembers[13])) {
-                                  message.channel.send("u already in")}
-                                  else if ( message.mentions.users.first().includes(pugMembers[14])) {
-                                    message.channel.send("u already in")}
-                                    else if ( message.mentions.users.first().includes(pugMembers[15])) {
-                                      message.channel.send("u already in")}
-                                      else if ( message.mentions.users.first().includes(pugMembers[16])) {
-                                        message.channel.send("u already in")}
-                                        else if ( message.mentions.users.first().includes(pugMembers[17])) {
-                                          message.channel.send("u already in")}
-                                          else if ( message.mentions.users.first().includes(pugMembers[18])) {
-                                            message.channel.send("u already in")}
-                                            else if ( message.mentions.users.first().includes(pugMembers[19])) {
-                                              message.channel.send("u already in")}
-       else  {
+  if (member){
+          
+      
      
         checkPugSize();
         addUserPug(message);}
-
+       
       
        
     }
