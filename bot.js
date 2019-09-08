@@ -1276,9 +1276,9 @@ client.on('message', message => {
 
        if ( message.content.includes(spugMembers[0])) {
         const embed = new RichEmbed()
-        .setTitle(spugMembers[0])
+        .setTitle(message.mentions.users.first())
         .setColor(0x0000ff)
-        .setDescription(message.mentions.users.first()+`  is a Supporter`)}
+        .setDescription("  is a Supporter")}
          
         else if ( message.content.includes(spugMembers[1])) {
          message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
