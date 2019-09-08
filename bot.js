@@ -1151,7 +1151,65 @@ client.on('message', message => {
 
       if ( message.content.includes(spugMembers[0])) {
         delete spugMembers[0]
- }
+        spugMembers.length = spugMembers.length-1;}
+        else if ( message.content.includes(spugMembers[1])) {
+         delete spugMembers[1]
+        spugMembers.length = spugMembers.length-1;}
+         else if ( message.content.includes(spugMembers[2])) {
+           delete spugMembers[2]
+           spugMembers.length = spugMembers.length-1;}
+           else if ( message.content.includes(spugMembers[3])) {
+             delete spugMembers[3]
+             spugMembers.length = spugMembers.length-1;}
+             else if ( message.content.includes(spugMembers[4])) {
+               delete spugMembers[4]
+               spugMembers.length = spugMembers.length-1;}
+               else if ( message.content.includes(spugMembers[5])) {
+                 delete spugMembers[5]
+                 spugMembers.length = spugMembers.length-1;}
+                 else if ( message.content.includes(spugMembers[6])) {
+                   delete spugMembers[6]
+                   spugMembers.length = spugMembers.length-1;}
+                   else if ( message.content.includes(spugMembers[7])) {
+                     delete spugMembers[7]
+                     spugMembers.length = spugMembers.length-1;}
+                     else if ( message.content.includes(spugMembers[8])) {
+                       delete spugMembers[8]
+                       spugMembers.length = spugMembers.length-1;}
+                       else if ( message.content.includes(spugMembers[9])) {
+                         delete spugMembers[9]
+                         spugMembers.length = spugMembers.length-1;}
+                         else if ( message.content.includes(spugMembers[10])) {
+                           delete spugMembers[10]
+                           spugMembers.length = spugMembers.length-1;}
+                           else if ( message.content.includes(spugMembers[11])) {
+                             delete spugMembers[11]
+                             spugMembers.length = spugMembers.length-1;}
+                             else if ( message.content.includes(spugMembers[12])) {
+                               delete spugMembers[12]
+                               spugMembers.length = spugMembers.length-1;}
+                               else if ( message.content.includes(spugMembers[13])) {
+                                 delete spugMembers[13]
+                                 spugMembers.length = spugMembers.length-1;}
+                                 else if ( message.content.includes(spugMembers[14])) {
+                                   delete spugMembers[14]
+                                   spugMembers.length = spugMembers.length-1;}
+                                   else if ( message.content.includes(spugMembers[15])) {
+                                     delete spugMembers[15]
+                                     spugMembers.length = spugMembers.length-1;}
+                                     else if ( message.content.includes(spugMembers[16])) {
+                                       delete spugMembers[16]
+                                       spugMembers.length = spugMembers.length-1;}
+                                       else if ( message.content.includes(spugMembers[17])) {
+                                         delete spugMembers[17]
+                                         spugMembers.length = spugMembers.length-1;}
+                                         else if ( message.content.includes(spugMembers[18])) {
+                                           delete spugMembers[18]
+                                           spugMembers.length = spugMembers.length-1;}
+                                           else if ( message.content.includes(spugMembers[19])) {
+                                             delete spugMembers[19]
+                                             spugMembers.length = spugMembers.length-1;}
+
      }}}
   
 
@@ -1210,7 +1268,7 @@ client.on('message', message => {
         }
        }
         
-     }
+      }
  });
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
  const pugSizes = 20; // Maximum amount of players in the PUG
