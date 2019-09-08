@@ -1043,9 +1043,7 @@ client.on('message', message => {
     .addField('',`${pugMembers[14]}`,true)
     .addField('',`${pugMembers[15]}`,true)
     .addField('',`${pugMembers[16]}`,true)
-    .addField('',`${pugMembers[17]}`,true)
-    .addField('',`${pugMembers[18]}`,true)
-    .addField('',`${pugMembers[19]}`,true)
+ 
     message.channel.send(embed)
 
    
