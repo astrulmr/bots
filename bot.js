@@ -1031,6 +1031,7 @@ client.on('message', message => {
     .addField('-------',`${pugMembers[13]}`,true)
     .addField('-------',`${pugMembers[14]}`,true)
     .addField('-------',`${pugMembers[15]}`,true)
+    .addField('-------',`${pugMembers[16]}`,true)
     .addField('-------',`${pugMembers[17]}`,true)
     .addField('-------',`${pugMembers[18]}`,true)
     .addField('-------',`${pugMembers[19]}`,true)
@@ -1039,45 +1040,576 @@ client.on('message', message => {
    
      
     }
+
+
+
     if (!message.guild) return
-    if (message.content.startsWith('!0delete')) {
+    if (message.content.startsWith('!0sdelete')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
     if ( message.content.includes(pugMembers[0])) { 
-
+    if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
       var keyToDelete = 0 ;
     
-      delete pugMembers[keyToDelete];
+      delete pugMembers[keyToDelete];}
   
     }}}}
     if (!message.guild) return
-    if (message.content.startsWith('!2delete')) {
+    if (message.content.startsWith('!1rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[1])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 1 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    
+    if (!message.guild) return
+    if (message.content.startsWith('!2rdelete')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
     if ( message.content.includes(pugMembers[2])) { 
-
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
       var keyToDelete = 2 ;
     
       delete pugMembers[keyToDelete];
   
-    }}}}
+    }}}}}
 
+    if (!message.guild) return
+    if (message.content.startsWith('!3rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[3])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 3 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!4rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[4])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 4 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!5rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[5])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 5 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!6rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[6])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 6 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!7rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[7])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 7 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!8rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[8])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 8 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!9rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[9])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 9 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!9rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[9])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 9 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!10rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[10])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 10 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!11rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[11])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 11 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!12rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[12])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 12 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!13rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[13])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 13 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!14rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[14])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 14 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!15rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[15])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 15 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!16rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[16])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 16 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!17rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[17])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 17 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!18rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[18])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 18 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!19rdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[19])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 19 ;
+    
+      delete pugMembers[keyToDelete];
+  
+    }}}}}
+
+    //====================================================================================================
 
     if (!message.guild) return
     if (message.content.startsWith('!0Arunner')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
-    if ( member) {
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
     pugMembers[0]=message.mentions.users.first()
       checkPugSize();
      
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!1Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[1]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!2Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[2]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!3Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[3]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!4Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[4]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!5Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[5]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!6Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[6]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!7Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[7]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!8Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[8]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!9Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[9]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!10Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[10]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!11Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[11]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!12Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[12]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!13Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[13]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!14Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[14]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!15Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[15]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!16Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[16]=message.mentions.users.first()
+      checkPugSize();
+     
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!17Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[17]=message.mentions.users.first()
+      checkPugSize();}
+     
     }}}
-
+    if (!message.guild) return
+    if (message.content.startsWith('!18Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[18]=message.mentions.users.first()
+      checkPugSize();}
+     
+    }}}
+    if (!message.guild) return
+    if (message.content.startsWith('!19Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+     if ( member) {
+                if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+           else {
+           
+    pugMembers[19]=message.mentions.users.first()
+      checkPugSize();}
+     
+    }}}
     
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
@@ -1314,10 +1846,12 @@ client.on('message', message => {
       }
       if ( message.content.includes(spugMembers[1])) {
         const embed = new RichEmbed()
-        .setTitle("Supporter")
+        .setTitle("Name")
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .setDescription(message.mentions.users.first())
+        addField('Position','Supporter',true)
+        addField('Legend','hattori',true)
         message.channel.send(embed)
       }
       
@@ -1443,9 +1977,587 @@ client.on('message', message => {
                                                                                                                          else {
 
                                                                                                                           message.channel.send("power not set")
-                                                                                                                         }
+       }}}  
+      
+       if (!message.guild) return
+    if (message.content.startsWith('!0sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[0])) { 
+    if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 0 ;
+    
+      delete spugMembers[keyToDelete];}
+  
+    }}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!1sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[1])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 1 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    
+    if (!message.guild) return
+    if (message.content.startsWith('!2sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[2])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 2 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!3sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[3])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 3 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!4sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[4])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 4 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!5sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[5])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 5 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!6sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[6])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 6 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!7sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[7])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 7 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!8sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[8])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 8 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!9sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[9])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 9 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!9sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[9])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 9 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!10sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[10])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 10 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!11sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[11])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 11 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!12sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[12])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 12 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!13sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[13])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 13 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+    if (!message.guild) return
+    if (message.content.startsWith('!14sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[14])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 14 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!15sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[15])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 15 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!16sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[16])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 16 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!17sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[17])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 17 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!18sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[18])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 18 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}
+
+    if (!message.guild) return
+    if (message.content.startsWith('!19sdelete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(spugMembers[19])) { 
+if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+else{
+      var keyToDelete = 19 ;
+    
+      delete spugMembers[keyToDelete];
+  
+    }}}}}}
+
+
+
+
+
+      //--------------------------------------------------------------------------------------
+
+
+
+
+
+     
+     if (!message.guild) return
+     if (message.content.startsWith('!0Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+     spugMembers[0]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!1Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[1]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!2Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[2]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!3Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[3]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!4Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[4]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!5Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[5]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!6Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[6]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!7Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[7]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!8Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[8]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!9Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[9]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!10Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[10]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!11Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[11]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!12Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[12]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!13Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[13]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!14Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[14]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!15Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[15]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!16Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[16]=message.mentions.users.first()
+       checksPugSize();
+      
+     }}}}
+     if (!message.guild) return
+     if (message.content.startsWith('!17Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[17]=message.mentions.users.first()
+       checksPugSize();}
       
      }}}
+     if (!message.guild) return
+     if (message.content.startsWith('!18Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[18]=message.mentions.users.first()
+       checksPugSize();}
+      
+     }}}
+     if (!message.guild) return
+     if (message.content.startsWith('!19Asupporter')) {
+     const user = message.mentions.users.first()
+     if (user) {
+     const member = message.guild.member(user)
+      if ( member) {
+                 if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+            else {
+            
+     spugMembers[19]=message.mentions.users.first()
+       checksPugSize();}
+      
+     }}}
+
+//-----------------------------------------------------------------------------------------------------------------
+
 
      if (!message.guild) return
      if (message.content.startsWith('!Asupporter')) {
@@ -1654,6 +2766,585 @@ client.on('message', message => {
         
           
          }
+
+
+
+
+         if (!message.guild) return
+         if (message.content.startsWith('!0sdelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[0])) { 
+         if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 0 ;
+         
+           delete pugMemberss[keyToDelete];}
+       
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!1ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[1])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 1 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         
+         if (!message.guild) return
+         if (message.content.startsWith('!2ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[2])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 2 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!3ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[3])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 3 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!4ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[4])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 4 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!5ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[5])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 5 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!6ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[6])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 6 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!7ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[7])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 7 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!8ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[8])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 8 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!9ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[9])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 9 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!9ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[9])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 9 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!10ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[10])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 10 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!11ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[11])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 11 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!12ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[12])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 12 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!13ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[13])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 13 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!14ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[14])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 14 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!15ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[15])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 15 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!16ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[16])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 16 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!17ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[17])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 17 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!18ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[18])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 18 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+     
+         if (!message.guild) return
+         if (message.content.startsWith('!19ddelete')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+         if ( member) {
+         if ( message.content.includes(pugMemberss[19])) { 
+     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+     else{
+           var keyToDelete = 19 ;
+         
+           delete pugMemberss[keyToDelete];
+       
+         }}}}}
+
+
+
+         //----------------------------------------------------------------------------------------------------
+
+
+
+
+
+         if (!message.guild) return
+         if (message.content.startsWith('!0Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+         pugMemberss[0]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!1Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[1]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!2Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[2]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!3Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[3]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!4Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[4]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!5Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[5]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!6Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[6]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!7Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[7]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!8Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[8]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!9Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[9]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!10Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[10]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!11Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[11]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!12Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[12]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!13Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[13]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!14Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[14]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!15Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[15]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!16Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[16]=message.mentions.users.first()
+           checkPugSizes();
+          
+         }}}}
+         if (!message.guild) return
+         if (message.content.startsWith('!17Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[17]=message.mentions.users.first()
+           checkPugSizes();}
+          
+         }}}
+         if (!message.guild) return
+         if (message.content.startsWith('!18Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[18]=message.mentions.users.first()
+           checkPugSizes();}
+          
+         }}}
+         if (!message.guild) return
+         if (message.content.startsWith('!19Adefender')) {
+         const user = message.mentions.users.first()
+         if (user) {
+         const member = message.guild.member(user)
+          if ( member) {
+                     if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.sendMessage("You Dont Have Permission")
+                else {
+                
+         pugMemberss[19]=message.mentions.users.first()
+           checkPugSizes();}
+          
+         }}}
+
+         //--------------------------------------------------------------------------------------------------
    
      if (!message.guild) return
      if (message.content.startsWith('!Adefender')) {
