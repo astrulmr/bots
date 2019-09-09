@@ -6,6 +6,17 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 
+    client.on('message', message => {
+    if (message.content === 'args-info') {
+      if (!args.length) {
+        return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+      }
+    
+      message.channel.send(`Command name: ${command}\nArguments: ${args}`);
+    }})
+
+
+
     client.user.setActivity("BrawlBall")
     client.guilds.forEach((guild) => {
        console.log(guild.name)
@@ -24,6 +35,11 @@ client.on('ready' , () => {
               .setColor(0xFFFFFF)
               welchannel.send(embed)
       }
+
+
+
+
+      
     })
     client.on('message', message => {
       if (message.content === 'a') {
