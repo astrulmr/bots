@@ -3538,10 +3538,7 @@ client.on('guildMemberAdd', member => {
           }
          
         })
-        client.on('message', message => {
-
-        if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+     
 
         const args = message.content.slice(prefix.length).split(' ');
         const command = args.shift().toLowerCase();
@@ -3553,7 +3550,7 @@ client.on('guildMemberAdd', member => {
 
 	message.channel.send(`Command name: ${command}\nArguments: ${args}`);
 }
-        })
+       
 
 
 client.login(process.env.BOT_TOKEN)
