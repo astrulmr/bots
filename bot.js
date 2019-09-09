@@ -1050,7 +1050,7 @@ client.on('message', message => {
       var keyToDelete = 0 ;
     
       delete pugMembers[keyToDelete];
-  pugMembers=pugMembers+1
+  pugMembers=pugMembers-1
     }}}}
     if (!message.guild) return
     if (message.content.startsWith('!2delete')) {
@@ -1063,7 +1063,7 @@ client.on('message', message => {
       var keyToDelete = 2 ;
     
       delete pugMembers[keyToDelete];
-  pugMembers=pugMembers-+1
+  pugMembers=pugMembers-1
     }}}}
 
 
@@ -1073,9 +1073,9 @@ client.on('message', message => {
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
-    if (pugMembers[0] == "undefined"){
+      pugMembers[0].push(message.mentions.users.first());
       checkPugSize();
-      addUserPug(message)}
+      addUserPug(message)
     }}}
 
     
