@@ -1050,7 +1050,7 @@ client.on('message', message => {
       var keyToDelete = 0 ;
     
       delete pugMembers[keyToDelete];
-  pugMembers=pugMembers-1
+  
     }}}}
     if (!message.guild) return
     if (message.content.startsWith('!2delete')) {
@@ -1063,7 +1063,7 @@ client.on('message', message => {
       var keyToDelete = 2 ;
     
       delete pugMembers[keyToDelete];
-  pugMembers=pugMembers-1
+  
     }}}}
 
 
