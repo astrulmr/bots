@@ -3545,6 +3545,56 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+
+        require('dotenv-flow').config();
+
+const config = {
+
+    owner: process.env.OWNER,
+    prefix: process.env.PREFIX
+};
+
+const prefix = config.prefix;
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+// [!!mute @User 12h Posting too many good memes]
+// 0        1     2      3     5   6    7   8   
+// !!mute <user> <time> <reason> \
+
+client.on('message', message => {
+    if (message.author.bot) return;
+    if (message.content.indexOf(prefix) !== 0) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+
+    switch (command) {
+        case 'ping': {
+            message.channel.send('Pong!').catch(console.error);
+            break;
+        }
+        case 'myname': {
+            const name = message.member.displayName;
+            message.delete();
+            message.channel.send(`Your name is ${name}.`);
+            break;
+        }
+        case 'say': {
+            // !!say My name is Jeff
+            const response = args.join(' ');
+            message.delete();
+            message.channel.send(response);
+            break;
+        }
+        default:
+            message.channel.send('This command is unknown!');
+            break;
+    }
+});
+
      
 
       
