@@ -1046,10 +1046,11 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
     if ( message.content.includes(pugMembers[0])) { 
-      const filteredItems = pugMembers.filter(function(item) {
-        return item !== pugMembers[0]
-      })
-      
+
+      var keyToDelete = pugMembers[0] ;
+    
+      delete pugMembers[keyToDelete];
+  
     }}}}
 
 
