@@ -1214,6 +1214,8 @@ client.on('message', message => {
  
      if (spugMembers.length<=20){
          spugMembers.push(message.mentions.users.first());
+         spugMembers.push(message.mentions.displayAvatarURL)
+         spugMembers.length= spugMembers.length-1
      }
      
      else{ // Create a new pug and pass the user into the array
@@ -1276,10 +1278,10 @@ client.on('message', message => {
 
        if ( message.content.includes(spugMembers[0])) {
         const embed = new RichEmbed()
-        .setTitle(message.mentions.users.first())
+        .setTitle("Supporter")
         .setColor(0x0000ff)
-        .setThumbnail(message.mentions.users.avatarURL)
-        .setDescription(message.mentions.users.first()+`  is a Supporter`)
+        .setThumbnail(message.mentions.displayAvatarURL)
+        .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
          
