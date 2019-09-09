@@ -1284,9 +1284,16 @@ client.on('message', message => {
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
+      if ( message.content.includes(spugMembers[1])) {
+        const embed = new RichEmbed()
+        .setTitle("Supporter")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+        message.channel.send(embed)
+      }
+      
          
-        else if ( message.content.includes(spugMembers[1])) {
-         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
          else if ( message.content.includes(spugMembers[2])) {
            message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
            else if ( message.content.includes(spugMembers[3])) {
