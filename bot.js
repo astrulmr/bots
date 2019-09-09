@@ -1047,7 +1047,7 @@ client.on('message', message => {
     if ( member) {
     if ( message.content.includes(pugMembers[0])) { 
 
-      var keyToDelete = pugMembers[0] ;
+      var keyToDelete = 0 ;
     
       delete pugMembers[keyToDelete];
   
