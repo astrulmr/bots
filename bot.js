@@ -1850,7 +1850,7 @@ else{
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .addField('Position','Supporter',true)
-        .addField('Legend','hattori',true)
+        .addField('Legend','https://brawldb.com/player/stats/7385879',true)
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
@@ -3538,8 +3538,22 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+        client.on('message', message => {
+
+        if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 
+        const args = message.content.slice(prefix.length).split(' ');
+        const command = args.shift().toLowerCase();
+
+ if (command === 'args-info') {
+	if (!args.length) {
+		return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+	}
+
+	message.channel.send(`Command name: ${command}\nArguments: ${args}`);
+}
+        })
 
 
 client.login(process.env.BOT_TOKEN)
