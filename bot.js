@@ -1046,7 +1046,7 @@ client.on('message', message => {
     const member = message.guild.member(user)
     if ( member) {
     if ( message.content.includes(pugMembers[0])) {
-      message.mentions.users.first().delete()}
+      pugMembers[0].delete()}
     }}}
 
 
