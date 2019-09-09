@@ -1075,7 +1075,7 @@ client.on('message', message => {
     if ( member) {
     pugMembers[0]=message.mentions.users.first()
       checkPugSize();
-      addUserPug(message)
+     
     }}}
 
     
