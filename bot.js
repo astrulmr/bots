@@ -3540,14 +3540,6 @@ client.on('guildMemberAdd', member => {
         })
      
 
-        if (message.content === 'args-info') {
-          if (!args.length) {
-            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
-          }
-        
-          message.channel.send(`Command name: ${message.content}\nArguments: ${args}`);
-        }
-       
-
+      
 
 client.login(process.env.BOT_TOKEN)
