@@ -1214,7 +1214,7 @@ client.on('message', message => {
  
      if (spugMembers.length<=20){
          spugMembers.push(message.mentions.users.first());
-         spugMembers.push(message.mentions.displayAvatarURL)
+         spugMembers.push(message.mentions.users.size)
          spugMembers.length= spugMembers.length-1
      }
      
@@ -1280,7 +1280,7 @@ client.on('message', message => {
         const embed = new RichEmbed()
         .setTitle("Supporter")
         .setColor(0x0000ff)
-        .setThumbnail(message.mentions.displayAvatarURL)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
