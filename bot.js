@@ -927,22 +927,11 @@ client.on('message', message => {
  })  
 
 })
-client.on('message', message => {
-  if (!message.guild) return
-  if (message.content.startsWith('!power')) {
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if (member) {
-  if(user.s){
-  message.channel.send(s)}
-  else 
-message.channel.send("power not set")
- }
 
 
-}}
-})
+
+
+
 
   client.on('message', message => {
     if (!message.guild) return
@@ -1050,7 +1039,29 @@ client.on('message', message => {
    
      
     }
+    if (!message.guild) return
+    if (message.content.startsWith('!0delete')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if ( message.content.includes(pugMembers[0])) {
+      message.mentions.users.first().delete()}
+    }}}
 
+
+    if (!message.guild) return
+    if (message.content.startsWith('!0Arunner')) {
+    const user = message.mentions.users.first()
+    if (user) {
+    const member = message.guild.member(user)
+    if ( member) {
+    if (pugMembers[0] == "undefined"){
+      checkPugSize();
+      addUserPug(message)}
+    }}}
+
+    
     if (!message.guild) return
     if (message.content.startsWith('!Arunner')) {
     const user = message.mentions.users.first()
@@ -1063,7 +1074,7 @@ client.on('message', message => {
         else if ( message.content.includes(pugMembers[0])) {
           message.channel.send("u already in")}
           else if ( message.content.includes(pugMembers[1])) {
-           message.channel.send("u already in")}
+            message.channel.send("u already in")}
            else if ( message.content.includes(pugMembers[2])) {
              message.channel.send("u already in")}
              else if ( message.content.includes(pugMembers[3])) {
