@@ -1044,7 +1044,7 @@ client.on('message', message => {
 
 
     if (!message.guild) return
-    if (message.content.startsWith('!0sdelete')) {
+    if (message.content.startsWith('!0rdelete')) {
     const user = message.mentions.users.first()
     if (user) {
     const member = message.guild.member(user)
@@ -1849,9 +1849,9 @@ else{
         .setTitle("Name")
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .addField('Position','Supporter',true)
+        .addField('Legend','hattori',true)
         .setDescription(message.mentions.users.first())
-        addField('Position','Supporter',true)
-        addField('Legend','hattori',true)
         message.channel.send(embed)
       }
       
