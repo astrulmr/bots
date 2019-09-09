@@ -1073,7 +1073,7 @@ client.on('message', message => {
     if (user) {
     const member = message.guild.member(user)
     if ( member) {
-      pugMembers[0].push(message.mentions.users.first());
+    pugMembers[0]=message.mentions.users.first()
       checkPugSize();
       addUserPug(message)
     }}}
