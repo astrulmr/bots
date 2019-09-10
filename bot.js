@@ -1857,7 +1857,7 @@ else{
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .addField('Position','Supporter',true)
-        .addField('Legend','https://brawldb.com/player/stats/7385879',true)
+        .addField('clan',sayMessage,true)
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
@@ -3559,4 +3559,5 @@ client.on('message', message => {
           // And we get the bot to say the thing: 
           message.channel.send(sayMessage);
         }})
+
 client.login(process.env.BOT_TOKEN)
