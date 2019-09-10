@@ -3548,7 +3548,7 @@ client.on('guildMemberAdd', member => {
 
         let bChannelb = client.channels.get("613364249615532072")
  client.on('message', message => {
-        if (message.bChannelb.content === ('work?')) {
+        if (message.bChannelb.content === 'work?') {
           message.bChannelb.send("yes work")
         }})
 
