@@ -18,19 +18,6 @@ client.on('ready' , () => {
     })
 
 
-    client.on("message", message => {
-      if(message.author.bot) return;
-      let messageArray = message.content.split(" ");
-      let command = messageArray[0];
-      let args = messageArray.slice(1);
-      if(command === '+ann') {
-          let channelss = message.mentions.channels();
-          let announcements = args.slice(1).join(" ");
-  
-          channel.send(announcements);
-      }
-  })
-
     let welcomeChannel = client.channels.get("535534516945682462")
     let welchannel = client.channels.get("556806228144291861")
     client.on('message', message => {
@@ -1862,149 +1849,857 @@ else{
      const member = message.guild.member(user)
      if ( member) {
 
-       if ( message.content.includes(spugMembers[0])) {
-        const embed = new RichEmbed()
-        .setTitle("Supporter")
-        .setColor(0x0000ff)
-        .setThumbnail(message.mentions.users.first().displayAvatarURL)
-        .setDescription(message.mentions.users.first())
-        message.channel.send(embed)
-      }
-   
-
+      
 
       if ( message.content.includes(spugMembers[1])) {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
         .addField('Position','Supporter',true)
+
         
         message.channel.send(embed)
       }
       
-         
-         else if ( message.content.includes(spugMembers[2])) {
-           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-           else if ( message.content.includes(spugMembers[3])) {
-             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-             else if ( message.content.includes(spugMembers[4])) {
-               message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-               else if ( message.content.includes(spugMembers[5])) {
-                 message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                 else if ( message.content.includes(spugMembers[6])) {
-                   message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                   else if ( message.content.includes(spugMembers[7])) {
-                     message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                     else if ( message.content.includes(spugMembers[8])) {
-                       message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                       else if ( message.content.includes(spugMembers[9])) {
-                         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                         else if ( message.content.includes(spugMembers[10])) {
-                           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                           else if ( message.content.includes(spugMembers[11])) {
-                             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                             else if ( message.content.includes(spugMembers[12])) {
-                               message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                               else if ( message.content.includes(spugMembers[13])) {
-                                 message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                 else if ( message.content.includes(spugMembers[14])) {
-                                   message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                   else if ( message.content.includes(spugMembers[15])) {
-                                     message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                     else if ( message.content.includes(spugMembers[16])) {
-                                       message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                       else if ( message.content.includes(spugMembers[17])) {
-                                         message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                         else if ( message.content.includes(spugMembers[18])) {
-                                           message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
-                                           else if ( message.content.includes(spugMembers[19])) {
-                                             message.channel.send(message.mentions.users.first()+`  is a Supporter`)}
 
-                                             else if ( message.content.includes(pugMembers[0])) {
-                                              message.channel.send(`Hes Runner`)}
-                                              else if ( message.content.includes(pugMembers[1])) {
-                                               message.channel.send(`Hes Runner`)}
-                                               else if ( message.content.includes(pugMembers[2])) {
-                                                 message.channel.send(`Hes Runner`)}
-                                                 else if ( message.content.includes(pugMembers[3])) {
-                                                   message.channel.send(`Hes Runner`)}
-                                                   else if ( message.content.includes(pugMembers[4])) {
-                                                     message.channel.send(`Hes Runner`)}
-                                                     else if ( message.content.includes(pugMembers[5])) {
-                                                       message.channel.send(`Hes Runner`)}
-                                                       else if ( message.content.includes(pugMembers[6])) {
-                                                         message.channel.send(`Hes Runner`)}
-                                                         else if ( message.content.includes(pugMembers[7])) {
-                                                           message.channel.send(`Hes Runner`)}
-                                                           else if ( message.content.includes(pugMembers[8])) {
-                                                             message.channel.send(`Hes Runner`)}
-                                                             else if ( message.content.includes(pugMembers[9])) {
-                                                               message.channel.send(`Hes Runner`)}
-                                                               else if ( message.content.includes(pugMembers[10])) {
-                                                                 message.channel.send(`Hes Runner`)}
-                                                                 else if ( message.content.includes(pugMembers[11])) {
-                                                                   message.channel.send(`Hes Runner`)}
-                                                                   else if ( message.content.includes(pugMembers[12])) {
-                                                                     message.channel.send(`Hes Runner`)}
-                                                                     else if ( message.content.includes(pugMembers[13])) {
-                                                                       message.channel.send(`Hes Runner`)}
-                                                                       else if ( message.content.includes(pugMembers[14])) {
-                                                                         message.channel.send(`Hes Runner`)}
-                                                                         else if ( message.content.includes(pugMembers[15])) {
-                                                                           message.channel.send(`Hes Runner`)}
-                                                                           else if ( message.content.includes(pugMembers[16])) {
-                                                                             message.channel.send(`Hes Runner`)}
-                                                                             else if ( message.content.includes(pugMembers[17])) {
-                                                                               message.channel.send(`Hes Runner`)}
-                                                                               else if ( message.content.includes(pugMembers[18])) {
-                                                                                 message.channel.send(`Hes Runner`)}
-                                                                                 else if ( message.content.includes(pugMembers[19])) {
-                                                                                   message.channel.send(`Hes Runner`)}
+      if ( message.content.includes(spugMembers[2])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
 
-                                                                                   else if ( message.content.includes(pugMemberss[0])) {
-                                                                                    message.channel.send("Hes Defender")}
-                                                                                    else if ( message.content.includes(pugMemberss[1])) {
-                                                                                     message.channel.send("Hes Defender")}
-                                                                                     else if ( message.content.includes(pugMemberss[2])) {
-                                                                                       message.channel.send("Hes Defender")}
-                                                                                       else if ( message.content.includes(pugMemberss[3])) {
-                                                                                         message.channel.send("Hes Defender")}
-                                                                                         else if ( message.content.includes(pugMemberss[4])) {
-                                                                                           message.channel.send("Hes Defender")}
-                                                                                           else if ( message.content.includes(pugMemberss[5])) {
-                                                                                             message.channel.send("Hes Defender")}
-                                                                                             else if ( message.content.includes(pugMemberss[6])) {
-                                                                                               message.channel.send("Hes Defender")}
-                                                                                               else if ( message.content.includes(pugMemberss[7])) {
-                                                                                                 message.channel.send("Hes Defender")}
-                                                                                                 else if ( message.content.includes(pugMemberss[8])) {
-                                                                                                   message.channel.send("Hes Defender")}
-                                                                                                   else if ( message.content.includes(pugMemberss[9])) {
-                                                                                                     message.channel.send("Hes Defender")}
-                                                                                                     else if ( message.content.includes(pugMemberss[10])) {
-                                                                                                       message.channel.send("Hes Defender")}
-                                                                                                       else if ( message.content.includes(pugMemberss[11])) {
-                                                                                                         message.channel.send("Hes Defender")}
-                                                                                                         else if ( message.content.includes(pugMemberss[12])) {
-                                                                                                           message.channel.send("Hes Defender")}
-                                                                                                           else if ( message.content.includes(pugMemberss[13])) {
-                                                                                                             message.channel.send("Hes Defender")}
-                                                                                                             else if ( message.content.includes(pugMemberss[14])) {
-                                                                                                               message.channel.send("Hes Defender")}
-                                                                                                               else if ( message.content.includes(pugMemberss[15])) {
-                                                                                                                 message.channel.send("Hes Defender")}
-                                                                                                                 else if ( message.content.includes(pugMemberss[16])) {
-                                                                                                                   message.channel.send("Hes Defender")}
-                                                                                                                   else if ( message.content.includes(pugMemberss[17])) {
-                                                                                                                     message.channel.send("Hes Defender")}
-                                                                                                                     else if ( message.content.includes(pugMemberss[18])) {
-                                                                                                                       message.channel.send("Hes Defender")}
-                                                                                                                       else if ( message.content.includes(pugMemberss[19])) {
-                                                                                                                         message.channel.send("Hes Defender")}
-                                                                                                                         else {
+        .addField('Position','Supporter',true)
 
-                                                                                                                          message.channel.send("power not set")
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[3])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[4])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[5])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[6])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[7])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[8])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[9])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[10])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[11])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[12])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+
+      if ( message.content.includes(spugMembers[13])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[14])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[15])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[16])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[17])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[18])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(spugMembers[19])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[1])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+
+      if ( message.content.includes(pugMembers[2])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[3])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[4])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[5])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[6])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[7])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[8])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[9])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[10])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[11])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[12])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+
+      if ( message.content.includes(pugMembers[13])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[14])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[15])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[16])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[17])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[18])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMembers[19])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[1])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+
+      if ( message.content.includes(pugMemberss[2])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[3])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[4])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[5])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[6])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[7])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[8])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[9])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[10])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[11])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[12])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+
+      if ( message.content.includes(pugMemberss[13])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[14])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[15])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[16])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[17])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+      
+      if ( message.content.includes(pugMemberss[18])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      
+      
+
+      if ( message.content.includes(pugMemberss[19])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
+      else {
+      
+        message.channel.send("power not set")
        }}}  
       
        if (!message.guild) return
