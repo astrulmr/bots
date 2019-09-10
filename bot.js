@@ -1859,21 +1859,7 @@ else{
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
-      const prefix='!';
-
-
-        const args = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command = args.shift().toLowerCase();
-        if(command === "say") {
-          // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-          // To get the "message" itself we join the `args` back into a string with spaces: 
-          const sayMessage = args.join(" ");
-          // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-          message.delete().catch(O_o=>{}); 
-          // And we get the bot to say the thing: 
-          message.channel.send(sayMessage);
-          let ss = sayMessage;
-        }
+     
 
 
       if ( message.content.includes(spugMembers[1])) {
@@ -3571,5 +3557,20 @@ client.on('guildMemberAdd', member => {
          
         })
 
+        const prefix='!';
+
+        client.on('message', message => {
+        const args = message.content.slice(prefix.length).trim().split(/ +/g);
+        const command = args.shift().toLowerCase();
+        if(command === "say") {
+          // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+          // To get the "message" itself we join the `args` back into a string with spaces: 
+          const sayMessage = args.join(" ");
+          // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+          message.delete().catch(O_o=>{}); 
+          // And we get the bot to say the thing: 
+          message.channel.send(sayMessage);
+          let ss = sayMessage;
+        }})
 
 client.login(process.env.BOT_TOKEN)
