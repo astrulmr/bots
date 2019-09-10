@@ -3546,6 +3546,8 @@ client.on('guildMemberAdd', member => {
          
         })
 const prefix='!';
+
+client.on('message', message => {
         const args = message.content.slice(prefix.length).trim().split(/ +/g);
         const command = args.shift().toLowerCase();
         if(command === "say") {
@@ -3556,5 +3558,5 @@ const prefix='!';
           message.delete().catch(O_o=>{}); 
           // And we get the bot to say the thing: 
           message.channel.send(sayMessage);
-        }
+        }})
 client.login(process.env.BOT_TOKEN)
