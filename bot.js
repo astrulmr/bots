@@ -1866,7 +1866,6 @@ else{
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .addField('Position','Supporter',true)
         
-        .setDescription(sayMessage)
         message.channel.send(embed)
       }
       
@@ -3555,8 +3554,7 @@ client.on('guildMemberAdd', member => {
         })
 
  on("message", message => {
-          if(message.author.bot) return;
-      
+         
           let messageArray = message.content.split(" ");
           let command = messageArray[0];
           let args = messageArray.slice(1);
