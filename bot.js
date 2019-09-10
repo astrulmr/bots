@@ -1857,8 +1857,8 @@ else{
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .addField('Position','Supporter',true)
-        .addField('clan',sayMessage,true)
-        .setDescription(message.mentions.users.first())
+        
+        .setDescription(sayMessage)
         message.channel.send(embed)
       }
       
