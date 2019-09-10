@@ -6,6 +6,18 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 
+
+
+    client.user.setActivity("BrawlBall")
+    client.guilds.forEach((guild) => {
+       console.log(guild.name)
+        guild.channels.forEach((channel) => {
+            console.log(` - ${channel.name} ${channel.type} ${channel.id}`)
+        })
+        // welcome is 535515917518372886
+    })
+
+
     on("message", message => {
          
       let messageArray = message.content.split(" ");
@@ -23,16 +35,6 @@ client.on('ready' , () => {
           channel.send(announcement);
       }
   })
-
-
-    client.user.setActivity("BrawlBall")
-    client.guilds.forEach((guild) => {
-       console.log(guild.name)
-        guild.channels.forEach((channel) => {
-            console.log(` - ${channel.name} ${channel.type} ${channel.id}`)
-        })
-        // welcome is 535515917518372886
-    })
 
     let welcomeChannel = client.channels.get("535534516945682462")
     let welchannel = client.channels.get("556806228144291861")
