@@ -1851,6 +1851,18 @@ else{
 
       
 
+      if ( message.content.includes(spugMembers[0])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Supporter',true)
+
+        
+        message.channel.send(embed)
+      }
       if ( message.content.includes(spugMembers[1])) {
         const embed = new RichEmbed()
         .setTitle("Name")
@@ -2132,6 +2144,18 @@ else{
         message.channel.send(embed)
       }
       
+      if ( message.content.includes(pugMembers[0])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Runner',true)
+
+        
+        message.channel.send(embed)
+      }
       
 
       if ( message.content.includes(pugMembers[1])) {
@@ -2415,7 +2439,18 @@ else{
         message.channel.send(embed)
       }
       
-      
+      if ( message.content.includes(pugMemberss[0])) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail(message.mentions.users.first().displayAvatarURL)
+        .setDescription(message.mentions.users.first())
+
+        .addField('Position','Defender',true)
+
+        
+        message.channel.send(embed)
+      }
 
       if ( message.content.includes(pugMemberss[1])) {
         const embed = new RichEmbed()
@@ -2676,7 +2711,6 @@ else{
         .setColor(0x0000ff)
         .setThumbnail(message.mentions.users.first().displayAvatarURL)
         .setDescription(message.mentions.users.first())
-
         .addField('Position','Defender',true)
 
         
