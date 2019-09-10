@@ -995,7 +995,7 @@ function addUserPuga(message){
     // Add user to the pugMembers Array if the array is not full
 
     if (pugMembersa.length<=20){
-        pugMembersa.push(sayMessage);
+        pugMembersa.push(args);
     }
     
     else{ // Create a new pug and pass the user into the array
@@ -1003,7 +1003,7 @@ function addUserPuga(message){
         // createNewPug(msg.author.username);
     }
   
-    message.channel.send(`${sayMessage} added to Runner ${pugMembersa.length}.`); // Mention the user that they are added into the queue
+    message.channel.send(` added to Runner ${pugMembersa.length}.`); // Mention the user that they are added into the queue
     // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
     message.delete()
     .then(message => console.log(pugMembersa))
