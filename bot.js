@@ -978,73 +978,6 @@ client.on('message', message => {
     
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const pugSizea = 20; // Maximum amount of players in the PUG
-var pugMembersa = []; // Array to hold the members in the PUG
-
-function checkPugSizea(){
-    if (pugMembersa.length == 20){
-        //TODO Create the two teams
-        console.log(`PUG IS FULL: ${pugMembersa.length}`);
-    }else{
-        console.log(`THE PUG IS NOT FULL: ${pugMembersa.length}`);
-    }
-}
-
-function addUserPuga(message){
-    // console.log(msg.author);
-    // Add user to the pugMembers Array if the array is not full
-
-    if (pugMembersa.length<=20){
-        pugMembersa.push(args);
-    }
-    
-    else{ // Create a new pug and pass the user into the array
-        console.log("TODO: Create a new pug when current array is filled");
-        // createNewPug(msg.author.username);
-    }
-  
-    message.channel.send(` added to Runner ${pugMembersa.length}.`); // Mention the user that they are added into the queue
-    // msg.reply(' added to queue. ' + `${pugMembers.length}/6`);
-    message.delete()
-    .then(message => console.log(pugMembersa))
-    .catch(console.error);
-}
-
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-});
-
-
-
-const prefix='!';
-
-client.on('message', message => {
-        const args = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command = args.shift().toLowerCase();
-        if(command === "0clan") {
-          // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-          // To get the "message" itself we join the `args` back into a string with spaces: 
-          const sayMessage = args.join(" ");
-          // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-          message.delete().catch(O_o=>{}); 
-          // And we get the bot to say the thing: 
-         
-          checkPugSizea();
-          addUserPuga(message);
-        }
-         
-        if (message.content == '!clans'){           
-          const embed = new RichEmbed()
-          .setTitle('------------------ Runner Players ------------------ \n\n')
-          .setColor(0xFF0000	)
-          .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
-          .addField('-------',`${pugMembera[0]}`,true)
-    
-          message.channel.send(embed)
-    
-
-        }})
-
 
 
 
@@ -1923,20 +1856,7 @@ else{
         .setDescription(message.mentions.users.first())
         message.channel.send(embed)
       }
-      const prefix='!';
-
-
-        const args = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command = args.shift().toLowerCase();
-        if(command === "say") {
-          // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-          // To get the "message" itself we join the `args` back into a string with spaces: 
-          const sayMessage = args.join(" ");
-          // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-          message.delete().catch(O_o=>{}); 
-          // And we get the bot to say the thing: 
-          message.channel.send(sayMessage);
-        }
+   
 
 
       if ( message.content.includes(spugMembers[1])) {
@@ -3633,6 +3553,25 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+
+ on("message", message => {
+          if(message.author.bot) return;
+      
+          let messageArray = message.content.split(" ");
+          let command = messageArray[0];
+          let args = messageArray.slice(1);
+      
+          if(message.channel.type === "dm") return;
+      
+          if(!message.content.startsWith('+')) return;
+      
+          if(command === '+ann') {
+              let channel = message.mentions.channels();
+              let announcement = args.slice(1).join(" ");
+      
+              channel.send(announcement);
+          }
+      })
 
 
 client.login(process.env.BOT_TOKEN)
