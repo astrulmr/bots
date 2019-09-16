@@ -981,7 +981,18 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
   if (message.content === "<@184230639086731264>" ) {
-message.channel.send("hi")
+   const id= "<@184230639086731264>"
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail(message.id.displayAvatarURL)
+      .setDescription("ThomaSerena")
+
+      .addField('Position','Supporter',true)
+
+      
+      message.channel.send(embed)
+    
   }
   })
 
