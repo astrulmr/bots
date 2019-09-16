@@ -981,7 +981,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
   if (message.content === "<@184230639086731264>" ) {
-   const iid= "<@184230639086731264>"
+   var iid= "<@184230639086731264>"
       const embed = new RichEmbed()
       .setTitle("Name")
       .setColor(0x0000ff)
