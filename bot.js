@@ -1381,7 +1381,7 @@ client.on('message', message => {
   if (message.content == '!run'){          
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
-      .setColor(0xFFFF00)
+      .setColor(0xFF0000)
       .addField('Astru',"our style",true)
       .addField('Kevin1185',"our style",true)
       .addField('Jimm25',"our style",true)
@@ -1398,7 +1398,7 @@ client.on('message', message => {
         if (message.content == '!sup'){          
             const embed = new RichEmbed()
             .setTitle('------------------ Supporter Players ------------------')
-            .setColor(0xFFFF00)
+            .setColor(0x0000ff)
             .addField('Kenshiro',"our style",true)
             .addField('|OS| Tmis Kun',"our style",true)
             .addField('ThomaSerena',"NBS",true)
@@ -1434,7 +1434,7 @@ client.on('message', message => {
   if (message.content == '!pall'){          
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
-      .setColor(0xFFFF00)
+      .setColor(0xFF0000)
       .addField('Astru',"our style",true)
       .addField('Kevin1185',"our style",true)
       .addField('Jimm25',"our style",true)
@@ -1451,7 +1451,7 @@ client.on('message', message => {
         if (message.content == '!pall'){          
             const embed = new RichEmbed()
             .setTitle('------------------ Supporter Players ------------------')
-            .setColor(0xFFFF00)
+            .setColor(0x0000ff)
             .addField('Kenshiro',"our style",true)
             .addField('|OS| Tmis Kun',"our style",true)
             .addField('ThomaSerena',"NBS",true)
