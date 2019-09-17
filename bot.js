@@ -1156,6 +1156,8 @@ client.on('message', message => {
       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/d/dc/SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
       .setDescription("ThomaSerena")
       .addField('Position','Supporter',true)
+      .addField('Clan','NBS',true)
+
       message.channel.send(embed)
   }
   })
@@ -1167,6 +1169,8 @@ client.on('message', message => {
         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/e9/SkinIcon_Artemis_Iron.png/600px-SkinIcon_Artemis_Iron.png?version=da9d1b6636935730e3a512a8ace891a0")
         .setDescription("Astru")
         .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+
         message.channel.send(embed)
     }
     })
@@ -1178,6 +1182,8 @@ client.on('message', message => {
           .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/47/SkinIcon_Val_Kunoichi.png/600px-SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
           .setDescription("DanzoDon")
           .addField('Position','Runner',true)
+          .addField('Clan','our style',true)
+
           message.channel.send(embed)
       }
       })
@@ -1189,6 +1195,8 @@ client.on('message', message => {
             .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/600px-SkinIcon_Yumiko_Tokyo.png?version=8392753f93e5267ec317090ca7462401")
             .setDescription("Kevin1185")
             .addField('Position','Runner',true)
+            .addField('Clan','our style',true)
+
             message.channel.send(embed)
         }
         })
@@ -1200,6 +1208,8 @@ client.on('message', message => {
               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/ad/SkinIcon_Ember_SantasHelper.png/600px-SkinIcon_Ember_SantasHelper.png?version=1c9cac26b75e97df79448500a7cda9ac")
               .setDescription("Jimm25")
               .addField('Position','Runner',true)
+              .addField('Clan','our style',true)
+
               message.channel.send(embed)
           }
           })
@@ -1211,6 +1221,8 @@ client.on('message', message => {
                 .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/96/SkinIcon_Rayman_Raymesis.png/600px-SkinIcon_Rayman_Raymesis.png?version=79354ce2895f8ecddae5539d8f8bcf72")
                 .setDescription("SweetMiguel")
                 .addField('Position','Runner',true)
+                .addField('Clan','our style',true)
+
                 message.channel.send(embed)
             }
             })
@@ -1222,6 +1234,8 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
+                  .addField('Clan','our style',true)
+
                   message.channel.send(embed)
               }
               })
@@ -1233,6 +1247,8 @@ client.on('message', message => {
                     .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/0e/SkinIcon_Bodvar_CyberViking.png/600px-SkinIcon_Bodvar_CyberViking.png?version=14e957b2301ba3454ea4b28435d4deef")
                     .setDescription("Kaeptnkook")
                     .addField('Position','Defender',true)
+                    .addField('Clan','our style',true)
+
                     message.channel.send(embed)
                 }
                 })
@@ -1244,6 +1260,8 @@ client.on('message', message => {
                       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/2c/SkinIcon_Mordex_Fenrir.png/600px-SkinIcon_Mordex_Fenrir.png?version=6b9f00361feb8542abab1f531b544911")
                       .setDescription("Junusbiaz")
                       .addField('Position','Defender',true)
+                      .addField('Clan','our style',true)
+
                       message.channel.send(embed)
                   }
                   })
@@ -1255,6 +1273,8 @@ client.on('message', message => {
                         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/eb/SkinIcon_Scarlet_Grease.png/600px-SkinIcon_Scarlet_Grease.png?version=d4550dfafa4972f753b8f9831ca20e43")
                         .setDescription("Jinleehurb")
                         .addField('Position','Defender',true)
+                        .addField('Clan','our style',true)
+
                         message.channel.send(embed)
                     }
                     })
@@ -1266,6 +1286,8 @@ client.on('message', message => {
                           .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/600px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37")
                           .setDescription("PanosBOA")
                           .addField('Position','Supporter',true)
+                          .addField('Clan','our style',true)
+
                           message.channel.send(embed)
                       }
                       })
@@ -1277,6 +1299,8 @@ client.on('message', message => {
                             .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
                             .setDescription("Kenshiro")
                             .addField('Position','Supporter',true)
+                            .addField('Clan','our style',true)
+
                             message.channel.send(embed)
                         }
                         })
@@ -1288,6 +1312,7 @@ client.on('message', message => {
                               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/600px-SkinIcon_Hattori_Shadow.png?version=191746d50260876e5e469cdfdce1bcb5")
                               .setDescription("|OS| Tmis Kun")
                               .addField('Position','Supporter',true)
+                              .addField('Clan','our style',true)
                               message.channel.send(embed)
                           }
                           })
@@ -1300,6 +1325,7 @@ client.on('message', message => {
                                 .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/d/dc/SkinIcon_LordVraxx_DarkMatter.png/600px-SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
                                 .setDescription("BlueDragon")
                                 .addField('Position','Defender',true)
+                                .addField('Clan','TVS',true)
                                 message.channel.send(embed)
                             }
                             })
@@ -1311,6 +1337,7 @@ client.on('message', message => {
                                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8f/SkinIcon_Hattori_TrackJacket.png/600px-SkinIcon_Hattori_TrackJacket.png?version=a75db8c19f4f1a79775f9dc4ad805082")
                                   .setDescription("LordCroissant")
                                   .addField('Position','Supporter',true)
+                                  .addField('Clan','Clansanity',true)
                                   message.channel.send(embed)
                               }
                               })
@@ -1321,16 +1348,15 @@ client.on('message', message => {
 
 
 
-
 client.on('message', message => {
   if (message.content === "!ap" ) {
- 
       const embed = new RichEmbed()
       .setTitle("Name")
       .setColor(0x0000ff)
-      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/d/dc/SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
-      .setDescription("ThomaSerena")
-      .addField('Position','Supporter',true)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/e9/SkinIcon_Artemis_Iron.png/600px-SkinIcon_Artemis_Iron.png?version=da9d1b6636935730e3a512a8ace891a0")
+      .setDescription("Astru")
+      .addField('Position','Runner',true)
+      .addField('Clan','our style',true)
       message.channel.send(embed)
   }
   })
@@ -1339,9 +1365,35 @@ client.on('message', message => {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
-        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/e9/SkinIcon_Artemis_Iron.png/600px-SkinIcon_Artemis_Iron.png?version=da9d1b6636935730e3a512a8ace891a0")
-        .setDescription("Astru")
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/d/dc/SkinIcon_LordVraxx_DarkMatter.png/600px-SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
+        .setDescription("BlueDragon")
+        .addField('Position','Defender',true)
+        .addField('Clan','TVS',true)
+        message.channel.send(embed)
+    }
+    })
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/47/SkinIcon_Val_Kunoichi.png/600px-SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
+        .setDescription("DanzoDon")
         .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }
+    })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/ad/SkinIcon_Ember_SantasHelper.png/600px-SkinIcon_Ember_SantasHelper.png?version=1c9cac26b75e97df79448500a7cda9ac")
+        .setDescription("Jimm25")
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
         message.channel.send(embed)
     }
     })
@@ -1350,31 +1402,23 @@ client.on('message', message => {
           const embed = new RichEmbed()
           .setTitle("Name")
           .setColor(0x0000ff)
-          .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/47/SkinIcon_Val_Kunoichi.png/600px-SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
-          .setDescription("DanzoDon")
-          .addField('Position','Runner',true)
+          .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/eb/SkinIcon_Scarlet_Grease.png/600px-SkinIcon_Scarlet_Grease.png?version=d4550dfafa4972f753b8f9831ca20e43")
+          .setDescription("Jinleehurb")
+          .addField('Position','Defender',true)
+          .addField('Clan','our style',true)
           message.channel.send(embed)
       }
       })
-      client.on('message', message => {
-        if (message.content === "!ap" ) {
-            const embed = new RichEmbed()
-            .setTitle("Name")
-            .setColor(0x0000ff)
-            .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/600px-SkinIcon_Yumiko_Tokyo.png?version=8392753f93e5267ec317090ca7462401")
-            .setDescription("Kevin1185")
-            .addField('Position','Runner',true)
-            message.channel.send(embed)
-        }
-        })
+    
         client.on('message', message => {
           if (message.content === "!ap" ) {
               const embed = new RichEmbed()
               .setTitle("Name")
               .setColor(0x0000ff)
-              .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/ad/SkinIcon_Ember_SantasHelper.png/600px-SkinIcon_Ember_SantasHelper.png?version=1c9cac26b75e97df79448500a7cda9ac")
-              .setDescription("Jimm25")
-              .addField('Position','Runner',true)
+              .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/2c/SkinIcon_Mordex_Fenrir.png/600px-SkinIcon_Mordex_Fenrir.png?version=6b9f00361feb8542abab1f531b544911")
+              .setDescription("Junusbiaz")
+              .addField('Position','Defender',true)
+              .addField('Clan','our style',true)
               message.channel.send(embed)
           }
           })
@@ -1383,9 +1427,10 @@ client.on('message', message => {
                 const embed = new RichEmbed()
                 .setTitle("Name")
                 .setColor(0x0000ff)
-                .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/96/SkinIcon_Rayman_Raymesis.png/600px-SkinIcon_Rayman_Raymesis.png?version=79354ce2895f8ecddae5539d8f8bcf72")
-                .setDescription("SweetMiguel")
-                .addField('Position','Runner',true)
+                .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/0e/SkinIcon_Bodvar_CyberViking.png/600px-SkinIcon_Bodvar_CyberViking.png?version=14e957b2301ba3454ea4b28435d4deef")
+                .setDescription("Kaeptnkook")
+                .addField('Position','Defender',true)
+                .addField('Clan','our style',true)
                 message.channel.send(embed)
             }
             })
@@ -1394,9 +1439,10 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle("Name")
                   .setColor(0x0000ff)
-                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
-                  .setDescription("Styleken")
-                  .addField('Position','Defender',true)
+                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
+                  .setDescription("Kenshiro")
+                  .addField('Position','Supporter',true)
+                  .addField('Clan','our style',true)
                   message.channel.send(embed)
               }
               })
@@ -1405,9 +1451,10 @@ client.on('message', message => {
                     const embed = new RichEmbed()
                     .setTitle("Name")
                     .setColor(0x0000ff)
-                    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/0e/SkinIcon_Bodvar_CyberViking.png/600px-SkinIcon_Bodvar_CyberViking.png?version=14e957b2301ba3454ea4b28435d4deef")
-                    .setDescription("Kaeptnkook")
-                    .addField('Position','Defender',true)
+                    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/600px-SkinIcon_Yumiko_Tokyo.png?version=8392753f93e5267ec317090ca7462401")
+                    .setDescription("Kevin1185")
+                    .addField('Position','Runner',true)
+                    .addField('Clan','our style',true)
                     message.channel.send(embed)
                 }
                 })
@@ -1416,45 +1463,63 @@ client.on('message', message => {
                       const embed = new RichEmbed()
                       .setTitle("Name")
                       .setColor(0x0000ff)
-                      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/2c/SkinIcon_Mordex_Fenrir.png/600px-SkinIcon_Mordex_Fenrir.png?version=6b9f00361feb8542abab1f531b544911")
-                      .setDescription("Junusbiaz")
-                      .addField('Position','Defender',true)
+                      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8f/SkinIcon_Hattori_TrackJacket.png/600px-SkinIcon_Hattori_TrackJacket.png?version=a75db8c19f4f1a79775f9dc4ad805082")
+                      .setDescription("LordCroissant")
+                      .addField('Position','Supporter',true)
+                      .addField('Clan','Clansanity',true)
                       message.channel.send(embed)
                   }
                   })
-                  client.on('message', message => {
-                    if (message.content === "!ap" ) {
-                        const embed = new RichEmbed()
-                        .setTitle("Name")
-                        .setColor(0x0000ff)
-                        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/eb/SkinIcon_Scarlet_Grease.png/600px-SkinIcon_Scarlet_Grease.png?version=d4550dfafa4972f753b8f9831ca20e43")
-                        .setDescription("Jinleehurb")
-                        .addField('Position','Defender',true)
-                        message.channel.send(embed)
-                    }
-                    })
-                    client.on('message', message => {
-                      if (message.content === "!ap" ) {
-                          const embed = new RichEmbed()
-                          .setTitle("Name")
-                          .setColor(0x0000ff)
-                          .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/600px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37")
-                          .setDescription("PanosBOA")
-                          .addField('Position','Supporter',true)
-                          message.channel.send(embed)
-                      }
-                      })
-                      client.on('message', message => {
-                        if (message.content === "!ap" ) {
-                            const embed = new RichEmbed()
-                            .setTitle("Name")
-                            .setColor(0x0000ff)
-                            .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
-                            .setDescription("Kenshiro")
-                            .addField('Position','Supporter',true)
-                            message.channel.send(embed)
-                        }
-                        })
+                client.on('message', message => {
+                  if (message.content === "!ap" ) {
+                      const embed = new RichEmbed()
+                      .setTitle("Name")
+                      .setColor(0x0000ff)
+                      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/600px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37")
+                      .setDescription("PanosBOA")
+                      .addField('Position','Supporter',true)
+                      .addField('Clan','our style',true)
+                      message.channel.send(embed)
+                  }
+                  })
+        
+            client.on('message', message => {
+              if (message.content === "!ap" ) {
+                  const embed = new RichEmbed()
+                  .setTitle("Name")
+                  .setColor(0x0000ff)
+                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
+                  .setDescription("Styleken")
+                  .addField('Position','Defender',true)
+                  .addField('Clan','our style',true)
+                  message.channel.send(embed)
+              }
+              })
+              client.on('message', message => {
+                if (message.content === "!ap" ) {
+                    const embed = new RichEmbed()
+                    .setTitle("Name")
+                    .setColor(0x0000ff)
+                    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/96/SkinIcon_Rayman_Raymesis.png/600px-SkinIcon_Rayman_Raymesis.png?version=79354ce2895f8ecddae5539d8f8bcf72")
+                    .setDescription("SweetMiguel")
+                    .addField('Position','Runner',true)
+                    .addField('Clan','our style',true)
+                    message.channel.send(embed)
+                }
+                })
+                        client.on('message', message => {
+                          if (message.content === "!ap" ) {
+                         
+                              const embed = new RichEmbed()
+                              .setTitle("Name")
+                              .setColor(0x0000ff)
+                              .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/d/dc/SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
+                              .setDescription("ThomaSerena")
+                              .addField('Position','Supporter',true)
+                              .addField('Clan','NBS',true)
+                              message.channel.send(embed)
+                          }
+                          })
                         client.on('message', message => {
                           if (message.content === "!ap" ) {
                               const embed = new RichEmbed()
@@ -1463,32 +1528,13 @@ client.on('message', message => {
                               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/600px-SkinIcon_Hattori_Shadow.png?version=191746d50260876e5e469cdfdce1bcb5")
                               .setDescription("|OS| Tmis Kun")
                               .addField('Position','Supporter',true)
+                              .addField('Clan','our style',true)
                               message.channel.send(embed)
                           }
                           })
                       
-                          client.on('message', message => {
-                            if (message.content === "!ap" ) {
-                                const embed = new RichEmbed()
-                                .setTitle("Name")
-                                .setColor(0x0000ff)
-                                .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/d/dc/SkinIcon_LordVraxx_DarkMatter.png/600px-SkinIcon_LordVraxx_DarkMatter.png?version=626182a02aac284418cc9a103942a784")
-                                .setDescription("BlueDragon")
-                                .addField('Position','Defender',true)
-                                message.channel.send(embed)
-                            }
-                            })
-                            client.on('message', message => {
-                              if (message.content === "!ap" ) {
-                                  const embed = new RichEmbed()
-                                  .setTitle("Name")
-                                  .setColor(0x0000ff)
-                                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8f/SkinIcon_Hattori_TrackJacket.png/600px-SkinIcon_Hattori_TrackJacket.png?version=a75db8c19f4f1a79775f9dc4ad805082")
-                                  .setDescription("LordCroissant")
-                                  .addField('Position','Supporter',true)
-                                  message.channel.send(embed)
-                              }
-                              })
+                      
+                         
 
                 
   
