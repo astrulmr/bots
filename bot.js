@@ -229,10 +229,9 @@ client.on('message', message => {
       if (message.content === '!styleken') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------STYLEKEN------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
+      .setImage('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/51/Sky_Captain_Scarlet_1.png/134px-Sky_Captain_Scarlet_1.png?version=543da455b5347b354ddd6e9433209d3c')
       .setColor('#ffffff')
         message.channel.send(embed)
-
       }
     })
     client.on('message', message => {
@@ -290,7 +289,7 @@ client.on('message', message => {
       if (message.content === '!jinleehurb') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------JINLEEHURB------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
       .setColor('#ffffff')
         message.channel.send(embed)
 
@@ -412,7 +411,7 @@ client.on('message', message => {
   if (message.content === '!legends') {
     let embed = new Discord.RichEmbed()
   .setColor('#ffffff')
-  .setAuthor("!styleken",'https://cdn.discordapp.com/avatars/499591499122737153/ba0a096028219a6badb8dfcfbcdf6469.png?size=2048')
+  .setAuthor("!styleken",'https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/51/Sky_Captain_Scarlet_1.png/134px-Sky_Captain_Scarlet_1.png?version=543da455b5347b354ddd6e9433209d3c')
   .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
 
 message.channel.send(embed)
@@ -478,7 +477,7 @@ client.on('message', message => {
   if (message.content === '!legends') {
     let embed = new Discord.RichEmbed()
   .setColor('#ffffff')
-  .setAuthor("!jinleehurb",'https://discordapp.com/assets/1cbd08c76f8af6dddce02c5138971129.png')
+  .setAuthor("!jinleehurb",'https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
   .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
 
   message.channel.send(embed)
