@@ -360,7 +360,7 @@ client.on('message', message => {
       if (message.content === '!thomaserena') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------THOMASERENA------------')
-      .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/f/f4/ClassyRoland.png/revision/latest/scale-to-width-down/404?cb=20180215191845')
+      .setImage('https://pbs.twimg.com/media/Cyiq9mnWQAAU533.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
