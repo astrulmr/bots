@@ -229,9 +229,10 @@ client.on('message', message => {
       if (message.content === '!styleken') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------STYLEKEN------------')
-      .setImage('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/51/Sky_Captain_Scarlet_1.png/134px-Sky_Captain_Scarlet_1.png?version=543da455b5347b354ddd6e9433209d3c')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
       .setColor('#ffffff')
         message.channel.send(embed)
+
       }
     })
     client.on('message', message => {
@@ -411,7 +412,7 @@ client.on('message', message => {
   if (message.content === '!legends') {
     let embed = new Discord.RichEmbed()
   .setColor('#ffffff')
-  .setAuthor("!styleken",'https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/51/Sky_Captain_Scarlet_1.png/134px-Sky_Captain_Scarlet_1.png?version=543da455b5347b354ddd6e9433209d3c')
+  .setAuthor("!styleken",'https://cdn.discordapp.com/avatars/499591499122737153/ba0a096028219a6badb8dfcfbcdf6469.png?size=2048')
   .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
 
 message.channel.send(embed)
@@ -477,8 +478,8 @@ client.on('message', message => {
   if (message.content === '!legends') {
     let embed = new Discord.RichEmbed()
   .setColor('#ffffff')
-  .setAuthor("!jinleehurb",'https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
-  .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
+  .setAuthor("!jinleehurb",'https://discordapp.com/assets/1cbd08c76f8af6dddce02c5138971129.png')
+  .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
 
   message.channel.send(embed)
 
@@ -1272,7 +1273,7 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle("Name")
                   .setColor(0x0000ff)
-                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
+                  .setThumbnail("https://images2.alphacoders.com/963/thumb-1920-963972.png")
                   .setDescription("Kenshiro")
                   .addField('Position','Supporter',true)
                   .addField('Clan','our style',true)
