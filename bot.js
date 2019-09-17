@@ -1428,8 +1428,59 @@ client.on('message', message => {
                  
               }
                   })
+///////////=============---------------------------------==========////////////////////////////////////////////////
 
+client.on('message', message => {
+  if (message.content == '!pall'){          
+      const embed = new RichEmbed()
+      .setTitle('------------------ Runner Players ------------------')
+      .setColor(0xFFFF00)
+      .addField('Astru',"our style",true)
+      .addField('Kevin1185',"our style",true)
+      .addField('Jimm25',"our style",true)
+      .addField('SweetMiguel',"our style",true)
+      .addField('DanzoDon',"our style",true)
+      .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
 
+      message.channel.send(embed)
+  }
+     
+       
+      })
+      client.on('message', message => {
+        if (message.content == '!pall'){          
+            const embed = new RichEmbed()
+            .setTitle('------------------ Supporter Players ------------------')
+            .setColor(0xFFFF00)
+            .addField('Kenshiro',"our style",true)
+            .addField('|OS| Tmis Kun',"our style",true)
+            .addField('ThomaSerena',"NBS",true)
+            .addField('LordCroissant'," Clansanity",true)
+            .addField('PanosBOA',"our style",true)
+            .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
+    
+            message.channel.send(embed)
+        
+           
+        }
+            })
+            client.on('message', message => {
+              if (message.content == '!pall'){          
+                  const embed = new RichEmbed()
+                  .setTitle('------------------ Defender Players ------------------')
+                  .setColor(0xFFFF00)
+                  .addField('Styleken',"our style",true)
+                  .addField('KaeptnKook',"our style",true)
+                  .addField('Jinleehurb',"our style",true)
+                  .addField('Junusbiaz',"our style",true)
+                  .addField('BlueDragon',"TVS",true)
+                  .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
+          
+                  message.channel.send(embed)
+              
+                 
+              }
+                  })
 
 
 
