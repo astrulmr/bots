@@ -36,7 +36,7 @@ client.on('ready' , () => {
     client.on('message', message => {
       if (message.content === 'a') {
             const embed = new RichEmbed()
-            .setTitle('Brawball Clan That You Cant Beat')
+            .setTitle('Brawlball Clan That You Cant Beat')
             .setColor(0xFFFF00)
             welchannel.send(embed)
       }
@@ -73,19 +73,10 @@ client.on('ready' , () => {
       }
     })
  
-     welcomeChannel.send("Hello")
+
      
 
-     client.on('message', message => {
-      if (message.content === '!help') {
-        const embed = new RichEmbed()
-        
-        .setTitle(' IT Bot For our style clan And it For Brawlball information And Here His Work : ')
-        .setColor(0xFF0000)
-        .setDescription('1. Write { !who@anyname } to Get A Random Msg \n\n 2. Write { !os clan } To See our style clan Friends \n\n 3. Write{ !avatar @anyname } To See Your Avatar on Picture u can download \n\n 4. Write { !hi } for Some Info\n\n 5. He Welcome The People Who Join Server \n\n Designed By OS Team :)')
-        message.channel.send(embed)
-      }
-      })
+ 
       client.on('message', message => {
         if (message.content === '!os clan') {
           const embed = new RichEmbed()
@@ -1481,8 +1472,34 @@ client.on('message', message => {
                  
               }
                   })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+  if (message.content == '!codes'){          
+      const embed = new RichEmbed()
+      .setTitle('OS|Bot All Codes You Can Use')
+      .setColor(0xFFFF00)
+      .addField('!os clan',"To see info about (our style) clan",true)
+      .addField('!avatar @anyname',"To see avatar of someone in the server",true)
+      .addField('!pall',"To see all runners and supporters and defender in the server",true)
+      .addField('!run',"To see all runners the server",true)
+      .addField('!sup',"To see all supporters in the server",true)
+      .addField('!def',"To see eall defenders in the server",true)
+      .addField('!p @anyname',"To see power of someone in the server",true)
+      .addField('!legends',"To see every one fav legend in the server",true)
+      .addField('!anyname',"To see fav legend of someone in the server",true)
+      .addField('!ap',"To see which position and clan of every one in the server",true)
+      .addField('!p @anyname',"To see position and clan of someone in the server",true)
+      .addField('!brawlball',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
 
-
+      .setThumbnail(client.user.avatarURL)
+      .setFooter("Os|BOT Designed And Edited by OS Team",client.user.avatarURL)
+      message.channel.send(embed)
+  
+     
+  }
+      })
 
 
 
