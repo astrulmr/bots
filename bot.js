@@ -985,7 +985,7 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle("Name")
       .setColor(0x0000ff)
-      .setThumbnail(message.member.id.displayAvatarURL)
+      .setThumbnail("https://pbs.twimg.com/media/Cyiq9mnWQAAU533.png")
       .setDescription("ThomaSerena")
 
       .addField('Position','Supporter',true)
