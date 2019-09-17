@@ -209,7 +209,7 @@ client.on('message', message => {
       if (message.content === '!kenshiro') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------KENSHIRO------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+      .setImage('https://images2.alphacoders.com/963/thumb-1920-963972.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -1273,7 +1273,7 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle("Name")
                   .setColor(0x0000ff)
-                  .setThumbnail("https://images2.alphacoders.com/963/thumb-1920-963972.png")
+                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
                   .setDescription("Kenshiro")
                   .addField('Position','Supporter',true)
                   .addField('Clan','our style',true)
