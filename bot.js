@@ -1485,8 +1485,8 @@ client.on('message', message => {
       .addField('!brawlball                      |',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
       .addField('!os clan                          |',"To see info about (our style) clan",true)
       .addField('!legends                         |',"To see every one fav legend in the server",true)
-      .addField('!anyname                       |',"To see fav legend of someone in the server",true)
-      .addField('!pall                               |',"To see all runners and supporters and defender in the server",true)
+      .addField('!anyname                      |',"To see fav legend of someone in the server",true)
+      .addField('!pall                                 |',"To see all runners and supporters and defender in the server",true)
       .addField('!run                                |',"To see all runners the server        \n ",false)
 
       .addField('!sup                               |',"To see all supporters in the server          ",false)
