@@ -384,7 +384,7 @@ client.on('message', message => {
       if (message.content === '! <@314532481519058944>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------LORDCROISSANT------------')
-      .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/3/31/Kill_Thrill_Hattori.png/revision/latest?cb=20190522222609')
+      .setImage('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/31/Harbinger_Orion.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -393,8 +393,8 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === '! <@363346337132969996>') {
         let embed = new Discord.RichEmbed()
-        .setTitle('------------THE INSINE COW------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Gnash.png')
+        .setTitle('------------THE_INSANE_COW------------')
+      .setImage('https://3.bp.blogspot.com/-deOoBXcT8oo/Vs3H_BNT3wI/AAAAAAAAmsg/IQkCm4V8qSY/s1600/KOJI_Ronin_None.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -1214,7 +1214,7 @@ client.on('message', message => {
                                   const embed = new RichEmbed()
                                   .setTitle("Name")
                                   .setColor(0x0000ff)
-                                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8f/SkinIcon_Hattori_TrackJacket.png/600px-SkinIcon_Hattori_TrackJacket.png?version=a75db8c19f4f1a79775f9dc4ad805082")
+                                  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                                   .setDescription("LordCroissant")
                                   .addField('Position','Supporter',true)
                                   .addField('Clan','Clansanity',true)
@@ -1226,8 +1226,8 @@ client.on('message', message => {
                                     const embed = new RichEmbed()
                                     .setTitle("Name")
                                     .setColor(0x0000ff)
-                                    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/3a/SkinIcon_Gnash_AH.png/600px-SkinIcon_Gnash_AH.png?version=bae3053547394815a98439df7b9217f0")
-                                    .setDescription("The Insine Cow")
+                                    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/44/SkinIcon_Koji_Ronin.png/600px-SkinIcon_Koji_Ronin.png?version=506a902bd2dfc67fd7cdc40e4fe21465")
+                                    .setDescription("THE_INSANE_COW")
                                     .addField('Position','Runner',true)
                                     .addField('Clan','Pyrateers',true)
                                     message.channel.send(embed)
@@ -1365,7 +1365,7 @@ client.on('message', message => {
                       const embed = new RichEmbed()
                       .setTitle("Name")
                       .setColor(0x0000ff)
-                      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8f/SkinIcon_Hattori_TrackJacket.png/600px-SkinIcon_Hattori_TrackJacket.png?version=a75db8c19f4f1a79775f9dc4ad805082")
+                      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                       .setDescription("LordCroissant")
                       .addField('Position','Supporter',true)
                       .addField('Clan','Clansanity',true)
@@ -1439,8 +1439,8 @@ client.on('message', message => {
                                 const embed = new RichEmbed()
                                 .setTitle("Name")
                                 .setColor(0x0000ff)
-                                .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/3a/SkinIcon_Gnash_AH.png/600px-SkinIcon_Gnash_AH.png?version=bae3053547394815a98439df7b9217f0")
-                                .setDescription("The Insine Cow")
+                                .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/44/SkinIcon_Koji_Ronin.png/600px-SkinIcon_Koji_Ronin.png?version=506a902bd2dfc67fd7cdc40e4fe21465")
+                                .setDescription("THE_INSANE_COW")
                                 .addField('Position','Runner',true)
                                 .addField('Clan','Pyrateers',true)
                                 message.channel.send(embed)
@@ -1472,7 +1472,7 @@ client.on('message', message => {
       .addField('Jimm25',"our style",true)
       .addField('SweetMiguel',"our style",true)
       .addField('DanzoDon',"our style",true)
-      .addField('The Insine Cow',"Pyrateers",true)
+      .addField('THE_INSANE_COW',"Pyrateers",true)
       .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
 
       message.channel.send(embed)
@@ -1540,7 +1540,7 @@ client.on('message', message => {
       .addField('Jimm25',"our style",true)
       .addField('SweetMiguel',"our style",true)
       .addField('DanzoDon',"our style",true)
-      .addField('The Insine Cow',"Pyrateers",true)
+      .addField('THE_INSANE_COW',"Pyrateers",true)
       .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
 
       message.channel.send(embed)
