@@ -1,7 +1,7 @@
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 
-const client = require('.')('180984871685062656');
+const client = require('.')('603956394219274240');
 
 client.on('join', (secret) => {
   console.log('we should join with', secret);
