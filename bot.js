@@ -8,7 +8,7 @@ client.on('ready' , () => {
 
 
 
-    client.user.setActivity("BrawlBall")
+    client.user.setActivity("Nubs")
     client.guilds.forEach((guild) => {
        console.log(guild.name)
         guild.channels.forEach((channel) => {
