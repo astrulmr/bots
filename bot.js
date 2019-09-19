@@ -8,7 +8,7 @@ client.on('ready' , () => {
 
 
 
-    client.setActivity({
+    client.user.setActivity({
       details : `${tabTitle}`,
       state : `${tabURL}`,
       // startTimestamp: moment(new Date()).add(parse("-0s"), "ms").toDate(),
