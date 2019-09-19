@@ -394,7 +394,7 @@ client.on('message', message => {
       if (message.content === '! <@363346337132969996>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------THE_INSANE_COW------------')
-      .setImage('https://3.bp.blogspot.com/-deOoBXcT8oo/Vs3H_BNT3wI/AAAAAAAAmsg/IQkCm4V8qSY/s1600/KOJI_Ronin_None.png')
+      .setImage('https://i.redd.it/liunxjf6gqax.jpg')
       .setColor('#275BF0')
         message.channel.send(embed)
 
