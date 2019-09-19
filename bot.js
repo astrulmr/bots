@@ -8,15 +8,8 @@ client.on('ready' , () => {
 
 
 
-    client.user.setActivity({
-      details : `${tabTitle}`,
-      state : `${tabURL}`,
-      // startTimestamp: moment(new Date()).add(parse("-0s"), "ms").toDate(),
-      largeImageKey : `${iconName}`,
-      smallImageKey : 'firefox-small',
-      smallImageText : 'Firefox',
-      instance : false,
-    })
+    client.user.setActivity("Nubs","yes")
+    
     client.guilds.forEach((guild) => {
        console.log(guild.name)
         guild.channels.forEach((channel) => {
