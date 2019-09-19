@@ -6,9 +6,17 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 
+    client.setActivity({
+      details : `yes`,
+      state : `no`,
+      // startTimestamp: moment(new Date()).add(parse("-0s"), "ms").toDate(),
+      largeImageKey : `ok`,
+      smallImageKey : 'firefox-small',
+      smallImageText : 'Firefox',
+      instance : false,
+    })
 
-
-    client.user.setActivity("Nubs","yes")
+    
     
     client.guilds.forEach((guild) => {
        console.log(guild.name)
