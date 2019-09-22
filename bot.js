@@ -7,11 +7,12 @@ client.on('ready' , () => {
 
 
     client.user.setActivity("Brawlball")
-    let role = message.guild.roles.get("615317792186433586");
-
+ 
 client.on('message', message => {
   if (!message.guild) return
   if (message.content.startsWith('!addrole')) {
+    let role = message.guild.roles.get("615317792186433586");
+
   const user = message.mentions.users.first()
   if (user) {
   const member = message.guild.member(user)
