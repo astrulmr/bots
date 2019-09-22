@@ -17,117 +17,9 @@ client.on('message', message => {
     message.channel.send("yellow color set to "+message.author.username)
   }
   })
-  client.on('message', message => {
-    if (!message.guild) return
-    if (message.content === '!red' ) {
-    
-      message.member.addRole('615317792618577960')
   
-      message.channel.send("red color set to "+message.author.username)
-    }
-    })
-    client.on('message', message => {
-      if (!message.guild) return
-      if (message.content === '!blue' ) {
-      
-        message.member.addRole('615317792677298192')
-    
-        message.channel.send("blue color set to "+message.author.username)
-      }
-      })
-      client.on('message', message => {
-        if (!message.guild) return
-        if (message.content === 'green' ) {
-        
-          message.member.addRole('615317792656457729')
-      
-          message.channel.send("green color set to "+message.author.username)
-        }
-        })
-        client.on('message', message => {
-          if (!message.guild) return
-          if (message.content === '!black' ) {
-          
-            message.member.addRole('615317792664715306')
-        
-            message.channel.send("black color set to "+message.author.username)
-          }
-          })
-          client.on('message', message => {
-            if (!message.guild) return
-            if (message.content === '!orange' ) {
-            
-              message.member.addRole('615317792756858895')
-          
-              message.channel.send("orange color set to "+message.author.username)
-            }
-            })
-            client.on('message', message => {
-              if (!message.guild) return
-              if (message.content === '!white' ) {
-              
-                message.member.addRole('615317792539017249')
-            
-                message.channel.send("white color set to "+message.author.username)
-              }
-              })
-              client.on('message', message => {
-                if (!message.guild) return
-                if (message.content === '!pink' ) {
-                
-                  message.member.addRole('615317792723304488')
-              
-                  message.channel.send("pink color set to "+message.author.username)
-                }
-                })
-                client.on('message', message => {
-                  if (!message.guild) return
-                  if (message.content === '!purple' ) {
-                  
-                    message.member.addRole('615317793130283054')
-                
-                    message.channel.send("purple color set to "+message.author.username)
-                  }
-                  })
-                  client.on('message', message => {
-                    if (!message.guild) return
-                    if (message.content === '!brown' ) {
-                    
-                      message.member.addRole('615317793415626776')
-                  
-                      message.channel.send("brown color set to "+message.author.username)
-                    }
-                    })
-                    client.on('message', message => {
-                      if (!message.guild) return
-                      if (message.content === '!gray' ) {
-                      
-                        message.member.addRole('615317793159512074')
-                    
-                        message.channel.send("gray color set to "+message.author.username)
-                      }
-                      })
-                      client.on('message', message => {
-                        if (message.content === 'colors') {
-                              const embed = new RichEmbed()
-                              .setTitle('All Color That Can Change Ur online name color')
-                              .setColor(0xFFFF00)
-                              .addField("RED","!red",true)
-                              .addField("BLUE","!blue",true)
-                              .addField("GREEN","!green",true)
-                              .addField("YELLOW","!yellow",true)
-                              .addField("GRAY","!gray",true)
-                              .addField("ORANGE","!orange",true)
-                              .addField("WHITE","!white",true)
-                              .addField("BLACK","!black",true)
-                              .addField("BROWN","!brown",true)
-                              .addField("PINK","!pink",true)
-                              .addField("PURPLE","!purple",true)
 
-                              welchannel.send(embed)
-                        }
-                      })
-                        
+    
     
     client.guilds.forEach((guild) => {
        console.log(guild.name)
@@ -1723,8 +1615,6 @@ client.on('message', message => {
 
       .addField('!def                                |',"To see all defenders in the server",false)
       .addField('!ap                                  |',"To see which position and clan of every one in the server",true)
-      .addField("!colors                               |","To see all color that can change ur name color",true)
-
       .setThumbnail(client.user.avatarURL)
       .setFooter("\n\n OS|BOT Designed And Edited by OS Team",client.user.avatarURL)
       message.channel.send(embed)
