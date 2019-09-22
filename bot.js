@@ -9,16 +9,17 @@ client.on('ready' , () => {
     client.user.setActivity("Brawlball")
  
 client.on('message', message => {
+  if (!message.guild) return
   if (message.content.startsWith('!addrole')) {
-    let role = message.guild.roles.get("615317792186433586");
-    let userToModify = message.member;
-    let roleToAdd = message.mentions.roles.first();
-    userToModify.addRole(roleToAdd);
-    
-  message.channel.send("role added")
-  }
-
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if ( member) {
+    message.member.addRole('615317792186433586')
+    message.channel.send("role added")
+  }}}
   })
+    
     
     client.guilds.forEach((guild) => {
        console.log(guild.name)
