@@ -11,7 +11,7 @@ client.on('ready' , () => {
 client.on('message', message => {
   if (!message.guild) return
   if (message.content === '!yellow' ) {
-    let role = message.guild.roles.find(r => r.name === "co1");
+    let role = message.guild.roles.find(r => r.name === "co 1");
 
     message.member.addRole('role')
                             
