@@ -15,7 +15,8 @@ client.on('ready' , () => {
       if (user) {
       const member = message.guild.member(user)
       if ( member) {
-        message.member.addRole(myrole);
+        member.addRole(myrole).catch(console.error);
+
         message.channel.send("role added")
       }}}
       })
