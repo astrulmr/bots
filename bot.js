@@ -13,16 +13,10 @@ client.on('message', message => {
   if (message.content.startsWith('!addrole')) {
     let role = message.guild.roles.get("615317792186433586");
 
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if ( member) {
-    message.mentions.users.first().addRole(role)
-
-    message.channel.send("role added")
-  }}}
+    let userToModify = message.member;
+    let roleToAdd = message.mentions.roles.first();
+    userToModify.addRole(roleToAdd);}
   })
-    
     
     client.guilds.forEach((guild) => {
        console.log(guild.name)
