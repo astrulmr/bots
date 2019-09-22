@@ -7,19 +7,19 @@ client.on('ready' , () => {
 
 
     client.user.setActivity("Brawlball")
-    let role = message.guild.roles.find(r => r.name === "Team Mystic");
-
-    // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-    let member = message.mentions.members.first();
-    
-    // or the person who made the command: let member = message.member;
-    
-    // Add the role!
+    client.on('message', message => {
+      let role = message.guild.roles.find(r => r.name === "orange");
+      if (!message.guild) return
+      if (message.content.startsWith('!addrole')) {
+      const user = message.mentions.users.first()
+      if (user) {
+      const member = message.guild.member(user)
+      if ( member) {
     member.addRole(role).catch(console.error);
     
-    // Remove a role!
     member.removeRole(role).catch(console.error);
-
+      }}}
+      })
     
     
     client.guilds.forEach((guild) => {
