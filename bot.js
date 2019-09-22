@@ -15,7 +15,7 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if ( member) {
-    message.mentions.users.first().addRole('536618838863773707')
+    message.mentions.users.addRole('536618838863773707')
 
     message.channel.send("role added")
   }}}
