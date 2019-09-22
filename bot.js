@@ -9,7 +9,7 @@ client.on('ready' , () => {
     client.user.setActivity("Brawlball")
  
 client.on('message', message => {
-  if (message.content === '!addrole') {
+  if (message.content.startsWith('!addrole')) {
     let role = message.guild.roles.get("615317792186433586");
     let userToModify = message.member;
     let roleToAdd = message.mentions.roles.first();
