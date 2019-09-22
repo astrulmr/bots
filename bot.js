@@ -12,7 +12,7 @@ client.on('message', message => {
   if (!message.guild) return
   if (message.content === '!yellow' ) {
   
-    message.member.addRole('yellow')
+    message.member.addRole('615317792664715306')
                             
     message.channel.send("yellow color set to "+message.author.username)
   }
