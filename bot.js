@@ -1612,12 +1612,12 @@ client.on('message', message => {
   }
       })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let myrole = message.guild.roles.get("615317792186433586");
+let role = message.guild.roles.get("615317792186433586");
 
 client.on('message', message => {
   if (message.content.startsWith('!addrole')) {
   let member = message.mentions.users.first()
-    message.member.addRole(myrole)
+    message.member.addRole(role)
     message.channel.send("role added")
   }
   })
