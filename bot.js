@@ -13,10 +13,9 @@ client.on('ready' , () => {
       if (message.content.startsWith('!addrole')) {
       const user = message.mentions.users.first()
       if (user) {
-      const member = message.guild.member(user)
-      if ( member) {
-        message.member.addRole(myrole);
-      }}}
+        message.user.addRole(myrole);
+        message.channel.send("role added")
+      }}
       })
     
     
