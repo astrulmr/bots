@@ -13,7 +13,6 @@ client.on('ready' , () => {
 client.on('message', message => {
   if (message.content.startsWith('!addrole')) {
   let member = message.mentions.users.first()
-    message.member.addRole(role)
     message.channel.send("role added")
   }
   })
