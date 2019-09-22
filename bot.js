@@ -10,15 +10,12 @@ client.on('ready' , () => {
  
 client.on('message', message => {
   if (!message.guild) return
-  if (message.content.startsWith('!addrole')) {
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if ( member) {
+  if (message.content === '!yellow' ) {
+  
     message.member.addRole('615317792539017249')
 
-    message.channel.send("role added")
-  }}}
+    message.channel.send("yellow set to"+message.author.username)
+  }
   })
     
     
