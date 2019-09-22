@@ -12,7 +12,7 @@ client.on('message', message => {
   if (message.content === '!addrole') {
     let role = message.guild.roles.get("615317792186433586");
     let userToModify = message.member;
-    let roleToAdd = message.mentions.roles.first();
+    let roleToAdd = message.roles.first();
     userToModify.addRole(roleToAdd);}
   })
     
