@@ -7,7 +7,20 @@ client.on('ready' , () => {
 
 
     client.user.setActivity("Brawlball")
-    
+    let role = message.guild.roles.get("615317792186433586");
+
+client.on('message', message => {
+  if (!message.guild) return
+  if (message.content.startsWith('!addrole')) {
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if ( member) {
+    member.addRole(role)
+
+    message.channel.send("role added")
+  }}}
+  })
     
     
     client.guilds.forEach((guild) => {
@@ -1612,20 +1625,7 @@ client.on('message', message => {
   }
       })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let role = message.guild.roles.get("615317792186433586");
 
-client.on('message', message => {
-  if (!message.guild) return
-  if (message.content.startsWith('!addrole')) {
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if ( member) {
-    member.addRole(role)
-
-    message.channel.send("role added")
-  }}}
-  })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
