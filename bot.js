@@ -1615,15 +1615,10 @@ client.on('message', message => {
 client.on('message', message => {
   let myrole = message.guild.roles.get("615317792186433586");
   if (!message.guild) return
-  if (message.content.startsWith('!addrole')) {
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if ( member) {
-    member.addRole(myrole).catch(console.error);
-
+  if (message.content==='!orange') {
+ message.author.addRole(myrole)
     message.channel.send("role added")
-  }}}
+  }
   })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
