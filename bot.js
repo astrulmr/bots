@@ -124,7 +124,7 @@ client.on('message', message => {
                               .addField("PINK","!pink",true)
                               .addField("PURPLE","!purple",true)
 
-                       channel.send(embed)
+                       message.channel.send(embed)
                         }
                       })
                         
