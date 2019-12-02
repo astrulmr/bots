@@ -66,7 +66,7 @@ client.on('message', message => {
               if (!message.guild) return
               if (message.content === '!white' ) {
               
-                message.member.addRole('615317792539017249')
+                message.member.addRole('651018880206241822')
             
                 message.channel.send("white color set to "+message.author.username)
               }
