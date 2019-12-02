@@ -37,7 +37,7 @@ client.on('message', message => {
       })
       client.on('message', message => {
         if (!message.guild) return
-        if (message.content === 'green' ) {
+        if (message.content === '!green' ) {
         
           message.member.addRole('615317792656457729')
       
