@@ -1801,7 +1801,7 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle('OS|Bot All Codes You Can Use')
       .setColor(0xffffff)
-      .addField('!avatar @anyname      _________________________',"To see avatar of someone in the server",true)
+      .addField('!avatar @anyname____________',"To see avatar of someone in the server",true)
       .addField('!p @anyname               _________________________',"To see position and clan of someone in the server",true)
       .addField('!brawlball                     _________________________ ',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
       .addField('!os clan                         _________________________ ',"To see info about (our style) clan",true)
