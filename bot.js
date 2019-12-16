@@ -198,7 +198,10 @@ client.on('message', message => {
             
             .addField('\n kevin1185', ' He So Coool on Runner And Fantastic in  Defender And Supporter (Runner)', true)
             
+          
+            .addField('\n LordCroissant', ' He Never crossed on Supporter And witty in Runner And Defender (Supporter) ', true)
             
+          
             .addField('\n nani', ' He is a Brilliant on Supporter And Indestructible in Runner And Defender (Supporter) ', true)
             
             
@@ -660,6 +663,17 @@ client.on('message', message => {
   .setColor('#ffffff')
   .setAuthor("!kaeptnkook",'https://cdn.discordapp.com/avatars/240226379596038146/c43892dba6796734d7936b39a08a98c9.png?size=2048')
   .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Bodvar.png')
+
+  message.channel.send(embed)
+
+}
+})
+    client.on('message', message => {
+  if (message.content === '!legends') {
+    let embed = new Discord.RichEmbed()
+  .setColor('#ffffff')
+  .setAuthor("!LordCroissant",'https://cdn.discordapp.com/avatars/314532481519058944/414f704e4f2e39f85df7ca4f04407440.png?size=2048')
+  .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
 
   message.channel.send(embed)
 
