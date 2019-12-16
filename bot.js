@@ -153,45 +153,7 @@ client.on('message', message => {
 
       
     })
-    client.on('message', message => {
-      if (message.content === 'a') {
-            const embed = new RichEmbed()
-            .setTitle('Brawlball Clan That You Cant Beat')
-            .setColor(0xFFFF00)
-            welchannel.send(embed)
-      }
-    })
-    client.on('message', message => {
-      if (message.content === 'a') {
-            const embed = new RichEmbed()
-            .setTitle('There Is No Leader , We Are All Leaders In OS')
-            .setColor(0xff0000)
-            welchannel.send(embed)
-      }
-    })
-    client.on('message', message => {
-      if (message.content === 'a') {
-            const embed = new RichEmbed()
-            .setTitle('We Are a Small Clan With a Lot Of Pride')
-            .setColor(0xeee8aa)
-            welchannel.send(embed)
-      }
-    })
-    client.on('message', message => {
-      if (message.content === 'a') {
-            const embed = new RichEmbed()
-            .setTitle('NBS = EZPZ')
-            .setColor(0x0000ff)
-            welchannel.send(embed)
-      }
-    })
-    client.on('message', message => {
-      if (message.content === 'a') {
-            
-        welchannel.send  ('https://discord.gg/aMTafbd')
-      
-      }
-    })
+    
  
 
      
@@ -310,7 +272,7 @@ client.on('message', message => {
           
           .setTitle('Up Pass Brawlball Move it Consists of five steps : ')
           .setColor(0x00BFFF)
-          .setDescription('\n\n 1. Go Top Of Ur Base Tower And Jump Up And Left Or Right (depend on which side u play) \n\n 2. Dodge Aiming Up + Left Or Right  \n\n 3. Throw The Ball Up  ( Without Jumping Just Throw Button And Aim Up ) \n\n 4. Punch Up On Heavy Button Attack To Catch The Ball  \n\n 5. Jump 1 Time  \n\n 6. And Dodge One Time \n\n Designed By OS Team :)')
+          .setDescription('\n\n 1. Go Top Of Ur Base Tower And Jump Up And Left Or Right (depend on which side u play) \n\n 2. Dodge Aiming Up + Left Or Right  \n\n 3. Throw The Ball Up  ( Without Jumping Just Throw Button And Aim Up ) \n\n 4. Punch Up On Heavy Button Attack To Catch The Ball  \n\n 5. Jump 1 Time  \n\n 6. And Dodge One Time \n\n {files:["myvideo.mp4"]}  ) \n\n Designed By OS Team :)')
           channel3.send(embed)
  }
  })
