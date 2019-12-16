@@ -1313,7 +1313,7 @@ client.on('message', message => {
                                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                                   .setDescription("LordCroissant")
                                   .addField('Position','Supporter',true)
-                                  .addField('Clan','Clansanity',true)
+                                  .addField('Clan','our style',true)
                                   message.channel.send(embed)
                               }
                               })
@@ -1464,7 +1464,7 @@ client.on('message', message => {
                       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                       .setDescription("LordCroissant")
                       .addField('Position','Supporter',true)
-                      .addField('Clan','Clansanity',true)
+                      .addField('Clan','our style',true)
                       message.channel.send(embed)
                   }
                   })
@@ -1586,7 +1586,7 @@ client.on('message', message => {
             .addField('Kenshiro',"our style",true)
             .addField('|OS| Tmis Kun',"our style",true)
             .addField('ThomaSerena',"NBS",true)
-            .addField('LordCroissant'," Clansanity",true)
+            .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
@@ -1656,7 +1656,7 @@ client.on('message', message => {
             .addField('Kenshiro',"our style",true)
             .addField('|OS| Tmis Kun',"our style",true)
             .addField('ThomaSerena',"NBS",true)
-            .addField('LordCroissant'," Clansanity",true)
+            .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
