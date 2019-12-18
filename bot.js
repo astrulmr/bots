@@ -1138,7 +1138,7 @@ client.on('message', message => {
   }
   })
   client.on('message', message => {
-    if (message.content === "!p <@482162074097549333>" ) {
+    if (message.content === '!p <@482162074097549333>' ) {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
