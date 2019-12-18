@@ -1688,9 +1688,132 @@ client.on('message', message => {
 
 /////////////////////////////////////////////////////////////////
 
+   client.on('message', message => {
+      if (message.content === '! <@205466076622880778>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------EICHELB4RT------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "!p <@205466076622880778>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/1/18/SkinIcon_Lucien_Stealth.png/900px-SkinIcon_Lucien_Stealth.png?version=fafe5f5a88c16a7a2132cd69779d44c0")
+      .setDescription("Eichelb4rt")
+      .addField('Position','Runner',true)
+      .addField('Clan','Pyrateers',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/1/18/SkinIcon_Lucien_Stealth.png/900px-SkinIcon_Lucien_Stealth.png?version=fafe5f5a88c16a7a2132cd69779d44c0")
+        .setDescription("Eichelb4rt")
+        .addField('Position','Runner',true)
+        .addField('Clan','Pyrateers',true)
+        message.channel.send(embed)
+    }
+    })
 
 
-   
+
+
+
+//////////////////////////////////////////////
+
+   client.on('message', message => {
+      if (message.content === '! <@484482242949939221>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------SHADOW------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "!p <@484482242949939221>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/9d/SkinIcon_Brynn_Metadev.png/150px-SkinIcon_Brynn_Metadev.png?version=26e9fb7150eb2cb3cb0c5edc7bb6c3b8")
+      .setDescription("Shadow")
+      .addField('Position','Runner',true)
+      .addField('Clan','Pyrateers',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/9d/SkinIcon_Brynn_Metadev.png/150px-SkinIcon_Brynn_Metadev.png?version=26e9fb7150eb2cb3cb0c5edc7bb6c3b8")
+        .setDescription("Shadow")
+        .addField('Position','Runner',true)
+        .addField('Clan','Pyrateers',true)
+        message.channel.send(embed)
+    }
+    })
+
+/////////////////////////////////////
+
+
+
+   client.on('message', message => {
+      if (message.content === '! <@321188857359892480>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------Glaedr------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "!p <@321188857359892480>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+      .setDescription("Glaedr")
+      .addField('Position','Runner',true)
+      .addField('Clan','La Team Rainbow',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+        .setDescription("Glaedr")
+        .addField('Position','Runner',true)
+        .addField('Clan','La Team Rainbow',true)
+        message.channel.send(embed)
+    }
+    })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
