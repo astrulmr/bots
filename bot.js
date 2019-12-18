@@ -1571,6 +1571,7 @@ client.on('message', message => {
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
+      .addField('Glaedr',"La Team Rainbow",true)
       .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
 
       message.channel.send(embed)
@@ -1641,6 +1642,7 @@ client.on('message', message => {
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
+      .addField('Glaedr',"La Team Rainbow",true)
       .setThumbnail('http://www.logolama.com/wp-content/uploads/2017/12/running_color-positive-300x300.png')
 
       message.channel.send(embed)
