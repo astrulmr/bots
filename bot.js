@@ -1769,6 +1769,49 @@ client.on('message', message => {
         message.channel.send(embed)
     }
     })
+
+/////////////////////////////////////
+
+
+
+   client.on('message', message => {
+      if (message.content === '! <@321188857359892480>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------Glaedr------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "!p <@321188857359892480>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+      .setDescription("Glaedr")
+      .addField('Position','Runner',true)
+      .addField('Clan','La Team Rainbow',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+        .setDescription("Glaedr")
+        .addField('Position','Runner',true)
+        .addField('Clan','La Team Rainbow',true)
+        message.channel.send(embed)
+    }
+    })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
