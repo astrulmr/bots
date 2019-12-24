@@ -1,8 +1,16 @@
-
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
+client.on('ready' , () => {
+    console.log("connected as " + client.user.tag)
+
+client.user.setDescription("yes")
+    client.user.setActivity("Brawlball")
+void UpdatePresence()
+ {
+    const DiscordRichPresence = discordPresence;
+    memset(discordPresence, 0, sizeof(discordPresence));
     discordPresence.state = "Playing Solo";
     discordPresence.details = "Competitive";
     discordPresence.startTimestamp = 1507665886;
@@ -14,13 +22,8 @@ const client = new Discord.Client()
     discordPresence.partyMax = 5;
     discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
     discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+    Discord_UpdatePresence(discordPresence);}
 
-client.on('ready' , () => {
-    console.log("connected as " + client.user.tag)
-
-
-    client.user.setActivity("Brawlball")
- 
 client.on('message', message => {
   if (!message.guild) return
   if (message.content === '!yellow' ) {
@@ -940,7 +943,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === "<@482162074097549333>") {
+  if (message.content === '! <@482162074097549333>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
@@ -1151,7 +1154,7 @@ client.on('message', message => {
   }
   })
   client.on('message', message => {
-    if (message.content === '!p <@482162074097549333>' ) {
+    if (message.content === "!p <@482162074097549333>" ) {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
