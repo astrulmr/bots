@@ -3,10 +3,6 @@ const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
-static void UpdatePresence()
-{
-    DiscordRichPresence discordPresence;
-    memset(&discordPresence, 0, sizeof(discordPresence));
     discordPresence.state = "Playing Solo";
     discordPresence.details = "Competitive";
     discordPresence.startTimestamp = 1507665886;
@@ -18,8 +14,7 @@ static void UpdatePresence()
     discordPresence.partyMax = 5;
     discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
     discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
-    Discord_UpdatePresence(&discordPresence);
-} 
+
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
