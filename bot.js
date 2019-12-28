@@ -916,13 +916,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('message', message => {
-const userID = "482162074097549333"
-if(message.content == userID)
-{
-    message.channel.send('Hello there!');
-}
-})
+
 client.on('message', message => {
   if (message.content === '! <@505751422449614878>') {
     let embed = new Discord.RichEmbed()
@@ -934,16 +928,7 @@ client.on('message', message => {
   }
 })
 
-client.on('message', message => {
-  if (message.content === "<@482162074097549333>"); {
-    let embed = new Discord.RichEmbed()
-    .setTitle('------------ASTRU------------')
-  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
-  .setColor('#275BF0')
-    message.channel.send(embed)
 
-  }
-})
 client.on('message', message => {
   if (message.content === '! <@499591499122737153>') {
     let embed = new Discord.RichEmbed()
