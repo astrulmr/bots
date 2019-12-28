@@ -950,7 +950,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@499591499122737153>') {
+  if (message.content === '<@499591499122737153>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------STYLEKEN------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
