@@ -935,12 +935,12 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if ( member) {
-    message.channel.send("<@"+user.id+">")
+    message.channel.send("! <@"+user.id+">")
  }}}
 })
 
 client.on('message', message => {
-  if (message.contact === "<@482162074097549333>") {
+  if (message.contact === "! <@482162074097549333>") {
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
