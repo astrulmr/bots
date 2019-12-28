@@ -935,7 +935,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-  if (message.content == ("<@482162074097549333>")); {
+  if (message.content == "<@482162074097549333>"); {
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
