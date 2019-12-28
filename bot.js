@@ -919,7 +919,7 @@ client.on('message', message => {
 const userID = "482162074097549333"
 
 bot.on("message", function(message){
-if(!message.sender === userID)
+if(message.sender === userID)
 {
 
 if(message.content === 'psst')
