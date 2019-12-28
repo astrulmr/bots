@@ -935,7 +935,7 @@ client.on('message', message => {
   if (user) {
   const member = message.guild.member(user)
   if ( member) {
-    message.channel.send("/"+user.id)
+    message.channel.send("<@"+user.id+">")
  }}}
 })
 
