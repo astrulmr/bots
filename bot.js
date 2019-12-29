@@ -1816,7 +1816,7 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle("Name")
       .setColor(0x0000ff)
-      .setThumbnail("https://drive.google.com/file/d/1GrwSQmsKVDUTf3SVh0PoK3wXzL1qBxoa")
+      .setThumbnail("https://lh3.googleusercontent.com/y3ESsdjFmRiTz3VIprcaXoeJrSj6Tq9_bmbG6w2-caPDmbyLI3C73aEyggHlys3RwC-b-g=s99")
       .setDescription("Glaedr")
       .addField('Position','Runner',true)
       .addField('Clan','La Team Rainbow',true)
