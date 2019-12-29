@@ -1816,7 +1816,7 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle("Name")
       .setColor(0x0000ff)
-      .setThumbnail("./kkkl.png")
+      .setThumbnail('attachment://kkkl.png')
       .setDescription("Glaedr")
       .addField('Position','Runner',true)
       .addField('Clan','La Team Rainbow',true)
