@@ -918,7 +918,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('message', message => {
-  if (message.content === '! <@505751422449614878>') {
+  if (message.content === '<@505751422449614878>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------KENSHIRO------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
@@ -940,7 +940,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-  if (message.contect === '<@482162074097549333>') {
+  if (message.content === '<@482162074097549333>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
@@ -960,7 +960,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@320264452874305536>') {
+  if (message.content === '<@320264452874305536>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------DANZODON------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
@@ -970,7 +970,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@286208201186213888>') {
+  if (message.content === '<@286208201186213888>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------KEVIN1185------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png')
@@ -980,7 +980,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@614045629773119489>') {
+  if (message.content === '<@614045629773119489>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------SWEETMIGUEL------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Rayman.png')
@@ -990,7 +990,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@286209333488910336>') {
+  if (message.content === '<@286209333488910336>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------JIMM25------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ember.png')
@@ -1000,7 +1000,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@423131212945817620>') {
+  if (message.content === '<@423131212945817620>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------JUNUSBIAZ------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Mordex.png')
@@ -1011,7 +1011,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-  if (message.content === '! <@504543749293080597>') {
+  if (message.content === '<@504543749293080597>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------JINLEEHURB------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
@@ -1021,7 +1021,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@240226379596038146>') {
+  if (message.content === '<@240226379596038146>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------KEAPTNKOOK------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Bodvar-1.png')
@@ -1051,7 +1051,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@365968871326351360>') {
+  if (message.content === '<@365968871326351360>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------|OS| TMIS KUN------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
@@ -1071,7 +1071,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@555853237689909344>') {
+  if (message.content === '<@555853237689909344>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------PANOSBOA------------')
   .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
@@ -1081,7 +1081,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@184230639086731264>') {
+  if (message.content === '<@184230639086731264>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------THOMASERENA------------')
   .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/e/e5/DarkMatterVraxx.png/revision/latest/scale-to-width-down/294?cb=20180215181636')
@@ -1091,7 +1091,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@347563513297895452>') {
+  if (message.content === '<@347563513297895452>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------BLUEDRAGON------------')
   .setImage('https://pbs.twimg.com/media/Cyiq9mnWQAAU533.png')
@@ -1101,7 +1101,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@314532481519058944>') {
+  if (message.content === '<@314532481519058944>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------LORDCROISSANT------------')
   .setImage('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/31/Harbinger_Orion.png')
@@ -1111,7 +1111,7 @@ client.on('message', message => {
   }
 })
 client.on('message', message => {
-  if (message.content === '! <@363346337132969996>') {
+  if (message.content === '<@363346337132969996>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------THE_INSANE_COW------------')
   .setImage('https://i.redd.it/liunxjf6gqax.jpg')
@@ -1135,9 +1135,19 @@ client.on('message', message => {
 ////////////////////////////////////////
 
 
+client.on('message', message => {
+  if (!message.guild) return
+  if (message.content.startsWith('!p')) {
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if ( member) {
+    message.channel.send("p <@"+user.id+">")
+ }}}
+})
 
                               client.on('message', message => {
-  if (message.content === "!p <@184230639086731264>" ) {
+  if (message.content === "p <@184230639086731264>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -1151,7 +1161,7 @@ client.on('message', message => {
   }
   })
   client.on('message', message => {
-    if (message.content === "!p <@482162074097549333>" ) {
+    if (message.content === "p <@482162074097549333>" ) {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
@@ -1164,7 +1174,7 @@ client.on('message', message => {
     }
     })
     client.on('message', message => {
-      if (message.content === "!p <@320264452874305536>" ) {
+      if (message.content === "p <@320264452874305536>" ) {
           const embed = new RichEmbed()
           .setTitle("Name")
           .setColor(0x0000ff)
@@ -1177,7 +1187,7 @@ client.on('message', message => {
       }
       })
       client.on('message', message => {
-        if (message.content === "!p <@286208201186213888>" ) {
+        if (message.content === "p <@286208201186213888>" ) {
             const embed = new RichEmbed()
             .setTitle("Name")
             .setColor(0x0000ff)
@@ -1190,7 +1200,7 @@ client.on('message', message => {
         }
         })
         client.on('message', message => {
-          if (message.content === "!p <@286209333488910336>" ) {
+          if (message.content === "p <@286209333488910336>" ) {
               const embed = new RichEmbed()
               .setTitle("Name")
               .setColor(0x0000ff)
@@ -1203,7 +1213,7 @@ client.on('message', message => {
           }
           })
           client.on('message', message => {
-            if (message.content === "!p <@614045629773119489>" ) {
+            if (message.content === "p <@614045629773119489>" ) {
                 const embed = new RichEmbed()
                 .setTitle("Name")
                 .setColor(0x0000ff)
@@ -1216,7 +1226,7 @@ client.on('message', message => {
             }
             })
             client.on('message', message => {
-              if (message.content === "!p <@499591499122737153>" ) {
+              if (message.content === "p <@499591499122737153>" ) {
                   const embed = new RichEmbed()
                   .setTitle("Name")
                   .setColor(0x0000ff)
@@ -1229,7 +1239,7 @@ client.on('message', message => {
               }
               })
               client.on('message', message => {
-                if (message.content === "!p <@240226379596038146>" ) {
+                if (message.content === "p <@240226379596038146>" ) {
                     const embed = new RichEmbed()
                     .setTitle("Name")
                     .setColor(0x0000ff)
@@ -1242,7 +1252,7 @@ client.on('message', message => {
                 }
                 })
                 client.on('message', message => {
-                  if (message.content === "!p <@423131212945817620>" ) {
+                  if (message.content === "p <@423131212945817620>" ) {
                       const embed = new RichEmbed()
                       .setTitle("Name")
                       .setColor(0x0000ff)
@@ -1255,7 +1265,7 @@ client.on('message', message => {
                   }
                   })
                   client.on('message', message => {
-                    if (message.content === "!p <@504543749293080597>" ) {
+                    if (message.content === "p <@504543749293080597>" ) {
                         const embed = new RichEmbed()
                         .setTitle("Name")
                         .setColor(0x0000ff)
@@ -1268,7 +1278,7 @@ client.on('message', message => {
                     }
                     })
                     client.on('message', message => {
-                      if (message.content === "!p <@555853237689909344>" ) {
+                      if (message.content === "p <@555853237689909344>" ) {
                           const embed = new RichEmbed()
                           .setTitle("Name")
                           .setColor(0x0000ff)
@@ -1281,7 +1291,7 @@ client.on('message', message => {
                       }
                       })
                       client.on('message', message => {
-                        if (message.content === "!p <@505751422449614878>" ) {
+                        if (message.content === "p <@505751422449614878>" ) {
                             const embed = new RichEmbed()
                             .setTitle("Name")
                             .setColor(0x0000ff)
@@ -1294,7 +1304,7 @@ client.on('message', message => {
                         }
                         })
                         client.on('message', message => {
-                          if (message.content === "!p <@365968871326351360>" ) {
+                          if (message.content === "p <@365968871326351360>" ) {
                               const embed = new RichEmbed()
                               .setTitle("Name")
                               .setColor(0x0000ff)
@@ -1307,7 +1317,7 @@ client.on('message', message => {
                           })
                       
                           client.on('message', message => {
-                            if (message.content === "!p <@347563513297895452>" ) {
+                            if (message.content === "p <@347563513297895452>" ) {
                                 const embed = new RichEmbed()
                                 .setTitle("Name")
                                 .setColor(0x0000ff)
@@ -1319,7 +1329,7 @@ client.on('message', message => {
                             }
                             })
                             client.on('message', message => {
-                              if (message.content === "!p <@314532481519058944>" ) {
+                              if (message.content === "p <@314532481519058944>" ) {
                                   const embed = new RichEmbed()
                                   .setTitle("Name")
                                   .setColor(0x0000ff)
@@ -1331,7 +1341,7 @@ client.on('message', message => {
                               }
                               })
                               client.on('message', message => {
-                                if (message.content === "!p <@363346337132969996>" ) {
+                                if (message.content === "p <@363346337132969996>" ) {
                                     const embed = new RichEmbed()
                                     .setTitle("Name")
                                     .setColor(0x0000ff)
@@ -1702,7 +1712,7 @@ client.on('message', message => {
 /////////////////////////////////////////////////////////////////
 
    client.on('message', message => {
-      if (message.content === '! <@205466076622880778>') {
+      if (message.content === '<@205466076622880778>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------EICHELB4RT------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png')
@@ -1713,7 +1723,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <@205466076622880778>" ) {
+  if (message.content === "p <@205466076622880778>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -1747,7 +1757,7 @@ client.on('message', message => {
 //////////////////////////////////////////////
 
    client.on('message', message => {
-      if (message.content === '! <@484482242949939221>') {
+      if (message.content === '<@484482242949939221>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------SHADOW------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
@@ -1758,7 +1768,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <@484482242949939221>" ) {
+  if (message.content === "p <@484482242949939221>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -1790,7 +1800,7 @@ client.on('message', message => {
 
 
    client.on('message', message => {
-      if (message.content === '! <@321188857359892480>') {
+      if (message.content === '<@321188857359892480>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------Glaedr------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
@@ -1801,7 +1811,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <@321188857359892480>" ) {
+  if (message.content === "p <@321188857359892480>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
