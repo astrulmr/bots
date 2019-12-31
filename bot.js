@@ -215,9 +215,6 @@ client.on('message', message => {
             .addField('\n Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter (Supporter) ', true)
             
             
-            .addField('\n styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter (Defender)', true)
-            
-            
             
             .addField('\n SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter (Runner)', true)
             
@@ -1233,7 +1230,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
-                  .addField('Clan','our style',true)
+                  .addField('Clan','N/A',true)
 
                   message.channel.send(embed)
               }
@@ -1512,7 +1509,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
-                  .addField('Clan','our style',true)
+                  .addField('Clan','N/A',true)
                   message.channel.send(embed)
               }
               })
@@ -1624,7 +1621,7 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle('------------------ Defender Players ------------------')
                   .setColor(0xFFFF00)
-                  .addField('Styleken',"our style",true)
+                  .addField('Styleken',"N/A",true)
                   .addField('KaeptnKook',"our style",true)
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
@@ -1695,7 +1692,7 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle('------------------ Defender Players ------------------')
                   .setColor(0xFFFF00)
-                  .addField('Styleken',"our style",true)
+                  .addField('Styleken',"N/A",true)
                   .addField('KaeptnKook',"our style",true)
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
