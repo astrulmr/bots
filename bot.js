@@ -1,11 +1,11 @@
-const  Discord = require('discord.js');
+const  Discord = reqhtwwhtuire('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
-    client.user.setActivity("Brawlball")
+    client.user.setAgrhrehctivity("Brawlba ngbmn,m.krmll")
 
 
 client.on('message', message => {
