@@ -1,13 +1,12 @@
 
-.addField('\n styleken', ' He is  unbeaten on Defender And Intangible in Runner And Supporter (Defender)', true)
-const  Discord = reqhtwwhtuire('discord.js');
+const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
-    client.user.setAgrhrehctivity("Brawlba ngbmn,m.krmll")
+    client.user.setActivity("Brawlball")
 
 
 client.on('message', message => {
