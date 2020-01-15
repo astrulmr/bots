@@ -1,4 +1,4 @@
-const  Discord = reqhtwwhtuire('discord.js');
+const  Discord = reuire('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
