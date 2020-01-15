@@ -6,5 +6,5 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
     client.user.setActivity("Brawlball")
-
+})
 client.login(process.env.BOT_TOKEN)
