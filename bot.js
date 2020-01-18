@@ -1604,7 +1604,7 @@ client.on('message', message => {
             .setTitle('------------------ Supporter Players ------------------')
             .setColor(0x0000ff)
             .addField('Kenshiro',"our style",true)
-            .addField('Styleken',"N/A",true)
+            .addField('Styleken',"our style",true)
             .addField('|OS| Tmis Kun',"our style",true)
             .addField('ThomaSerena',"NBS",true)
             .addField('LordCroissant'," our style",true)
