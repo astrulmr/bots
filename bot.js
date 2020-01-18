@@ -1584,7 +1584,6 @@ client.on('message', message => {
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
       .addField('Astru',"our style",true)
-      .addField('Kevin1185',"our style",true)
       .addField('Jimm25',"our style",true)
       .addField('SweetMiguel',"our style",true)
       .addField('DanzoDon',"our style",true)
@@ -1609,6 +1608,7 @@ client.on('message', message => {
             .addField('ThomaSerena',"NBS",true)
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
+            .addField('Kevin1185',"our style",true)
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
@@ -1655,7 +1655,6 @@ client.on('message', message => {
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
       .addField('Astru',"our style",true)
-      .addField('Kevin1185',"our style",true)
       .addField('Jimm25',"our style",true)
       .addField('SweetMiguel',"our style",true)
       .addField('DanzoDon',"our style",true)
@@ -1680,6 +1679,7 @@ client.on('message', message => {
             .addField('ThomaSerena',"NBS",true)
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
+            .addField('Kevin1185',"our style",true)
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
