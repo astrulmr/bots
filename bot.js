@@ -2041,3 +2041,124 @@ if (message.content === "!ap" ) {
     message.channel.send(embed)
 }
 })
+/////////////////////////////////////////////////////////////////
+lient.on('message', message => {
+      if (message.content === '!<<<@560538993058512915>>>
+>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------SID_GMRツ------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ragnir.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <<<@560538993058512915>>>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/86/SkinIcon_Ragnir_Ashen.png")
+      .setDescription("SID_GMRツ")
+      .addField('Position','Runner',true)
+      .addField('Clan','PHB',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/86/SkinIcon_Ragnir_Ashen.png")
+        .setDescription("SID_GMRツ")
+        .addField('Position','Runner',true)
+        .addField('Clan','PHB',true)
+        message.channel.send(embed)
+    }
+    })
+/////////////////////////////////////////////////////////////////
+lient.on('message', message => {
+      if (message.content === '!<<@322316295943225345>>
+>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------LOAY__XDAR------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <<@322316295943225345>>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/4/47/SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
+      .setDescription("Loay__xdar")
+      .addField('Position','Runner',true)
+      .addField('Clan','ps clan',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/4/47/SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
+        .setDescription("Loay__xdar")
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }
+    })
+/////////////////////////////////////////////////////////////////
+
+client.on('message', message => {
+      if (message.content === '!<@324504927407833088>
+>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------KLASHMIX470------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <@324504927407833088>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png?version=7afb1835c45671a54e458c32395a4c10")
+      .setDescription("klashmix470")
+      .addField('Position','Runner',true)
+      .addField('Clan','ps clan',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png?version=7afb1835c45671a54e458c32395a4c10")
+        .setDescription("klashmix470")
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }
+    })
