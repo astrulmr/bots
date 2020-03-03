@@ -2043,8 +2043,7 @@ if (message.content === "!ap" ) {
 })
 /////////////////////////////////////////////////////////////////
 lient.on('message', message => {
-      if (message.content === '!<<<@560538993058512915>>>
->') {
+      if (message.content === '!<<<@560538993058512915>>>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------SID_GMRツ------------')
       .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ragnir.png)
@@ -2055,7 +2054,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <<<@560538993058512915>>>" ) {
+  if (message.content === "!p <<<@560538993058512915>>>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2095,7 +2094,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <<@322316295943225345>>" ) {
+  if (message.content === "!p <<@322316295943225345>>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2136,7 +2135,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <@324504927407833088>" ) {
+  if (message.content === "!p <@324504927407833088>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
