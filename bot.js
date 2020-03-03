@@ -1783,6 +1783,95 @@ client.on('message', message => {
                   })
 
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+  if (message.content == '!codes'){          
+      const embed = new RichEmbed()
+      .setTitle('OS|Bot All Codes You Can Use')
+      .setColor(0xffffff)
+      .addField('!avatar @anyname',"To see avatar of someone in the server",true)
+      .addField('!p @anyname               ',"To see position and clan of someone in the server",true)
+      .addField('!brawlball                      ',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
+      .addField('!os clan                          ',"To see info about (our style) clan",true)
+      .addField('!legends                         ',"To see every one fav legend in the server",true)
+      .addField('! @anyname                      ',"To see fav legend of someone in the server",true)
+      .addField('!pall                                 ',"To see all runners and supporters and defender in the server",true)
+      .addField('!run                                ',"To see all runners the server        \n ",true)
+
+      .addField('!sup                               ',"To see all supporters in the server          ",true)
+
+      .addField('!def                                ',"To see all defenders in the server",true)
+      .addField('!ap                                  ',"To see which position and clan of every one in the server",true)
+      .addField("!colors                               ","To see all color that can change ur name color",true)
+
+      .setThumbnail(client.user.avatarURL)
+      .setFooter("\n\n OS|BOT Designed And Edited by OS Team",client.user.avatarURL)
+      message.channel.send(embed)
+  
+     
+  }
+      })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('guildMemberAdd', member => {
+  const channel2 = member.guild.channels.get("535540529379672074")
+  if (!channel2) return
+  channel2.send(`${member} Has Join To our style Server`)
+                member.addRole('603386617620856852')
+})
+  client.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.get("613400026978320395")
+    if (!channel) return 
+      number = 10
+  imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
+      channel.send({files:[imagenumber+".png"]}  )
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+          var msg1 = Array(5); 
+          msg1[1] = `OMG !!! Is That You  ${member} Welcome Dude \n\n ${member} Has Joined To our style server`;
+          msg1[2] = `Hey  ${member} Welcome To Our Style \n\n ${member} Has Joined To our style server`;
+          msg1[3] = `Great We'er Glad You Came  ${member} :wink: \n\n ${member} Has Joined To our style server`;
+          msg1[4] = `Well Well Well Look Who is Here Guys  ${member} \n\n ${member} Has Joined To our style server`;
+          msg1[5] = `I Have To Tell You Something Come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} Has Joined To our style server`
+          msg1[6] = `Is That You , Wait Its not You Are ${member} Anyway Welcome \n\n ${member} Has Joined To our style server` 
+  
+              var x = getRandomInt(0, 20);
+          if (x < 5){ 
+               if (x < 3){
+          channel.send(msg1[1]);
+          }
+          else {
+                     channel.send(msg1[3]);
+          }
+          }
+          else if (x<= 9) {
+            if (x >= 7){
+            channel.send(msg1[2]); }
+              else{
+                         channel.send(msg1[4]);
+              }
+          } 
+          else if (x <= 12 ) { 
+           channel.send(msg1[5]);
+          }
+          else {
+            channel.send(msg1[6])
+          }
+         
+        })
+
+
+
+client.login(process.env.BOT_TOKEN)
+
 /////////////////////////////////////////////////////////////////
 
    client.on('message', message => {
@@ -1952,92 +2041,3 @@ if (message.content === "!ap" ) {
     message.channel.send(embed)
 }
 })
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('message', message => {
-  if (message.content == '!codes'){          
-      const embed = new RichEmbed()
-      .setTitle('OS|Bot All Codes You Can Use')
-      .setColor(0xffffff)
-      .addField('!avatar @anyname',"To see avatar of someone in the server",true)
-      .addField('!p @anyname               ',"To see position and clan of someone in the server",true)
-      .addField('!brawlball                      ',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
-      .addField('!os clan                          ',"To see info about (our style) clan",true)
-      .addField('!legends                         ',"To see every one fav legend in the server",true)
-      .addField('! @anyname                      ',"To see fav legend of someone in the server",true)
-      .addField('!pall                                 ',"To see all runners and supporters and defender in the server",true)
-      .addField('!run                                ',"To see all runners the server        \n ",true)
-
-      .addField('!sup                               ',"To see all supporters in the server          ",true)
-
-      .addField('!def                                ',"To see all defenders in the server",true)
-      .addField('!ap                                  ',"To see which position and clan of every one in the server",true)
-      .addField("!colors                               ","To see all color that can change ur name color",true)
-
-      .setThumbnail(client.user.avatarURL)
-      .setFooter("\n\n OS|BOT Designed And Edited by OS Team",client.user.avatarURL)
-      message.channel.send(embed)
-  
-     
-  }
-      })
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('guildMemberAdd', member => {
-  const channel2 = member.guild.channels.get("535540529379672074")
-  if (!channel2) return
-  channel2.send(`${member} Has Join To our style Server`)
-                member.addRole('603386617620856852')
-})
-  client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.get("613400026978320395")
-    if (!channel) return 
-      number = 10
-  imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
-      channel.send({files:[imagenumber+".png"]}  )
-
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-      }
-          var msg1 = Array(5); 
-          msg1[1] = `OMG !!! Is That You  ${member} Welcome Dude \n\n ${member} Has Joined To our style server`;
-          msg1[2] = `Hey  ${member} Welcome To Our Style \n\n ${member} Has Joined To our style server`;
-          msg1[3] = `Great We'er Glad You Came  ${member} :wink: \n\n ${member} Has Joined To our style server`;
-          msg1[4] = `Well Well Well Look Who is Here Guys  ${member} \n\n ${member} Has Joined To our style server`;
-          msg1[5] = `I Have To Tell You Something Come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} Has Joined To our style server`
-          msg1[6] = `Is That You , Wait Its not You Are ${member} Anyway Welcome \n\n ${member} Has Joined To our style server` 
-  
-              var x = getRandomInt(0, 20);
-          if (x < 5){ 
-               if (x < 3){
-          channel.send(msg1[1]);
-          }
-          else {
-                     channel.send(msg1[3]);
-          }
-          }
-          else if (x<= 9) {
-            if (x >= 7){
-            channel.send(msg1[2]); }
-              else{
-                         channel.send(msg1[4]);
-              }
-          } 
-          else if (x <= 12 ) { 
-           channel.send(msg1[5]);
-          }
-          else {
-            channel.send(msg1[6])
-          }
-         
-        })
-
-
-
-client.login(process.env.BOT_TOKEN)
-
-
