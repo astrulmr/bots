@@ -1870,7 +1870,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
   if (!channel2) return
-  channel2.send(`${member} Has Join To our style Server`) message.member.addRole('651018880206241822')
+  channel2.send(`${member} Has Join To our style Server`)
                 message.member.addRole('603386617620856852')
 })
   client.on('guildMemberAdd', member => {
