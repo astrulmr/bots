@@ -2054,7 +2054,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <<<@560538993058512915>>>" ) {
+  if (message.content === "p <<<@560538993058512915>>>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2080,7 +2080,7 @@ lient.on('message', message => {
         message.channel.send(embed)
     }
     })
-/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 lient.on('message', message => {
       if (message.content === '!<<@322316295943225345>>
 >') {
@@ -2094,7 +2094,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <<@322316295943225345>>" ) {
+  if (message.content === "p <<@322316295943225345>>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2120,7 +2120,7 @@ lient.on('message', message => {
         message.channel.send(embed)
     }
     })
-/////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 client.on('message', message => {
       if (message.content === '!<@324504927407833088>
@@ -2135,7 +2135,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "!p <@324504927407833088>" ) {
+  if (message.content === "p <@324504927407833088>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
