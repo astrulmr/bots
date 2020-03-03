@@ -1911,6 +1911,47 @@ client.on('message', message => {
     })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+client.on('message', message => {
+  if (message.content === '! <@364069557951922176>') {
+    let embed = new Discord.RichEmbed()
+    .setTitle('------------OTMANEZZA------------')
+  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+  .setColor('#275BF0')
+    message.channel.send(embed)
+
+  }
+})
+
+                         client.on('message', message => {
+if (message.content === "!p <@364069557951922176>" ) {
+
+  const embed = new RichEmbed()
+  .setTitle("Name")
+  .setColor(0x0000ff)
+  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
+  .setDescription("otmanezza")
+  .addField('Position','Runner',true)
+  .addField('Clan','our style',true)
+
+  message.channel.send(embed)
+}
+})
+
+client.on('message', message => {
+if (message.content === "!ap" ) {
+    const embed = new RichEmbed()
+    .setTitle("Name")
+    .setColor(0x0000ff)
+    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
+    .setDescription("otmanezza")
+    .addField('Position','Runner',true)
+    .addField('Clan','our style',true)
+    message.channel.send(embed)
+}
+})
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('message', message => {
   if (message.content == '!codes'){          
