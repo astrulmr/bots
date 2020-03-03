@@ -1666,6 +1666,7 @@ client.on('message', message => {
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
+      .addField('otmanezza',"our style",true)
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
@@ -1737,6 +1738,7 @@ client.on('message', message => {
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
+      .addField('otmanezza',"our style",true)
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
