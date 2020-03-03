@@ -1867,8 +1867,344 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  client.on('message', message => {
+      if (message.content === '<@205466076622880778>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------EICHELB4RT------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <@205466076622880778>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/1/18/SkinIcon_Lucien_Stealth.png/900px-SkinIcon_Lucien_Stealth.png?version=fafe5f5a88c16a7a2132cd69779d44c0")
+      .setDescription("Eichelb4rt")
+      .addField('Position','Runner',true)
+      .addField('Clan','Pyrateers',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/1/18/SkinIcon_Lucien_Stealth.png/900px-SkinIcon_Lucien_Stealth.png?version=fafe5f5a88c16a7a2132cd69779d44c0")
+        .setDescription("Eichelb4rt")
+        .addField('Position','Runner',true)
+        .addField('Clan','Pyrateers',true)
+        message.channel.send(embed)
+    }
+    })
 
 
+
+
+
+//////////////////////////////////////////////
+
+   client.on('message', message => {
+      if (message.content === '<@484482242949939221>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------SHADOW------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <@484482242949939221>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/9d/SkinIcon_Brynn_Metadev.png/150px-SkinIcon_Brynn_Metadev.png?version=26e9fb7150eb2cb3cb0c5edc7bb6c3b8")
+      .setDescription("Shadow")
+      .addField('Position','Runner',true)
+      .addField('Clan','Pyrateers',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/9d/SkinIcon_Brynn_Metadev.png/150px-SkinIcon_Brynn_Metadev.png?version=26e9fb7150eb2cb3cb0c5edc7bb6c3b8")
+        .setDescription("Shadow")
+        .addField('Position','Runner',true)
+        .addField('Clan','Pyrateers',true)
+        message.channel.send(embed)
+    }
+    })
+
+/////////////////////////////////////
+
+
+
+   client.on('message', message => {
+      if (message.content === '<@321188857359892480>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------Glaedr------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <@321188857359892480>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://lh3.googleusercontent.com/UoIzDUwX-Mz7Nn2ULldlnfh_bHgJdbsGLoSUaJsmC8vIBp6N7GgxDteYTbTsghY7Mj94ag=s95")
+      .setDescription("Glaedr")
+      .addField('Position','Runner',true)
+      .addField('Clan','La Team Rainbow',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+        .setDescription("Glaedr")
+        .addField('Position','Runner',true)
+        .addField('Clan','La Team Rainbow',true)
+        message.channel.send(embed)
+    }
+    })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+client.on('message', message => {
+  if (message.content === '! <@364069557951922176>') {
+    let embed = new Discord.RichEmbed()
+    .setTitle('------------OTMANEZZA------------')
+  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+  .setColor('#275BF0')
+    message.channel.send(embed)
+
+  }
+})
+
+                         client.on('message', message => {
+if (message.content === "!p <@364069557951922176>" ) {
+
+  const embed = new RichEmbed()
+  .setTitle("Name")
+  .setColor(0x0000ff)
+  .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
+  .setDescription("otmanezza")
+  .addField('Position','Runner',true)
+  .addField('Clan','our style',true)
+
+  message.channel.send(embed)
+}
+})
+
+client.on('message', message => {
+if (message.content === "!ap" ) {
+    const embed = new RichEmbed()
+    .setTitle("Name")
+    .setColor(0x0000ff)
+    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
+    .setDescription("otmanezza")
+    .addField('Position','Runner',true)
+    .addField('Clan','our style',true)
+    message.channel.send(embed)
+}
+})
+/////////////////////////////////////////////////////////////////
+lient.on('message', message => {
+      if (message.content === '!<<<@560538993058512915>>>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------SID_GMRツ------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ragnir.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <<<@560538993058512915>>>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/86/SkinIcon_Ragnir_Ashen.png")
+      .setDescription("SID_GMRツ")
+      .addField('Position','Runner',true)
+      .addField('Clan','PHB',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/86/SkinIcon_Ragnir_Ashen.png")
+        .setDescription("SID_GMRツ")
+        .addField('Position','Runner',true)
+        .addField('Clan','PHB',true)
+        message.channel.send(embed)
+    }
+    })
+///////////////////////////////////////////////////////////////////////////////
+lient.on('message', message => {
+      if (message.content === '!<<@322316295943225345>>
+>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------LOAY__XDAR------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <<@322316295943225345>>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/4/47/SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
+      .setDescription("Loay__xdar")
+      .addField('Position','Runner',true)
+      .addField('Clan','ps clan',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/4/47/SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
+        .setDescription("Loay__xdar")
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }
+    })
+//////////////////////////////////////////////////////////////
+
+client.on('message', message => {
+      if (message.content === '!<@324504927407833088>
+>') {
+        let embed = new Discord.RichEmbed()
+        .setTitle('------------KLASHMIX470------------')
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png)
+      .setColor('#275BF0')
+        message.channel.send(embed)
+
+      }
+    })
+
+                             client.on('message', message => {
+  if (message.content === "p <@324504927407833088>" ) {
+ 
+      const embed = new RichEmbed()
+      .setTitle("Name")
+      .setColor(0x0000ff)
+      .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png?version=7afb1835c45671a54e458c32395a4c10")
+      .setDescription("klashmix470")
+      .addField('Position','Runner',true)
+      .addField('Clan','ps clan',true)
+
+      message.channel.send(embed)
+  }
+  })
+
+  client.on('message', message => {
+    if (message.content === "!ap" ) {
+        const embed = new RichEmbed()
+        .setTitle("Name")
+        .setColor(0x0000ff)
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png?version=7afb1835c45671a54e458c32395a4c10")
+        .setDescription("klashmix470")
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }
+    })
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.login(process.env.BOT_TOKEN)
 
