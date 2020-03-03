@@ -484,6 +484,81 @@ client.on('message', message => {
 
    }
  })
+    client.on('message', message => {
+    if (message.content === 'XD') {
+      bChannel.send("You're funny");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'dx') {
+      bChannel.send("smiles at you");
+
+   }
+ })
+
+                  client.on('message', message => {
+    if (message.content === 'you suck') {
+      bChannel.send("Yeah I'm sure");
+
+   }
+ })
+
+                  client.on('message', message => {
+    if (message.content === 'Hhhh') {
+      bChannel.send("You are slow to learn");
+
+   }
+ })
+
+                  client.on('message', message => {
+    if (message.content === 'Hhhhhh') {
+      bChannel.send("I think we need some boundaries");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'Kevin') {
+      bChannel.send("That's a nice name");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'gottem') {
+      bChannel.send("What the heck");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'why you still here') {
+      bChannel.send("Because I'm alive");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'Really') {
+      bChannel.send("Yes will you marry me?");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'I need a girlfriend') {
+      bChannel.send("Well it's not gonna be me");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'Truth or dare') {
+      bChannel.send("Are you in love with someone? And if yes, who?");
+
+   }
+ })
+                  client.on('message', message => {
+    if (message.content === 'Nope') {
+      bChannel.send("Ok.. Bye");
+
+   }
+ })
           client.on('message', message => {
     if (message.content === 'damn') {
        const attachment = new Attachment('https://media.giphy.com/media/11q8qiwWSkGzrW/giphy.gif');
