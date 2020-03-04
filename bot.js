@@ -2009,10 +2009,10 @@ if (message.content === "!ap" ) {
 })
 /////////////////////////////////////////////////////////////////
 lient.on('message', message => {
-      if (message.content === '!<<<@560538993058512915>>>') {
+      if (message.content === '! <@560538993058512915>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------SID_GMRツ------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ragnir.png)
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ragnir.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -2020,7 +2020,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <<<@560538993058512915>>>" ) {
+  if (message.content === "!p <@560538993058512915>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2048,11 +2048,10 @@ lient.on('message', message => {
     })
 ///////////////////////////////////////////////////////////////////////////////
 lient.on('message', message => {
-      if (message.content === '!<<@322316295943225345>>
->') {
+      if (message.content === '! <@322316295943225345>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------LOAY__XDAR------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png)
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -2060,7 +2059,7 @@ lient.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <<@322316295943225345>>" ) {
+  if (message.content === "!p <@322316295943225345>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
@@ -2089,11 +2088,10 @@ lient.on('message', message => {
 //////////////////////////////////////////////////////////////
 
 client.on('message', message => {
-      if (message.content === '!<@324504927407833088>
->') {
+      if (message.content === '! <@324504927407833088>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------KLASHMIX470------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png)
+      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
@@ -2101,7 +2099,7 @@ client.on('message', message => {
     })
 
                              client.on('message', message => {
-  if (message.content === "p <@324504927407833088>" ) {
+  if (message.content === "!p <@324504927407833088>" ) {
  
       const embed = new RichEmbed()
       .setTitle("Name")
