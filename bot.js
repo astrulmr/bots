@@ -5,7 +5,7 @@ const client = new Discord.Client()
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
-    client.user.setActivity("Brawlball")
+    client.user.setActivity("yes")
 
 
 client.on('message', message => {
