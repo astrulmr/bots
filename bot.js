@@ -5,7 +5,7 @@ const client = new Discord.Client()
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
-    client.user.setActivity("nub")
+    client.user.setActivity("kk")
 
 
 client.on('message', message => {
