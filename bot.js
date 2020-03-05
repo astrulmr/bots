@@ -932,10 +932,9 @@ client.on('message', message => {
  })  
     
 client.on('message', message => { 
-if (message.content === nice dude) {
-bChannel.send(OFC im the best ez pz);
+if (message.content === 'nice dude') {
+bChannel.send('OFC im the best ez pz');
 }})
-
 //nubstnubstnubstyhh
 
 })
@@ -2103,3 +2102,4 @@ client.on('guildMemberAdd', member => {
         })
 
 client.login(process.env.BOT_TOKEN)
+
