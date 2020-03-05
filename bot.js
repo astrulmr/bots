@@ -1,3 +1,4 @@
+Summary:
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1693,7 +1694,9 @@ client.on('message', message => {
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .addField('Kevin1185',"our style",true)
-            //uwilllosenubhahahahahahanub
+                  .addField('Erzinos','La Team Rainbow',true)
+
+//uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
@@ -1768,7 +1771,9 @@ client.on('message', message => {
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .addField('Kevin1185',"our style",true)
-            //uwilllosenubhahahahahahanub
+                  .addField('Erzinos','La Team Rainbow',true)
+
+//uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
@@ -2019,6 +2024,35 @@ if (message.content === "!ap" ) {
     message.channel.send(embed)
 }
 })
+
+  client.on('message', message => { 
+      if (message.content === '<@284987318736257025') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ERZINOS------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Thatch.png') 
+        .setColor('#275BF0') 
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@284987318736257025 > ' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor(0x0000ff)
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/28/SkinIcon_Thatch_Zombie.png/900px-SkinIcon_Thatch_Zombie.png?version=bc1edd09890581a56b0de04e478a1e90')
+        .setDescription(Erzinos)
+        .addField('Position','Supporter',true)
+        .addField('Clan','La Team Rainbow',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor(0x0000ff)
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/28/SkinIcon_Thatch_Zombie.png/900px-SkinIcon_Thatch_Zombie.png?version=bc1edd09890581a56b0de04e478a1e90')
+        .addField('Position','Supporter',true)
+        .addField('Clan','La Team Rainbow',true)
+    }})
+
 //styleandastrusonub13579
 /////////////////////////////////////////////////////////////////
 
@@ -2102,4 +2136,3 @@ client.on('guildMemberAdd', member => {
         })
 
 client.login(process.env.BOT_TOKEN)
-
