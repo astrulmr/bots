@@ -2072,7 +2072,7 @@ if (message.content === "!ap" ) {
         message.channel.send(embed)
     }})
   client.on('message', message => {
-      if (message.content === 'p <@199353363576389633> ' ) {
+      if (message.content === 'p <@199353363576389633>' ) {
        const embed = new RichEmbed()
         .setTitle('Name')
         .setColor('0x0000ff')
