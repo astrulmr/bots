@@ -930,6 +930,7 @@ client.on('message', message => {
 
    }
  })  
+    //nubstnubstnubstyhh
 
 })
 
@@ -1667,6 +1668,7 @@ client.on('message', message => {
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
+      //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
@@ -1686,6 +1688,7 @@ client.on('message', message => {
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .addField('Kevin1185',"our style",true)
+            //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
@@ -1702,6 +1705,7 @@ client.on('message', message => {
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
                   .addField('BlueDragon',"TVS",true)
+                  //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
                   message.channel.send(embed)
@@ -1739,6 +1743,7 @@ client.on('message', message => {
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
+      //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
@@ -1758,6 +1763,7 @@ client.on('message', message => {
             .addField('LordCroissant'," our style",true)
             .addField('PanosBOA',"our style",true)
             .addField('Kevin1185',"our style",true)
+            //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
             message.channel.send(embed)
@@ -1774,6 +1780,7 @@ client.on('message', message => {
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
                   .addField('BlueDragon',"TVS",true)
+                  //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
                   message.channel.send(embed)
@@ -2007,6 +2014,7 @@ if (message.content === "!ap" ) {
     message.channel.send(embed)
 }
 })
+//styleandastrusonub13579
 /////////////////////////////////////////////////////////////////
 
 
