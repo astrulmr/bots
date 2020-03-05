@@ -1,3 +1,4 @@
+Summary:
 
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
@@ -1715,7 +1716,9 @@ client.on('message', message => {
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
                   .addField('BlueDragon',"TVS",true)
-                  //dontjokwithmeucantwin545
+                        .addField('senpai','our style',true)
+
+//dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
                   message.channel.send(embed)
@@ -1794,7 +1797,9 @@ client.on('message', message => {
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
                   .addField('BlueDragon',"TVS",true)
-                  //dontjokwithmeucantwin545
+                        .addField('senpai','our style',true)
+
+//dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
                   message.channel.send(embed)
@@ -2090,6 +2095,37 @@ if (message.content === "!ap" ) {
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
         .addField('Position','Supporter',true)
         .addField('Clan','Clansanity',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@346343324069920772>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------SENPAI------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@346343324069920772>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
+        .setDescription('senpai')
+        .addField('Position','Defender',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
+        .addField('Position','Defender',true)
+        .addField('Clan','our style',true)
         message.channel.send(embed)
     }})
 
