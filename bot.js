@@ -2025,12 +2025,15 @@ if (message.content === "!ap" ) {
 }
 })
 
+
+
   client.on('message', message => { 
       if (message.content === '<@284987318736257025>') { 
        let embed = new Discord.RichEmbed()
         .setTitle('------------ERZINOS------------')
         .setImage("https://www.brawlhalla.com/c/uploads/2018/11/Thatch.png") 
         .setColor('#275BF0') 
+       message.channel.send(embed)
     }})
   client.on('message', message => {
       if (message.content === 'p <@284987318736257025 >' ) {
