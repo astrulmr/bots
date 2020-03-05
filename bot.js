@@ -2026,19 +2026,19 @@ if (message.content === "!ap" ) {
 })
 
   client.on('message', message => { 
-      if (message.content === '<@284987318736257025') { 
+      if (message.content === '<@284987318736257025>') { 
        let embed = new Discord.RichEmbed()
         .setTitle('------------ERZINOS------------')
         .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Thatch.png') 
         .setColor('#275BF0') 
     }})
   client.on('message', message => {
-      if (message.content === 'p <@284987318736257025 > ' ) {
+      if (message.content === '!p <@284987318736257025 > ' ) {
        const embed = new RichEmbed()
         .setTitle('Name')
         .setColor(0x0000ff)
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/28/SkinIcon_Thatch_Zombie.png/900px-SkinIcon_Thatch_Zombie.png?version=bc1edd09890581a56b0de04e478a1e90')
-        .setDescription(Erzinos)
+        .setDescription("Erzinos")
         .addField('Position','Supporter',true)
         .addField('Clan','La Team Rainbow',true)
         message.channel.send(embed)
