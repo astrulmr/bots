@@ -1,3 +1,4 @@
+Summary:
 
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
@@ -1696,6 +1697,8 @@ client.on('message', message => {
             .addField('Kevin1185',"our style",true)
                   .addField('Erzinos','La Team Rainbow',true)
 
+      .addField('Helper','Clansanity',true)
+
 //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
@@ -1772,6 +1775,8 @@ client.on('message', message => {
             .addField('PanosBOA',"our style",true)
             .addField('Kevin1185',"our style",true)
                   .addField('Erzinos','La Team Rainbow',true)
+
+      .addField('Helper','Clansanity',true)
 
 //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
@@ -2056,6 +2061,37 @@ if (message.content === "!ap" ) {
         .addField('Position','Supporter',true)
         .addField('Clan','La Team Rainbow',true)
        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@199353363576389633>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------HELPER------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@199353363576389633> ' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
+        .setDescription('Helper')
+        .addField('Position','Supporter',true)
+        .addField('Clan','Clansanity',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
+        .addField('Position','Supporter',true)
+        .addField('Clan','Clansanity',true)
+        message.channel.send(embed)
     }})
 
 //styleandastrusonub13579
