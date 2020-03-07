@@ -1,6 +1,7 @@
 
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1680,6 +1681,8 @@ client.on('message', message => {
 
       .addField('nub','our style',true)
 
+      .addField('Loay__xdar','ps clan',true)
+
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1764,6 +1767,8 @@ client.on('message', message => {
             .addField('astru','our style',true)
 
       .addField('nub','our style',true)
+
+      .addField('Loay__xdar','ps clan',true)
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -2197,6 +2202,37 @@ if (message.content === "!ap" ) {
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/60/SkinIcon_Brynn_Uber.png/900px-SkinIcon_Brynn_Uber.png?version=4a61bce02e2e72ad23f198c1ed227d58')
         .addField('Position','Runner',true)
         .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@322316295943225345>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------LOAY__XDAR------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@322316295943225345>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/900px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37')
+        .setDescription('Loay__xdar')
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/900px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37')
+        .addField('Position','Runner',true)
+        .addField('Clan','ps clan',true)
         message.channel.send(embed)
     }})
 
