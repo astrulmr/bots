@@ -2196,36 +2196,6 @@ if (message.content === "!ap" ) {
     }})
 
 
-  client.on('message', message => { 
-      if (message.content === '<@astru>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------STYLENUB------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Teros.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@astru>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/42/SkinIcon_Teros_IronBull.png/900px-SkinIcon_Teros_IronBull.png?version=314bcb71ba6763c4f11c28d5063708a9')
-        .setDescription('stylenub')
-        .addField('Position','Defender',true)
-        .addField('Clan','yes',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/42/SkinIcon_Teros_IronBull.png/900px-SkinIcon_Teros_IronBull.png?version=314bcb71ba6763c4f11c28d5063708a9')
-        .setDescription('stylenub')
-        .addField('Position','Defender',true)
-        .addField('Clan','yes',true)
-        message.channel.send(embed)
-    }})
 
 
   client.on('message', message => { 
@@ -2260,100 +2230,8 @@ if (message.content === "!ap" ) {
     }})
 
 
-  client.on('message', message => { 
-      if (message.content === '<@560538993058512915>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------SID_GMRツ------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@560538993058512915>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
 
 
-  client.on('message', message => { 
-      if (message.content === '<@560538993058512915>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------SID_GMRツ------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@560538993058512915>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
-
-
-  client.on('message', message => { 
-      if (message.content === '<@560538993058512915>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------SID_GMRツ------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@560538993058512915>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/3/3a/SkinIcon_WuShang_Bender.png')
-        .setDescription('SID_GMRツ')
-        .addField('Position','Runner',true)
-        .addField('Clan','PHB',true)
-        message.channel.send(embed)
-    }})
 
 //styleandastrusonub13579
 /////////////////////////////////////////////////////////////////
