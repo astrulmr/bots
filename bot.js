@@ -2,6 +2,7 @@
 
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1726,6 +1727,8 @@ client.on('message', message => {
                   .addField('BlueDragon',"TVS",true)
                         .addField('senpai','our style',true)
 
+      .addField('stylenub','yes',true)
+
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
@@ -1812,6 +1815,8 @@ client.on('message', message => {
                   .addField('Junusbiaz',"our style",true)
                   .addField('BlueDragon',"TVS",true)
                         .addField('senpai','our style',true)
+
+      .addField('stylenub','yes',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
@@ -2174,6 +2179,38 @@ if (message.content === "!ap" ) {
         .setDescription("Loay__xdar")
        .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@astru>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------STYLENUB------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Teros.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@astru>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/42/SkinIcon_Teros_IronBull.png/900px-SkinIcon_Teros_IronBull.png?version=314bcb71ba6763c4f11c28d5063708a9')
+        .setDescription('stylenub')
+        .addField('Position','Defender',true)
+        .addField('Clan','yes',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/42/SkinIcon_Teros_IronBull.png/900px-SkinIcon_Teros_IronBull.png?version=314bcb71ba6763c4f11c28d5063708a9')
+        .setDescription('stylenub')
+        .addField('Position','Defender',true)
+        .addField('Clan','yes',true)
         message.channel.send(embed)
     }})
 
