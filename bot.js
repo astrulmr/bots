@@ -1,5 +1,4 @@
 
-
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1592,7 +1591,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
-                  .addField('Clan','N/A',true)
+                  .addField('Clan','our style',true)
                   message.channel.send(embed)
               }
               })
@@ -1690,8 +1689,6 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
 
       .addField('klashmix470','ps clan',true)
-
-      .addField('ELITE','',true)
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -1791,8 +1788,6 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
 
       .addField('klashmix470','ps clan',true)
-
-      .addField('ELITE','',true)
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -2392,38 +2387,6 @@ if (message.content === "!ap" ) {
         .setDescription('klashmix470')
         .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
-        message.channel.send(embed)
-    }})
-
-
-  client.on('message', message => { 
-      if (message.content === '<@444377033724657675>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------ELITE------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@444377033724657675>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/8f/SkinIcon_Hattori_TrackJacket.png')
-        .setDescription('ELITE')
-        .addField('Position','Runner',true)
-        .addField('Clan','',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/8/8f/SkinIcon_Hattori_TrackJacket.png')
-        .setDescription('ELITE')
-        .addField('Position','Runner',true)
-        .addField('Clan','',true)
         message.channel.send(embed)
     }})
 
