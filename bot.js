@@ -1,5 +1,6 @@
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1677,6 +1678,8 @@ client.on('message', message => {
       .addField('otmanezza',"our style",true)
             .addField('astru','our style',true)
 
+      .addField('nub','our style',true)
+
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1759,6 +1762,8 @@ client.on('message', message => {
       .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
             .addField('astru','our style',true)
+
+      .addField('nub','our style',true)
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -2159,6 +2164,37 @@ if (message.content === "!ap" ) {
         .setTitle('Name')
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/37/SkinIcon_Orion_Knight.png/900px-SkinIcon_Orion_Knight.png?version=a6e46140531c1a989ab7373486479d41')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@style>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------NUB------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@style>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/60/SkinIcon_Brynn_Uber.png/900px-SkinIcon_Brynn_Uber.png?version=4a61bce02e2e72ad23f198c1ed227d58')
+        .setDescription('nub')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/60/SkinIcon_Brynn_Uber.png/900px-SkinIcon_Brynn_Uber.png?version=4a61bce02e2e72ad23f198c1ed227d58')
         .addField('Position','Runner',true)
         .addField('Clan','our style',true)
         message.channel.send(embed)
