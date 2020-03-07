@@ -1,4 +1,5 @@
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1674,7 +1675,9 @@ client.on('message', message => {
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
-      //postionneverlosehaha747
+            .addField('astru','our style',true)
+
+//postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
@@ -1755,7 +1758,9 @@ client.on('message', message => {
       .addField('Shadow',"Pyrateers",true)
       .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
-      //postionneverlosehaha747
+            .addField('astru','our style',true)
+
+//postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
       message.channel.send(embed)
@@ -2124,6 +2129,37 @@ if (message.content === "!ap" ) {
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
         .addField('Position','Defender',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@astru>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@astru>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/37/SkinIcon_Orion_Knight.png/900px-SkinIcon_Orion_Knight.png?version=a6e46140531c1a989ab7373486479d41')
+        .setDescription('astru')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/37/SkinIcon_Orion_Knight.png/900px-SkinIcon_Orion_Knight.png?version=a6e46140531c1a989ab7373486479d41')
+        .addField('Position','Runner',true)
         .addField('Clan','our style',true)
         message.channel.send(embed)
     }})
