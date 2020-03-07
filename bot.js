@@ -2107,7 +2107,8 @@ if (message.content === "!ap" ) {
         .setTitle('Name')
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
-        .addField('Position','Supporter',true)
+       .setDescription('Helper')
+       .addField('Position','Supporter',true)
         .addField('Clan','Clansanity',true)
         message.channel.send(embed)
     }})
@@ -2138,69 +2139,8 @@ if (message.content === "!ap" ) {
         .setTitle('Name')
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
-        .addField('Position','Defender',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-
-
-  client.on('message', message => { 
-      if (message.content === '<@astru>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------ASTRU------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@astru>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/37/SkinIcon_Orion_Knight.png/900px-SkinIcon_Orion_Knight.png?version=a6e46140531c1a989ab7373486479d41')
-        .setDescription('astru')
-        .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/37/SkinIcon_Orion_Knight.png/900px-SkinIcon_Orion_Knight.png?version=a6e46140531c1a989ab7373486479d41')
-        .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-
-
-  client.on('message', message => { 
-      if (message.content === '<@style>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------NUB------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@style>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/60/SkinIcon_Brynn_Uber.png/900px-SkinIcon_Brynn_Uber.png?version=4a61bce02e2e72ad23f198c1ed227d58')
-        .setDescription('nub')
-        .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/60/SkinIcon_Brynn_Uber.png/900px-SkinIcon_Brynn_Uber.png?version=4a61bce02e2e72ad23f198c1ed227d58')
-        .addField('Position','Runner',true)
+        .setDescription('senpai')
+       .addField('Position','Defender',true)
         .addField('Clan','our style',true)
         message.channel.send(embed)
     }})
@@ -2231,7 +2171,8 @@ if (message.content === "!ap" ) {
         .setTitle('Name')
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/900px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37')
-        .addField('Position','Runner',true)
+        .setDescription("Loay__xdar")
+       .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
         message.channel.send(embed)
     }})
