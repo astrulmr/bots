@@ -961,15 +961,12 @@ bChannel.send('OFC im the best ez pz');
  client.on('message', message => {
     if (message.content === '!roll' ) {
      
-     var message_options = [
-        "Hello there!",
-        "How are you?",
-        "What's up?"
+     var message_options = ["Hello there!","How are you?","What's up?"
     ]
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
-message.channel.send(message, chosen_message) 
+message.channel.send(chosen_message) 
     }})
  
 
