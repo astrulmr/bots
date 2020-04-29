@@ -961,7 +961,7 @@ bChannel.send('OFC im the best ez pz');
  client.on('message', message => {
     if (message.content === '!roll' ) {
      
-     var message_options = ["Can't attack", "Only defend (stay in your scoring area)","Can't taunt",]
+     var message_options = ["Can't attack", "Only defend (stay in your scoring area)","Can't taunt"]
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
