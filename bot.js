@@ -2333,6 +2333,7 @@ if (message.content === "!ap" ) {
         .setTitle('------------SID_GMRツ------------')
         .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Wu-Shang.png') 
         .setColor('#275BF0') 
+        
         message.channel.send(embed)
     }})
   client.on('message', message => {
@@ -2471,5 +2472,21 @@ client.on('guildMemberAdd', member => {
           }
          
         })
+        client.on('message', message => {
+            if (message.content === '!roll' ) {
+             const nerfchannel = member.guild.channels.get("705155467881742516")
 
+             var roll =(Math.floor(Math.random()*200)+1);
+             if (roll == 1)
+             {
+                 message.reply('Wowza!');
+             }
+             else if (rool == 2)
+             message.reply('unub!');
+
+             else 
+             {
+                 message.reply('lol!');
+             }
+            }})
 client.login(process.env.BOT_TOKEN)
