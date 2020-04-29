@@ -1000,7 +1000,7 @@ bChannel.send('OFC im the best ez pz');
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
-message.channel.send(user.author + chosen_message) 
+message.channel.send(message.author + chosen_message) 
     }})
  
 
