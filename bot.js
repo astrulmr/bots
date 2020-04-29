@@ -174,7 +174,9 @@ client.on('message', message => {
 
             .addField('\n DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter (Runner)', true)
 
-          
+
+            .addField('\n Glaedr', ' He is a Brilliant on Runner And Indestructible in Supporter And Defender (Runner) ', true)
+
             
             .addField('\n Iknes ', '  He is a Legend Defender And Great In Runner And Supporter (Defender) ', true)
             
@@ -201,10 +203,7 @@ client.on('message', message => {
             
           
             .addField('\n LordCroissant', ' He Never crossed on Supporter And witty in Runner And Defender (Supporter) ', true)
-            
-          
-            .addField('\n nani', ' He is a Brilliant on Supporter And Indestructible in Runner And Defender (Supporter) ', true)
-            
+                        
             
             .addField('\n PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter (Defender)', true)
       
@@ -1001,7 +1000,7 @@ bChannel.send('OFC im the best ez pz');
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
-message.channel.send(chosen_message) 
+message.channel.send(user.username + chosen_message) 
     }})
  
 
