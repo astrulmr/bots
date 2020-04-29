@@ -1020,7 +1020,7 @@ bChannel.send('OFC im the best ez pz');
     }})
 
 
-
+    client.on('message', message => {
 
     const preefix ="!"
     if(message.author.bot) return
@@ -1038,7 +1038,7 @@ message.channel.send(args.join(" "))
 
     }
 
-
+    })
 
 
 
