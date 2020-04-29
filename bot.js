@@ -1018,6 +1018,29 @@ bChannel.send('OFC im the best ez pz');
      }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
 
     }})
+
+
+
+
+    const preefix ="!"
+    if(message.author.bot) return
+    if(message.guild) return
+    if(message.content.startsWith(preefix)) return
+
+    const args = message.content.slice(preefix.length).trim().spilt(/ +/g)
+    const cmd = args.shift().toLowerCase()
+    if(cmd === "say"){
+if(message.deletable) message.delete()
+if(args.length < 1)
+return message.reply("Nothing to say?").then(m => m.delete(5000))
+message.channel.send(args.join(" "))
+
+    }
+
+
+
+
+
   client.on('message', message => {
     if (message.content.startsWith('!avatar')) {
     if (!message.mentions.users.size) {
@@ -1025,9 +1048,7 @@ bChannel.send('OFC im the best ez pz');
     return message.channel.send(`Your avatar: ${message.author.displayAvatarURL}`);
     
     }
-    
-    
-    
+        
     const avatarList = message.mentions.users.map(user => {
     
     return `${user.username}\'s avatar: ${user.displayAvatarURL}`;
