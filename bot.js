@@ -1009,9 +1009,15 @@ bChannel.send('OFC im the best ez pz');
     }})
  
 
+    client.on('message', message => {
+        if (message.content === '!strt' ) {
+         
+    message.channel.fetchMessages()
+    .then(function(list){
+         message.channel.bulkDelete(list);
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
 
-  
- 
+    }})
   client.on('message', message => {
     if (message.content.startsWith('!avatar')) {
     if (!message.mentions.users.size) {
