@@ -1024,8 +1024,8 @@ bChannel.send('OFC im the best ez pz');
 
     const preefix ="!"
     if(message.author.bot) return
-    if(message.guild) return
-    if(message.content.startsWith(preefix)) return
+    if(!message.guild) return
+    if(!message.content.startsWith(preefix)) return
 
     const args = message.content.slice(preefix.length).trim().spilt(/ +/g)
     const cmd = args.shift().toLowerCase()
