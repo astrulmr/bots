@@ -957,6 +957,21 @@ bChannel.send('OFC im the best ez pz');
  })
   
  
+
+ client.on('message', message => {
+    if (message.content === '!roll' ) {
+     const nerfchannel = member.guild.channels.get("705155467881742516")
+
+     var roll =(Math.floor(Math.random()*200)+1);
+     if (roll == 1)
+     {
+         nerfchannel.send('Wowza!');
+     }
+     else 
+     {
+        nerfchannel.send('lol!');
+     }
+    }})
  
 
 
@@ -2472,21 +2487,5 @@ client.on('guildMemberAdd', member => {
           }
          
         })
-        client.on('message', message => {
-            if (message.content === '!roll' ) {
-             const nerfchannel = member.guild.channels.get("705155467881742516")
-
-             var roll =(Math.floor(Math.random()*200)+1);
-             if (roll == 1)
-             {
-                 nerfchannel.send('Wowza!');
-             }
-             else if (rool == 2)
-             nerfchannel.send('unub!');
-
-             else 
-             {
-                nerfchannel.send('lol!');
-             }
-            }})
+  
 client.login(process.env.BOT_TOKEN)
