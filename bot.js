@@ -959,7 +959,8 @@ bChannel.send('OFC im the best ez pz');
 
  client.on('message', message => {
     if (message.content === '!roll' ) {
-     
+        let embed = new Discord.RichEmbed()
+    
      var message_options = ["Can't attack",
      "Only defend (stay in your scoring area)",
      "Can't taunt",
@@ -999,8 +1000,9 @@ bChannel.send('OFC im the best ez pz');
      "GAME NERF - YELLOW MAN SPAM"]
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
-    
-message.channel.send(message.author + chosen_message) 
+    .setTitle(message.auther)
+    .setDescription(chosen_message)
+      message.channel.send(embed)
     }})
  
 
