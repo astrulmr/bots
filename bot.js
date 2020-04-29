@@ -1001,7 +1001,7 @@ bChannel.send('OFC im the best ez pz');
     var chosen_message = message_options[random_index]
 
     let embed = new Discord.RichEmbed()
-    .setTitle(message.author)
+    .setTitle(message.author.username)
   .setColor('#275BF0')
   .setDescription(chosen_message)
     message.channel.send(embed)
