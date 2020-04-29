@@ -961,8 +961,45 @@ bChannel.send('OFC im the best ez pz');
  client.on('message', message => {
     if (message.content === '!roll' ) {
      
-     var message_options = ["Hello there!","How are you?","What's up?"
-    ]
+     var message_options = ["Can't attack",
+     "Only defend (stay in your scoring area)",
+     "Can't taunt",
+     "Can't throw the ball",
+     "Can't attack without a weapon (throws allowed)",
+     "Can only hold the ball for 7 sec",
+     "Can't hold the ball",
+     "Stay on the opponent's goal",
+     "Can't dodge/dash while holding the ball",
+     "Can't jump while holding the ball",
+     "Suicide when losing the ball",
+     "Score 3 goals",
+     "Keep jumping (spam the jump button)",
+     "Can't score without down pass / down selfpass",
+     "TEAM NERF - Can't score without taunting",
+     "TEAM NERF - Pass the ball at least 4 times before scoring)",
+     "TEAM NERF - Can't use a weapon",
+     "Can only throw weapons (can't attack with it)",
+     "Stand still for 3 sec every 15 sec (set timer) ",
+     "TEAM NERF - KO one or more opponents before each goal",
+     "TEAM NERF - Every team member needs to get KO'd by the opponent ",
+     "Can't go in the opponent scoring area",
+     "Can't land on the middle of the arena (Only the scoring areas)",
+     "TEAM NERF -  Do an Alley-oop",
+     "TEAM NERF - Go back to your scoring area when you lose the ball in the scoring area",
+     "Can't take the ball twice in a row without an opponent taking it",
+     "Can't take the ball twice in a row without a team member taking it",
+     "Can't take the ball twice in a row without a player taking it",
+     "Can only do unarmed sigs (no weapon, no light or air attack)",
+     "Can only do ground pound attacks (throws allowed)",
+     "TEAM NERF - Use Azoth",
+     "TEAM NERF - Use Koji",
+     "TEAM NERF - Use Bödvar",
+     "TEAM NERF - Use Isaiah",
+     "TEAM NERF - Use Queen Nai with 2 speed",
+     "GAME NERF - 300% damage",
+     "GAME NERF - Team Damage On",
+     "GAME NERF -  Must use Axe legend",
+     "GAME NERF - YELLOW MAN SPAM"]
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
