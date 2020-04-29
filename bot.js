@@ -961,7 +961,6 @@ bChannel.send('OFC im the best ez pz');
  client.on('message', message => {
     if (message.content === '!roll' ) {
      
-        const nerfchannel = member.guild.channels.get("705155467881742516")
      var message_options = [
         "Hello there!",
         "How are you?",
@@ -970,7 +969,7 @@ bChannel.send('OFC im the best ez pz');
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
-    nerfchannel.send(message, chosen_message) 
+message.channel.send(message, chosen_message) 
     }})
  
 
