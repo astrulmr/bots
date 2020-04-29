@@ -2479,14 +2479,14 @@ client.on('guildMemberAdd', member => {
              var roll =(Math.floor(Math.random()*200)+1);
              if (roll == 1)
              {
-                 message.reply('Wowza!');
+                 nerfchannel.send('Wowza!');
              }
              else if (rool == 2)
-             message.reply('unub!');
+             nerfchannel.send('unub!');
 
              else 
              {
-                 message.reply('lol!');
+                nerfchannel.send('lol!');
              }
             }})
 client.login(process.env.BOT_TOKEN)
