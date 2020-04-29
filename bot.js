@@ -965,11 +965,11 @@ bChannel.send('OFC im the best ez pz');
      var roll =(Math.floor(Math.random()*200)+1);
      if (roll == 1)
      {
-         nerfchannel.send('Wowza!');
+         message.nerfchannel.send('Wowza!');
      }
      else 
      {
-        nerfchannel.send('lol!');
+        message.nerfchannel.send('lol!');
      }
     }})
  
