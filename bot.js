@@ -996,9 +996,8 @@ bChannel.send('OFC im the best ez pz');
      "TEAM NERF - Use Bödvar",
      "TEAM NERF - Use Isaiah",
      "TEAM NERF - Use Queen Nai with 2 speed",
-     "GAME NERF - 300% damage",
-     "GAME NERF - Team Damage On",
-     "GAME NERF -  Must use Axe legend"]
+     "GAME NERF - 300% damage","GAME NERF - Team Damage On","GAME NERF -  Must use Axe legend",
+     "GAME NERF - YELLOW MAN SPAM"]
     var random_index = Math.floor(Math.random() * message_options.length)
     var chosen_message = message_options[random_index]
     
