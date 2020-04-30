@@ -1062,7 +1062,7 @@ bChannel.send('OFC im the best ez pz');
        .setTitle(user.username)
        .setColor('#ffff00')
        .setDescription(chosen_message)
-       if(user.bot)  return;
+       if(user.bot)  channel.send("no");
        message.channel.send(embed)
        })
       }}});
