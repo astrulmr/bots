@@ -978,7 +978,8 @@ bChannel.send('OFC im the best ez pz');
     if(message.channel.id == '705155467881742516'){
     
     if(emoji.name == '👇') {
-      if(user.bot)  return;
+      if (message.author.bot) return;
+
     message.channel.fetchMessages()
     .then(function(list){
          message.channel.bulkDelete(list);
