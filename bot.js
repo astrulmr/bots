@@ -1026,13 +1026,13 @@ bChannel.send('OFC im the best ez pz');
     }})
 
     client.on('messageReactionAdd', (messageReaction, user) => {
-      if(user.bot)  return;
-      const { message, emoji } = messageReaction;
-      
-       if(message.id === "705319511766859777") {
-      if(emoji.name === "👍") {
      
-      channel.send("u did it fainly")
+      const { message, emoji } = messageReaction;
+      if(emoji.name === "👍") {
+       if(message.id === "705319511766859777") {
+      
+     
+      message.channel.send("u did it fainly")
         }
        } 
       });
