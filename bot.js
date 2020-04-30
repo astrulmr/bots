@@ -1029,7 +1029,7 @@ bChannel.send('OFC im the best ez pz');
      
       const { message, emoji } = messageReaction;
       
-      if(emoji.name === ":smiley:") { 
+      if(emoji.name === "smiley") { 
        if(message.id === "705319511766859777") {
       
      
