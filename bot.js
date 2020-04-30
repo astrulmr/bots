@@ -1011,7 +1011,7 @@ bChannel.send('OFC im the best ez pz');
 
     client.on('message', message => {
         if (message.content === '!strt' ) {
-         if(!message.member.hasPermission(["ADMINISTRATOR" , "MANAGE_MESSAGES"])) retrun
+         if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) retrun
           channel.send("You can not use this")
 
     message.channel.fetchMessages()
