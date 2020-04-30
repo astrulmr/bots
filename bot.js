@@ -983,6 +983,7 @@ bChannel.send('OFC im the best ez pz');
     if(emoji.name == '👇') {
      
  if(user.id == "603956394219274240")  return;
+
     else { message.channel.fetchMessages()
     .then(function(list){
      
@@ -1002,7 +1003,7 @@ bChannel.send('OFC im the best ez pz');
      .addField('**Last** ',' **To enter the nerf roll react with 👍 and to enter new nerf roll react with 👇 **',false)
      message.channel.send(embed)
 
-     message.react('👍').then(() => message.react('👇'));
+     message.react('👍')
 
 
      }
