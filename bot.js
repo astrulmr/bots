@@ -1028,12 +1028,9 @@ bChannel.send('OFC im the best ez pz');
     client.on('message', message => {
 
 
-        if (message.content === '!yasos' ) {
-const agree="👍"
-let msg =  message.channel.send("!yesos")
- msg.react(agree)
-const reactions =  msg.awaitReactions(reaction => reaction.emoji.name == agree , {time :15000} )
-message.channel.send("yes")
+        if (message.react('👍')) {
+channel.send("yess")
+
 
         }})
     client.on('message', message => {
