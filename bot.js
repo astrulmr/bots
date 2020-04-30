@@ -978,11 +978,12 @@ bChannel.send('OFC im the best ez pz');
     if(message.channel.id == '705155467881742516'){
     
     if(emoji.name == '👇') {
-      if (message.author.bot) return;
+     
 
     message.channel.fetchMessages()
     .then(function(list){
-         message.channel.bulkDelete(list);
+      if(user.bot)  return;
+        else message.channel.bulkDelete(list);
      }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
 
      let embed = new Discord.RichEmbed()
