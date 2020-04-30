@@ -970,14 +970,20 @@ bChannel.send('OFC im the best ez pz');
         .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
         message.channel.send(embed)
     }})
-     
+    client.on('messageReactionAdd', (messageReaction, user) => {
+    
+      // Deal with command
+  
+    const { message, emoji } = messageReaction;
+    if(message.channel.id == '705155467881742516'){
+    if(emoji.name == ':no:') {
 
-    channel.fetchMessages({limit: 10}).then(collected => { //collected is a Collection
-      collected.forEach(msg => {
-        if (msg.content.startsWith("Something")) msg.delete();
-      });
-    });
-
+    message.channel.fetchMessages()
+    .then(function(list){
+         message.channel.bulkDelete(list);
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
+     }
+    }})
 
     client.on('messageReactionAdd', (messageReaction, user) => {
     
