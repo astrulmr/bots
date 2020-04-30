@@ -1,4 +1,5 @@
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1874,6 +1875,12 @@ client.on('message', message => {
 
       .addField('klashmix470','ps clan',true)
 
+      .addField('Astru','our style',true)
+
+      .addField('ASTRU','our style',true)
+
+      .addField('ASTRU','our style',true)
+
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1972,6 +1979,12 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
 
       .addField('klashmix470','ps clan',true)
+
+      .addField('Astru','our style',true)
+
+      .addField('ASTRU','our style',true)
+
+      .addField('ASTRU','our style',true)
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -2572,6 +2585,99 @@ if (message.content === "!ap" ) {
         .setDescription('klashmix470')
         .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@482162074097549333>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@482162074097549333>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .setDescription('Astru')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@482162074097549333>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@482162074097549333>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .setDescription('ASTRU')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@482162074097549333>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@482162074097549333>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .setDescription('ASTRU')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/150px-SkinIcon_Yumiko_Tokyo.png?version=a1be00566e3b874d3019bfc8f8f932c8')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
         message.channel.send(embed)
     }})
 
