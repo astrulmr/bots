@@ -1011,7 +1011,9 @@ bChannel.send('OFC im the best ez pz');
 
     client.on('message', message => {
         if (message.content === '!strt' ) {
-         
+         if(!message.member.hasPermission(["ADMINISTRATOR" , "MANAGE_MESSAGES"])) retrun
+          channel.send("You can not use this")
+
     message.channel.fetchMessages()
     .then(function(list){
          message.channel.bulkDelete(list);
