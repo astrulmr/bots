@@ -1024,6 +1024,10 @@ bChannel.send('OFC im the best ez pz');
     message.channel.send(embed)
 
     }})
+
+    if (member.react === ':thumbsup:') {
+        chanel.send("hi")
+    }
  
 
     client.on('message', message => {
