@@ -993,12 +993,11 @@ bChannel.send('OFC im the best ez pz');
     
     if(emoji.name == '👇') {
      
-
-     message.channel.fetchMessages()
+      if(user.bot)  return;
+     else { message.channel.fetchMessages()
     .then(function(list){
-     
           message.channel.bulkDelete(list);
-     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) }
 
      let embed = new Discord.RichEmbed()
      .setTitle('---New Nerf Roll match started---')
@@ -1012,8 +1011,10 @@ bChannel.send('OFC im the best ez pz');
      .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
      .addField('**Last** ',' **To enter the nerf roll react with 👍 and to enter new nerf roll react with 👇 **',false)
      message.channel.send(embed)
-
-     message.react('👍')
+     .then(function (message) {
+      message.react("👍")
+      message.react("👇")
+     })
 
 
      }
@@ -1067,13 +1068,13 @@ bChannel.send('OFC im the best ez pz');
        var random_index = Math.floor(Math.random() * message_options.length)
        var chosen_message = message_options[random_index]
        message.guild.fetchMember(user.id).then(member => {
-       let embed = new Discord.RichEmbed()
-       
+        if(user.bot)  return;
+      else { let embed = new Discord.RichEmbed()
        .setTitle(user.username)
        .setColor('#ffff00')
        .setDescription(chosen_message)
     
-       message.channel.send(embed)
+       message.channel.send(embed)}
        })
       }}});
       
