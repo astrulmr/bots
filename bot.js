@@ -1028,11 +1028,11 @@ bChannel.send('OFC im the best ez pz');
     client.on('message', message => {
 
       if (message.content === '!cool' ) {
-        if (message.react('👍')) {
+        message.react('👍')
 channel.send("yess")
 
 
-     } }})
+      }})
     client.on('message', message => {
 
 
