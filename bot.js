@@ -1063,8 +1063,6 @@ bChannel.send('OFC im the best ez pz');
                 const embed = new RichEmbed()
                     .setDescription(args.slice(1).join(" "))
                     .setColor("#000000")
-                    .setImage(client.user.displayAvatarURL)
-                    .setAuthor(message.author.username, message.author.displayAvatarURL);
     
                 message.channel.send(embed);
             } else {
