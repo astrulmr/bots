@@ -1029,8 +1029,8 @@ bChannel.send('OFC im the best ez pz');
       if(user.bot)  return;
       const { message, emoji } = messageReaction;
       
-      if(emoji.id === "705319511766859777") {
-      if(message.id === "705310547561938955") {
+      if(reaction.emoji.name === "👍") {
+      if(message.id === "705319511766859777") {
       channel.send("u did it fainly")
         }
        } 
