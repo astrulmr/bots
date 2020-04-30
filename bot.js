@@ -974,7 +974,9 @@ bChannel.send('OFC im the best ez pz');
 
  client.on('message', message => {
     if (message.content === '!roll' ) {
-     
+
+        if (message.deletable) message.delete();
+        
      var message_options = ["Can't attack",
      "Only defend (stay in your scoring area)",
      "Can't taunt",
