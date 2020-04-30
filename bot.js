@@ -995,6 +995,7 @@ bChannel.send('OFC im the best ez pz');
      .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
      .addField('**Last** ',' **To enter the nerf roll react with 👍 and to enter new nerf roll react with 👇 **',false)
      message.channel.send(embed)
+
 message.react("👍")
 message.react("👇")
 
@@ -1054,6 +1055,7 @@ message.react("👇")
        .setTitle(user.username)
        .setColor('#ffff00')
        .setDescription(chosen_message)
+       if(user.bot)  return;
        message.channel.send(embed)
        })
       }}});
