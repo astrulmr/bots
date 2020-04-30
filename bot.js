@@ -993,8 +993,11 @@ bChannel.send('OFC im the best ez pz');
      .addField('**3.** ',' **If you cheat when you have a team nerf, you (only) have to commit suicide and all the team members will get two new nerfs on the next game**',false)
      .addField("**4.** "," **Please play fair and try not to spam. If you've cheated, say it or we'll kick you**",false)
      .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
+     .addField('**Last** ',' **To enter the nerf roll react with 👍 and to enter new nerf roll react with 👇 **',false)
      message.channel.send(embed)
-     
+message.react("👍")
+message.react("👇")
+
      }
     }})
 
