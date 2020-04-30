@@ -959,7 +959,7 @@ bChannel.send('OFC im the best ez pz');
     if (message.content === '!sgame' ) {
 
         let embed = new Discord.RichEmbed()
-        .setTitle('----------New Nerf Roll match started----------')
+        .setTitle('---New Nerf Roll match started---')
         .setColor('0x0000ff')
         .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
         .setDescription('Here is the rules')
