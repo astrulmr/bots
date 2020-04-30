@@ -1029,7 +1029,7 @@ bChannel.send('OFC im the best ez pz');
 
 
         if (message.content === '!yasos' ) {
-const agree="705289387381882901"
+const agree="👍"
 let msg =  message.channel.send("!yesos")
  msg.react(agree)
 const reactions =  msg.awaitReactions(reaction => reaction.emoji.name == agree , {time :15000} )
