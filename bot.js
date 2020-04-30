@@ -1025,14 +1025,18 @@ bChannel.send('OFC im the best ez pz');
 
     }})
 
-    client.on('message', message => {
+    client.on('messageReactionAdd', (messageReaction, user) => {
+      if(user.bot)  return;
+      const { message, emoji } = messageReaction;
+      
+      if(emoji.name === ":thumbsup: ") {
+      if(message.id === "705310547561938955") {
+      channel.send("u did it fainly")
+        }
+       } 
+      });
+        message.react('')
 
-      if (message.content === '!cool' ) {
-        message.react('👍')
-channel.send("yess")
-
-
-      }})
     client.on('message', message => {
 
 
