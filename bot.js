@@ -1020,13 +1020,14 @@ bChannel.send('OFC im the best ez pz');
         "GAME NERF - YELLOW MAN SPAM"]
        var random_index = Math.floor(Math.random() * message_options.length)
        var chosen_message = message_options[random_index]
-   
+       message.guild.fetchMember(user.id).then(member => {
        let embed = new Discord.RichEmbed()
-       .setTitle(message.author.username)
+       
+       .setTitle(user.username)
        .setColor('#ffff00')
        .setDescription(chosen_message)
        message.channel.send(embed)
-   
+       })
       }}});
       
 
