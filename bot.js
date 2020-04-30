@@ -1029,7 +1029,7 @@ bChannel.send('OFC im the best ez pz');
       if(user.bot)  return;
       const { message, emoji } = messageReaction;
       
-      if(emoji.name === "👍") {
+      if(emoji.name === "thumbsup") {
       if(message.id === "705310547561938955") {
       channel.send("u did it fainly")
         }
