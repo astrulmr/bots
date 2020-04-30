@@ -1025,14 +1025,12 @@ bChannel.send('OFC im the best ez pz');
 
     }})
 
-    client.on('messageReactionAdd', (reaction, user) => {
-      let message = reaction.message, emoji = reaction.emoji;
-
-      if (emoji.name == '👍') {
-      if(message.id == '705387594254385152') {
-        message.guild.fetchMember(user.id).then(member => {
-         message.channel.send("haha");})
-     } }})
+    client.on('messageReactionAdd', (messageReaction, user) => {
+      const { message, emoji } = messageReaction;
+      if(emoji == '👍') {
+      if(message.id === "705388267528519734") {
+      message.channel.send("cool")
+      }}});
       
 
     client.on('message', message => {
