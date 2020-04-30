@@ -955,7 +955,12 @@ bChannel.send('OFC im the best ez pz');
    }}}
  })
   
- 
+ client.on('message', message => {
+    if (message.content === '!sgame' ) {
+
+    
+    }})
+     
 
  client.on('message', message => {
     if (message.content === '!roll' ) {
@@ -1011,10 +1016,10 @@ bChannel.send('OFC im the best ez pz');
 
     client.on('message', message => {
 
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You do not have permission to  this")
 
         if (message.content === '!strt' ) {
-          
+            if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You do not have permission to  this")
+
 
     message.channel.fetchMessages()
     .then(function(list){
