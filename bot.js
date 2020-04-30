@@ -972,6 +972,8 @@ bChannel.send('OFC im the best ez pz');
         .addField("**4.** "," **Please play fair and try not to spam. If you've cheated, say it or we'll kick you**",false)
         .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
         message.channel.send(embed)
+        message.react('👍')
+
     }})
 
 
