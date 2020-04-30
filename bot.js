@@ -1,5 +1,4 @@
 
-
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -936,6 +935,26 @@ client.on('message', message => {
 if (message.content === 'nice dude') {
 bChannel.send('OFC im the best ez pz');
 }})
+
+   client.on('message', message => { 
+    if (message.content === 'How are you today?') {
+      bChannel.send('Well, good for you.');
+ }})
+
+   client.on('message', message => { 
+    if (message.content === 'How are you today?') {
+      bChannel.send('Well, good for you.');
+ }})
+
+   client.on('message', message => { 
+    if (message.content === 'How are you today?') {
+      bChannel.send('Well, good for you.');
+ }})
+
+   client.on('message', message => { 
+    if (message.content === 'How are you today?') {
+      bChannel.send('Well, good for you.');
+ }})
 //nubstnubstnubstyhh
 
 })
