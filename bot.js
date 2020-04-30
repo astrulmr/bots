@@ -982,13 +982,12 @@ bChannel.send('OFC im the best ez pz');
     
     if(emoji.name == '👇') {
      
- if(user.id == "603956394219274240")  return;
 
-    else { message.channel.fetchMessages()
+     message.channel.fetchMessages()
     .then(function(list){
      
           message.channel.bulkDelete(list);
-     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) }
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
 
      let embed = new Discord.RichEmbed()
      .setTitle('---New Nerf Roll match started---')
