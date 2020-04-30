@@ -1026,6 +1026,12 @@ bChannel.send('OFC im the best ez pz');
     }})
 
 
+const agree="705289387381882901"
+let msg = await message.channel.send("!yesos")
+await msg.react(agree)
+const reactions = await msg.awaitReactions(reaction => reaction.emoji.name == agree )
+message.channel.send("yes")
+
 
     client.on('message', message => {
 
