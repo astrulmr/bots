@@ -1028,9 +1028,8 @@ bChannel.send('OFC im the best ez pz');
     client.on('messageReactionAdd', (messageReaction, user) => {
       const { message, emoji } = messageReaction;
       if(emoji == '👍') {
-      if(message.id === "705388267528519734") {
       message.channel.send("cool")
-      }}});
+      }});
       
 
     client.on('message', message => {
