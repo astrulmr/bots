@@ -1019,7 +1019,7 @@ bChannel.send('OFC im the best ez pz');
 
     let embed = new Discord.RichEmbed()
     .setTitle(message.author.username)
-  .setColor('‎#ffff00')
+  .setColor('‎#0099ff')
   .setDescription(chosen_message)
     message.channel.send(embed)
 
