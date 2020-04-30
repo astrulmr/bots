@@ -982,6 +982,19 @@ bChannel.send('OFC im the best ez pz');
     .then(function(list){
          message.channel.bulkDelete(list);
      }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})
+
+     let embed = new Discord.RichEmbed()
+     .setTitle('---New Nerf Roll match started---')
+     .setColor('#FF0000')
+     .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
+     .setDescription('**Here is the rules**')
+     .addField('**1.** ',' **Every player gets one nerf**',false)
+     .addField("**2.** "," **If you cheat, you have to commit suicide and you'll get two new nerfs on the next game**",false)
+     .addField('**3.** ',' **If you cheat when you have a team nerf, you (only) have to commit suicide and all the team members will get two new nerfs on the next game**',false)
+     .addField("**4.** "," **Please play fair and try not to spam. If you've cheated, say it or we'll kick you**",false)
+     .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
+     message.channel.send(embed)
+     
      }
     }})
 
