@@ -955,6 +955,9 @@ bChannel.send('OFC im the best ez pz');
    }}}
  })
   
+
+
+ 
  client.on('message', message => {
     if (message.content === '!sgame' ) {
 
@@ -999,8 +1002,8 @@ bChannel.send('OFC im the best ez pz');
      .addField('**Last** ',' **To enter the nerf roll react with 👍 and to enter new nerf roll react with 👇 **',false)
      message.channel.send(embed)
 
-message.react("👍")
-message.react("👇")
+     message.react('👍').then(() => message.react('👇'));
+
 
      }
     }})
