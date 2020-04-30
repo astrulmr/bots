@@ -973,6 +973,9 @@ bChannel.send('OFC im the best ez pz');
         .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
         message.channel.send(embed)
     }})
+
+
+
     client.on('messageReactionAdd', (messageReaction, user) => {
     
       // Deal with command
@@ -1061,7 +1064,7 @@ bChannel.send('OFC im the best ez pz');
        .setTitle(user.username)
        .setColor('#ffff00')
        .setDescription(chosen_message)
-       if(user.bot)  channel.send("no");
+    
        message.channel.send(embed)
        })
       }}});
