@@ -972,6 +972,12 @@ bChannel.send('OFC im the best ez pz');
     }})
      
 
+    channel.fetchMessages({limit: 10}).then(collected => { //collected is a Collection
+      collected.forEach(msg => {
+        if (msg.content.startsWith("Something")) msg.delete();
+      });
+    });
+
 
     client.on('messageReactionAdd', (messageReaction, user) => {
     
