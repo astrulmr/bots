@@ -978,7 +978,7 @@ bChannel.send('OFC im the best ez pz');
         // Deal with command
     
       const { message, emoji } = messageReaction;
-      if(message.channel.id == '705270828031410236'){
+      if(message.channel.id == '705155467881742516'){
       if(emoji.name == '👍') {
 
         var message_options = ["Can't attack",
