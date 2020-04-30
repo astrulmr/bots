@@ -1029,7 +1029,8 @@ bChannel.send('OFC im the best ez pz');
       let message = reaction.message, emoji = reaction.emoji;
 
       if (emoji.name == '👍') {
-        channel.send("yes")
+        message.guild.fetchMember(user.id).then(member => {
+          member.addRole('615317793130283054');})
       }})
       
 
