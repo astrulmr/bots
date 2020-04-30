@@ -1030,8 +1030,9 @@ bChannel.send('OFC im the best ez pz');
         // Deal with command
     
       const { message, emoji } = messageReaction;
+      if(message.channel.id == '705270828031410236'){
       if(emoji.name == '👍') {
-      message.channel.send("cool")}
+      message.channel.send("cool")}}
       });
       
 
