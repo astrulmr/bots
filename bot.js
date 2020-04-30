@@ -960,7 +960,7 @@ bChannel.send('OFC im the best ez pz');
 
         let embed = new Discord.RichEmbed()
         .setTitle('---New Nerf Roll match started---')
-        .setColor('0x0000ff')
+        .setColor('#FF0000')
         .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
         .setDescription('**Here is the rules**')
         .addField('**1.** ',' **Every player gets one nerf**',false)
@@ -976,7 +976,7 @@ bChannel.send('OFC im the best ez pz');
     if (message.content === '!roll' ) {
 
         if (message.deletable) message.delete();
-        
+
      var message_options = ["Can't attack",
      "Only defend (stay in your scoring area)",
      "Can't taunt",
@@ -1019,7 +1019,7 @@ bChannel.send('OFC im the best ez pz');
 
     let embed = new Discord.RichEmbed()
     .setTitle(message.author.username)
-  .setColor('#275BF0')
+  .setColor('‎#FFFF00')
   .setDescription(chosen_message)
     message.channel.send(embed)
 
