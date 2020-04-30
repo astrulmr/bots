@@ -1026,17 +1026,14 @@ bChannel.send('OFC im the best ez pz');
     }})
 
     client.on('messageReactionAdd', (messageReaction, user) => {
-     
+
       const { message, emoji } = messageReaction;
       
-      if(emoji.name === "smiley") { 
+      if(emoji.name === "Grinning Face") { 
        if(message.id === "705319511766859777") {
       
-     
       message.channel.send("u did it fainly")
-        }
-       } 
-      });
+        }}});
       
 
     client.on('message', message => {
