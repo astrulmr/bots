@@ -1035,7 +1035,7 @@ bChannel.send('OFC im the best ez pz');
         }
        } 
       });
-        message.react('')
+      
 
     client.on('message', message => {
 
