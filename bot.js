@@ -1,5 +1,6 @@
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1871,6 +1872,8 @@ client.on('message', message => {
 
       .addField('astru','our style',true)
 
+      .addField('astru','our style',true)
+
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1956,6 +1959,8 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
       .addField('klashmix470','ps clan',true)
       
+      .addField('astru','our style',true)
+
       .addField('astru','our style',true)
 
 //postionneverlosehaha747
@@ -2459,6 +2464,38 @@ if (message.content === "!ap" ) {
         .setTitle('Name')
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/c/c6/SkinIcon_Bodvar_Beardvar.png/900px-SkinIcon_Bodvar_Beardvar.png?version=c0d6076d7f24d2f3b94ec35ad01cb727')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@482162074097549333>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Gnash.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@482162074097549333>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/35/SkinIcon_Gnash_Wolf.png/900px-SkinIcon_Gnash_Wolf.png?version=72a909ca663dd50350782751f0a1efbe')
+        .setDescription('astru')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/3/35/SkinIcon_Gnash_Wolf.png/900px-SkinIcon_Gnash_Wolf.png?version=72a909ca663dd50350782751f0a1efbe')
+        .setDescription('astru')
         .addField('Position','Runner',true)
         .addField('Clan','our style',true)
         message.channel.send(embed)
