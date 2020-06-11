@@ -58,8 +58,8 @@ client.on('message', message => {
                   message.channel.send("pink color set to "+message.author.username)
                 }
                 })
-                
-                      client.on('message', message => {
+
+                     client.on('message', message => {
                         if (message.content === '!colors') {
                               const embed = new RichEmbed()
                               .setTitle('All Color That Can Change Ur online name color')
@@ -105,7 +105,7 @@ client.on('message', message => {
      
 
  
-      client.on('message', message => {
+       client.on('message', message => {
         if (message.content === '!os clan') {
           const embed = new RichEmbed()
     
@@ -113,6 +113,7 @@ client.on('message', message => {
             .setColor(0xFF0000)
             .setThumbnail(client.user.avatarURL)
             .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
+            
             .addField('Astru®', ' He is the perfect Runner and a f*cking good Supporter and Defender', true)
 
             
@@ -184,7 +185,7 @@ client.on('message', message => {
       
            const embed = new RichEmbed()
            
-           .setTitle(' Which do you wanna tryna learn ? : ')
+           .setTitle(' Whcich Move You Wan Try To Learn ? : ')
            .setColor(0xFFFFFF)
            .setDescription('1.Down Pass Move (Combos One Player) ===> !@ \n\n 2. Up Pass Move (Combos One Player) ===> !#\n\n 3. Tags Moves (Blackhols 2 Player)===> !$  \n\n 4. Tricks ===> !% \n\n 5. Others ===> !^ \n\n Designed By OS Team :)')
            channel3.send(embed)
@@ -199,7 +200,7 @@ client.on('message', message => {
          
          .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
          .setColor(0xFFFF00)
-         .setDescription('\n\n 1. Leave The Wall And Dodge Left Or Right (depend on which side you play) \n\n 2. Throw The Ball Up ( Without Jumping Just Throw Button And Aim Up ) \n\n 3. Do Recovery To Catch The Ball \n\n 4. Jump 2 Times Slowly \n\n 5. Dodge Up To Touch The Wall \n\n https://drive.google.com/file/d/1FfiNTu6czLBpXZUrtr7Vbhl_aGz-iFS1/view?usp=sharing \n\n Designed By OS Team :)')
+         .setDescription('\n\n 1. Leave The Wall And Dodge Left Or Right (depend on which side u play) \n\n 2. Throw The Ball Up ( Without Jumping Just Throw Button And Aim Up ) \n\n 3. Punch Up On Heavy Button Attack To Catch The Ball \n\n 4. Jump 2 Times Slowly \n\n 5. Dodge Up To Touch The Wall \n\n https://drive.google.com/file/d/1FfiNTu6czLBpXZUrtr7Vbhl_aGz-iFS1/view?usp=sharing \n\n Designed By OS Team :)')
          channel3.send(embed)
 }
 })
