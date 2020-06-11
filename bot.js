@@ -13,22 +13,13 @@ client.on('ready' , () => {
 
 client.on('message', message => {
   if (!message.guild) return
-  if (message.content === '!yellow' ) {
+      if (message.content === '!yellow' ) {
   
-    message.member.addRole('615317792539017249')
+    message.member.addRole('615317793159512074')
 
     message.channel.send("yellow color set to "+message.author.username)
   }
   })
-  client.on('message', message => {
-    if (!message.guild) return
-    if (message.content === '!red' ) {
-    
-      message.member.addRole('615317792618577960')
-  
-      message.channel.send("red color set to "+message.author.username)
-    }
-    })
     client.on('message', message => {
       if (!message.guild) return
       if (message.content === '!blue' ) {
@@ -38,15 +29,7 @@ client.on('message', message => {
         message.channel.send("blue color set to "+message.author.username)
       }
       })
-      client.on('message', message => {
-        if (!message.guild) return
-        if (message.content === '!green' ) {
-        
-          message.member.addRole('615317792656457729')
       
-          message.channel.send("green color set to "+message.author.username)
-        }
-        })
         client.on('message', message => {
           if (!message.guild) return
           if (message.content === '!black' ) {
@@ -65,16 +48,8 @@ client.on('message', message => {
               message.channel.send("orange color set to "+message.author.username)
             }
             })
-            client.on('message', message => {
-              if (!message.guild) return
-              if (message.content === '!white' ) {
-              
-                message.member.addRole('651018880206241822')
             
-                message.channel.send("white color set to "+message.author.username)
-              }
-              })
-              client.on('message', message => {
+            client.on('message', message => {
                 if (!message.guild) return
                 if (message.content === '!pink' ) {
                 
@@ -83,49 +58,17 @@ client.on('message', message => {
                   message.channel.send("pink color set to "+message.author.username)
                 }
                 })
-                client.on('message', message => {
-                  if (!message.guild) return
-                  if (message.content === '!purple' ) {
-                  
-                    message.member.addRole('615317793130283054')
                 
-                    message.channel.send("purple color set to "+message.author.username)
-                  }
-                  })
-                  client.on('message', message => {
-                    if (!message.guild) return
-                    if (message.content === '!brown' ) {
-                    
-                      message.member.addRole('615317793415626776')
-                  
-                      message.channel.send("brown color set to "+message.author.username)
-                    }
-                    })
-                    client.on('message', message => {
-                      if (!message.guild) return
-                      if (message.content === '!gray' ) {
-                      
-                        message.member.addRole('615317793159512074')
-                    
-                        message.channel.send("gray color set to "+message.author.username)
-                      }
-                      })
                       client.on('message', message => {
                         if (message.content === '!colors') {
                               const embed = new RichEmbed()
                               .setTitle('All Color That Can Change Ur online name color')
                               .setColor(0xFFFF00)
-                              .addField("RED","!red",true)
                               .addField("BLUE","!blue",true)
-                              .addField("GREEN","!green",true)
                               .addField("YELLOW","!yellow",true)
-                              .addField("GRAY","!gray",true)
                               .addField("ORANGE","!orange",true)
-                              .addField("WHITE","!white",true)
                               .addField("BLACK","!black",true)
-                              .addField("BROWN","!brown",true)
                               .addField("PINK","!pink",true)
-                              .addField("PURPLE","!purple",true)
 
                        message.channel.send(embed)
                         }
@@ -170,63 +113,56 @@ client.on('message', message => {
             .setColor(0xFF0000)
             .setThumbnail(client.user.avatarURL)
             .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
-            .addField('Astru® ', ' He is a great Runner And Good In Supporter And Defender (Runner) ', true)
+            .addField('Astru®', ' He is the perfect Runner and a f*cking good Supporter and Defender', true)
 
             
+            .addField('\n DanzoDon', ' He is a godzila Runner and cool in Defence and Support', true)
 
-            .addField('\n DanzoDon ', ' He is a Godzila Runner And Cool In Defender And Supporter (Runner)', true)
 
-
-            .addField('\n Glaedr', ' He is a Brilliant on Runner And Indestructible in Supporter And Defender (Runner) ', true)
+            .addField('\n Glaedr', ' He is a brilliant Runner and indestructible in Support and Defence', true)
 
             
-            .addField('\n Iknes ', '  He is a Legend Defender And Great In Runner And Supporter (Defender) ', true)
-            
-         
-            .addField('\n jimm25  ', '   He  So Good Defender And Surly In Runner And Supporter (Runner) ', true)
+            .addField('\n jimm25', ' He is an insane Runner and surely great in Defence and Support', true)
             
            
-            
-            .addField('\n jinleehurb ', ' He is unbelievable defence and good at Supporter and Runner (Defender)', true)
-            
-           
-            
-            .addField('\n Junusbiaz ', 'He  just super on Defender And GREATS in Runner And Supporter (Defender) ', true)
-            
-           
-            
-            .addField('\n KaeptnKook', ' He is The best in Defence and Smart at Runner (Defender) ', true)
+            .addField('\n kevin1185', ' He so cool in Run and fantastic as Defender and Supporter', true)
             
             
-            .addField('\n Kenshiro', ' He is  The Best on Runner And Wild in  Defender And Supporter (Supporter)', true)
+            .addField('\n otmanezza', 'He is an unstoppable Runner and unbreakable Defender and Supporter', true)
             
             
-            .addField('\n kevin1185', ' He So Coool on Runner And Fantastic in  Defender And Supporter (Runner)', true)
+            .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
             
           
-            .addField('\n LordCroissant', ' He Never crossed on Supporter And witty in Runner And Defender (Supporter) ', true)
-                        
-            
-            .addField('\n PanosBOA', ' He is a Wall on Defence And Indestructible in Runner And Supporter (Defender)', true)
-      
-            
-            .addField('\n Sanmaay', ' She is  not merciful on Defender And Great in Runner And Supporter (Defender)', true)
+            .addField('\n LordCroissant', ' He never crossed in Support and witty as Runner And Defender', true)
             
             
-            
-            .addField('\n Sugarfree', 'He is  just cooler on Defender And  GREAT in Runner And Supporter (Supporter) ', true)
-            
-            
-            
-            .addField('\n SweetMiguel', ' He can run like shit u cant even catch him And Fantastic in  Defender And Supporter (Runner)', true)
+            .addField('\n Styleken', 'He is the Defender you want behind you but he can also Run and Support like no one else', true)
             
            
+            .addField('\n JustThomas', 'He is just super as Defender and great in Run and Support', true)
             
-            .addField('\n |OS| Tmis Kun', 'He is a just so good on Supporter And so GREAT in Runner And Defender (Supporter) ', true)
+           
+            .addField('\n KaeptnKook', ' He is the best in Defence and a 300IQ Runner and Supporter', true)
+            
+            
+            .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
+            
+            
+            .addField('\n CTNS', 'He cannot be scored on when Defending and he is great in Run and Support', true)
+            
+            
+            .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
+            
+           
+            .addField('\n |OS| Tmis Kun', 'He is a just too good Supporter and so great in Run and Defence', true)
+                        
+            
+            .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
             
             
             
-            .setFooter('For Notes Must Of Os Clan Can Plays all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
+            .setFooter('Everyone in Our Style clan is able to kick you in all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
            
           message.channel.send(embed)
         }
@@ -248,7 +184,7 @@ client.on('message', message => {
       
            const embed = new RichEmbed()
            
-           .setTitle(' Whcich Move You Wan Try To Learn ? : ')
+           .setTitle(' Which do you wanna tryna learn ? : ')
            .setColor(0xFFFFFF)
            .setDescription('1.Down Pass Move (Combos One Player) ===> !@ \n\n 2. Up Pass Move (Combos One Player) ===> !#\n\n 3. Tags Moves (Blackhols 2 Player)===> !$  \n\n 4. Tricks ===> !% \n\n 5. Others ===> !^ \n\n Designed By OS Team :)')
            channel3.send(embed)
@@ -263,7 +199,7 @@ client.on('message', message => {
          
          .setTitle('Down Pass Brawlball Move it Consists of five steps : ')
          .setColor(0xFFFF00)
-         .setDescription('\n\n 1. Leave The Wall And Dodge Left Or Right (depend on which side u play) \n\n 2. Throw The Ball Up ( Without Jumping Just Throw Button And Aim Up ) \n\n 3. Punch Up On Heavy Button Attack To Catch The Ball \n\n 4. Jump 2 Times Slowly \n\n 5. Dodge Up To Touch The Wall \n\n https://drive.google.com/file/d/1FfiNTu6czLBpXZUrtr7Vbhl_aGz-iFS1/view?usp=sharing \n\n Designed By OS Team :)')
+         .setDescription('\n\n 1. Leave The Wall And Dodge Left Or Right (depend on which side you play) \n\n 2. Throw The Ball Up ( Without Jumping Just Throw Button And Aim Up ) \n\n 3. Do Recovery To Catch The Ball \n\n 4. Jump 2 Times Slowly \n\n 5. Dodge Up To Touch The Wall \n\n https://drive.google.com/file/d/1FfiNTu6czLBpXZUrtr7Vbhl_aGz-iFS1/view?usp=sharing \n\n Designed By OS Team :)')
          channel3.send(embed)
 }
 })
