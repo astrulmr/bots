@@ -110,7 +110,7 @@ client.on('ready', () => {
             const embed = new RichEmbed()
 
                 .setTitle('Our Style Brawlball Clan ')
-                .setColor(0xFF0000)
+                .setColor(0xf60af8)
                 .setThumbnail(client.user.avatarURL)
                 .setDescription('Here we are friends who where gathered by the love of brawlball. There are no leaders, just players')
                 .addField('Teams', 'Runner - Supporter - Defender - Substitute', false)
@@ -124,8 +124,8 @@ client.on('ready', () => {
         if (message.content === '!os clan') {
             const embed = new RichEmbed()
 
-                .setTitle('Team : ASK')
-                .setColor(0xFF0000)
+                .setTitle('Team : A.S.K')
+                .setColor(0xc44312)
                 .setDescription('The Ace team in Our Style, they won both of the tourneys they did within the clan')
                 .addField('Astru®', 'He is the perfect Runner and a f*cking good Supporter and Defender', true)
                 .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
@@ -140,7 +140,7 @@ client.on('ready', () => {
             const embed = new RichEmbed()
 
                 .setTitle('Team : KeJiCT')
-                .setColor(0xFF0000)
+                .setColor(0x000000)
                 .setDescription('The perfect Duo was joined by a third and they will show the power of Our Style players')
                 .addField('jimm25', ' He is an insane Runner and surely great in Defence and Support', true)
                 .addField('\n kevin1185', ' He so cool in Run and fantastic as Defender and Supporter', true)
@@ -156,7 +156,7 @@ client.on('ready', () => {
             const embed = new RichEmbed()
 
                 .setTitle('Team : Danzo°s Gang')
-                .setColor(0xFF0000)
+                .setColor(0x55e473)
                 .setDescription('Dan got a great team by his side, they are here to prove their force as a team')
                 .addField('DanzoDon', ' He is a godzila Runner and cool in Defence and Support', true)
                 .addField('\n LordCroissant', ' He never crossed in Support and witty as Runner And Defender', true)
@@ -172,7 +172,8 @@ client.on('ready', () => {
             const embed = new RichEmbed()
 
                 .setTitle('Our Style Players')
-                .setColor(0xFF0000)
+                .setColor(0x4c1f7e)
+                .addThumbnail(client.server.iconURL)
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even great, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
