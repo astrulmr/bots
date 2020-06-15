@@ -101,6 +101,11 @@ client.on('ready', () => {
     })
 
 
+    client.on('message', message => {
+        if (message.content === '!servericon') {
+            message.channel.send(message.guild.iconURL)
+        }
+    })
 
 
 
@@ -173,7 +178,6 @@ client.on('ready', () => {
 
                 .setTitle('Our Style Players')
                 .setColor(0x4c1f7e)
-                .addThumbnail(message.guild.iconURL)
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even great, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
