@@ -177,7 +177,7 @@ client.on('ready', () => {
             const embed = new RichEmbed()
 
                 .setTitle('Our Style Players')
-                .setColor(0x4c1f7e)
+                .setColor(0x35127a)
                 .setThumbnail('https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.png')
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
