@@ -62,7 +62,7 @@ client.on('ready', () => {
     client.on('message', message => {
         if (message.content === '!colors') {
             const embed = new RichEmbed()
-                .setTitle('All Color That Can Change Ur online name color')
+                .setTitle('You can change your discord name colour by using one of the commands below')
                 .setColor(0xFFFF00)
                 .addField("BLUE", "!blue", true)
                 .addField("YELLOW", "!yellow", true)
@@ -178,7 +178,7 @@ client.on('ready', () => {
 
                 .setTitle('Our Style Players')
                 .setColor(0x4c1f7e)
-                .setThumbnail(https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.jpg)
+                .setThumbnail('./OurStyle.jpg')
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
