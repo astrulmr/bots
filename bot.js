@@ -118,7 +118,7 @@ client.on('ready', () => {
                 .setColor(0xf60af8)
                 .setThumbnail(client.user.avatarURL)
                 .setDescription('Here we are friends who where gathered by the love of brawlball. There are no leaders, just players')
-                .addField('Teams', 'Runner - Supporter - Defender - Substitute', false)
+                .addField('Teams', 'Runner - Supporter - Defender \n Substitute', false)
                 .setFooter('We are Our style and we will make brawlball great again', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809%27')
           message.channel.send(embed)
         }
@@ -178,7 +178,8 @@ client.on('ready', () => {
 
                 .setTitle('Our Style Players')
                 .setColor(0x4c1f7e)
-                .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even great, do not be fools to underestimate us all')
+                .setThumbnail(https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.jpg)
+                .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
                 .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
