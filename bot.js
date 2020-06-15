@@ -194,7 +194,7 @@ client.on('ready', () => {
 
     client.on('message', message => {
         if (message.content === '!hi') {
-            message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
+            message.reply(`Hello  What Can i Do For You ? \n 1- !who @anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
         }
     })
     let channel3 = client.channels.get("613662955522752516")
