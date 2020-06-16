@@ -2457,9 +2457,9 @@ client.on('message', message => {
 const bbroomenter = member.guild.channels.get("594177565825171457")
 const bbroomjoin = member.guild.channels.get("713502234335510539")
 
-const prefix = "#";
+const prefix1 = "#";
 if (!bbroomenter) return
-const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const args = message.content.slice(prefix1.length).trim().split(/ +/g);
                 
 var msg1 = Array(5);
 msg1[1] = `brawlball time start now , Room #`+args.slice(1).join(" ");
