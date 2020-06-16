@@ -181,7 +181,7 @@ client.on('ready', () => {
                 .setThumbnail('https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.png')
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
                 .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
-                .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
+                .addField('\n jinleehurb', ' He has an unbelievable Defence and so good in Support and Run', true)
                 .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
                 .addField('\n |OS| Tmis Kun', 'He is a just too good Supporter and so great in Run and Defence', true)
                 .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
@@ -1077,7 +1077,7 @@ client.on('message', message => {
 
 client.on("message", async message => {
     const prefix = "_";
-
+ 
     // If the author's a bot, return
     // If the message was not sent in a server, return
     // If the message doesn't start with the prefix, return
@@ -1840,13 +1840,13 @@ client.on('message', message => {
             .addField('THE_INSANE_COW', "Pyrateers", true)
             .addField('Eichelb4rt', "Pyrateers", true)
             .addField('Shadow', "Pyrateers", true)
-            .addField('Glaedr', "La Team Rainbow", true)
+            .addField('Glaedr', "our style", true)
             .addField('otmanezza', "our style", true)
             .addField('Loay__xdar', 'ps clan', true)
             .addField('SID_GMRツ', 'PHB', true)
             .addField('klashmix470', 'ps clan', true)
 
-                  .addField('Astru','our style',true)
+    
 
 //postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -1927,13 +1927,13 @@ client.on('message', message => {
             .addField('THE_INSANE_COW', "Pyrateers", true)
             .addField('Eichelb4rt', "Pyrateers", true)
             .addField('Shadow', "Pyrateers", true)
-            .addField('Glaedr', "La Team Rainbow", true)
+            .addField('Glaedr', "our style", true)
             .addField('otmanezza', "our style", true)
             .addField('Loay__xdar', 'ps clan', true)
             .addField('SID_GMRツ', 'PHB', true)
             .addField('klashmix470', 'ps clan', true)
 
-                  .addField('Astru','our style',true)
+                  
 
 //postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -1956,9 +1956,7 @@ client.on('message', message => {
             .addField('PanosBOA', "our style", true)
             .addField('Kevin1185', "our style", true)
             .addField('Erzinos', 'La Team Rainbow', true)
-
             .addField('Helper', 'Clansanity', true)
-
             //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
 
@@ -2153,7 +2151,7 @@ client.on('message', message => {
             .setThumbnail("https://lh3.googleusercontent.com/UoIzDUwX-Mz7Nn2ULldlnfh_bHgJdbsGLoSUaJsmC8vIBp6N7GgxDteYTbTsghY7Mj94ag=s95")
             .setDescription("Glaedr")
             .addField('Position', 'Runner', true)
-            .addField('Clan', 'La Team Rainbow', true)
+            .addField('Clan', 'our style', true)
 
         message.channel.send(embed)
     }
@@ -2167,7 +2165,7 @@ client.on('message', message => {
             .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
             .setDescription("Glaedr")
             .addField('Position', 'Runner', true)
-            .addField('Clan', 'La Team Rainbow', true)
+            .addField('Clan', 'our style', true)
         message.channel.send(embed)
     }
 })
@@ -2428,37 +2426,6 @@ client.on('message', message => {
     }
 })
 
-
-  client.on('message', message => { 
-      if (message.content === '<@482162074097549333>') { 
-       let embed = new Discord.RichEmbed()
-        .setTitle('------------ASTRU------------')
-        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ada.png') 
-        .setColor('#275BF0') 
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === 'p <@482162074097549333>' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8b/SkinIcon_Ada_Future.png/900px-SkinIcon_Ada_Future.png?version=db1271f94f4221ac05f3a6c590ac6eab')
-        .setDescription('Astru')
-        .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-  client.on('message', message => {
-      if (message.content === '!ap' ) {
-       const embed = new RichEmbed()
-        .setTitle('Name')
-        .setColor('0x0000ff')
-        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8b/SkinIcon_Ada_Future.png/900px-SkinIcon_Ada_Future.png?version=db1271f94f4221ac05f3a6c590ac6eab')
-        .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
-        message.channel.send(embed)
-    }})
-
 //styleandastrusonub13579
 /////////////////////////////////////////////////////////////////
 
@@ -2486,15 +2453,66 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+const bbroomenter = member.guild.channels.get("594177565825171457")
+const bbroomjoin = member.guild.channels.get("713502234335510539")
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const prefix = "#";
+if (!bbroomenter) return
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+                
+var msg1 = Array(5);
+msg1[1] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+msg1[2] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+msg1[3] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+msg1[4] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+msg1[5] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+msg1[6] = `brawlball time start now , Room #`+args.slice(1).join(" ");
+var x = getRandomInt(0, 20);
+if (x < 5) {
+    if (x < 3) {
+      bbroomjoin.send(msg1[1]);
+    }
+    else {
+      bbroomjoin.send(msg1[3]);
+    }
+}
+else if (x <= 9) {
+    if (x >= 7) {
+      bbroomjoin.send(msg1[2]);
+    }
+    else {
+      bbroomjoin.send(msg1[4]);
+    }
+}
+else if (x <= 12) {
+  bbroomjoin.send(msg1[5]);
+}
+else {
+  bbroomjoin.send(msg1[6])
+}
+
+})
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on('guildMemberAdd', member => {
     const channel2 = member.guild.channels.get("535540529379672074")
     if (!channel2) return
     channel2.send(`${member} Has Join To our style Server`)
     member.addRole('603386617620856852')
+
 })
 client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
