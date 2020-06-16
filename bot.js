@@ -2499,28 +2499,10 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-        var message_options = ["brawlball time start , room"+args.join(" "),
-        "brawlball time start , room"+args.join(" "),
-        "brawlball time start , room"+args.join(" "),
-        "brawlball time start , room"+args.join(" "),
-        "brawlball time start , room"+args.join(" "),
-        "brawlball time start , room"+args.join(" "),
-        "Cbrawlball time start , room"+args.join(" ")]
-    var random_index = Math.floor(Math.random() * message_options.length)
-    var chosen_message = message_options[random_index]
-    message.guild.fetchMember(user.id).then(member => {
-        if (user.bot) return;
-        else {
-            let embed = new Discord.RichEmbed()
-                .setTitle(user.username + " has start the brawlball time")
-                .setColor('#ffff00')
-                .setDescription(chosen_message)
-
-                bbroomjoin.send(embed)
-        }
-    })
-
-}}
+       
+                bbroomjoin.send(args.join(" "))
+  }
+  }
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
