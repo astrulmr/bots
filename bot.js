@@ -2500,7 +2500,7 @@ client.on("message", async message => {
           message.channel.send(embed);
       } else {
        
-                bbroomjoin.send(args.join(" "))
+                message.channel.send(args.join(" "))
   }
   }
 });
