@@ -2499,41 +2499,28 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-        function getRandomInt(min, max) {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min)) + min;}
-        var msg1 = Array(5);
-        msg1[1] = `brawlball time start now , Room #`+args.join(" ");
-        msg1[2] = `brawlball time start now , Room #`+args.join(" ");
-        msg1[3] = `brawlball time start now , Room #`+args.join(" ");
-        msg1[4] = `brawlball time start now , Room #`+args.join(" ");
-        msg1[5] = `brawlball time start now , Room #`+args.join(" ");
-        msg1[6] = `brawlball time start now , Room #`+args.join(" ");
-        var x = getRandomInt(0, 20);
-        if (x < 5) {
-            if (x < 3) {
-              bbroomjoin.send(msg1[1]);
-            }
-            else {
-              bbroomjoin.send(msg1[3]);
-            }
-        }
-        else if (x <= 9) {
-            if (x >= 7) {
-              bbroomjoin.send(msg1[2]);
-            }
-            else {
-              bbroomjoin.send(msg1[4]);
-            }
-        }
-        else if (x <= 12) {
-          bbroomjoin.send(msg1[5]);
-        }
+        var message_options = ["brawlball time start , room"+args.join(" "),
+        "brawlball time start , room"+args.join(" "),
+        "brawlball time start , room"+args.join(" "),
+        "brawlball time start , room"+args.join(" "),
+        "brawlball time start , room"+args.join(" "),
+        "brawlball time start , room"+args.join(" "),
+        "Cbrawlball time start , room"+args.join(" ")]
+    var random_index = Math.floor(Math.random() * message_options.length)
+    var chosen_message = message_options[random_index]
+    message.guild.fetchMember(user.id).then(member => {
+        if (user.bot) return;
         else {
-          bbroomjoin.send(msg1[6])
-      }
-  }}
+            let embed = new Discord.RichEmbed()
+                .setTitle(user.username + " has start the brawlball time")
+                .setColor('#ffff00')
+                .setDescription(chosen_message)
+
+                bbroomjoin.send(embed)
+        }
+    })
+
+}}
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
