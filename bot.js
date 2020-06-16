@@ -2499,14 +2499,14 @@ else {
 
 
 client.on("message", async message => {
-  const prefix1 = "!";
+  const prefix = "#";
 
   // If the author's a bot, return
   // If the message was not sent in a server, return
   // If the message doesn't start with the prefix, return
   if (message.author.bot) return;
   if (!message.guild) return;
-  if (!message.content.startsWith(prefix1)) return;
+  if (!message.content.startsWith(prefix)) return;
 
   // Arguments and command variable
   // cmd is the first word in the message, aka the command
@@ -2514,11 +2514,11 @@ client.on("message", async message => {
   // !say hello I am a bot
   // cmd == say (because the prefix is sliced off)
   // args == ["hello", "I", "am", "a", "bot"]
-  const args = message.content.slice(prefix1.length).trim().split(/ +/g);
-  const cmd1 = args.shift().toLowerCase();
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const cmd = args.shift().toLowerCase();
 
 
-  if (cmd1 === "#") {
+  if (cmd === "!") {
       // Check if you can delete the message
       if (message.deletable) message.delete();
 
