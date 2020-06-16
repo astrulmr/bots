@@ -2499,6 +2499,10 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;}
         var msg1 = Array(5);
         msg1[1] = `brawlball time start now , Room #`+args.join(" ");
         msg1[2] = `brawlball time start now , Room #`+args.join(" ");
