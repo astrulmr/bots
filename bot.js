@@ -1846,7 +1846,9 @@ client.on('message', message => {
             .addField('SID_GMRツ', 'PHB', true)
             .addField('klashmix470', 'ps clan', true)
 
-            //postionneverlosehaha747
+                  .addField('Astru','our style',true)
+
+//postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
         message.channel.send(embed)
@@ -1931,7 +1933,9 @@ client.on('message', message => {
             .addField('SID_GMRツ', 'PHB', true)
             .addField('klashmix470', 'ps clan', true)
 
-            //postionneverlosehaha747
+                  .addField('Astru','our style',true)
+
+//postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
         message.channel.send(embed)
@@ -2423,6 +2427,37 @@ client.on('message', message => {
         message.channel.send(embed)
     }
 })
+
+
+  client.on('message', message => { 
+      if (message.content === '<@482162074097549333>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------ASTRU------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ada.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@482162074097549333>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8b/SkinIcon_Ada_Future.png/900px-SkinIcon_Ada_Future.png?version=db1271f94f4221ac05f3a6c590ac6eab')
+        .setDescription('Astru')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/8/8b/SkinIcon_Ada_Future.png/900px-SkinIcon_Ada_Future.png?version=db1271f94f4221ac05f3a6c590ac6eab')
+        .addField('Position','Runner',true)
+        .addField('Clan','our style',true)
+        message.channel.send(embed)
+    }})
 
 //styleandastrusonub13579
 /////////////////////////////////////////////////////////////////
