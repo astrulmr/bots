@@ -2474,6 +2474,9 @@ client.on("message", async message => {
   // !say hello I am a bot
   // cmd == say (because the prefix is sliced off)
   // args == ["hello", "I", "am", "a", "bot"]
+  const bbroomenter = member.guild.channels.get("594177565825171457")
+  const bbroomjoin = member.guild.channels.get("713502234335510539")
+
   const args = message.content.slice(prefix1.length).trim().split(/ +/g);
   const cmd1 = args.shift().toLowerCase();
 
@@ -2496,9 +2499,37 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-          message.channel.send(args.join(" "));
+        var msg1 = Array(5);
+        msg1[1] = `brawlball time start now , Room #`+args.join(" ");
+        msg1[2] = `brawlball time start now , Room #`+args.join(" ");
+        msg1[3] = `brawlball time start now , Room #`+args.join(" ");
+        msg1[4] = `brawlball time start now , Room #`+args.join(" ");
+        msg1[5] = `brawlball time start now , Room #`+args.join(" ");
+        msg1[6] = `brawlball time start now , Room #`+args.join(" ");
+        var x = getRandomInt(0, 20);
+        if (x < 5) {
+            if (x < 3) {
+              bbroomjoin.send(msg1[1]);
+            }
+            else {
+              bbroomjoin.send(msg1[3]);
+            }
+        }
+        else if (x <= 9) {
+            if (x >= 7) {
+              bbroomjoin.send(msg1[2]);
+            }
+            else {
+              bbroomjoin.send(msg1[4]);
+            }
+        }
+        else if (x <= 12) {
+          bbroomjoin.send(msg1[5]);
+        }
+        else {
+          bbroomjoin.send(msg1[6])
       }
-  }
+  }}
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
