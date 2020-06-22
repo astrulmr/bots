@@ -2433,7 +2433,7 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-          message.channel.send(args1.join(" "));
+          message.channel.send("the room number is "+args1.join(" "));
       }
   }
 });
