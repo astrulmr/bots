@@ -2416,24 +2416,19 @@ client.on("message", async message => {
 
       const roleColor = message.guild.me.highestRole.hexColor;
 
-      if (args1[0].toLowerCase() === "embed") {
-          const embed = new RichEmbed()
-              .setDescription(args1.slice(1).join(" "))
-              .setColor("#000000")
-
-          message.channel.send(embed);
-      } else {
-        var message_options = [ "Brawlball time is starting right now ! Join us room below",
+      
+        var bbmsg = [ "Brawlball time is starting right now ! Join us room below",
         "What are you waiting for ? Join the brawlball room below right now",
        "It is time we show you who the masters are, come and challenge us in brawlball !",
        "Do you really think you don't need any training ? You're such a fool, come on !",
        "We're gonna play some pro brawlball right now, wanna join us ?",
        "Let's play brawlball ! Room bellow ;)"]
-        var bbrandom = Math.floor(Math.random() * message_options.length)
-       var bbchoose = message_options[bbrandom]
+
+        var bbrandom = Math.floor(Math.random() * bbmsg.length)
+       var bbchoose = bbmsg[bbrandom]
           bbchannel.send(bbchoose+" "+args1.join(" "));
 
-      }
+      
   }
 });
 
