@@ -2408,7 +2408,7 @@ client.on("message", async message => {
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "bb") {
-    let bbchannel = client.channels.get("713502234335510539")
+    let bbchannel = client.channels.get("717814003627327553")
 
       if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
