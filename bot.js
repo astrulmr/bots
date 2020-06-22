@@ -2430,9 +2430,9 @@ client.on("message", async message => {
              .setTitle('Brawllball Time')
              .setColor('#fff900')
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
-             .setDescription(bbchoose)
+             .setDescription(user.username)
              .addField("The Room ", args1.join(" "),true)
-             .setFooter(user.username,user.displayAvatarURL)
+             
           bbchannel.send(embed);
 
       
