@@ -2432,7 +2432,7 @@ client.on("message", async message => {
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
              .setDescription(bbchoose)
              .addField("The Room ", args1.join(" "),true)
-             .setFooter(user.username,client.user.avatarURL)
+             .setFooter(user.username,user.displayAvatarURL)
           bbchannel.send(embed);
 
       
