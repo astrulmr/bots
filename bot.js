@@ -2439,7 +2439,7 @@ client.on("message", async message => {
              .addField("The Room ","**"+args1.join(" ")+"**",true)
              .setFooter(message.author.username,message.author.displayAvatarURL)
             
-             if (client.channels!=theroomhere){
+             if (message.channel.id != theroomhere){
   }
   else {
           bbchannel.send(embed);}
