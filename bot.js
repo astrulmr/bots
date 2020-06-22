@@ -2429,7 +2429,7 @@ client.on("message", async message => {
        let embed = new Discord.RichEmbed()
              .setTitle('Brawllball Time')
              .setColor('#fff900')
-             .setThumbnail('https://cdn.discordapp.com/attachments/594177565825171457/724691950602682448/bb.png%27')
+             .setThumbnail('https://ibb.co/NC1Pv51')
              .setDescription(bbchoose)
              .addField(args1.join(" "))
              .setFooter(user.username)
