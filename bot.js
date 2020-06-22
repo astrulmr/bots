@@ -102,7 +102,19 @@ client.on('message', message => {
     
  
 
-     
+      client.on('message', message => {
+        if (message.content === '!os clan') {
+            const embed = new RichEmbed()
+
+                .setTitle('Our Style Brawlball Clan ')
+                .setColor(0xf60af8)
+                .setThumbnail(client.user.avatarURL)
+                .setDescription('Here we are friends who where gathered by the love of brawlball. There are no leaders, just players')
+                .addField('Teams', 'Runner - Supporter - Defender \n Substitute', false)
+                .setFooter('We are Our style and we will make brawlball great again', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809%27')
+          message.channel.send(embed)
+        }
+    })
 
  
       client.on('message', message => {
