@@ -2429,9 +2429,9 @@ client.on("message", async message => {
        let embed = new Discord.RichEmbed()
              .setTitle('Brawllball Time')
              .setColor('#fff900')
-             .setThumbnail('https://ibb.co/NC1Pv51')
+             .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
              .setDescription(bbchoose)
-             .addField(args1.join(" "))
+             .addField("The Room ", args1.join(" "),true)
              .setFooter(user.username)
           bbchannel.send(embed);
 
