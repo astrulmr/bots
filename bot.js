@@ -172,7 +172,7 @@ client.on('message', message => {
                 .setColor(0x35127a)
                 .setThumbnail('https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.png')
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
-                .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
+                .addField('Junusbiaz', 'He is just super as Defender and great in Run and Support', true)
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
                 .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
                 .addField('\n |OS| Tmis Kun', 'He is a just too good Supporter and so great in Run and Defence', true)
@@ -2425,15 +2425,20 @@ client.on("message", async message => {
        "Let's play brawlball ! Room bellow ;)"]
 
         var bbrandom = Math.floor(Math.random() * bbmsg.length)
-       var bbchoose = bbmsg[bbrandom]
-       let embed = new Discord.RichEmbed()
-             .setTitle('Brawllball Time')
-             .setColor('#fff900')
-             .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
-             .setDescription(bbchoose)
-             .addField("The Room ", args1.join(" "),true)
-             .setFooter(user.username)
-          bbchannel.send(embed);
+        var bbchoose = bbmsg[bbrandom]
+       message.guild.fetchMember(user.id).then(member => {
+        if (user.bot) return;
+        else {
+            let embed = new Discord.RichEmbed()
+                .setTitle('Brawllball Time')
+                .setColor('#fff900')
+                .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+                .setDescription(bbchoose)
+                .addField(args1.join(" "))
+                .setFooter(user.username)
+            bbchannel.send(RichEmbed)
+        }
+    })
 
       
   }
