@@ -2121,8 +2121,8 @@ client.on('message', message => {
       .setColor(0x0000ff)
       .setThumbnail("https://lh3.googleusercontent.com/UoIzDUwX-Mz7Nn2ULldlnfh_bHgJdbsGLoSUaJsmC8vIBp6N7GgxDteYTbTsghY7Mj94ag=s95")
       .setDescription("Glaedr")
-      .addField('Position','Runner',true)
-      .addField('Clan','La Team Rainbow',true)
+      .addField('Position','Defender',true)
+      .addField('Clan','our style',true)
 
       message.channel.send(embed)
   }
@@ -2133,10 +2133,10 @@ client.on('message', message => {
         const embed = new RichEmbed()
         .setTitle("Name")
         .setColor(0x0000ff)
-        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/150px-SkinIcon_Hattori_Shadow.png?version=ce565423a0ccd35b1e5c5540a9f809c1")
+        .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
         .setDescription("Glaedr")
-        .addField('Position','Runner',true)
-        .addField('Clan','La Team Rainbow',true)
+        .addField('Position','Defender',true)
+        .addField('Clan','our style',true)
         message.channel.send(embed)
     }
     })
@@ -2174,7 +2174,7 @@ if (message.content === "!ap" ) {
     const embed = new RichEmbed()
     .setTitle("Name")
     .setColor(0x0000ff)
-    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
+    .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/a8/SkinIcon_Hattori_Classic.png/150px-SkinIcon_Hattori_Classic.png?version=a995a6aa35135e835c144e99e509e1f8")
     .setDescription("otmanezza")
     .addField('Position','Runner',true)
     .addField('Clan','our style',true)
