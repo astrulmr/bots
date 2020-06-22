@@ -107,67 +107,69 @@ client.on('message', message => {
  
       client.on('message', message => {
         if (message.content === '!os clan') {
-          const embed = new RichEmbed()
-    
-            .setTitle(' This Our Style Clan We All Leader Here And Friends :)')
-            .setColor(0xFF0000)
-            .setThumbnail(client.user.avatarURL)
-            .setDescription('OS Clan Info = https://brawldb.com/clan/info/637285')
+            const embed = new RichEmbed()
 
-            .addField('Astru®', ' He is the perfect Runner and a f*cking good Supporter and Defender', true)
-
-            
-            .addField('\n DanzoDon', ' He is a godzila Runner and cool in Defence and Support', true)
-
-
-            .addField('\n Glaedr', ' He is a brilliant Runner and indestructible in Support and Defence', true)
-
-            
-            .addField('\n jimm25', ' He is an insane Runner and surely great in Defence and Support', true)
-            
-           
-            .addField('\n kevin1185', ' He so cool in Run and fantastic as Defender and Supporter', true)
-            
-            
-            .addField('\n otmanezza', 'He is an unstoppable Runner and unbreakable Defender and Supporter', true)
-            
-            
-            .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
-            
-          
-            .addField('\n LordCroissant', ' He never crossed in Support and witty as Runner And Defender', true)
-            
-            
-            .addField('\n Styleken', 'He is the Defender you want behind you but he can also Run and Support like no one else', true)
-            
-           
-            .addField('\n JustThomas', 'He is just super as Defender and great in Run and Support', true)
-            
-           
-            .addField('\n KaeptnKook', ' He is the best in Defence and a 300IQ Runner and Supporter', true)
-            
-            
-            .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
-            
-            
-            .addField('\n CTNS', 'He cannot be scored on when Defending and he is great in Run and Support', true)
-            
-            
-            .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
-            
-           
-            .addField('\n |OS| Tmis Kun', 'He is a just too good Supporter and so great in Run and Defence', true)
-                        
-            
-            .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
-            
-            
-            
-            .setFooter('Everyone in Our Style clan is able to kick you in all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
-           
-          message.channel.send(embed)
+                .setTitle('Team : A.S.K')
+                .setColor(0xc44312)
+                .setDescription('The Ace team in Our Style, they won both of the tourneys they did within the clan')
+                .addField('Astru®', 'He is the perfect Runner and a f*cking good Supporter and Defender', true)
+                .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
+                .addField('\n Styleken', 'He is the Defender you want behind you but he can also Run and Support like no one else', true)
+            message.channel.send(embed)
         }
-      })
+    })
+
+
+    client.on('message', message => {
+        if (message.content === '!os clan') {
+            const embed = new RichEmbed()
+
+                .setTitle('Team : KeJiCT')
+                .setColor(0x000000)
+                .setDescription('The perfect Duo was joined by a third and they will show the power of Our Style players')
+                .addField('jimm25', ' He is an insane Runner and surely great in Defence and Support', true)
+                .addField('\n kevin1185', ' He so cool in Run and fantastic as Defender and Supporter', true)
+                .addField('\n CTNS', 'He cannot be scored on when Defending and he is great in Run and Support', true)
+                .addField('\n KaeptnKook', ' He is the best in Defence and a 300IQ Runner and Supporter', true)
+            message.channel.send(embed)
+        }
+    })
+
+
+    client.on('message', message => {
+        if (message.content === '!os clan') {
+            const embed = new RichEmbed()
+
+                .setTitle('Team : Danzo°s Gang')
+                .setColor(0x55e473)
+                .setDescription('Dan got a great team by his side, they are here to prove their force as a team')
+                .addField('DanzoDon', ' He is a godzila Runner and cool in Defence and Support', true)
+                .addField('\n LordCroissant', ' He never crossed in Support and witty as Runner And Defender', true)
+                .addField('\n Glaedr', ' He is a brilliant Defender and indestructible in Support and Run', true)
+                .addField('\n otmanezza', 'He is an unstoppable Runner and unbreakable Defender and Supporter', true)
+            message.channel.send(embed)
+        }
+    })
+
+
+    client.on('message', message => {
+        if (message.content === '!os clan') {
+            const embed = new RichEmbed()
+
+                .setTitle('Our Style Players')
+                .setColor(0x35127a)
+                .setThumbnail('https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.png')
+                .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
+                .addField('JustThomas', 'He is just super as Defender and great in Run and Support', true)
+                .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
+                .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
+                .addField('\n |OS| Tmis Kun', 'He is a just too good Supporter and so great in Run and Defence', true)
+                .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
+                .setFooter('Everyone in Our Style clan is able to kick you in all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
+
+            message.channel.send(embed)
+        }
+    })
 
 
   client.on('message', message => {
