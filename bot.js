@@ -2397,14 +2397,14 @@ if (message.content === "!ap" ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
-  const prefix = "#";
+  const prefix1 = "#";
 
   // If the author's a bot, return
   // If the message was not sent in a server, return
   // If the message doesn't start with the prefix, return
   if (message.author.bot) return;
   if (!message.guild) return;
-  if (!message.content.startsWith(prefix)) return;
+  if (!message.content.startsWith(prefix1)) return;
 
   // Arguments and command variable
   // cmd is the first word in the message, aka the command
@@ -2412,36 +2412,28 @@ client.on("message", async message => {
   // !say hello I am a bot
   // cmd == say (because the prefix is sliced off)
   // args == ["hello", "I", "am", "a", "bot"]
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
-  const cmd = args.shift().toLowerCase();
+  const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
+  const cmd = args1.shift().toLowerCase();
 
-  if (cmd === "ping") {
-      // Send a message
-      const msg = await message.channel.send(`🏓 Pinging....`);
-
-      // Edit the message
-      msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestap - message.createdTimestap)}ms\nAPI Latency is ${Math.round(client.ping)}ms`);
-  }
-
-  if (cmd === "say") {
+  if (cmd === "#") {
       // Check if you can delete the message
       if (message.deletable) message.delete();
 
-      if (args.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
+      if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
       // Role color
       const roleColor = message.guild.me.highestRole.hexColor;
 
       // If the first argument is embed, send an embed,
       // otherwise, send a normal message
-      if (args[0].toLowerCase() === "embed") {
+      if (args1[0].toLowerCase() === "embed") {
           const embed = new RichEmbed()
-              .setDescription(args.slice(1).join(" "))
+              .setDescription(args1.slice(1).join(" "))
               .setColor("#000000")
 
           message.channel.send(embed);
       } else {
-          message.channel.send(args.join(" "));
+          message.channel.send(args1.join(" "));
       }
   }
 });
