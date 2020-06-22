@@ -2415,28 +2415,46 @@ client.on("message", async message => {
   const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
   const cmd = args1.shift().toLowerCase();
 
-  if (cmd === "#") {
-    let bbchannel = client.channels.get("713502234335510539")
-      // Check if you can delete the message
-      if (message.deletable) message.delete();
+  if (cmd === "bb") {
+    // Check if you can delete the message
+    if (message.deletable) message.delete();
 
-      if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
+    if (args.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
-      // Role color
-      const roleColor = message.guild.me.highestRole.hexColor;
+    // Role color
+    const roleColor = message.guild.me.highestRole.hexColor;
 
-      // If the first argument is embed, send an embed,
-      // otherwise, send a normal message
-      if (args1[0].toLowerCase() === "embed") {
-          const embed = new RichEmbed()
-              .setDescription(args1.slice(1).join(" "))
-              .setColor("#000000")
+    // If the first argument is embed, send an embed,
+    // otherwise, send a normal message
+    if (args[0].toLowerCase() === "embed") {
+        const embed = new RichEmbed()
+            .setDescription(args.slice(1).join(" "))
+            .setColor("#000000")
 
-          message.channel.send(embed);
-      } else {
-          bbchannel.send("the room number is "+args1.join(" "));
-      }
-  }
+        message.channel.send(embed);
+    } else {
+      var bbtime_message = [ "Brawlball time is starting right now ! Join us room below",
+      "What are you waiting for ? Join the brawlball room below right now",
+      "It is time we show you who the masters are, come and challenge us in brawlball !",
+      "Do you really think you don't need any training ? You're such a fool, come on !",
+      "We're gonna play some pro brawlball right now, wanna join us ?",
+      "Let's play brawlball ! Room bellow ;)"]
+      var randomize = Math.floor(Math.random() * bbtime_message.length)
+      var bbtime = message_options[randomize]
+        message.guild.fetchMember(user.id).then(member => {
+        if (user.bot) return;
+        else {
+          let embed = new Discord.RichEmbed()
+             .setTitle('Brawllball Time')
+             .setColor('#fff900')
+             .setThumbnail('https://cdn.discordapp.com/attachments/594177565825171457/724691950602682448/bb.png')
+             .setDescription(bbtime)
+             .addField(args.slice(1).join(" "))
+             .setFooter(user.username)
+     }
+ })
+    }
+}
 });
 
 
