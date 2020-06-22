@@ -2399,7 +2399,7 @@ if (message.content === "!ap" ) {
 client.on("message", async message => {
   const prefix1 = "#";
   let theroomhere = client.channels.get("594177565825171457")
-  if (!theroomhere) return
+  
  
   if (message.author.bot) return;
   if (!message.guild) return;
@@ -2436,8 +2436,9 @@ client.on("message", async message => {
              .setColor(bbclrchos)
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
              .setDescription(bbchoose)
-             .addField("The Room ", args1.join(" "),true)
+             .addField("The Room ","**"+args1.join(" ")+"**",true)
              .setFooter(message.author.username,message.author.displayAvatarURL)
+             if (!theroomhere) return
           bbchannel.send(embed);
 
       
