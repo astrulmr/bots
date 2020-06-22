@@ -2426,14 +2426,7 @@ client.on("message", async message => {
 
         var bbrandom = Math.floor(Math.random() * bbmsg.length)
        var bbchoose = bbmsg[bbrandom]
-       let embed = new Discord.RichEmbed()
-             .setTitle('Brawllball Time')
-             .setColor('#fff900')
-             .setThumbnail('https://cdn.discordapp.com/attachments/594177565825171457/724691950602682448/bb.png%27')
-             .setDescription(bbchoose)
-             .addField(args1.join(" "))
-             .setFooter(user.username)
-          bbchannel.send(embed);
+          bbchannel.send(bbchoose+" "+args1.join(" "));
 
       
   }
