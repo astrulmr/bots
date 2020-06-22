@@ -2424,11 +2424,16 @@ client.on("message", async message => {
        "We're gonna play some pro brawlball right now, wanna join us ?",
        "Let's play brawlball ! Room bellow ;)"]
 
+       var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
+       
+       var bbccrndm = Math.floor(Math.random() * bbcolor.length)
+       var bbclrchos = bbcolor[bbccrndm]
+
         var bbrandom = Math.floor(Math.random() * bbmsg.length)
        var bbchoose = bbmsg[bbrandom]
        let embed = new Discord.RichEmbed()
              .setTitle('Brawllball Time')
-             .setColor('#fff900')
+             .setColor(bbclrchos)
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
              .setDescription(bbchoose)
              .addField("The Room ", args1.join(" "),true)
