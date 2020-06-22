@@ -2416,6 +2416,7 @@ client.on("message", async message => {
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "#") {
+    const bbchannel = member.guild.channels.get("713502234335510539")
       // Check if you can delete the message
       if (message.deletable) message.delete();
 
@@ -2433,7 +2434,7 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-          message.channel.send("the room number is "+args1.join(" "));
+          message.bbchannel.send("the room number is "+args1.join(" "));
       }
   }
 });
