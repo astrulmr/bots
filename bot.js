@@ -913,7 +913,7 @@ bChannel.send('OFC im the best ez pz');
       message.channel.send("He Is A Brawlball Player")
    }}}
  })
-  
+
 
 
  
@@ -1813,7 +1813,6 @@ client.on('message', message => {
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
-      .addField('Glaedr',"La Team Rainbow",true)
       .addField('otmanezza',"our style",true)
       .addField('Loay__xdar','ps clan',true)
       .addField('SID_GMRツ','PHB',true)
@@ -1859,6 +1858,7 @@ client.on('message', message => {
                   .addField('KaeptnKook',"our style",true)
                   .addField('Jinleehurb',"our style",true)
                   .addField('Junusbiaz',"our style",true)
+                  .addField('Glaedr',"our style",true)
                   .addField('BlueDragon',"TVS",true)
                   .addField('senpai','our style',true)
 
