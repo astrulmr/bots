@@ -2439,8 +2439,7 @@ client.on("message", async message => {
              .addField("The Room ","**"+args1.join(" ")+"**",true)
              .setFooter(message.author.username,message.author.displayAvatarURL)
             
-             if (message.channel.id != theroomhere){
-  }
+  if(!theroomhere){}
   else {
           bbchannel.send(embed);}
 
@@ -2515,3 +2514,4 @@ client.on('guildMemberAdd', member => {
         })
   
 client.login(process.env.BOT_TOKEN)
+
