@@ -2403,7 +2403,7 @@ client.on("message", async message => {
   // If the message was not sent in a server, return
   // If the message doesn't start with the prefix, return
   if (message.author.bot) return;
-  if (!message.guild) return;
+
   if (!message.content.startsWith(prefix1)) return;
 
   // Arguments and command variable
@@ -2434,7 +2434,7 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-          message.bbchannel.send("the room number is "+args1.join(" "));
+          bbchannel.send("the room number is "+args1.join(" "));
       }
   }
 });
