@@ -2398,63 +2398,40 @@ if (message.content === "!ap" ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
   const prefix1 = "#";
-
-  // If the author's a bot, return
-  // If the message was not sent in a server, return
-  // If the message doesn't start with the prefix, return
+  let theroomhere = client.channels.get("594177565825171457")
+  if (!theroomhere) return
+ 
   if (message.author.bot) return;
   if (!message.guild) return;
   if (!message.content.startsWith(prefix1)) return;
 
-  // Arguments and command variable
-  // cmd is the first word in the message, aka the command
-  // args is an array of words after the command
-  // !say hello I am a bot
-  // cmd == say (because the prefix is sliced off)
-  // args == ["hello", "I", "am", "a", "bot"]
   const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "bb") {
-    // Check if you can delete the message
-    if (message.deletable) message.delete();
+    let bbchannel = client.channels.get("713502234335510539")
 
-    if (args.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
+      if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
-    // Role color
-    const roleColor = message.guild.me.highestRole.hexColor;
 
-    // If the first argument is embed, send an embed,
-    // otherwise, send a normal message
-    if (args[0].toLowerCase() === "embed") {
-        const embed = new RichEmbed()
-            .setDescription(args.slice(1).join(" "))
-            .setColor("#000000")
+      const roleColor = message.guild.me.highestRole.hexColor;
 
-        message.channel.send(embed);
-    } else {
-      var bbtime_message = [ "Brawlball time is starting right now ! Join us room below",
-      "What are you waiting for ? Join the brawlball room below right now",
-      "It is time we show you who the masters are, come and challenge us in brawlball !",
-      "Do you really think you don't need any training ? You're such a fool, come on !",
-      "We're gonna play some pro brawlball right now, wanna join us ?",
-      "Let's play brawlball ! Room bellow ;)"]
-      var randomize = Math.floor(Math.random() * bbtime_message.length)
-      var bbtime = message_options[randomize]
-        message.guild.fetchMember(user.id).then(member => {
-        if (user.bot) return;
-        else {
-          let embed = new Discord.RichEmbed()
-             .setTitle('Brawllball Time')
-             .setColor('#fff900')
-             .setThumbnail('https://cdn.discordapp.com/attachments/594177565825171457/724691950602682448/bb.png')
-             .setDescription(bbtime)
-             .addField(args.slice(1).join(" "))
-             .setFooter(user.username)
-     }
- })
-    }
-}
+      if (args1[0].toLowerCase() === "embed") {
+          const embed = new RichEmbed()
+              .setDescription(args1.slice(1).join(" "))
+              .setColor("#000000")
+
+          message.channel.send(embed);
+      } else {
+        var message_options = ["bb room start now room",
+        "it brawlball time room ",
+        "dont be late for the bb time room"]
+        var bbrandom = Math.floor(Math.random() * message_options.length)
+       var bbchoose = message_options[bbrandom]
+          bbchannel.send(bbchoose+args1.join(" "));
+
+      }
+  }
 });
 
 
