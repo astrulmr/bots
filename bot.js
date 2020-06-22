@@ -2403,7 +2403,7 @@ client.on("message", async message => {
   // If the message was not sent in a server, return
   // If the message doesn't start with the prefix, return
   if (message.author.bot) return;
-
+  if (!message.guild) return;
   if (!message.content.startsWith(prefix1)) return;
 
   // Arguments and command variable
@@ -2416,7 +2416,7 @@ client.on("message", async message => {
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "#") {
-    const bbchannel = member.guild.channels.get("713502234335510539")
+    let bbchannel = client.channels.get("713502234335510539")
       // Check if you can delete the message
       if (message.deletable) message.delete();
 
