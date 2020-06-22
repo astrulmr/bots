@@ -2423,12 +2423,15 @@ client.on("message", async message => {
 
           message.channel.send(embed);
       } else {
-        var message_options = ["bb room start now room",
-        "it brawlball time room ",
-        "dont be late for the bb time room"]
+        var message_options = [ "Brawlball time is starting right now ! Join us room below",
+        "What are you waiting for ? Join the brawlball room below right now",
+       "It is time we show you who the masters are, come and challenge us in brawlball !",
+       "Do you really think you don't need any training ? You're such a fool, come on !",
+       "We're gonna play some pro brawlball right now, wanna join us ?",
+       "Let's play brawlball ! Room bellow ;)"]
         var bbrandom = Math.floor(Math.random() * message_options.length)
        var bbchoose = message_options[bbrandom]
-          bbchannel.send(bbchoose+args1.join(" "));
+          bbchannel.send(bbchoose+" "+args1.join(" "));
 
       }
   }
