@@ -2434,7 +2434,7 @@ client.on("message", async message => {
                 .setColor('#fff900')
                 .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
                 .setDescription(bbchoose)
-                .addField(args1.join(" "))
+                
                 .setFooter(user.username)
             bbchannel.send(RichEmbed)
         }
@@ -2511,3 +2511,4 @@ client.on('guildMemberAdd', member => {
         })
   
 client.login(process.env.BOT_TOKEN)
+
