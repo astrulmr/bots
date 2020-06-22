@@ -2398,8 +2398,7 @@ if (message.content === "!ap" ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
   const prefix1 = "#";
-  let theroomhere = client.channels.get("594177565825171457")
-  
+ 
  
   if (message.author.bot) return;
   if (!message.guild) return;
@@ -2439,9 +2438,9 @@ client.on("message", async message => {
              .addField("The Room ","**"+args1.join(" ")+"**",true)
              .setFooter(message.author.username,message.author.displayAvatarURL)
             
-  if(!theroomhere){}
-  else {
-          bbchannel.send(embed);}
+             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
+else
+          bbchannel.send(embed);
 
       
   }
@@ -2514,4 +2513,3 @@ client.on('guildMemberAdd', member => {
         })
   
 client.login(process.env.BOT_TOKEN)
-
