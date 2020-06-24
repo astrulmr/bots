@@ -2441,6 +2441,7 @@ client.on("message", async message => {
              if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
           bbchannel.send(embed);
+          bbchannel.send("@here")
 
       
   }
