@@ -2421,7 +2421,10 @@ client.on("message", async message => {
        "It is time we show you who the masters are, come and challenge us in brawlball !",
        "Do you really think you don't need any training ? You're such a fool, come on !",
        "We're gonna play some pro brawlball right now, wanna join us ?",
-       "Let's play brawlball ! Room bellow ;)"]
+       "Let's play brawlball ! Room bellow ;)",
+       "Money is nothing if you don't have the skill to spend it right. Anyway join brawlball right now",
+       "You have the right to choose : either you come and play brawlball now ; either you don't come and you get worse and worse day after day.",
+       "Don't be shy, try to defeat us in brawlball, maybe we'll be kind enough to let you score once"]
 
        var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
        
