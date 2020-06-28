@@ -89,7 +89,7 @@ client.on('message', message => {
     client.on('message', message => {
       if (message.content === 'a') {
             const embed = new RichEmbed()
-              .setTitle('Welcome To our style Server')
+              .setTitle('Welcome to Our Style server')
               .setColor(0xFFFFFF)
               welchannel.send(embed)
       }
@@ -1388,7 +1388,7 @@ client.on('message', message => {
         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/e9/SkinIcon_Artemis_Iron.png/600px-SkinIcon_Artemis_Iron.png?version=da9d1b6636935730e3a512a8ace891a0")
         .setDescription("Astru")
         .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
+        .addField('Clan','Our Style',true)
 
         message.channel.send(embed)
     }
@@ -1401,7 +1401,7 @@ client.on('message', message => {
           .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/47/SkinIcon_Val_Kunoichi.png/600px-SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
           .setDescription("DanzoDon")
           .addField('Position','Runner',true)
-          .addField('Clan','our style',true)
+          .addField('Clan','Our Style',true)
 
           message.channel.send(embed)
       }
@@ -1414,7 +1414,7 @@ client.on('message', message => {
             .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/600px-SkinIcon_Yumiko_Tokyo.png?version=8392753f93e5267ec317090ca7462401")
             .setDescription("Kevin1185")
             .addField('Position','Runner',true)
-            .addField('Clan','our style',true)
+            .addField('Clan','Our Style',true)
 
             message.channel.send(embed)
         }
@@ -1427,7 +1427,7 @@ client.on('message', message => {
               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/ad/SkinIcon_Ember_SantasHelper.png/600px-SkinIcon_Ember_SantasHelper.png?version=1c9cac26b75e97df79448500a7cda9ac")
               .setDescription("Jimm25")
               .addField('Position','Runner',true)
-              .addField('Clan','our style',true)
+              .addField('Clan','Our Style',true)
 
               message.channel.send(embed)
           }
@@ -1440,7 +1440,7 @@ client.on('message', message => {
                 .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/96/SkinIcon_Rayman_Raymesis.png/600px-SkinIcon_Rayman_Raymesis.png?version=79354ce2895f8ecddae5539d8f8bcf72")
                 .setDescription("SweetMiguel")
                 .addField('Position','Runner',true)
-                .addField('Clan','our style',true)
+                .addField('Clan','Our Style',true)
 
                 message.channel.send(embed)
             }
@@ -1453,7 +1453,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
-                  .addField('Clan','our style',true)
+                  .addField('Clan','Our Style',true)
 
                   message.channel.send(embed)
               }
@@ -1466,7 +1466,7 @@ client.on('message', message => {
                     .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/0e/SkinIcon_Bodvar_CyberViking.png/600px-SkinIcon_Bodvar_CyberViking.png?version=14e957b2301ba3454ea4b28435d4deef")
                     .setDescription("Kaeptnkook")
                     .addField('Position','Defender',true)
-                    .addField('Clan','our style',true)
+                    .addField('Clan','Our Style',true)
 
                     message.channel.send(embed)
                 }
@@ -1479,7 +1479,7 @@ client.on('message', message => {
                       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/2c/SkinIcon_Mordex_Fenrir.png/600px-SkinIcon_Mordex_Fenrir.png?version=6b9f00361feb8542abab1f531b544911")
                       .setDescription("Junusbiaz")
                       .addField('Position','Defender',true)
-                      .addField('Clan','our style',true)
+                      .addField('Clan','Our Style',true)
 
                       message.channel.send(embed)
                   }
@@ -1492,7 +1492,7 @@ client.on('message', message => {
                         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/eb/SkinIcon_Scarlet_Grease.png/600px-SkinIcon_Scarlet_Grease.png?version=d4550dfafa4972f753b8f9831ca20e43")
                         .setDescription("Jinleehurb")
                         .addField('Position','Defender',true)
-                        .addField('Clan','our style',true)
+                        .addField('Clan','Our Style',true)
 
                         message.channel.send(embed)
                     }
@@ -1505,7 +1505,7 @@ client.on('message', message => {
                           .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/600px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37")
                           .setDescription("PanosBOA")
                           .addField('Position','Supporter',true)
-                          .addField('Clan','our style',true)
+                          .addField('Clan','Our Style',true)
 
                           message.channel.send(embed)
                       }
@@ -1518,7 +1518,7 @@ client.on('message', message => {
                             .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
                             .setDescription("Kenshiro")
                             .addField('Position','Supporter',true)
-                            .addField('Clan','our style',true)
+                            .addField('Clan','Our Style',true)
 
                             message.channel.send(embed)
                         }
@@ -1531,7 +1531,7 @@ client.on('message', message => {
                               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/600px-SkinIcon_Hattori_Shadow.png?version=191746d50260876e5e469cdfdce1bcb5")
                               .setDescription("|OS| Tmis Kun")
                               .addField('Position','Supporter',true)
-                              .addField('Clan','our style',true)
+                              .addField('Clan','Our Style',true)
                               message.channel.send(embed)
                           }
                           })
@@ -1556,7 +1556,7 @@ client.on('message', message => {
                                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                                   .setDescription("LordCroissant")
                                   .addField('Position','Supporter',true)
-                                  .addField('Clan','our style',true)
+                                  .addField('Clan','Our Style',true)
                                   message.channel.send(embed)
                               }
                               })
@@ -1597,7 +1597,7 @@ client.on('message', message => {
       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/e9/SkinIcon_Artemis_Iron.png/600px-SkinIcon_Artemis_Iron.png?version=da9d1b6636935730e3a512a8ace891a0")
       .setDescription("Astru")
       .addField('Position','Runner',true)
-      .addField('Clan','our style',true)
+      .addField('Clan','Our Style',true)
       message.channel.send(embed)
   }
   })
@@ -1621,7 +1621,7 @@ client.on('message', message => {
         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/47/SkinIcon_Val_Kunoichi.png/600px-SkinIcon_Val_Kunoichi.png?version=43c51465bb65b2cfbe02db40cd52697b")
         .setDescription("DanzoDon")
         .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }
     })
@@ -1634,7 +1634,7 @@ client.on('message', message => {
         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/ad/SkinIcon_Ember_SantasHelper.png/600px-SkinIcon_Ember_SantasHelper.png?version=1c9cac26b75e97df79448500a7cda9ac")
         .setDescription("Jimm25")
         .addField('Position','Runner',true)
-        .addField('Clan','our style',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }
     })
@@ -1646,7 +1646,7 @@ client.on('message', message => {
           .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/eb/SkinIcon_Scarlet_Grease.png/600px-SkinIcon_Scarlet_Grease.png?version=d4550dfafa4972f753b8f9831ca20e43")
           .setDescription("Jinleehurb")
           .addField('Position','Defender',true)
-          .addField('Clan','our style',true)
+          .addField('Clan','Our Style',true)
           message.channel.send(embed)
       }
       })
@@ -1659,7 +1659,7 @@ client.on('message', message => {
               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/2/2c/SkinIcon_Mordex_Fenrir.png/600px-SkinIcon_Mordex_Fenrir.png?version=6b9f00361feb8542abab1f531b544911")
               .setDescription("Junusbiaz")
               .addField('Position','Defender',true)
-              .addField('Clan','our style',true)
+              .addField('Clan','Our Style',true)
               message.channel.send(embed)
           }
           })
@@ -1671,7 +1671,7 @@ client.on('message', message => {
                 .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/0e/SkinIcon_Bodvar_CyberViking.png/600px-SkinIcon_Bodvar_CyberViking.png?version=14e957b2301ba3454ea4b28435d4deef")
                 .setDescription("Kaeptnkook")
                 .addField('Position','Defender',true)
-                .addField('Clan','our style',true)
+                .addField('Clan','Our Style',true)
                 message.channel.send(embed)
             }
             })
@@ -1683,7 +1683,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/7/7e/SkinIcon_Brynn_Huntress.png/600px-SkinIcon_Brynn_Huntress.png?version=28f7f6ef5cca88c9563b99a3efc6df07")
                   .setDescription("Kenshiro")
                   .addField('Position','Supporter',true)
-                  .addField('Clan','our style',true)
+                  .addField('Clan','Our Style',true)
                   message.channel.send(embed)
               }
               })
@@ -1695,7 +1695,7 @@ client.on('message', message => {
                     .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/b/bf/SkinIcon_Yumiko_Tokyo.png/600px-SkinIcon_Yumiko_Tokyo.png?version=8392753f93e5267ec317090ca7462401")
                     .setDescription("Kevin1185")
                     .addField('Position','Runner',true)
-                    .addField('Clan','our style',true)
+                    .addField('Clan','Our Style',true)
                     message.channel.send(embed)
                 }
                 })
@@ -1707,7 +1707,7 @@ client.on('message', message => {
                       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/67/SkinIcon_Orion_DeathAngel.png/600px-SkinIcon_Orion_DeathAngel.png?version=0c51a5e96f38bc216a6bc7a24ad99c28")
                       .setDescription("LordCroissant")
                       .addField('Position','Supporter',true)
-                      .addField('Clan','our style',true)
+                      .addField('Clan','Our Style',true)
                       message.channel.send(embed)
                   }
                   })
@@ -1719,7 +1719,7 @@ client.on('message', message => {
                       .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/600px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37")
                       .setDescription("PanosBOA")
                       .addField('Position','Supporter',true)
-                      .addField('Clan','our style',true)
+                      .addField('Clan','Our Style',true)
                       message.channel.send(embed)
                   }
                   })
@@ -1732,7 +1732,7 @@ client.on('message', message => {
                   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/57/SkinIcon_Scarlet_Captain.png/600px-SkinIcon_Scarlet_Captain.png?version=5646cd825a8bddebcb22641781cddbd7")
                   .setDescription("Styleken")
                   .addField('Position','Defender',true)
-                  .addField('Clan','our style',true)
+                  .addField('Clan','Our Style',true)
                   message.channel.send(embed)
               }
               })
@@ -1744,7 +1744,7 @@ client.on('message', message => {
                     .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/9/96/SkinIcon_Rayman_Raymesis.png/600px-SkinIcon_Rayman_Raymesis.png?version=79354ce2895f8ecddae5539d8f8bcf72")
                     .setDescription("SweetMiguel")
                     .addField('Position','Runner',true)
-                    .addField('Clan','our style',true)
+                    .addField('Clan','Our Style',true)
                     message.channel.send(embed)
                 }
                 })
@@ -1769,7 +1769,7 @@ client.on('message', message => {
                               .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/00/SkinIcon_Hattori_Shadow.png/600px-SkinIcon_Hattori_Shadow.png?version=191746d50260876e5e469cdfdce1bcb5")
                               .setDescription("|OS| Tmis Kun")
                               .addField('Position','Supporter',true)
-                              .addField('Clan','our style',true)
+                              .addField('Clan','Our Style',true)
                               message.channel.send(embed)
                           }
                           })
@@ -1806,14 +1806,14 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
-      .addField('Astru',"our style",true)
-      .addField('Jimm25',"our style",true)
-      .addField('SweetMiguel',"our style",true)
-      .addField('DanzoDon',"our style",true)
+      .addField('Astru',"Our Style",true)
+      .addField('Jimm25',"Our Style",true)
+      .addField('SweetMiguel',"Our Style",true)
+      .addField('DanzoDon',"Our Style",true)
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
-      .addField('otmanezza',"our style",true)
+      .addField('otmanezza',"Our Style",true)
       .addField('Loay__xdar','ps clan',true)
       .addField('SID_GMRツ','PHB',true)
       .addField('klashmix470','ps clan',true)
@@ -1831,13 +1831,13 @@ client.on('message', message => {
             const embed = new RichEmbed()
             .setTitle('------------------ Supporter Players ------------------')
             .setColor(0x0000ff)
-            .addField('Kenshiro',"our style",true)
-            .addField('Styleken',"our style",true)
-            .addField('|OS| Tmis Kun',"our style",true)
+            .addField('Kenshiro',"Our Style",true)
+            .addField('Styleken',"Our Style",true)
+            .addField('|OS| Tmis Kun',"Our Style",true)
             .addField('ThomaSerena',"NBS",true)
-            .addField('LordCroissant'," our style",true)
-            .addField('PanosBOA',"our style",true)
-            .addField('Kevin1185',"our style",true)
+            .addField('LordCroissant',"Our Style",true)
+            .addField('PanosBOA',"Our Style",true)
+            .addField('Kevin1185',"Our Style",true)
                   .addField('Erzinos','La Team Rainbow',true)
 
       .addField('Helper','Clansanity',true)
@@ -1855,12 +1855,12 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle('------------------ Defender Players ------------------')
                   .setColor(0xFFFF00)
-                  .addField('KaeptnKook',"our style",true)
-                  .addField('Jinleehurb',"our style",true)
-                  .addField('Junusbiaz',"our style",true)
-                  .addField('Glaedr',"our style",true)
+                  .addField('KaeptnKook',"Our Style",true)
+                  .addField('Jinleehurb',"Our Style",true)
+                  .addField('Junusbiaz',"Our Style",true)
+                  .addField('Glaedr',"Our Style",true)
                   .addField('BlueDragon',"TVS",true)
-                  .addField('senpai','our style',true)
+                  .addField('senpai','Our Style',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
@@ -1891,15 +1891,14 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
-      .addField('Astru',"our style",true)
-      .addField('Jimm25',"our style",true)
-      .addField('SweetMiguel',"our style",true)
-      .addField('DanzoDon',"our style",true)
+      .addField('Astru',"Our Style",true)
+      .addField('Jimm25',"Our Style",true)
+      .addField('SweetMiguel',"Our Style",true)
+      .addField('DanzoDon',"Our Style",true)
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
       .addField('Shadow',"Pyrateers",true)
-      .addField('Glaedr',"La Team Rainbow",true)
-      .addField('otmanezza',"our style",true)
+      .addField('otmanezza',"Our Style",true)
       .addField('Loay__xdar','ps clan',true)
       .addField('SID_GMRツ','PHB',true)
       .addField('klashmix470','ps clan',true)
@@ -1917,16 +1916,15 @@ client.on('message', message => {
             const embed = new RichEmbed()
             .setTitle('------------------ Supporter Players ------------------')
             .setColor(0x0000ff)
-            .addField('Kenshiro',"our style",true)
-            .addField('Styleken',"our style",true)
-            .addField('|OS| Tmis Kun',"our style",true)
+            .addField('Kenshiro',"Our Style",true)
+            .addField('Styleken',"Our Style",true)
+            .addField('|OS| Tmis Kun',"Our Style",true)
             .addField('ThomaSerena',"NBS",true)
-            .addField('LordCroissant'," our style",true)
-            .addField('PanosBOA',"our style",true)
-            .addField('Kevin1185',"our style",true)
-                  .addField('Erzinos','La Team Rainbow',true)
-
-      .addField('Helper','Clansanity',true)
+            .addField('LordCroissant'," Our Style",true)
+            .addField('PanosBOA',"Our Style",true)
+            .addField('Kevin1185',"Our Style",true)
+            .addField('Erzinos','La Team Rainbow',true)
+            .addField('Helper','Clansanity',true)
 
 //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
@@ -1941,11 +1939,12 @@ client.on('message', message => {
                   const embed = new RichEmbed()
                   .setTitle('------------------ Defender Players ------------------')
                   .setColor(0xFFFF00)
-                  .addField('KaeptnKook',"our style",true)
-                  .addField('Jinleehurb',"our style",true)
-                  .addField('Junusbiaz',"our style",true)
+                  .addField('KaeptnKook',"Our Style",true)
+                  .addField('Jinleehurb',"Our Style",true)
+                  .addField('Junusbiaz',"Our Style",true)
                   .addField('BlueDragon',"TVS",true)
-                        .addField('senpai','our style',true)
+                  .addField('Glaedr',"Our Style",true)
+                  .addField('senpai','Our Style',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
@@ -1968,8 +1967,8 @@ client.on('message', message => {
       .setColor(0xffffff)
       .addField('!avatar @anyname',"To see avatar of someone in the server",true)
       .addField('!p @anyname               ',"To see position and clan of someone in the server",true)
-      .addField('!brawlball                      ',"To see hidden tricks and move of brawlball only clan (our style) can see it",true)
-      .addField('!os clan                          ',"To see info about (our style) clan",true)
+      .addField('!brawlball                      ',"To see hidden tricks and move of brawlball only clan (Our Style) can see it",true)
+      .addField('!os clan                          ',"To see info about (Our Style) clan",true)
       .addField('!legends                         ',"To see every one fav legend in the server",true)
       .addField('! @anyname                      ',"To see fav legend of someone in the server",true)
       .addField('!pall                                 ',"To see all runners and supporters and defender in the server",true)
@@ -2122,7 +2121,7 @@ client.on('message', message => {
       .setThumbnail("https://lh3.googleusercontent.com/UoIzDUwX-Mz7Nn2ULldlnfh_bHgJdbsGLoSUaJsmC8vIBp6N7GgxDteYTbTsghY7Mj94ag=s95")
       .setDescription("Glaedr")
       .addField('Position','Defender',true)
-      .addField('Clan','our style',true)
+      .addField('Clan','Our Style',true)
 
       message.channel.send(embed)
   }
@@ -2136,7 +2135,7 @@ client.on('message', message => {
         .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
         .setDescription("Glaedr")
         .addField('Position','Defender',true)
-        .addField('Clan','our style',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }
     })
@@ -2163,7 +2162,7 @@ if (message.content === "p <@364069557951922176>" ) {
   .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/4/4d/SkinIcon_Hattori_CyberNin.png/900px-SkinIcon_Hattori_CyberNin.png?version=6a680ff6213264a195cbdc1a8e5f4ec0")
   .setDescription("otmanezza")
   .addField('Position','Runner',true)
-  .addField('Clan','our style',true)
+  .addField('Clan','Our Style',true)
 
   message.channel.send(embed)
 }
@@ -2177,7 +2176,7 @@ if (message.content === "!ap" ) {
     .setThumbnail("https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/a/a8/SkinIcon_Hattori_Classic.png/150px-SkinIcon_Hattori_Classic.png?version=a995a6aa35135e835c144e99e509e1f8")
     .setDescription("otmanezza")
     .addField('Position','Runner',true)
-    .addField('Clan','our style',true)
+    .addField('Clan','Our Style',true)
     message.channel.send(embed)
 }
 })
@@ -2264,7 +2263,7 @@ if (message.content === "!ap" ) {
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
         .setDescription('senpai')
         .addField('Position','Defender',true)
-        .addField('Clan','our style',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }})
   client.on('message', message => {
@@ -2274,8 +2273,8 @@ if (message.content === "!ap" ) {
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
         .setDescription('senpai')
-       .addField('Position','Defender',true)
-        .addField('Clan','our style',true)
+        .addField('Position','Defender',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }})
 
@@ -2306,7 +2305,7 @@ if (message.content === "!ap" ) {
         .setColor('0x0000ff')
         .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/6/68/SkinIcon_Hattori_Cat.png/900px-SkinIcon_Hattori_Cat.png?version=3b6ea2b0f3219bf65955076dbddd0c37')
         .setDescription("Loay__xdar")
-       .addField('Position','Runner',true)
+        .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
         message.channel.send(embed)
     }})
@@ -2468,7 +2467,7 @@ else
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
   if (!channel2) return
-  channel2.send(`${member} Has Join To our style Server`)
+  channel2.send(`${member} has join to Our Style server`)
                 member.addRole('603386617620856852')
 })
   client.on('guildMemberAdd', member => {
@@ -2484,12 +2483,12 @@ client.on('guildMemberAdd', member => {
         return Math.floor(Math.random() * (max - min)) + min;
       }
           var msg1 = Array(5); 
-          msg1[1] = `OMG !!! Is That You  ${member} Welcome Dude \n\n ${member} Has Joined To our style server`;
-          msg1[2] = `Hey  ${member} Welcome To Our Style \n\n ${member} Has Joined To our style server`;
-          msg1[3] = `Great We'er Glad You Came  ${member} :wink: \n\n ${member} Has Joined To our style server`;
-          msg1[4] = `Well Well Well Look Who is Here Guys  ${member} \n\n ${member} Has Joined To our style server`;
-          msg1[5] = `I Have To Tell You Something Come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} Has Joined To our style server`
-          msg1[6] = `Is That You , Wait Its not You Are ${member} Anyway Welcome \n\n ${member} Has Joined To our style server` 
+          msg1[1] = `OMG !!! Is that you  ${member} Welcome Dude \n\n ${member} has joined to Our Style server`;
+          msg1[2] = `Hey  ${member} Welcome to Our Style \n\n ${member} has joined to Our Style server`;
+          msg1[3] = `Great we're glad you came  ${member} :wink: \n\n ${member} has joined to Our Style server`;
+          msg1[4] = `Well well well look who is here Guys  ${member} \n\n ${member} has joined to Our Style server`;
+          msg1[5] = `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} has joined to Our Style server`
+          msg1[6] = `Is that you, wait no. You are ${member} Anyway Welcome \n\n ${member} has joined to Our Style server` 
   
               var x = getRandomInt(0, 20);
           if (x < 5){ 
