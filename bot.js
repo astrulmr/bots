@@ -1,6 +1,7 @@
 
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1862,6 +1863,8 @@ client.on('message', message => {
                   .addField('BlueDragon',"TVS",true)
                   .addField('senpai','Our Style',true)
 
+      .addField('CTNS','Our Style',true)
+
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
@@ -1945,6 +1948,8 @@ client.on('message', message => {
                   .addField('BlueDragon',"TVS",true)
                   .addField('Glaedr',"Our Style",true)
                   .addField('senpai','Our Style',true)
+
+      .addField('CTNS','Our Style',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
@@ -2375,6 +2380,38 @@ if (message.content === "!ap" ) {
         .setDescription('klashmix470')
         .addField('Position','Runner',true)
         .addField('Clan','ps clan',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@&720286423768367146>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------CTNS------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ulgrim.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@&720286423768367146>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/ec/SkinIcon_Ulgrim_Cyber.png/900px-SkinIcon_Ulgrim_Cyber.png?version=94c3566b4f61734b2ce1576fc3747114')
+        .setDescription('CTNS')
+        .addField('Position','Defender',true)
+        .addField('Clan','Our Style',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/e/ec/SkinIcon_Ulgrim_Cyber.png/900px-SkinIcon_Ulgrim_Cyber.png?version=94c3566b4f61734b2ce1576fc3747114')
+        .setDescription('CTNS')
+        .addField('Position','Defender',true)
+        .addField('Clan','Our Style',true)
         message.channel.send(embed)
     }})
 
