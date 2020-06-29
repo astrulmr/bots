@@ -2385,7 +2385,7 @@ if (message.content === "!ap" ) {
 
 
   client.on('message', message => { 
-      if (message.content === '<@&720286423768367146>') { 
+      if (message.content === '<@456100864738983957>') { 
        let embed = new Discord.RichEmbed()
         .setTitle('------------CTNS------------')
         .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Ulgrim.png') 
@@ -2393,7 +2393,7 @@ if (message.content === "!ap" ) {
         message.channel.send(embed)
     }})
   client.on('message', message => {
-      if (message.content === 'p <@&720286423768367146>' ) {
+      if (message.content === 'p <@456100864738983957>' ) {
        const embed = new RichEmbed()
         .setTitle('Name')
         .setColor('0x0000ff')
