@@ -2,6 +2,7 @@
 
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -1865,6 +1866,8 @@ client.on('message', message => {
 
       .addField('CTNS','Our Style',true)
 
+      .addField('MineTurtle 🐢','turtle dislike life',true)
+
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
           
@@ -1950,6 +1953,8 @@ client.on('message', message => {
                   .addField('senpai','Our Style',true)
 
       .addField('CTNS','Our Style',true)
+
+      .addField('MineTurtle 🐢','turtle dislike life',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
@@ -2412,6 +2417,38 @@ if (message.content === "!ap" ) {
         .setDescription('CTNS')
         .addField('Position','Defender',true)
         .addField('Clan','Our Style',true)
+        message.channel.send(embed)
+    }})
+
+
+  client.on('message', message => { 
+      if (message.content === '<@137293311215009793>') { 
+       let embed = new Discord.RichEmbed()
+        .setTitle('------------MINETURTLE 🐢------------')
+        .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png') 
+        .setColor('#275BF0') 
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === 'p <@137293311215009793>' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/03/SkinIcon_Orion_Metadev.png/900px-SkinIcon_Orion_Metadev.png?version=90b528dc03e4cef67421c1299e63732b')
+        .setDescription('MineTurtle 🐢')
+        .addField('Position','Defender',true)
+        .addField('Clan','turtle dislike life',true)
+        message.channel.send(embed)
+    }})
+  client.on('message', message => {
+      if (message.content === '!ap' ) {
+       const embed = new RichEmbed()
+        .setTitle('Name')
+        .setColor('0x0000ff')
+        .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/0/03/SkinIcon_Orion_Metadev.png/900px-SkinIcon_Orion_Metadev.png?version=90b528dc03e4cef67421c1299e63732b')
+        .setDescription('MineTurtle 🐢')
+        .addField('Position','Defender',true)
+        .addField('Clan','turtle dislike life',true)
         message.channel.send(embed)
     }})
 
