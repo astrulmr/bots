@@ -208,12 +208,12 @@ client.on('message', message => {
    // This runs every day at 10:30:00, you can do anything you want
    let birthdaychannelthemain = yourGuild.channels.get('727390897016144012');
    birthdaychannelthemain.send('Good Morning');
- })})
- 
- // When you want to start it, use:
- scheduledMessage.start()
- // You could also make a command to pause and resume the job
+   scheduledMessage.start()
 
+ })})
+
+ // You could also make a command to pause and resume the job
+ 
 
  client.on("ready", async () => {
   var d = new Date();
