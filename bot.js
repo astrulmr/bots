@@ -4,9 +4,9 @@
 
 
 const  Discord = require('discord.js');
-const { client, RichEmbed,Attachment } = require('discord.js');
+const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
-
+var cron = require('node-cron');
 
 
 client.on('ready' , () => {
