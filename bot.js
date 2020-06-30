@@ -210,7 +210,7 @@ birthdaychannel.send("birthday test")
  })
  let channel3 = client.channels.get("613662955522752516")
  
- client.on('ready', () => {
+ client.on('message', message => {
    birthdaychannel.send("hi")
  })
  
