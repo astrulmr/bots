@@ -204,7 +204,7 @@ client.on('message', message => {
 
  // You don't need to add anything to the message event listener
  client.on("ready", () => {
- let scheduledMessage = new cron.CronJob('00 30 08 * * *', () => {
+ let scheduledMessage = new cron.CronJob('00 38 08 * * *', () => {
    // This runs every day at 10:30:00, you can do anything you want
    let birthdaychannelthemain = yourGuild.channels.get('727390897016144012');
    birthdaychannelthemain.send('Good Morning');
