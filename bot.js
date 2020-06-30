@@ -190,6 +190,7 @@ client.on('message', message => {
     if (message.content === '!hi') {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
+       message.reply(moment().utcOffset(-4).format("dddd, MMMM Do YYYY, h:mm:ss a"))
        
    }
  })
