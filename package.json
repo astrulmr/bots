@@ -6,7 +6,8 @@
   "start":"node bot.js"},
      "dependencies":{
     "discord.js":"11.5.0",
-    "request":"2.81.0"
-    
+    "request":"2.81.0",
+        "cron": "^1.2.1"
+
   }
   }
