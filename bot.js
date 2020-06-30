@@ -6,7 +6,7 @@
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
-const cron = require('cron');
+const cron = require('node-cron');
 
 
 client.on('ready' , () => {
@@ -2552,7 +2552,7 @@ var textchennelhaha = client.channels.find(channel => channel.id === '5941775658
 
 setInterval(() => {
   textchennelhaha.send("this msg send every hour")
-}, 1000000);
+}, 3600000);
 })
 
 
