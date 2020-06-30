@@ -202,17 +202,19 @@ client.on('message', message => {
 
 
 
- // You don't need to add anything to the message event listener
- client.on("ready", () => {
- let scheduledMessage = new cron.CronJob('00 42 08 * * *', () => {
-   // This runs every day at 10:30:00, you can do anything you want
-   let birthdaychannelthemain = yourGuild.channels.get('727390897016144012');
-   birthdaychannelthemain.send('Good Morning');
-   scheduledMessage.start()
+ 
 
- })})
 
- // You could also make a command to pause and resume the job
+let job1 = new cron.CronJob('00 50 08 * * *', () => { 
+let channel = yourGuild.channels.get('594177565825171457');
+channel.send('haha it work');
+})
+
+client.on('message', message => {
+  if (message.content === '!startjob')
+job1.start();
+})
+
  
 
  client.on("ready", async () => {
