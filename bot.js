@@ -190,13 +190,14 @@ client.on('message', message => {
     if (message.content === '!hi') {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
-       function getToday(){
-        let today = new Date();
-        let months = [`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];
-        let suffix = [`st`,`nd`,`rd`];
-        return `${today.getDate()}${suffix[today.getDate()] || `th`} of ${months[today.getMonth()]}`;
-    }
-   message.replay(getToday());
+       var currentdate = new Date(); 
+       var datetime = "Date Time: " + currentdate.getDate() + "/"
+           + (currentdate.getMonth()+1)  + "/" 
+           + currentdate.getFullYear() + " @ "  
+           + currentdate.getHours() + ":"  
+           + currentdate.getMinutes() + ":" 
+           + currentdate.getSeconds();
+   message.replay(datetime);
    }
  })
  let channel3 = client.channels.get("613662955522752516")
