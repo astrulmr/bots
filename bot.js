@@ -15,11 +15,6 @@ client.on('ready' , () => {
     client.user.setActivity("BrawlBall")
 
 
-    var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
-
-   setInterval(() => {
-     textchennelhaha.send("this msg send every 10sec")
-   }, 10000);
 
 
 client.on('message', message => {
@@ -2552,8 +2547,13 @@ else
 
 
 
+client.on('ready' , () => {
+var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
-
+setInterval(() => {
+  textchennelhaha.send("this msg send every 20sec")
+}, 20000);
+})
 
 
 
