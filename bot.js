@@ -205,15 +205,7 @@ client.on('message', message => {
  
 
 
-let job1 = new cron.CronJob('00 50 08 * * *', () => { 
-let channel = yourGuild.channels.get('594177565825171457');
-channel.send('haha it work');
-})
 
-client.on('message', message => {
-  if (message.content === '!startjob')
-job1.start();
-})
 
  
 
