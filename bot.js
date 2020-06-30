@@ -210,22 +210,9 @@ birthdaychannel.send("birthday test")
  })
  let channel3 = client.channels.get("613662955522752516")
  
- var spam = false;
-if (message.content === 'spam') {
-    if (message.author.id !== bot.user.id) { // Replace bot with the instance of your bot Client.
-        spam = true;
-    } else {
-        if(spam) {
-          birthdaychannel.send('spam');
-        }
-    }
-    if (message.content === 'stop spam') {
-        if(spam) {
-          birthdaychannel.send('stopped');
-        }
-        spam = false;
-    }
-}
+ client.on("ready", async () => {
+   birthdaychannel.send("hi")
+ })
  
 
 
