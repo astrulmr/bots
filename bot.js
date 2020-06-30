@@ -15,16 +15,7 @@ client.on('ready' , () => {
     client.user.setActivity("BrawlBall")
 
 
-    let scheduledMessage = new cron.CronJob('00 05 11 * * *', () => {
-      // This runs every day at 10:30:00, you can do anything you want
-      let bhbh = client.channels.get('594177565825171457');
-      bhbh.send('nice it work');
-    });
-    
-    client.on('message', message => {
-      if (message.content === '!startsch') {
-    scheduledMessage.start()
-      }})
+   
 
 
 client.on('message', message => {
@@ -2559,7 +2550,16 @@ else
 
 
 
+let scheduledMessage = new cron.CronJob('00 05 11 * * *', () => {
+  // This runs every day at 10:30:00, you can do anything you want
+  let bhbh = client.channels.get('594177565825171457');
+  bhbh.send('nice it work');
+});
 
+client.on('message', message => {
+  if (message.content === '!startsch') {
+scheduledMessage.start()
+  }})
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
