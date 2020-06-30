@@ -192,7 +192,7 @@ client.on('message', message => {
 
        var d = new Date();
 
-       message.channel.send(d.toLocaleTimeString()+d.toLocaleString()+d.toLocaleDateString())
+       message.channel.send(d.toLocaleString())
        
    }
  })
@@ -210,7 +210,10 @@ birthdaychannel.send("birthday test")
  })
  let channel3 = client.channels.get("613662955522752516")
  
-
+ client.on('message', message => {
+  if (message.content === 'u so nub haha')
+   birthdaychannel.send("u so nub haha")
+ })
  
 
 
