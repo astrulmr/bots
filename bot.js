@@ -196,7 +196,7 @@ client.on('message', message => {
         let suffix = [`st`,`nd`,`rd`];
         return `${today.getDate()}${suffix[today.getDate()] || `th`} of ${months[today.getMonth()]}`;
     }
-    channel.send(getToday());
+   message.replay(getToday());
    }
  })
  let channel3 = client.channels.get("613662955522752516")
