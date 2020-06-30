@@ -15,9 +15,9 @@ client.on('ready' , () => {
     client.user.setActivity("BrawlBall")
 
 
-    var textchennelhaha = client.channels.find(channel => channel.id === "594177565825171457")
+    var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
-   setinterval(() => {
+   setInterval(() => {
      textchennelhaha.send("yoyo")
    }, 1000);
 
