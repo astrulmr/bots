@@ -6,7 +6,6 @@
 const  Discord = require('discord.js');
 const { client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
-const cron = require('node-cron');
 
 
 
