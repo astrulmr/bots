@@ -188,7 +188,15 @@ client.on('message', message => {
 
   client.on('message', message => {
     if (message.content === '!hi') {
-       message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `+Date.now());
+       message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
+
+       function getToday(){
+        let today = new Date();
+        let months = [`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];
+        let suffix = [`st`,`nd`,`rd`];
+        return `${today.getDate()}${suffix[today.getDate()] || `th`} of ${months[today.getMonth()]}`;
+    }
+    channel.send(getToday);
    }
  })
  let channel3 = client.channels.get("613662955522752516")
