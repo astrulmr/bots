@@ -192,7 +192,7 @@ client.on('message', message => {
 
        var d = new Date();
 
-       message.reply(d.toLocaleTimeString())
+       message.reply(d.toLocaleDateString())
        
    }
  })
