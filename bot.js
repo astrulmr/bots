@@ -2548,11 +2548,18 @@ else
 
 
 client.on('ready' , () => {
-var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
-setInterval(() => {
-  textchennelhaha.send("this msg send every hour")
-}, 100000);
+  let scheduledMessage = new cron.CronJob('00 55 11 * * *', () => {
+    // This runs every day at 10:30:00, you can do anything you want
+    let gogo = client.channels.get('594177565825171457');
+    gogo.send('You message');
+  });
+  
+  client.on('message', message => {
+    if (message.content === '!startnub' )
+  scheduledMessage.start()
+
+  })
 })
 
 
