@@ -203,6 +203,11 @@ client.on('message', message => {
 if(d.toLocaleDateString()=="7/1/2020")
 birthdaychannel.send("birthday test")
  })
+ client.on("ready", async () => {
+  var d = new Date();
+if(d.toLocaleTimeString()=="3:59:17 AM")
+birthdaychannel.send("birthday test")
+ })
  let channel3 = client.channels.get("613662955522752516")
 
 
