@@ -19,7 +19,7 @@ client.on('ready' , () => {
 
    setInterval(() => {
      textchennelhaha.send("this msg send every 5sec")
-   }, 5000);
+   }, 10000);
 
 
 client.on('message', message => {
