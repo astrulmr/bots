@@ -18,8 +18,8 @@ client.on('ready' , () => {
     var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
    setInterval(() => {
-     textchennelhaha.send("yoyo")
-   }, 1000);
+     textchennelhaha.send("this msg send every 5sec")
+   }, 5000);
 
 
 client.on('message', message => {
