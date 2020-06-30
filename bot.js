@@ -209,7 +209,7 @@ if(d.toLocaleTimeString()=="3:59:17 AM")
 birthdaychannel.send("birthday test")
  })
  let channel3 = client.channels.get("613662955522752516")
- client.on('message', message => {
+ 
  var spam = false;
 if (message.content === 'spam') {
     if (message.author.id !== bot.user.id) { // Replace bot with the instance of your bot Client.
@@ -226,7 +226,7 @@ if (message.content === 'spam') {
         spam = false;
     }
 }
- })
+ 
 
 
   
