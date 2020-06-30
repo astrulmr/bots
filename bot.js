@@ -192,9 +192,16 @@ client.on('message', message => {
 
        var d = new Date();
 
-       message.reply(d.toLocaleDateString())
+       message.channel.send(d.toLocaleTimeString()+d.toLocaleString()+d.toLocaleDateString())
        
    }
+ })
+ let birthdaychannel = client.channels.get("594177565825171457")
+
+ client.on("ready", async () => {
+  var d = new Date();
+if(d.toLocaleDateString()=="7/1/2020")
+birthdaychannel.send("birthday test")
  })
  let channel3 = client.channels.get("613662955522752516")
 
