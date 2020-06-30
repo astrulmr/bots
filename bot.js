@@ -201,15 +201,6 @@ client.on('message', message => {
  
 
 
- let scheduledMessage = new cron.CronJob('00 30 10 * * *', () => {
-  // This runs every day at 10:30:00, you can do anything you want
-  let channel = yourGuild.channels.get('594177565825171457');
-  channel.send('nice it work');
-});
-client.on('message', message => {
-  if (message.content === '!startsch') {
-scheduledMessage.start()
-  }})
 
 
 
@@ -2552,6 +2543,20 @@ else
   }
 });
 
+
+
+
+let scheduledMessage = new cron.CronJob('00 57 10 * * *', () => {
+  // This runs every day at 10:30:00, you can do anything you want
+  let channel = yourGuild.channels.get('594177565825171457');
+  channel.send('nice it work');
+});
+client.on('message', message => {
+  if (message.content === '!startsch') {
+scheduledMessage.start()
+  }})
+
+  
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
