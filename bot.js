@@ -1869,7 +1869,7 @@ client.on('message', message => {
       .addField('MineTurtle 🐢','turtle dislike life',true)
 
 //dontjokwithmeucantwin545
-                  .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
+                  .setThumbnail('https://www.shareicon.net/data/2016/03/22/737658_security_512x512.png')
           
                   message.channel.send(embed)
               
@@ -1957,7 +1957,7 @@ client.on('message', message => {
       .addField('MineTurtle 🐢','turtle dislike life',true)
 
 //dontjokwithmeucantwin545
-                  .setThumbnail('https://icon-library.net/images/defend-icon/defend-icon-27.jpg')
+                  .setThumbnail('https://www.shareicon.net/data/2016/03/22/737658_security_512x512.png')
           
                   message.channel.send(embed)
               
