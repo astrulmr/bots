@@ -218,7 +218,7 @@ client.on('message', message => {
        .setTitle('Here are all Our Style players birthday date')
        .setColor(0xFFFFFF)
        .setDescription('Do not forget to wish a happy birthday to everyone of us !')
-       .setThumbnail('https://flyclipart.com/thumb2/birthday-party-transparent-png-pictures-551926.png')
+       .setThumbnail('https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
        .addField('Astru®','January 21', false)
        .addField('\n Spirix','April 7', false)
        .addField('\n Styleken','April 24', false)
@@ -232,7 +232,7 @@ client.on('message', message => {
        .addField('\n Kevin1185','November 2', false)
        .addField('\n LordCroissant','November 12', false)
        .addField('\n Junusbiaz','December 3', false)
-       .setFooter('There will be a command soon that will send a reminder at the right days','https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
+       .setFooter('There will be a command soon that will send a reminder at the right days','https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
 
 
      message.channel.send(embed)
