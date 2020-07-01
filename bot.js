@@ -2607,7 +2607,7 @@ client.on('message', message => {
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
            .setTitle(member.user.username + " has joined to Our Style server")
-           .setImage({files:[imagenumber+".png"]})
+           
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
