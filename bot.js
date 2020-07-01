@@ -220,6 +220,7 @@ client.on('message', message => {
        .setDescription('Do not forget to wish a happy birthday to everyone of us !')
        .addField('Astru®','January 21', false)
        .addField('\n Spirix','April 7', false)
+       .addField('\n Styleken','April 24', false)
        .addField('\n DanzoDon','June 1', false)
        .addField('\n Glaedr','June 23', false)
        .addField('\n CTNS','August 3', false)
