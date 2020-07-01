@@ -218,6 +218,7 @@ client.on('message', message => {
        .setTitle('Here are all Our Style players birthday date')
        .setColor(0xFFFFFF)
        .setDescription('Do not forget to wish a happy birthday to everyone of us !')
+       .setThumbnail('https://flyclipart.com/thumb2/birthday-party-transparent-png-pictures-551926.png')
        .addField('Astru®','January 21', false)
        .addField('\n Spirix','April 7', false)
        .addField('\n Styleken','April 24', false)
