@@ -2608,7 +2608,7 @@ client.on('message', message => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
-           .setTitle(member.user.username+"` Has joined to Our Style server`")
+           .setTitle(member.user.username+" "+"` Has joined to Our Style server`")
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
