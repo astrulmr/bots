@@ -187,8 +187,12 @@ client.on('message', message => {
         }
     })
 
+    
+    let testmsg = client.channels.get("594177565825171457")
 
   client.on('message', message => {
+    if(!testmsg) return
+    else{
     if (message.content === '!hi') {
        message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
@@ -196,7 +200,7 @@ client.on('message', message => {
 
        message.channel.send(d.toLocaleString())
        
-   }
+   }}
  })
  
 
@@ -2549,9 +2553,14 @@ client.on('ready' , () => {
 var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
 setInterval(() => {
-  textchennelhaha.send("this msg send every hour")
-}, 3600000);
+  textchennelhaha.send("this msg send every 8 hour")
+  textchennelhaha.send(d.toLocaleDateString())
+}, 28800000);
 })
+client.on('message', message => {
+  if (message.content === '7/1/2020' ) {
+    textchennelhaha.send("Happy birthday")
+  }})
 
 
 
