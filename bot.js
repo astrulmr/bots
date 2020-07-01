@@ -2577,18 +2577,11 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('guildMemberAdd', member => {
-  const channel2 = member.guild.channels.get("535540529379672074")
-  if (!channel2) return
-  channel2.send(`${member} has join to Our Style server`)
-                member.addRole('603386617620856852')
-})
+
   client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
     if (!channel) return 
-      number = 10
-  imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
-      channel.send({files:[imagenumber+".png"]}  )
+     
 
 
       var bbmsg = [ `OMG !!! Is that you  ${member} Welcome Dude \n\n ${member} has joined to Our Style server`,
@@ -2608,7 +2601,7 @@ client.on('guildMemberAdd', member => {
      let embed = new Discord.RichEmbed()
            .setTitle(`${member}`)
            .setColor(bbclrchos)
-           .setThumbnail(`${member.displayAvatarURL}`)
+           .setThumbnail(member.displayAvatarURL)
            .setDescription(bbchoose)
            
           
