@@ -2608,7 +2608,7 @@ client.on('guildMemberAdd', member => {
      let embed = new Discord.RichEmbed()
            .setTitle(`${member}`)
            .setColor(bbclrchos)
-           .setThumbnail(`${member.author.displayAvatarURL}`)
+           .setThumbnail(`${member.displayAvatarURL}`)
            .setDescription(bbchoose)
            
           
