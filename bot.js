@@ -2577,19 +2577,26 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/*client.on('guildMemberAdd', member => {
+  const channel2 = member.guild.channels.get("535540529379672074")
+  if (!channel2) return
+  channel2.send(`${member} has join to Our Style server`)
+                member.addRole('603386617620856852')
+})*/
   client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
     if (!channel) return 
-     
+      number = 10
+  imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
+      
 
 
-      var bbmsg = [ `OMG !!! Is that you  `+member.user.username+` Welcome Dude \n\n **${member} has joined to Our Style server**`,
-      `Hey  `+member.user.username+` Welcome to Our Style \n\n **${member} has joined to Our Style server**`,
-      `Great we're glad you came  `+member.user.username+` :wink: \n\n **${member} has joined to Our Style server**`,
-      `Well well well look who is here Guys `+member.user.username+` \n\n **${member} has joined to Our Style server**`,
-      `I have to tell you something come here ~WELCOME~  `+member.user.username+` :neutral_face: \n\n **${member} has joined to Our Style server**`,
-      `Is that you, wait no. You are `+member.user.username+` Anyway Welcome \n\n **${member} has joined to Our Style server**`]
+      var bbmsg = [ `OMG !!! Is that you  `+member.user.username+` Welcome Dude `,
+      `Hey  `+member.user.username+` Welcome to Our Style `,
+      `Great we're glad you came  `+member.user.username+` :wink: `,
+      `Well well well look who is here Guys `+member.user.username,
+      `I have to tell you something come here ~WELCOME~  `+member.user.username+` :neutral_face: `,
+      `Is that you, wait no. You are `+member.user.username+` Anyway Welcome `]
 
      var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
      
@@ -2599,7 +2606,8 @@ client.on('message', message => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
-           .setTitle(member.user.username)
+           .setTitle(member.user.username + " has joined to Our Style server")
+           .setImage({files:[imagenumber+".png"]})
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
@@ -2607,6 +2615,7 @@ client.on('message', message => {
           
 
         channel.send(embed);
+
 
 
         
