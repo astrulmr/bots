@@ -2582,14 +2582,15 @@ else
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-client.on('ready' , () => {
-var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
+//textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
 
-setInterval(() => {
-  textchennelhaha.send("this msg send every 8 hour")
-  //textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
-}, 3600000);
-})
+client.on('ready' , () => {
+  var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
+  
+  setInterval(() => {
+    textchennelhaha.send("this msg send every hour")
+  }, 3600000);
+  })
 client.on('message', message => {
   if (message.content === 'gg the date haha7/1/2020' ) {
     textchennelhaha.send("Happy birthday")
