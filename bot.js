@@ -2588,17 +2588,17 @@ client.on('message', message => {
     if (!channel) return 
       number = 10
   
-  var images = ["Image1", "Image2", "Image3", "Image4" ];
+  var images = ["https://raw.githubusercontent.com/astrulmr/bots/master/1.png", "https://raw.githubusercontent.com/astrulmr/bots/master/2.png", "https://raw.githubusercontent.com/astrulmr/bots/master/3.png", "https://raw.githubusercontent.com/astrulmr/bots/master/4.png", "https://raw.githubusercontent.com/astrulmr/bots/master/5.png", "https://raw.githubusercontent.com/astrulmr/bots/master/6.png", "https://raw.githubusercontent.com/astrulmr/bots/master/7.png", "https://raw.githubusercontent.com/astrulmr/bots/master/8.png", "https://raw.githubusercontent.com/astrulmr/bots/master/9.png"];
   var image = Math.floor(Math.random() * images.length);
   
 
 
-      var bbmsg = [ `OMG !!! Is that you  `+member.user.username+` Welcome Dude `,
-      `Hey  `+member.user.username+` Welcome to Our Style `,
-      `Great we're glad you came  `+member.user.username+` :wink: `,
-      `Well well well look who is here Guys `+member.user.username,
-      `I have to tell you something come here ~WELCOME~  `+member.user.username+` :neutral_face: `,
-      `Is that you, wait no. You are `+member.user.username+` Anyway Welcome `]
+      var bbmsg = [ `OMG !!! Is that you  ${member} Welcome Dude `,
+      `Hey  ${member} Welcome to Our Style `,
+      `Great we're glad you came  ${member} :wink: `,
+      `Well well well look who is here Guys ${member}`,
+      `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: `,
+      `Is that you, wait no. You are ${member} Anyway Welcome `]
 
      var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
      
@@ -2608,13 +2608,12 @@ client.on('message', message => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
-           .setTitle(`${member}`+" has joined to Our Style server")
+           .setTitle(member.user.username+"` Has joined to Our Style server`")
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
-           .setImage("https://raw.githubusercontent.com/astrulmr/bots/master/10.png")
+           .setImage(image)
           
-
         channel.send(embed);
 
 
