@@ -2584,12 +2584,12 @@ client.on('message', message => {
      
 
 
-      var bbmsg = [ `OMG !!! Is that you  ${member} Welcome Dude \n\n ${member} has joined to Our Style server`,
-      `Hey  ${member} Welcome to Our Style \n\n ${member} has joined to Our Style server`,
-      `Great we're glad you came  ${member} :wink: \n\n ${member} has joined to Our Style server`,
-      `Well well well look who is here Guys  ${member} \n\n ${member} has joined to Our Style server`,
-      `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} has joined to Our Style server`,
-      `Is that you, wait no. You are ${member} Anyway Welcome \n\n ${member} has joined to Our Style server`]
+      var bbmsg = [ `OMG !!! Is that you  `+member.user.username+` Welcome Dude \n\n **${member} has joined to Our Style server**`,
+      `Hey  `+member.user.username+` Welcome to Our Style \n\n **${member} has joined to Our Style server**`,
+      `Great we're glad you came  `+member.user.username+` :wink: \n\n **${member} has joined to Our Style server**`,
+      `Well well well look who is here Guys `+member.user.username+` \n\n **${member} has joined to Our Style server**`,
+      `I have to tell you something come here ~WELCOME~  `+member.user.username+` :neutral_face: \n\n **${member} has joined to Our Style server**`,
+      `Is that you, wait no. You are `+member.user.username+` Anyway Welcome \n\n **${member} has joined to Our Style server**`]
 
      var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
      
