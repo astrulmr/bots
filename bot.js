@@ -2607,11 +2607,10 @@ client.on('message', message => {
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
            .setTitle(member.user.username + " has joined to Our Style server")
-           
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
-           
+           .setImage({files:[imagenumber+".png"]})
           
 
         channel.send(embed);
