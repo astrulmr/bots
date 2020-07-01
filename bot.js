@@ -2610,7 +2610,7 @@ client.on('message', message => {
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
-           .setImage({files:[imagenumber+".png"]})
+           .setImage("https://lh3.googleusercontent.com/proxy/XkS0BWpZhyysxsLwruxshCQRP9FQHXHr0hDlreCgnjYX-R3c_mQKJrVFBm6ejpC4vqsWlWoT6vTfvrT31_zAyl78lPDIB70tuR1JuBWCuKRUNN2kvZoPKkJVTrIox-0y7ZAGxDL57y9FM18")
           
 
         channel.send(embed);
