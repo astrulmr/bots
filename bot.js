@@ -197,7 +197,7 @@ client.on('message', message => {
 
        var d = new Date();
 
-       message.channel.send("gg the date haha"+d.toLocaleDateString())
+       message.channel.send("Date is : "+d.toLocaleDateString())
        
    }
  })
@@ -2553,11 +2553,11 @@ var textchennelhaha = client.channels.find(channel => channel.id === '5941775658
 
 setInterval(() => {
   textchennelhaha.send("this msg send every 8 hour")
-  textchennelhaha.send(d.toLocaleDateString())
+  textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
 }, 28800000);
 })
 client.on('message', message => {
-  if (message.content === '7/1/2020' ) {
+  if (message.content === 'gg the date haha7/1/2020' ) {
     textchennelhaha.send("Happy birthday")
   }})
 
