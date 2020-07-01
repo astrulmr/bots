@@ -2587,8 +2587,10 @@ client.on('message', message => {
     const channel = member.guild.channels.get("613400026978320395")
     if (!channel) return 
       number = 10
-  imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
-      
+  
+  var images = ["Image1", "Image2", "Image3", "Image4" ];
+  var image = Math.floor(Math.random() * images.length);
+  
 
 
       var bbmsg = [ `OMG !!! Is that you  `+member.user.username+` Welcome Dude `,
@@ -2606,11 +2608,11 @@ client.on('message', message => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
      var bbchoose = bbmsg[bbrandom]
      let embed = new Discord.RichEmbed()
-           .setTitle(member.user.username + " has joined to Our Style server")
+           .setTitle(`${member}`+" has joined to Our Style server")
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
-           .setImage("https://lh3.googleusercontent.com/proxy/XkS0BWpZhyysxsLwruxshCQRP9FQHXHr0hDlreCgnjYX-R3c_mQKJrVFBm6ejpC4vqsWlWoT6vTfvrT31_zAyl78lPDIB70tuR1JuBWCuKRUNN2kvZoPKkJVTrIox-0y7ZAGxDL57y9FM18")
+           .setImage("https://raw.githubusercontent.com/astrulmr/bots/master/10.png")
           
 
         channel.send(embed);
