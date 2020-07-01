@@ -2612,7 +2612,7 @@ client.on('message', message => {
            .setColor(bbclrchos)
            .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
-           .setImage(image)
+           .setImage(String([images[image]]))
           
         channel.send(embed);
 
