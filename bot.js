@@ -2590,41 +2590,34 @@ client.on('guildMemberAdd', member => {
   imagenumber = Math.floor(Math.random() *  (number - 1 + 1 )) +1
       channel.send({files:[imagenumber+".png"]}  )
 
-      function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-      }
-          var msg1 = Array(5); 
-          msg1[1] = `OMG !!! Is that you  ${member} Welcome Dude \n\n ${member} has joined to Our Style server`;
-          msg1[2] = `Hey  ${member} Welcome to Our Style \n\n ${member} has joined to Our Style server`;
-          msg1[3] = `Great we're glad you came  ${member} :wink: \n\n ${member} has joined to Our Style server`;
-          msg1[4] = `Well well well look who is here Guys  ${member} \n\n ${member} has joined to Our Style server`;
-          msg1[5] = `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} has joined to Our Style server`
-          msg1[6] = `Is that you, wait no. You are ${member} Anyway Welcome \n\n ${member} has joined to Our Style server` 
-  
-              var x = getRandomInt(0, 20);
-          if (x < 5){ 
-               if (x < 3){
-          channel.send(msg1[1]);
-          }
-          else {
-                     channel.send(msg1[3]);
-          }
-          }
-          else if (x<= 9) {
-            if (x >= 7){
-            channel.send(msg1[2]); }
-              else{
-                         channel.send(msg1[4]);
-              }
-          } 
-          else if (x <= 12 ) { 
-           channel.send(msg1[5]);
-          }
-          else {
-            channel.send(msg1[6])
-          }
+
+      var bbmsg = [ `OMG !!! Is that you  ${member} Welcome Dude \n\n ${member} has joined to Our Style server`,
+      `Hey  ${member} Welcome to Our Style \n\n ${member} has joined to Our Style server`,
+      `Great we're glad you came  ${member} :wink: \n\n ${member} has joined to Our Style server`,
+      `Well well well look who is here Guys  ${member} \n\n ${member} has joined to Our Style server`,
+      `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: \n\n ${member} has joined to Our Style server`,
+      `Is that you, wait no. You are ${member} Anyway Welcome \n\n ${member} has joined to Our Style server`]
+
+     var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
+     
+     var bbccrndm = Math.floor(Math.random() * bbcolor.length)
+     var bbclrchos = bbcolor[bbccrndm]
+
+      var bbrandom = Math.floor(Math.random() * bbmsg.length)
+     var bbchoose = bbmsg[bbrandom]
+     let embed = new Discord.RichEmbed()
+           .setTitle(`${member}`)
+           .setColor(bbclrchos)
+           .setThumbnail(`${member.author.displayAvatarURL}`)
+           .setDescription(bbchoose)
+           
+          
+
+        channel.send(embed);
+
+
+        
+   
          
         })
   
