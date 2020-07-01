@@ -193,7 +193,7 @@ client.on('message', message => {
   client.on('message', message => {
     
     if (message.content === '!hi') {
-       message.reply(`gg  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
+       message.reply(`Yoooo What Can i Do For You ? \n 1- !who @anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
        var d = new Date();
 
@@ -212,7 +212,29 @@ client.on('message', message => {
 
  
 
+ client.on('message', message => {
+   if (message.content === '!birthday') {
+     const embed = new RichEmbed()
+     .setTitle('Here are all Our Style players birthday date')
+     .setColor(0xf187ed)
+     .setThumbnail('<a href="https://flyclipart.com/birthday-party-transparent-png-pictures-birthday-balloons-png-551926" title="Birthday Party Transparent Png Pictures - Birthday Balloons PNG"><img src="https://flyclipart.com/thumb2/birthday-party-transparent-png-pictures-551926.png" width="350" /></a>')
+     .setDescription('Do not forget to wish a happy birthday to everyone of us !')
+     .addField('Astru®','January 21', false)
+     .addField('\n Spirix','April 7', false)
+     .addField('\n DanzoDon','June 1', false)
+     .addField('\n Glaedr','June 23', false)
+     .addField('\n CTNS','August 3', false)
+     .addField('\n otmanezza','August 12', false)
+     .addField('\n Kenshiro','August 14 ', false)
+     .addField('\n jimm25','September 30', false)
+     .addField('\n jinleehurb','October 23', false)
+     .addField('\n Kevin1185','November 2', false)
+     .addField('\n LordCroissant','November 12', false)
+     .addField('\n Junusbiaz','December 3', false)
 
+     message.channel.send(embed)
+   }
+})
 
 
 
