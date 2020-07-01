@@ -2546,13 +2546,7 @@ else
 
 
 
-client.on('ready' , () => {
-var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
-setInterval(() => {
-  textchennelhaha.send("this msg send every hour")
-}, 3600000);
-})
 
 
 
