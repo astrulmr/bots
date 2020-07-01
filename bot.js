@@ -2601,7 +2601,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
            .setTitle(`${member}`)
            .setColor(bbclrchos)
-           .setThumbnail(member.displayAvatarURL)
+           .setThumbnail(member.user.displayAvatarURL)
            .setDescription(bbchoose)
            
           
