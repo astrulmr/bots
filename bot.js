@@ -2548,7 +2548,7 @@ else
 
 
 
-client.on('ready' , () => {
+/*client.on('ready' , () => {
 var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
 setInterval(() => {
@@ -2559,7 +2559,7 @@ setInterval(() => {
 client.on('message', message => {
   if (message.content === 'gg the date haha7/1/2020' ) {
     textchennelhaha.send("Happy birthday")
-  }})
+  }})*/
 
 
 
@@ -2577,12 +2577,12 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
   if (!channel2) return
   channel2.send(`${member} has join to Our Style server`)
                 member.addRole('603386617620856852')
-})*/
+})
   client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.get("613400026978320395")
     if (!channel) return 
@@ -2624,3 +2624,4 @@ client.on('message', message => {
         })
   
 client.login(process.env.BOT_TOKEN)
+cbnk
