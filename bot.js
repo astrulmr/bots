@@ -191,16 +191,15 @@ client.on('message', message => {
     let testmsg = client.channels.get("594177565825171457")
 
   client.on('message', message => {
-    if(!testmsg) return
-    else{
-    if (message.content === '!hi') {
-       message.reply(`Hello  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
+    
+    if (testmsg.message.content === '!hi') {
+       message.reply(`gg  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
        var d = new Date();
 
-       message.channel.send(d.toLocaleString())
+       message.channel.send("gg the date haha"+d.toLocaleDateString())
        
-   }}
+   }
  })
  
 
