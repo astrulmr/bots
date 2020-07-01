@@ -192,7 +192,7 @@ client.on('message', message => {
 
   client.on('message', message => {
     
-    if (testmsg.message.content === '!hi') {
+    if (message.content === '!hi') {
        message.reply(`gg  What Can i Do For You ? \n 1- !who@anyname \n 2- !avatar @anyname \n 3- !os clan \n 4- !help `);
 
        var d = new Date();
