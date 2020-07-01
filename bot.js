@@ -216,7 +216,7 @@ client.on('message', message => {
    if (message.content === '!birthday') {
      const embed = new RichEmbed()
        .setTitle('Here are all Our Style players birthday date')
-       .setColor(0xf187ed)
+       .setColor(0xFFFFFF)
        .setDescription('Do not forget to wish a happy birthday to everyone of us !')
        .addField('Astru®','January 21', false)
        .addField('\n Spirix','April 7', false)
@@ -2585,7 +2585,7 @@ var textchennelhaha = client.channels.find(channel => channel.id === '5941775658
 
 setInterval(() => {
   textchennelhaha.send("this msg send every 8 hour")
-  textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
+  //textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
 }, 3600000);
 })
 client.on('message', message => {
