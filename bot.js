@@ -217,7 +217,6 @@ client.on('message', message => {
      const embed = new RichEmbed()
        .setTitle('Here are all Our Style players birthday date')
        .setColor(0xf187ed)
-       .setThumbnail('<a href="https://flyclipart.com/birthday-party-transparent-png-pictures-birthday-balloons-png-551926" title="Birthday Party Transparent Png Pictures - Birthday Balloons PNG"><img src="https://flyclipart.com/thumb2/birthday-party-transparent-png-pictures-551926.png" width="350" /></a>')
        .setDescription('Do not forget to wish a happy birthday to everyone of us !')
        .addField('Astru®','January 21', false)
        .addField('\n Spirix','April 7', false)
