@@ -6,7 +6,7 @@
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
-
+const cron = require("cron");
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
