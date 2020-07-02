@@ -2584,18 +2584,31 @@ else
 
 client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
+  var text12chennelhaha = client.channels.find(channel => channel.id === '727390897016144012')
+
   var d = new Date();
 
   setInterval(() => {
     textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
-  }, 1800000);
+  }, 18000000);
 
   
 client.on('message', message => {
-  if (message.content === 'gg the date haha7/2/2020' ) {
-    textchennelhaha.send("Happy birthday")
+  if (message.content === 'gg the date haha7/3/2020' ) {
+    text12chennelhaha.send("Happy birthday bro")
   }})
-})
+
+
+client.on('message', message => {
+  if (message.content === 'gg the date haha1/21/2021' ) {
+    text12chennelhaha.send("Happy birthday Astru")
+  }})
+
+
+
+
+
+  })
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
