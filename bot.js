@@ -2587,11 +2587,16 @@ client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
   
   setInterval(() => {
-    textchennelhaha.send("Date is : "+d.toLocaleDateString())
-  }, 20000);
+    textchennelhaha.send("lalalolahahajj")
+  }, 60000);
   })
+  client.on('message', message => {
+    if (message.content === 'lalalolahahajj' ) {
+      textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
+    }})
+  
 client.on('message', message => {
-  if (message.content === 'gg the date haha7/1/2020' ) {
+  if (message.content === 'gg the date haha7/2/2020' ) {
     textchennelhaha.send("Happy birthday")
   }})
 
