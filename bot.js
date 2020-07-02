@@ -2582,13 +2582,13 @@ else
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
 
 client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
   
   setInterval(() => {
     textchennelhaha.send("this msg send every hour")
+    textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
   }, 3600000);
   })
 client.on('message', message => {
