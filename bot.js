@@ -222,6 +222,7 @@ client.on('message', message => {
        .addField('\n Spirix','April 7', false)
        .addField('\n Styleken','April 24', false)
        .addField('\n DanzoDon','June 1', false)
+       .addField('\n KaeptnKook','June 20', false)
        .addField('\n Glaedr','June 23', false)
        .addField('\n CTNS','August 3', false)
        .addField('\n otmanezza','August 12', false)
