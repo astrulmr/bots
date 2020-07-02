@@ -2587,7 +2587,7 @@ client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
   
   setInterval(() => {
-    textchennelhaha.send(d.toLocaleDateString())
+    textchennelhaha.send("Date is : "+d.toLocaleDateString())
   }, 20000);
   })
 client.on('message', message => {
