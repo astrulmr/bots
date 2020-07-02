@@ -2588,7 +2588,7 @@ client.on('ready' , () => {
 
   setInterval(() => {
     textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
-  }, 60000);
+  }, 1800000);
 
   
 client.on('message', message => {
