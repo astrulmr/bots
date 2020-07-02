@@ -188,7 +188,6 @@ client.on('message', message => {
     })
 
     
-    let testmsg = client.channels.get("594177565825171457")
 
   client.on('message', message => {
     
@@ -2582,6 +2581,7 @@ else
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+let ggghhgg = client.channels.get("594177565825171457")
 
 client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
@@ -2589,17 +2589,18 @@ client.on('ready' , () => {
   setInterval(() => {
     textchennelhaha.send("lalalolahahajj")
   }, 60000);
+})
 
   client.on('message', message => {
     if (message.content === 'lalalolahahajj' ) {
-      textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
+      ggghhgg.send("gg the date haha"+d.toLocaleDateString())
     }})
   
 client.on('message', message => {
   if (message.content === 'gg the date haha7/2/2020' ) {
-    textchennelhaha.send("Happy birthday")
+    ggghhgg.send("Happy birthday")
   }})
-})
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
