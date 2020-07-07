@@ -20,7 +20,7 @@ let sttius2 =[
 ]
 
     setInterval(() => {
-  client.user.setActivity(sttius,{type: sttius2})
+  client.user.setActivity(sttius2,{type: sttius})
     }, 60000);
     
 
