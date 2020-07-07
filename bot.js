@@ -11,8 +11,8 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 let sttius =[
-  client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",{type: "WATCHING"}),
-  client.user.setActivity("Brawlbbball",{type: "PLAYING"})
+  client.user.setActivity("Brawlhalla",{type: "PLAYING"}),
+  client.user.setActivity("Brawlball",{type: "PLAYING"})
 ]
 let sttius2 =[
   "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
