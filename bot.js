@@ -20,7 +20,10 @@ let sttius2 =[
 ]
 
     setInterval(() => {
-  client.user.setActivity(sttius2,{type: sttius})
+      let jijo = sttius[Math.floor(Math.random()*sttius.length)]
+      let notjjjj = sttius2[Math.floor(Math.random()*sttius2.length)]
+
+  client.user.setActivity(notjjjj,{type: jijo})
     }, 60000);
     
 
