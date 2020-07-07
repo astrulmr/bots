@@ -10,9 +10,19 @@ const client = new Discord.Client()
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
-    client.user.setActivity("BrawlBall")
+let sttius =[
+  "WATCHING",
+  "PLAYING"
+]
+let sttius2 =[
+  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
+  "Brawlball"
+]
 
-
+    setInterval(() => {
+  client.user.setActivity(sttius,{type: sttius2})
+    }, 60000);
+    
 
 
 client.on('message', message => {
