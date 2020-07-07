@@ -21,7 +21,7 @@ let sttius2 =[
 ]
 
     setInterval(() => {
-      let jijo = sttius[Math.floor(Math.random()*sttius.length)]
+      let jijo = Math.floor(Math.random()*sttius.length)
       let notjjjj = sttius2[Math.floor(Math.random()*sttius2.length)]
        jijo
     }, 60000);
