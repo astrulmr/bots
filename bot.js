@@ -12,17 +12,17 @@ client.on('ready' , () => {
 
 let sttius =[
   
-  client.user.setActivity("Brawlball",{type: "PLAYING"}),
+
   client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",{type: "WATCHING"})
 ]
 let sttius2 =[
-  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
-  "Brawlball"
+  client.user.setActivity("Brawlball",{type: "PLAYING"})
 ]
 
     setInterval(() => {
       let jijo = Math.floor(Math.random()*sttius.length)
-      let notjjjj = sttius2[Math.floor(Math.random()*sttius2.length)]
+      let notjjjj = Math.floor(Math.random()*sttius2.length)
+      notjjjj
        jijo
     }, 60000);
     
