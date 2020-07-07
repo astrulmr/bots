@@ -11,8 +11,8 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 let sttius =[
-  "WATCHING",
-  "PLAYING"
+  client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",{type: "WATCHING" , url:"www.youtube.com/watch?v=KV-8PCeqPzg&t=42s"}),
+  client.user.setActivity("Brawlball",{type: "PLAYING"}),
 ]
 let sttius2 =[
   "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
@@ -22,8 +22,7 @@ let sttius2 =[
     setInterval(() => {
       let jijo = sttius[Math.floor(Math.random()*sttius.length)]
       let notjjjj = sttius2[Math.floor(Math.random()*sttius2.length)]
-
-  client.user.setActivity(notjjjj,{type: jijo})
+       jijo
     }, 60000);
     
 
