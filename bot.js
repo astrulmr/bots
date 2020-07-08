@@ -27,29 +27,16 @@ let sttius2 =[
 }
     setInterval(() => {
 
-      var x = getRandomInt(0, 20);
-          if (x < 5){ 
-               if (x < 3){
+      var x = 1 + 1;
+         if(x=2){
                 client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
           }
-          else {
+          else if(x=3) {
             client.user.setActivity("Brawlball" , {type: "PLAYING"})
           }
-          }
-          else if (x<= 9) {
-            if (x >= 7){
-              client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
-            }
-              else{
-                client.user.setActivity("Brawlball" , {type: "PLAYING"})
-              }
-          } 
-          else if (x <= 12 ) { 
-            client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
-          }
-          else {
-            client.user.setActivity("Brawlball" , {type: "PLAYING"})
-          }
+          if (x=3)
+          x=0
+         
          
     }, 60000);
     
