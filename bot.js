@@ -29,13 +29,20 @@ var xjok = 0
 var njok
     setInterval(() => {
 njok=xjok+1
-      
+let typething = "no"
+let descthing = "yes"
          if(njok=1){
-                client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
+            typething = "WATCHING"
+            descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
           }
           else if(njok=2) {
-            client.user.setActivity("Brawlball" , {type: "PLAYING"})
+             typething = "PLAYING"
+            descthing =  "Brawlball" 
+            
           }
+
+          client.user.setActivity(descthing , {type: typething})
+
           if (njok=2)
           njok=0
          
