@@ -20,7 +20,7 @@ let sttius2 =[
 
 
     setInterval(() => {
-      let jijo = Math.floor(Math.random() * (sttius.length+1)-1);
+      let jijo = Math.floor(Math.random() * (sttius.length-1)+1);
       let kokohbhs = Math.floor(Math.random() * (sttius2.length-1)+1 );
        
        client.user.setActivity(jijo , {type: kokohbhs})
