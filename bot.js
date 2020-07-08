@@ -25,17 +25,19 @@ let sttius2 =[
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
+var xjok = 0
+var njok
     setInterval(() => {
-
-      var x = 1 + 1;
-         if(x=2){
+njok=xjok+1
+      
+         if(njok=1){
                 client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
           }
-          else if(x=3) {
+          else if(njok=2) {
             client.user.setActivity("Brawlball" , {type: "PLAYING"})
           }
-          if (x=3)
-          x=0
+          if (njok=2)
+          njok=0
          
          
     }, 60000);
