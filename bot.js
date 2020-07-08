@@ -11,19 +11,20 @@ client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
 let sttius =[
-  
-
-  client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",{type: "WATCHING"})
+ "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
+  "Brawlball"
 ]
 let sttius2 =[
-  client.user.setActivity("Brawlball",{type: "PLAYING"})
-]
+  "WATCHING",
+   "PLAYING"
+ ]
+
 
     setInterval(() => {
-      let jijo = Math.floor(Math.random()*sttius.length)
-      let notjjjj = Math.floor(Math.random()*sttius2.length)
-      notjjjj
-       jijo
+      let jijo = Math.floor(Math.random() * (sttius.length - 1) + 1);
+      let kokohbhs = Math.floor(Math.random() * (sttius2.length - 1) + 1);
+       
+       client.user.setActivity(jijo,{type: kokohbhs})
     }, 60000);
     
 
