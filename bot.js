@@ -2,6 +2,7 @@
 
 
 
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -19,13 +20,57 @@ let sttius2 =[
  ]
 
 
+ function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
     setInterval(() => {
-      let jijo = Math.floor(Math.random() * (sttius.length-1)+1);
-      let kokohbhs = Math.floor(Math.random() * (sttius2.length-1)+1 );
-       
-       client.user.setActivity(jijo , {type: kokohbhs})
+
+      var x = getRandomInt(0, 20);
+          if (x < 5){ 
+               if (x < 3){
+                client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
+          }
+          else {
+            client.user.setActivity("Brawlball" , {type: "PLAYING"})
+          }
+          }
+          else if (x<= 9) {
+            if (x >= 7){
+              client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
+            }
+              else{
+                client.user.setActivity("Brawlball" , {type: "PLAYING"})
+              }
+          } 
+          else if (x <= 12 ) { 
+            client.user.setActivity("www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" , {type: "WATCHING"})
+          }
+          else {
+            client.user.setActivity("Brawlball" , {type: "PLAYING"})
+          }
+         
     }, 60000);
     
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 
 client.on('message', message => {
