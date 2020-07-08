@@ -1,4 +1,4 @@
-
+=
 
 
 
@@ -21,10 +21,10 @@ let sttius2 =[
 
 
     setInterval(() => {
-      let jijo = Math.floor(Math.random() * (sttius.length - 1) + 1);
-      let kokohbhs = Math.floor(Math.random() * (sttius2.length - 1) + 1);
+      let jijo = Math.floor(Math.random() * sttius.length);
+      let kokohbhs = Math.floor(Math.random() * sttius2.length );
        
-       client.user.setActivity(jijo,{type: kokohbhs})
+       client.user.setActivity(jijo , {type: kokohbhs})
     }, 60000);
     
 
