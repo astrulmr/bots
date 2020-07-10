@@ -44,7 +44,7 @@ let descthing = "yes"
           }
           client.user.setActivity("with depression", {
             type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
+            url: "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s"
           });
          
           if (njok=3)
