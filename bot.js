@@ -37,7 +37,7 @@ let descthing = "yes"
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
           }
-           if(njok=1) {
+           if(njok=2) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
             
@@ -45,8 +45,7 @@ let descthing = "yes"
       
           client.user.setActivity(descthing , {type: typething})
 
-          if (njok=3)
-          njok=0
+          
          
          
     }, 6000);
