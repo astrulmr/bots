@@ -45,7 +45,7 @@ let descthing = "yes"
 
           client.user.setActivity(descthing , {type: typething})
 
-          if (njok=2)
+          if (njok=3)
           njok=0
          
          
