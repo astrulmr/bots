@@ -7,6 +7,9 @@ const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
+var xjok = 0
+var njok
+
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
 
@@ -25,10 +28,9 @@ let sttius2 =[
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-var xjok = 0
-var njok
+
     setInterval(() => {
-njok=xjok+1
+ njok=xjok+1
 let typething = "no"
 let descthing = "yes"
          if(njok=1){
