@@ -33,11 +33,11 @@ let sttius2 =[
  xjok=xjok+1
 let typething = "no"
 let descthing = "yes"
-         if(xjok=1){
+         if(xjok=2){
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
           }
-           if(xjok=2) {
+           if(xjok=3) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
             xjok=0
