@@ -37,7 +37,7 @@ let descthing = "yes"
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
           }
-          else if(njok=2) {
+           if(njok=1) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
             
