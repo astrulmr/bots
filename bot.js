@@ -43,7 +43,7 @@ let descthing = "yes"
             client.user.setActivity(descthing , {type: typething})
 
           }
-           if(xjok=2){
+          else if(xjok=2){
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
             xjok=0
