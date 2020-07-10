@@ -33,12 +33,9 @@ let sttius2 =[
  xjok=xjok+1
 let typething = "no"
 let descthing = "yes"
-         if(xjok=2){
-            typething = "WATCHING"
-            descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
-            client.user.setActivity(descthing , {type: typething})
+    
 
-          }
+          
            if(xjok=1) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
@@ -46,7 +43,10 @@ let descthing = "yes"
             client.user.setActivity(descthing , {type: typething})
 
           }
-      
+           if(xjok=2){
+            typething = "WATCHING"
+            descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
+            client.user.setActivity(descthing , {type: typething})}
           
          
          
