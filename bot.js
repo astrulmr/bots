@@ -1,10 +1,14 @@
 
+
+
+
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
 
 var xjok = 0
-var njok
+
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
@@ -26,22 +30,20 @@ let sttius2 =[
 }
 
     setInterval(() => {
- njok=xjok+1
+ xjok=xjok+1
 let typething = "no"
 let descthing = "yes"
-         if(njok=1){
+         if(xjok=1){
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
-            client.user.setActivity(descthing , {type: typething})
           }
-           if(njok=2) {
+           if(xjok=2) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
-            njok=0
-            client.user.setActivity(descthing , {type: typething})
+            xjok=0
           }
       
-
+          client.user.setActivity(descthing , {type: typething})
           
          
          
