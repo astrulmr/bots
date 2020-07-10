@@ -42,9 +42,11 @@ let descthing = "yes"
             descthing =  "Brawlball" 
             
           }
-
-          client.user.setActivity(descthing , {type: typething})
-
+          client.user.setActivity("with depression", {
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+          });
+         
           if (njok=3)
           njok=0
          
