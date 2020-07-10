@@ -36,14 +36,17 @@ let descthing = "yes"
          if(xjok=2){
             typething = "WATCHING"
             descthing =  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s" 
+            client.user.setActivity(descthing , {type: typething})
+
           }
            if(xjok=1) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
             xjok=0
+            client.user.setActivity(descthing , {type: typething})
+
           }
       
-          client.user.setActivity(descthing , {type: typething})
           
          
          
