@@ -42,16 +42,14 @@ let descthing = "yes"
             descthing =  "Brawlball" 
             
           }
-          client.user.setActivity("with depression", {
-            type: "STREAMING",
-            url: "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s"
-          });
-         
+      
+          client.user.setActivity(descthing , {type: typething})
+
           if (njok=3)
           njok=0
          
          
-    }, 60000);
+    }, 6000);
     
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
