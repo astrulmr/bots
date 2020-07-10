@@ -39,7 +39,7 @@ let descthing = "yes"
            if(xjok=1) {
              typething = "PLAYING"
             descthing =  "Brawlball" 
-            xjok=0
+           
             client.user.setActivity(descthing , {type: typething})
 
           }
