@@ -2685,61 +2685,61 @@ client.on('ready' , () => {
   
 client.on('message', message => {
   if (message.content === 'Date is 8/3/2020' ) {
-    text12chennelhaha.send("Happy birthday @CTNS#7355")
+    text12chennelhaha.send("Happy birthday <@456100864738983957>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 8/12/2020' ) {
-    text12chennelhaha.send("Happy birthday @otmanezza#1947")
+    text12chennelhaha.send("Happy birthday <@364069557951922176>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 8/14/2020' ) {
-    text12chennelhaha.send("Happy birthday @Kenshiro#1685")
+    text12chennelhaha.send("Happy birthday <@505751422449614878>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 30/9/2020' ) {
-    text12chennelhaha.send("Happy birthday @jimm25#5927")
+    text12chennelhaha.send("Happy birthday <@286209333488910336>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 10/23/2020' ) {
-    text12chennelhaha.send("Happy birthday @jinleehurb#6599")
+    text12chennelhaha.send("Happy birthday <@504543749293080597>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 11/3/2020' ) {
-    text12chennelhaha.send("Happy birthday @Kevin1185#5213")
+    text12chennelhaha.send("Happy birthday <@286208201186213888>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 11/12/2020' ) {
-    text12chennelhaha.send("Happy birthday @LordCroissant#5655")
+    text12chennelhaha.send("Happy birthday <@314532481519058944>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 12/3/2020' ) {
-    text12chennelhaha.send("Happy birthday @JunusBiaz#3807")
+    text12chennelhaha.send("Happy birthday <@423131212945817620>")
   }})
 
 
 client.on('message', message => {
   if (message.content === 'gg the date haha1/21/2021' ) {
-    text12chennelhaha.send("Happy birthday @Astru®#1813")
+    text12chennelhaha.send("Happy birthday <@482162074097549333>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 4/7/2021' ) {
-    text12chennelhaha.send("Happy birthday @Snowflvkey#8024")
+    text12chennelhaha.send("Happy birthday <@433037812858880000>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 4/24/2021' ) {
-    text12chennelhaha.send("Happy birthday @Styleken#2650")
+    text12chennelhaha.send("Happy birthday <@499591499122737153>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 6/1/2021' ) {
-    text12chennelhaha.send("Happy birthday @DanzoDon#6146")
+    text12chennelhaha.send("Happy birthday <@320264452874305536>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 6/20/2021' ) {
-    text12chennelhaha.send("Happy birthday @Koush#4964")
+    text12chennelhaha.send("Happy birthday <@240226379596038146>")
   }})
 client.on('message', message => {
   if (message.content === 'Date is 6/23/2021' ) {
-    text12chennelhaha.send("Happy birthday @Glaedr#0422")
+    text12chennelhaha.send("Happy birthday <@321188857359892480>")
   }})
 
 
