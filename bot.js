@@ -2603,7 +2603,8 @@ client.on("message", async message => {
        "Let's play brawlball ! Room bellow ;)",
        "Money is nothing if you don't have the skill to spend it right. Anyway join brawlball right now",
        "You have the right to choose : either you come and play brawlball now ; either you don't come and you get worse and worse day after day.",
-       "Don't be shy, try to defeat us in brawlball, maybe we'll be kind enough to let you score once"]
+       "Don't be shy, try to defeat us in brawlball, maybe we'll be kind enough to let you score once",
+       "If you come and play insanely good with us, you might be our community highlights video ;)"]
 
        var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
        
@@ -2641,6 +2642,36 @@ else
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+client.on('message', message => {
+  if (message.content === '!birthday') {
+    const embed = new RichEmbed()
+      .setTitle('Here are all Our Style players birthday date')
+      .setColor(0xFFFFFF)
+      .setDescription('Do not forget to wish a happy birthday to everyone of us !')
+      .setThumbnail('https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
+      .addField('Astru®','January 21', false)
+      .addField('\n Spirix','April 7', false)
+      .addField('\n Styleken','April 24', false)
+      .addField('\n DanzoDon','June 1', false)
+      .addField('\n KaeptnKook','June 20', false)
+      .addField('\n Glaedr','June 23', false)
+      .addField('\n CTNS','August 3', false)
+      .addField('\n otmanezza','August 12', false)
+      .addField('\n Kenshiro','August 14 ', false)
+      .addField('\n jimm25','September 30', false)
+      .addField('\n jinleehurb','October 23', false)
+      .addField('\n Kevin1185','November 2', false)
+      .addField('\n LordCroissant','November 12', false)
+      .addField('\n Junusbiaz','December 3', false)
+      .setFooter('There will be a command soon that will send a reminder at the right days','https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
+
+
+    message.channel.send(embed)
+  }
+})
+
+
+
 client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
   var text12chennelhaha = client.channels.find(channel => channel.id === '727390897016144012')
@@ -2648,19 +2679,67 @@ client.on('ready' , () => {
   var d = new Date();
 
   setInterval(() => {
-    textchennelhaha.send("gg the date haha"+d.toLocaleDateString())
+    textchennelhaha.send("Date is "+d.toLocaleDateString())
   }, 18000000);
 
   
 client.on('message', message => {
-  if (message.content === 'gg the date haha7/3/2020' ) {
-    text12chennelhaha.send("Happy birthday bro")
+  if (message.content === 'Date is 8/3/2020' ) {
+    text12chennelhaha.send("Happy birthday @CTNS#7355")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 8/12/2020' ) {
+    text12chennelhaha.send("Happy birthday @otmanezza#1947")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 8/14/2020' ) {
+    text12chennelhaha.send("Happy birthday @Kenshiro#1685")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 30/9/2020' ) {
+    text12chennelhaha.send("Happy birthday @jimm25#5927")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 10/23/2020' ) {
+    text12chennelhaha.send("Happy birthday @jinleehurb#6599")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 11/3/2020' ) {
+    text12chennelhaha.send("Happy birthday @Kevin1185#5213")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 11/12/2020' ) {
+    text12chennelhaha.send("Happy birthday @LordCroissant#5655")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 12/3/2020' ) {
+    text12chennelhaha.send("Happy birthday @JunusBiaz#3807")
   }})
 
 
 client.on('message', message => {
   if (message.content === 'gg the date haha1/21/2021' ) {
-    text12chennelhaha.send("Happy birthday Astru")
+    text12chennelhaha.send("Happy birthday @Astru®#1813")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 4/7/2021' ) {
+    text12chennelhaha.send("Happy birthday @Snowflvkey#8024")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 4/24/2021' ) {
+    text12chennelhaha.send("Happy birthday @Styleken#2650")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 6/1/2021' ) {
+    text12chennelhaha.send("Happy birthday @DanzoDon#6146")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 6/20/2021' ) {
+    text12chennelhaha.send("Happy birthday @Koush#4964")
+  }})
+client.on('message', message => {
+  if (message.content === 'Date is 6/23/2021' ) {
+    text12chennelhaha.send("Happy birthday @Glaedr#0422")
   }})
 
 
