@@ -2776,12 +2776,12 @@ client.on('message', message => {
         .addField('**Remove Roles** ',' **🔴**',false)
         message.channel.send(embed)
             .then(function (message) {
-              message.react("🏃‍♂️")
-              message.react("🦈")
-              message.react("🛡️")
-              message.react("🔴")
-     
-             
+           
+              message.react('🏃‍♂️')
+              .then(() => message.react('🦈'))
+              .then(() => message.react('🛡️'))
+              .then(() => message.react('🔴'))
+
             }).catch(function() {
              
              });
@@ -2899,10 +2899,12 @@ client.on('message', message => {
                 
                   
                     const { message, emoji } = messageReaction;
+                    if(message.channel.id == '594177565825171457'){
+                      if(emoji.name == '🦈') {
 
+                        
+                      
                    
-                    if(emoji.name == '🦈') {
-                    reactions.remove("482162074097549333")
 
                     
               
@@ -2912,7 +2914,7 @@ client.on('message', message => {
                      })
                     }
                     
-                  });
+                  }});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
