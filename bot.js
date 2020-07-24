@@ -2834,7 +2834,7 @@ client.on('message', message => {
 
        message.guild.fetchMember(user.id).then(member => {
         if(user.bot)  return;
-      else { message.user.addRole('736222790516211723')}
+      else { message.member.addRole('736222790516211723')}
        })
       }}});
 
@@ -2848,7 +2848,7 @@ client.on('message', message => {
     
            message.guild.fetchMember(user.id).then(member => {
             if(user.bot)  return;
-          else { message.user.addRole('736222933827190835')}
+          else { message.member.addRole('736222933827190835')}
            })
           }}});
 
@@ -2862,7 +2862,7 @@ client.on('message', message => {
         
                message.guild.fetchMember(user.id).then(member => {
                 if(user.bot)  return;
-              else { message.user.addRole('736222973140402246')}
+              else { message.member.addRole('736222973140402246')}
                })
               }}});
 
