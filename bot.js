@@ -2855,7 +2855,8 @@ client.on('message', message => {
           }
           
         }});
-
+      
+  
 
           client.on('messageReactionAdd', (messageReaction, user) => {
             //Defender
@@ -2891,6 +2892,23 @@ client.on('message', message => {
                   }
                   
                 }});
+
+
+
+                client.on('messageReactionRemove', (messageReaction, user) => {
+                
+                  
+                    const { message, emoji } = messageReaction;
+                    if(message.channel.id == '594177565825171457'){
+                    if(emoji.name == '🦈') {
+              
+                     message.guild.fetchMember(user.id).then(member => {
+                      if(user.bot)  return;
+                    else { member.removeRole('736222933827190835')}
+                     })
+                    }
+                    
+                  }});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
