@@ -2771,8 +2771,8 @@ client.on('message', message => {
         .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
         .setDescription('**React with your position**')
         .addField('**Runner** ',' **🏃‍♂️**',false)
-        .addField("**Supporter** "," **🤺**",false)
-        .addField('**Defender** ',' **🏋️‍♂️**',false)
+        .addField("**Supporter** "," **🦈**",false)
+        .addField('**Defender** ',' **🛡️**',false)
         .addField('**Remove Roles** ',' **🔴**',false)
         message.channel.send(embed)
             .then(function (message) {
