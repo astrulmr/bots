@@ -2773,7 +2773,7 @@ client.on('message', message => {
         .addField('**Runner** ',' **🏃‍♂️**',false)
         .addField("**Supporter** "," **🦈**",false)
         .addField('**Defender** ',' **🛡️**',false)
-        .addField('**Remove Roles** ',' **🔴**',false)
+        .addField('**Remove Roles (Juts incase)** ',' **🔴**',false)
         message.channel.send(embed)
             .then(function (message) {
            
@@ -2894,20 +2894,27 @@ client.on('message', message => {
                 }});
 
 
-
                 client.on('messageReactionRemove', (messageReaction, user) => {
-                
+
+                  //remove Runner
                   
                     const { message, emoji } = messageReaction;
                     if(message.channel.id == '594177565825171457'){
-                      if(emoji.name == '🦈') {
-
-                        
-                      
-                   
-
-                    
+                    if(emoji.name == '🏃‍♂️') {
               
+                     message.guild.fetchMember(user.id).then(member => {
+                      if(user.bot)  return;
+                    else { member.removeRole('736222790516211723')}
+                     })
+                    }}});
+
+
+                client.on('messageReactionRemove', (messageReaction, user) => {
+                
+                  // remove supporter
+                    const { message, emoji } = messageReaction;
+                    if(message.channel.id == '594177565825171457'){
+                      if(emoji.name == '🦈') {
                      message.guild.fetchMember(user.id).then(member => {
                       if(user.bot)  return;
                     else { member.removeRole('736222933827190835')}
@@ -2915,6 +2922,19 @@ client.on('message', message => {
                     }
                     
                   }});
+
+                  client.on('messageReactionRemove', (messageReaction, user) => {
+                    //remove Defender
+        
+                      const { message, emoji } = messageReaction;
+                      if(message.channel.id == '594177565825171457'){
+                      if(emoji.name == '🛡️') {
+                
+                       message.guild.fetchMember(user.id).then(member => {
+                        if(user.bot)  return;
+                      else { member.removeRole('736222973140402246')}
+                       })
+                      }}});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
