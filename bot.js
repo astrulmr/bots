@@ -2899,8 +2899,12 @@ client.on('message', message => {
                 
                   
                     const { message, emoji } = messageReaction;
-                   if(msg.channel.messages.fetch("736281805136724007")){
+
+                    let messageEmbed = message.channel.fetchMessage('736281805136724007')
                     if(emoji.name == '🦈') {
+                    messageEmbed.reactions.first().remove(message.author.id)
+
+                    
               
                      message.guild.fetchMember(user.id).then(member => {
                       if(user.bot)  return;
@@ -2908,7 +2912,7 @@ client.on('message', message => {
                      })
                     }
                     
-                  }});
+                  });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
