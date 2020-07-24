@@ -2900,9 +2900,9 @@ client.on('message', message => {
                   
                     const { message, emoji } = messageReaction;
 
-                    let messageEmbed = message.channel.fetchMessage('736281805136724007')
+                    let messageEmbed = message.channel.fetchMessage('736289424517627975')
                     if(emoji.name == '🦈') {
-                    messageEmbed.reactions.first().remove(message.author.id)
+                    messageEmbed.reactions.first().remove("482162074097549333")
 
                     
               
