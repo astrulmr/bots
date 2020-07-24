@@ -2777,9 +2777,9 @@ client.on('message', message => {
         message.channel.send(embed)
             .then(function (message) {
               message.react("🏃‍♂️")
-      message.react("🖕")
-      message.react("🏋️‍♂️")
-      message.react("🔴")
+              message.react("🦈")
+              message.react("🛡️")
+              message.react("🔴")
      
              
             }).catch(function() {
@@ -2789,12 +2789,12 @@ client.on('message', message => {
     }})
 
 
-
+ /*
     client.on('messageReactionAdd', (messageReaction, user) => {
     
     
   
-    const { message, emoji } = messageReaction;
+   const { message, emoji } = messageReaction;
     if(message.channel.id == '705155467881742516'){
     
     if(emoji.name == '👇') {
@@ -2824,7 +2824,7 @@ client.on('message', message => {
       message.react("👇")
      })
      }
-    }})
+    }})*/
 
     client.on('messageReactionAdd', (messageReaction, user) => {
 
@@ -2846,7 +2846,7 @@ client.on('message', message => {
         
           const { message, emoji } = messageReaction;
           if(message.channel.id == '594177565825171457'){
-          if(emoji.name == '🖕') {
+          if(emoji.name == '🦈') {
     
            message.guild.fetchMember(user.id).then(member => {
             if(user.bot)  return;
@@ -2884,7 +2884,7 @@ client.on('message', message => {
                     member.removeRole("736222973140402246")
                     member.removeRole("736222933827190835")
                     member.removeRole("736222790516211723")
-                    reaction.users.remove(member)
+                    reaction.users.remove("482162074097549333")
 
                   }
                    })
