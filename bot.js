@@ -2766,18 +2766,20 @@ client.on('message', message => {
     if (message.content === '!prole' ) {
 
         let embed = new Discord.RichEmbed()
-        .setTitle('React WIth Your Position On Brawlball')
+        .setTitle('These are the positions in Brawlball')
         .setColor('#FF0000')
-        .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
-        .setDescription('**Here is the rules**')
+        .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+        .setDescription('**React with your position**')
         .addField('**Runner** ',' **🏃‍♂️**',false)
         .addField("**Supporter** "," **🤺**",false)
         .addField('**Defender** ',' **🏋️‍♂️**',false)
+        .addField('**Remove Roles** ',' **🔴**',false)
         message.channel.send(embed)
             .then(function (message) {
               message.react("🏃‍♂️")
       message.react("🤺")
       message.react("🏋️‍♂️")
+      message.react("🔴")
      
              
             }).catch(function() {
@@ -2850,7 +2852,9 @@ client.on('message', message => {
             if(user.bot)  return;
           else { member.addRole('736222933827190835')}
            })
-          }}});
+          }
+          
+        }});
 
 
           client.on('messageReactionAdd', (messageReaction, user) => {
@@ -2865,6 +2869,28 @@ client.on('message', message => {
               else { member.addRole('736222973140402246')}
                })
               }}});
+
+
+              client.on('messageReactionAdd', (messageReaction, user) => {
+                //remove role
+                
+                  const { message, emoji } = messageReaction;
+                  if(message.channel.id == '594177565825171457'){
+                  if(emoji.name == '🔴') {
+            
+                   message.guild.fetchMember(user.id).then(member => {
+                    if(user.bot)  return;
+                  else { 
+                    member.removeRole("736222973140402246")
+                    member.removeRole("736222933827190835")
+                    member.removeRole("736222790516211723")
+
+
+                  }
+                   })
+                  }
+                  
+                }});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
