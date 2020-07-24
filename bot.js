@@ -2777,7 +2777,7 @@ client.on('message', message => {
         message.channel.send(embed)
             .then(function (message) {
               message.react("🏃‍♂️")
-      message.react("🤺")
+      message.react("🖕")
       message.react("🏋️‍♂️")
       message.react("🔴")
      
@@ -2846,7 +2846,7 @@ client.on('message', message => {
         
           const { message, emoji } = messageReaction;
           if(message.channel.id == '594177565825171457'){
-          if(emoji.name == '🤺') {
+          if(emoji.name == '🖕') {
     
            message.guild.fetchMember(user.id).then(member => {
             if(user.bot)  return;
@@ -2862,7 +2862,7 @@ client.on('message', message => {
 
               const { message, emoji } = messageReaction;
               if(message.channel.id == '594177565825171457'){
-              if(emoji.name == '🏋️‍♂️') {
+              if(emoji.name == '🛡️') {
         
                message.guild.fetchMember(user.id).then(member => {
                 if(user.bot)  return;
@@ -2884,7 +2884,7 @@ client.on('message', message => {
                     member.removeRole("736222973140402246")
                     member.removeRole("736222933827190835")
                     member.removeRole("736222790516211723")
-
+                    reaction.users.remove(member)
 
                   }
                    })
