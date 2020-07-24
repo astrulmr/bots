@@ -2673,14 +2673,14 @@ client.on('message', message => {
 
 
 client.on('ready' , () => {
-  var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
-  var text12chennelhaha = client.channels.find(channel => channel.id === '727390897016144012')
+  var textchennelhaha = client.channels.find(channel => channel.id === '727390897016144012')
+  var text12chennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
 
   var d = new Date();
 
   setInterval(() => {
     textchennelhaha.send("Date is "+d.toLocaleDateString())
-  }, 18000000);
+  }, 7200000);
 
   
 client.on('message', message => {
@@ -2747,7 +2747,124 @@ client.on('message', message => {
 
 
   })
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////ROLES CODE/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+  client.on('message', message => {
+    if (message.content === '!prole' ) {
+
+        let embed = new Discord.RichEmbed()
+        .setTitle('React WIth Your Position On Brawlball')
+        .setColor('#FF0000')
+        .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
+        .setDescription('**Here is the rules**')
+        .addField('**Runner** ',' **🏃‍♂️**',false)
+        .addField("**Supporter** "," **🤺**",false)
+        .addField('**Defender** ',' **🏋️‍♂️**',false)
+        message.channel.send(embed)
+            .then(function (message) {
+              message.react("🏃‍♂️")
+      message.react("🤺")
+      message.react("🏋️‍♂️")
+     
+             
+            }).catch(function() {
+             
+             });
+
+    }})
+
+
+
+    client.on('messageReactionAdd', (messageReaction, user) => {
+    
+    
+  
+    const { message, emoji } = messageReaction;
+    if(message.channel.id == '705155467881742516'){
+    
+    if(emoji.name == '👇') {
+     
+      if(user.bot)  return;
+     else { message.channel.fetchMessages()
+    .then(function(list){
+          message.channel.bulkDelete(list);
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) }
+
+     let embed = new Discord.RichEmbed()
+     .setTitle('*-*--New Nerf Roll* match *started---')
+     .setColor('#FF0000')
+     .setThumbnail('https://i.ibb.co/cTHfBpQ/kooko.png')
+     .setDescription('**Here is the rules**')
+     .addField('**1.** ',' **Every player gets one nerf**',false)
+     .addField("**2.** "," **If you cheat, you have to commit suicide and you'll get two new nerfs on the next game**",false)
+     .addField('**3.** ',' **If you cheat when you have a team nerf, you (only) have to commit suicide and all the team members will get two new nerfs on the next game**',false)
+     .addField("**4.** "," **Please play fair and try not to spam. If you've cheated, say it or we'll kick you**",false)
+     .addField('**5.** ',' **Dont type other then !roll when game start on nerf_roll channel**',false)
+     .addField('**___________** ',' **To enter the nerf roll 👍 \n\n To enter new nerf roll 👇 **',false)
+     message.channel.send(embed)
+     .then(function (message) {
+      message.react("🏃‍♂️")
+      message.react("🤺")
+      message.react("🏋️‍♂️")
+      message.react("👇")
+     })
+     }
+    }})
+
+    client.on('messageReactionAdd', (messageReaction, user) => {
+
+    //Runner
+    
+      const { message, emoji } = messageReaction;
+      if(message.channel.id == '594177565825171457'){
+      if(emoji.name == '🏃‍♂️') {
+
+       message.guild.fetchMember(user.id).then(member => {
+        if(user.bot)  return;
+      else { message.user.addRole('736222790516211723')}
+       })
+      }}});
+
+
+      client.on('messageReactionAdd', (messageReaction, user) => {
+        //Supporter
+        
+          const { message, emoji } = messageReaction;
+          if(message.channel.id == '594177565825171457'){
+          if(emoji.name == '🤺') {
+    
+           message.guild.fetchMember(user.id).then(member => {
+            if(user.bot)  return;
+          else { message.user.addRole('736222933827190835')}
+           })
+          }}});
+
+
+          client.on('messageReactionAdd', (messageReaction, user) => {
+            //Defender
+
+              const { message, emoji } = messageReaction;
+              if(message.channel.id == '594177565825171457'){
+              if(emoji.name == '🏋️‍♂️') {
+        
+               message.guild.fetchMember(user.id).then(member => {
+                if(user.bot)  return;
+              else { message.user.addRole('736222973140402246')}
+               })
+              }}});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
