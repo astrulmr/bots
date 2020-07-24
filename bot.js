@@ -2899,7 +2899,7 @@ client.on('message', message => {
                 
                   
                     const { message, emoji } = messageReaction;
-                    if(message.id == '736281805136724007'){
+                   if(msg.channel.messages.fetch("736281805136724007")){
                     if(emoji.name == '🦈') {
               
                      message.guild.fetchMember(user.id).then(member => {
