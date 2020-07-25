@@ -2129,7 +2129,7 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })})
+             })
              
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
@@ -2150,7 +2150,7 @@ recchannel.send("!strt")
       
                   }).catch(function() {
                    
-                   })
+                   })})
                    /*
              let embed = new Discord.RichEmbed()
              .setTitle('These are the Colors')
