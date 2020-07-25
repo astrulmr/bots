@@ -2129,11 +2129,14 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })})
-/*
-             .then(()=> {  
-//colors
-             let embed1 = new Discord.RichEmbed()
+             })})})
+
+
+             client.on('ready' , () => {
+
+             
+
+             let embed = new Discord.RichEmbed()
              .setTitle('These are the Colors')
              .setColor('#FF0000')
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
@@ -2144,7 +2147,7 @@ recchannel.send("!strt")
              .addField('**Black** ',' **⬛**',false)
              .addField('**Pink** ',' **🦑**',false)
              .addField('**Remove Roles (Just incase)**',' **🚫**',false)
-             recchannel.send(embed1)
+             recchannel.send(embed)
                  .then(function (message) {
                 
                    message.react('🟦')
@@ -2157,9 +2160,6 @@ recchannel.send("!strt")
                  }).catch(function() {
                   
                   })
-                })
-            
-           */ 
 
     })
 
