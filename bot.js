@@ -2121,16 +2121,14 @@ client.on('ready' , () => {
             .then(function (message) {
            
               message.react('🏃‍♂️')
-              .then(() => message.react('🦈'))
-              .then(() => message.react('🛡️'))
-              .then(() => message.react('🔴'))
+           
 
             }).catch(function() {
              
              })
              
 //colors
-             let embed1 = new Discord.RichEmbed()
+             let embed = new Discord.RichEmbed()
              .setTitle('These are the Colors')
              .setColor('#FF0000')
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
@@ -2141,15 +2139,11 @@ client.on('ready' , () => {
              .addField('**Black** ',' **⬛**',false)
              .addField('**Pink** ',' **🦑**',false)
              .addField('**Remove Roles (Just incase)** ',' **🚫**',false)
-             recchannel.send(embed1)
+             recchannel.send(embed)
                  .then(function (message) {
                 
                    message.react('🟦')
-                   .then(() => message.react('🟨'))
-                   .then(() => message.react('🟧'))
-                   .then(() => message.react('⬛'))
-                   .then(() => message.react('🦑'))
-                   .then(() => message.react('🚫'))
+               
      
                  }).catch(function() {
                   
@@ -2164,7 +2158,7 @@ client.on('ready' , () => {
  
     //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    ////////////////////////////////////////POSITION ADD REACT/////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////  POSITION ADD REACT  /////////////////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
