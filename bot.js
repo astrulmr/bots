@@ -2102,8 +2102,6 @@ client.on('message', message => {
 
 
 
-client.on('ready' , () => {
-
 
 let recchannel = client.channels.get("736380370651709531")
 recchannel.send("!strt")
@@ -2120,16 +2118,16 @@ recchannel.send("!strt")
         .addField('**Remove Roles (Just incase)**',' **🔴**',false)
         recchannel.send(embed)
       
-            .then(function (message) {
+       .then(function (message) {
            
-              message.react('🏃‍♂️')
+        message.react('🏃‍♂️')
            .then(()=> message.react('🦈'))
            .then(()=> message.react('🛡️'))
            .then(()=> message.react('🔴'))
 
             })}).catch(function() {
              
-             })})
+             })
              /*.then(()=> {
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
