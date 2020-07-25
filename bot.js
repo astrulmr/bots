@@ -2763,6 +2763,12 @@ client.on('message', message => {
 
 
 client.on('ready' , () => {
+
+  message.channel.fetchMessages()
+    .then(function(list){
+          message.channel.bulkDelete(list);
+     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
+
   let recchannel = client.channels.get("736380370651709531")
 
         let embed = new Discord.RichEmbed()
