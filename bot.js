@@ -3043,7 +3043,7 @@ recchannel.send("!strt")
                             
                                           const { message, emoji } = messageReaction;
                                           if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == '736390846970331296') {
+                                          if(emoji.name == '<:yagpdb:736390846970331296>') {
                                     
                                            message.guild.fetchMember(user.id).then(member => {
                                             if(user.bot)  return;
@@ -3064,10 +3064,11 @@ recchannel.send("!strt")
                                        message.guild.fetchMember(user.id).then(member => {
                                         if(user.bot)  return;
                                       else { 
-                                        member.removeRole("736222973140402246")
-                                        member.removeRole("736222933827190835")
-                                        member.removeRole("736222790516211723")
-                                        reaction.users.remove("482162074097549333")
+                                        member.removeRole("615317792677298192")
+                                        member.removeRole("615317793159512074")
+                                        member.removeRole("615317792756858895")
+                                        member.removeRole("615317792664715306")
+                                        member.removeRole("615317792723304488")
                     
                                       }
                                        })
