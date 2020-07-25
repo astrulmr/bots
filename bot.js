@@ -2101,7 +2101,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+client.on('ready' , () => {
 client.on('message', message => {
   if(message.content==="!prole"){
 let recchannel = client.channels.get("736380370651709531")
@@ -2196,7 +2196,8 @@ recchannel.send("!strt")
 
        message.guild.fetchMember(user.id).then(member => {
         if(user.bot)  return;
-      else { member.addRole('736222790516211723')}
+      else {
+         member.addRole('736222790516211723')}
        })
       }}});
 
@@ -2301,6 +2302,7 @@ recchannel.send("!strt")
                       else { member.removeRole('736222973140402246')}
                        })
                       }}});
+                    })
 
                       /////////////////////////////////////////////////////////////////////////////////
 
