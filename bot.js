@@ -2773,7 +2773,7 @@ recchannel.fetchMessages()
       recchannel.bulkDelete(list);
      }, function(err){recchannel.send("ERROR: ERROR CLEARING CHANNEL.")})  
     })
-
+.then(() => {
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
         .setColor('#FF0000')
@@ -2795,7 +2795,7 @@ recchannel.fetchMessages()
              
              });
 
-    })
+  })})
 
 
  /*
