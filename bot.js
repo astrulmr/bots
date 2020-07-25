@@ -2136,7 +2136,27 @@ recchannel.send("!strt")
               let recchannel = client.channels.get("736380370651709531")
 
              
-
+              let embed = new Discord.RichEmbed()
+              .setTitle('These are the positions in Brawlball')
+              .setColor('#FF0000')
+              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+              .setDescription('**React with your position**')
+              .addField('**Runner** ',' **🟦**',false)
+              .addField("**Supporter** "," **🟨**",false)
+              .addField('**Defender** ',' **🟧**',false)
+              .addField('**Remove Roles (Just incase)**',' **⬛**',false)
+              recchannel.send(embed)
+                  .then(function (message) {
+                 
+                    message.react('🟦')
+                 .then(()=> message.react('🟨'))
+                 .then(()=> message.react('🟧'))
+                 .then(()=> message.react('⬛'))
+      
+                  }).catch(function() {
+                   
+                   })
+                   /*
              let embed = new Discord.RichEmbed()
              .setTitle('These are the Colors')
              .setColor('#FF0000')
@@ -2160,7 +2180,7 @@ recchannel.send("!strt")
      
                  }).catch(function() {
                   
-                  })
+                  })*/
 
     })
 
