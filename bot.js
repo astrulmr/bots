@@ -2106,9 +2106,7 @@ client.on('ready' , () => {
 
 
 let recchannel = client.channels.get("736380370651709531")
-recchannel.send("!strt")
 
-.then(()=> {
   //positins
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
@@ -2129,7 +2127,7 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })})})
+             })})
              /*.then(()=> {
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
