@@ -2801,7 +2801,7 @@ recchannel.send("!strt")
              .addField("**Yellow** "," **🟨**",false)
              .addField('**Orange** ',' **🟧**',false)
              .addField('**Black** ',' **⬛**',false)
-             .addField('**Pink** ',' **<:yagpdb:736390846970331296>**',false)
+             
              .addField('**Remove Roles (Juts incase)** ',' **🚫**',false)
              recchannel.send(embed)
                  .then(function (message) {
@@ -2810,7 +2810,7 @@ recchannel.send("!strt")
                    .then(() => message.react('🟨'))
                    .then(() => message.react('🟧'))
                    .then(() => message.react('⬛'))
-                   .then(() => message.react('736390846970331296'))
+                   
                    .then(() => message.react('🚫'))
      
                  }).catch(function() {
