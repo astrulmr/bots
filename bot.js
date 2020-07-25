@@ -2801,7 +2801,7 @@ recchannel.send("!strt")
              .addField("**Yellow** "," **🟨**",false)
              .addField('**Orange** ',' **🟧**',false)
              .addField('**Black** ',' **⬛**',false)
-             .addField('**Pink** ',' **<:yagpdb:736390846970331296>**',false)
+             .addField('**Pink** ',' **🦑**',false)
              .addField('**Remove Roles (Juts incase)** ',' **🚫**',false)
              recchannel.send(embed1)
                  .then(function (message) {
@@ -2810,7 +2810,7 @@ recchannel.send("!strt")
                    .then(() => message.react('🟨'))
                    .then(() => message.react('🟧'))
                    .then(() => message.react('⬛'))
-                   .then(() => message.react('736390846970331296'))
+                   .then(() => message.react('🦑'))
                    .then(() => message.react('🚫'))
      
                  }).catch(function() {
@@ -2859,6 +2859,11 @@ recchannel.send("!strt")
      })
      }
     }})*/
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////POSITION ADD REACT/////////////////////////////////////////////////////////////////
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     client.on('messageReactionAdd', (messageReaction, user) => {
 
@@ -2926,6 +2931,13 @@ recchannel.send("!strt")
                   }
                   
                 }});
+
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////////POSITION REMOVE REACT/////////////////////////////////////////////////////////////////
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
                 client.on('messageReactionRemove', (messageReaction, user) => {
@@ -3043,7 +3055,7 @@ recchannel.send("!strt")
                             
                                           const { message, emoji } = messageReaction;
                                           if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == ':yagpdb:') {
+                                          if(emoji.name == '🦑') {
                                     
                                            message.guild.fetchMember(user.id).then(member => {
                                             if(user.bot)  return;
@@ -3151,7 +3163,7 @@ recchannel.send("!strt")
                             
                                           const { message, emoji } = messageReaction;
                                           if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == '736390846970331296') {
+                                          if(emoji.name == '🦑') {
                                     
                                            message.guild.fetchMember(user.id).then(member => {
                                             if(user.bot)  return;
