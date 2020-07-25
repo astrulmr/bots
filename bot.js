@@ -3043,7 +3043,7 @@ recchannel.send("!strt")
                             
                                           const { message, emoji } = messageReaction;
                                           if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == '<:yagpdb:736390846970331296>') {
+                                          if(emoji.name == ':yagpdb:') {
                                     
                                            message.guild.fetchMember(user.id).then(member => {
                                             if(user.bot)  return;
