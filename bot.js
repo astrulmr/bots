@@ -2766,11 +2766,8 @@ client.on('ready' , () => {
 
 let recchannel = client.channels.get("736380370651709531")
 
-  recchannel.fetchMessages()
-    .then(function(list){
-          recchannel.bulkDelete(list);
-     }, function(err){recchannel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
 
+recchannel.send("!strt")
   
 
         let embed = new Discord.RichEmbed()
