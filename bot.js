@@ -12,7 +12,7 @@ var xjok = 0
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
-    recchannel.send("!strt")
+    
 
 let sttius =[
  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
