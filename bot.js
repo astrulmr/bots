@@ -2102,7 +2102,8 @@ client.on('message', message => {
 
 
 
-
+client.on('message', message => {
+  if(message.content==="!prole"){
 let recchannel = client.channels.get("736380370651709531")
 recchannel.send("!strt")
   //positins
@@ -2127,7 +2128,7 @@ recchannel.send("!strt")
 
             })}).catch(function() {
              
-             })
+             })}})
              /*.then(()=> {
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
