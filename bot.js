@@ -2102,11 +2102,13 @@ client.on('message', message => {
 
 
 
-client.on('ready' , () => {
-
+/*client.on('ready' , () => {
 
 
 let recchannel = client.channels.get("736380370651709531")
+recchannel.send("!strt")
+
+.then(()=> {
   //positins
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
@@ -2121,12 +2123,15 @@ let recchannel = client.channels.get("736380370651709531")
             .then(function (message) {
            
               message.react('🏃‍♂️')
-           
+           .then(()=> message.react('🦈'))
+           .then(()=> message.react('🛡️'))
+           .then(()=> message.react('🔴'))
 
             }).catch(function() {
              
-             })
-             
+             })})
+
+             .then(()=> {  
 //colors
              let embed1 = new Discord.RichEmbed()
              .setTitle('These are the Colors')
@@ -2143,16 +2148,20 @@ let recchannel = client.channels.get("736380370651709531")
                  .then(function (message) {
                 
                    message.react('🟦')
-               
+                   .then(()=> message.react('🟨'))
+                   .then(()=> message.react('🟧'))
+                   .then(()=> message.react('⬛'))
+                   .then(()=> message.react('🦑'))
+                   .then(()=> message.react('🚫'))
      
                  }).catch(function() {
                   
                   })
-            
+                })
             
             
 
-    })
+    })*/
 
 
  
