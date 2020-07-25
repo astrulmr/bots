@@ -2133,6 +2133,7 @@ recchannel.send("!strt")
 
 
              client.on('ready' , () => {
+              let recchannel = client.channels.get("736380370651709531")
 
              
 
@@ -2142,7 +2143,7 @@ recchannel.send("!strt")
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
              .setDescription('**React with your Color**')
              .addField('**Blue** ',' **🟦**',false)
-             .addField("**Yellow** "," **🟨**",false)
+             .addField('**Yellow** ',' **🟨**',false)
              .addField('**Orange** ',' **🟧**',false)
              .addField('**Black** ',' **⬛**',false)
              .addField('**Pink** ',' **🦑**',false)
