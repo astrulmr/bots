@@ -2102,7 +2102,7 @@ client.on('message', message => {
 
 
 
-/*client.on('ready' , () => {
+client.on('ready' , () => {
 
 
 let recchannel = client.channels.get("736380370651709531")
@@ -2130,7 +2130,7 @@ recchannel.send("!strt")
             }).catch(function() {
              
              })})
-
+/*
              .then(()=> {  
 //colors
              let embed1 = new Discord.RichEmbed()
@@ -2159,9 +2159,9 @@ recchannel.send("!strt")
                   })
                 })
             
-            
+           */ 
 
-    })*/
+    })
 
 
  
