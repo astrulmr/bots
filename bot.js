@@ -2837,7 +2837,7 @@ let recchannel = client.channels.get("736380370651709531")
     //Runner
     
       const { message, emoji } = messageReaction;
-      if(message.channel.id == '594177565825171457'){
+      if(message.channel.id == '736380370651709531'){
       if(emoji.name == '🏃‍♂️') {
 
        message.guild.fetchMember(user.id).then(member => {
@@ -2851,7 +2851,7 @@ let recchannel = client.channels.get("736380370651709531")
         //Supporter
         
           const { message, emoji } = messageReaction;
-          if(message.channel.id == '594177565825171457'){
+          if(message.channel.id == '736380370651709531'){
           if(emoji.name == '🦈') {
     
            message.guild.fetchMember(user.id).then(member => {
@@ -2868,7 +2868,7 @@ let recchannel = client.channels.get("736380370651709531")
             //Defender
 
               const { message, emoji } = messageReaction;
-              if(message.channel.id == '594177565825171457'){
+              if(message.channel.id == '736380370651709531'){
               if(emoji.name == '🛡️') {
         
                message.guild.fetchMember(user.id).then(member => {
@@ -2882,7 +2882,7 @@ let recchannel = client.channels.get("736380370651709531")
                 //remove role
                 
                   const { message, emoji } = messageReaction;
-                  if(message.channel.id == '594177565825171457'){
+                  if(message.channel.id == '736380370651709531'){
                   if(emoji.name == '🔴') {
             
                    message.guild.fetchMember(user.id).then(member => {
@@ -2905,7 +2905,7 @@ let recchannel = client.channels.get("736380370651709531")
                   //remove Runner
                   
                     const { message, emoji } = messageReaction;
-                    if(message.channel.id == '594177565825171457'){
+                    if(message.channel.id == '736380370651709531'){
                     if(emoji.name == '🏃‍♂️') {
               
                      message.guild.fetchMember(user.id).then(member => {
@@ -2919,7 +2919,7 @@ let recchannel = client.channels.get("736380370651709531")
                 
                   // remove supporter
                     const { message, emoji } = messageReaction;
-                    if(message.channel.id == '594177565825171457'){
+                    if(message.channel.id == '736380370651709531'){
                       if(emoji.name == '🦈') {
                      message.guild.fetchMember(user.id).then(member => {
                       if(user.bot)  return;
@@ -2933,7 +2933,7 @@ let recchannel = client.channels.get("736380370651709531")
                     //remove Defender
         
                       const { message, emoji } = messageReaction;
-                      if(message.channel.id == '594177565825171457'){
+                      if(message.channel.id == '736380370651709531'){
                       if(emoji.name == '🛡️') {
                 
                        message.guild.fetchMember(user.id).then(member => {
