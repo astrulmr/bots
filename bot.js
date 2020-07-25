@@ -12,6 +12,7 @@ var xjok = 0
 
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
+    recchannel.send("!strt")
 
 let sttius =[
  "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
@@ -2767,7 +2768,7 @@ client.on('ready' , () => {
 let recchannel = client.channels.get("736380370651709531")
 
 
-recchannel.send("!strt")
+
   
 
         let embed = new Discord.RichEmbed()
