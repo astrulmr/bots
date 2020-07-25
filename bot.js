@@ -2764,12 +2764,14 @@ client.on('message', message => {
 
 client.on('ready' , () => {
 
+let recchannel = client.channels.get("736380370651709531")
+
   recchannel.fetchMessages()
     .then(function(list){
           recchannel.bulkDelete(list);
-     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
+     }, function(err){recchannel.send("ERROR: ERROR CLEARING CHANNEL.")}) 
 
-  let recchannel = client.channels.get("736380370651709531")
+  
 
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
