@@ -2129,12 +2129,7 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })})})
-
-
-             client.on('ready' , () => {
-              let recchannel = client.channels.get("736380370651709531")
-
+             })})
              
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
