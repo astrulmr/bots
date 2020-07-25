@@ -2119,7 +2119,7 @@ recchannel.send("!strt")
         .addField('**Defender** ',' **🛡️**',false)
         .addField('**Remove Roles (Just incase)**',' **🔴**',false)
         recchannel.send(embed)
-      })
+      
             .then(function (message) {
            
               message.react('🏃‍♂️')
@@ -2127,7 +2127,7 @@ recchannel.send("!strt")
            .then(()=> message.react('🛡️'))
            .then(()=> message.react('🔴'))
 
-            }).catch(function() {
+            })}).catch(function() {
              
              })})
              /*.then(()=> {
