@@ -2778,7 +2778,7 @@ recchannel.send("!strt")
         .addField('**Runner** ',' **🏃‍♂️**',false)
         .addField("**Supporter** "," **🦈**",false)
         .addField('**Defender** ',' **🛡️**',false)
-        .addField('**Remove Roles (Juts incase)** ',' **🔴**',false)
+        .addField('**Remove Roles (Just incase)** ',' **🔴**',false)
         recchannel.send(embed)
             .then(function (message) {
            
@@ -2802,7 +2802,7 @@ recchannel.send("!strt")
              .addField('**Orange** ',' **🟧**',false)
              .addField('**Black** ',' **⬛**',false)
              .addField('**Pink** ',' **🦑**',false)
-             .addField('**Remove Roles (Juts incase)** ',' **🚫**',false)
+             .addField('**Remove Roles (Just incase)** ',' **🚫**',false)
              recchannel.send(embed1)
                  .then(function (message) {
                 
