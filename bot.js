@@ -1,4 +1,4 @@
-
+]
 
 
 
@@ -2792,7 +2792,7 @@ recchannel.send("!strt")
              })
              
 //colors
-             let embed = new Discord.RichEmbed()
+             let embed1 = new Discord.RichEmbed()
              .setTitle('These are the Colors')
              .setColor('#FF0000')
              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
@@ -2801,16 +2801,16 @@ recchannel.send("!strt")
              .addField("**Yellow** "," **🟨**",false)
              .addField('**Orange** ',' **🟧**',false)
              .addField('**Black** ',' **⬛**',false)
-             
+             .addField('**Pink** ',' **<:yagpdb:736390846970331296>**',false)
              .addField('**Remove Roles (Juts incase)** ',' **🚫**',false)
-             recchannel.send(embed)
+             recchannel.send(embed1)
                  .then(function (message) {
                 
                    message.react('🟦')
                    .then(() => message.react('🟨'))
                    .then(() => message.react('🟧'))
                    .then(() => message.react('⬛'))
-                   
+                   .then(() => message.react('736390846970331296'))
                    .then(() => message.react('🚫'))
      
                  }).catch(function() {
