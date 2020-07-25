@@ -2762,8 +2762,8 @@ client.on('message', message => {
 
 
 
-  client.on('message', message => {
-    if (message.content === '!prole' ) {
+client.on('ready' , () => {
+  let recchannel = client.channels.get("736380370651709531")
 
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
@@ -2774,7 +2774,7 @@ client.on('message', message => {
         .addField("**Supporter** "," **🦈**",false)
         .addField('**Defender** ',' **🛡️**',false)
         .addField('**Remove Roles (Juts incase)** ',' **🔴**',false)
-        message.channel.send(embed)
+        recchannel.send(embed)
             .then(function (message) {
            
               message.react('🏃‍♂️')
@@ -2786,7 +2786,7 @@ client.on('message', message => {
              
              });
 
-    }})
+    })
 
 
  /*
