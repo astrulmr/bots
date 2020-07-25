@@ -2130,7 +2130,7 @@ recchannel.send("!strt")
             }).catch(function() {
              
              })})
-             .then(()=> {
+             /*.then(()=> {
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
               .setColor('#FF0000')
@@ -2150,7 +2150,7 @@ recchannel.send("!strt")
       
                   }).catch(function() {
                    
-                   })})
+                   })})*/
                    /*
              let embed = new Discord.RichEmbed()
              .setTitle('These are the Colors')
