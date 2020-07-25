@@ -2767,13 +2767,8 @@ client.on('ready' , () => {
 
 let recchannel = client.channels.get("736380370651709531")
 
-client.on('message', message => {
-recchannel.fetchMessages()
-    .then(function(list){
-      recchannel.bulkDelete(list);
-     }, function(err){recchannel.send("ERROR: ERROR CLEARING CHANNEL.")})  
-    })
-.then(() => {
+recchannel.send("!strt")
+.then(()=>{
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
         .setColor('#FF0000')
@@ -2793,9 +2788,9 @@ recchannel.fetchMessages()
 
             }).catch(function() {
              
-             });
+             })});
 
-  })})
+    })
 
 
  /*
