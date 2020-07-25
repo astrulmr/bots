@@ -2769,6 +2769,7 @@ let recchannel = client.channels.get("736380370651709531")
 
 recchannel.send("!strt")
 .then(()=>{
+  //positins
         let embed = new Discord.RichEmbed()
         .setTitle('These are the positions in Brawlball')
         .setColor('#FF0000')
@@ -2788,7 +2789,36 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })});
+             })
+             
+//colors
+             let embed = new Discord.RichEmbed()
+             .setTitle('These are the Colors')
+             .setColor('#FF0000')
+             .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+             .setDescription('**React with your Color**')
+             .addField('**Blue** ',' **🟦**',false)
+             .addField("**Yellow** "," **🟨**",false)
+             .addField('**Orange** ',' **🟧**',false)
+             .addField('**Black** ',' **⬛**',false)
+             .addField('**Pink** ',' **<:yagpdb:736390846970331296>**',false)
+             .addField('**Remove Roles (Juts incase)** ',' **🚫**',false)
+             recchannel.send(embed)
+                 .then(function (message) {
+                
+                   message.react('🟦')
+                   .then(() => message.react('🟨'))
+                   .then(() => message.react('🟧'))
+                   .then(() => message.react('⬛'))
+                   .then(() => message.react('736390846970331296'))
+                   .then(() => message.react('🚫'))
+     
+                 }).catch(function() {
+                  
+                  })
+            
+            
+            });
 
     })
 
@@ -2939,6 +2969,195 @@ recchannel.send("!strt")
                       else { member.removeRole('736222973140402246')}
                        })
                       }}});
+
+                      /////////////////////////////////////////////////////////////////////////////////
+
+                      //////////////////////////////////////    COLOR ADD REACT    ///////////////////////////////////////////
+                      
+                      ////////////////////////////////////////////////////////////////////////////////
+
+                      client.on('messageReactionAdd', (messageReaction, user) => {
+
+                        //blue
+                        
+                          const { message, emoji } = messageReaction;
+                          if(message.channel.id == '736380370651709531'){
+                          if(emoji.name == '🟦') {
+                    
+                           message.guild.fetchMember(user.id).then(member => {
+                            if(user.bot)  return;
+                          else { member.addRole('615317792677298192')}
+                           })
+                          }}});
+                    
+                    
+                          client.on('messageReactionAdd', (messageReaction, user) => {
+                            //yellow
+                            
+                              const { message, emoji } = messageReaction;
+                              if(message.channel.id == '736380370651709531'){
+                              if(emoji.name == '🟨') {
+                        
+                               message.guild.fetchMember(user.id).then(member => {
+                                if(user.bot)  return;
+                              else { member.addRole('615317793159512074')}
+                               })
+                              }
+                              
+                            }});
+                          
+                      
+                    
+                              client.on('messageReactionAdd', (messageReaction, user) => {
+                                //orange
+                    
+                                  const { message, emoji } = messageReaction;
+                                  if(message.channel.id == '736380370651709531'){
+                                  if(emoji.name == '🟧') {
+                            
+                                   message.guild.fetchMember(user.id).then(member => {
+                                    if(user.bot)  return;
+                                  else { member.addRole('615317792756858895')}
+                                   })
+                                  }}});
+                    
+
+
+                                  client.on('messageReactionAdd', (messageReaction, user) => {
+                                    //black
+                        
+                                      const { message, emoji } = messageReaction;
+                                      if(message.channel.id == '736380370651709531'){
+                                      if(emoji.name == '⬛') {
+                                
+                                       message.guild.fetchMember(user.id).then(member => {
+                                        if(user.bot)  return;
+                                      else { member.addRole('615317792664715306')}
+                                       })
+                                      }}});
+
+
+
+                                      client.on('messageReactionAdd', (messageReaction, user) => {
+                                        //pink
+                            
+                                          const { message, emoji } = messageReaction;
+                                          if(message.channel.id == '736380370651709531'){
+                                          if(emoji.name == '736390846970331296') {
+                                    
+                                           message.guild.fetchMember(user.id).then(member => {
+                                            if(user.bot)  return;
+                                          else { member.addRole('615317792723304488')}
+                                           })
+                                          }}});
+
+
+
+                    
+                                  client.on('messageReactionAdd', (messageReaction, user) => {
+                                    //remove role
+                                    
+                                      const { message, emoji } = messageReaction;
+                                      if(message.channel.id == '736380370651709531'){
+                                      if(emoji.name == '🚫') {
+                                
+                                       message.guild.fetchMember(user.id).then(member => {
+                                        if(user.bot)  return;
+                                      else { 
+                                        member.removeRole("736222973140402246")
+                                        member.removeRole("736222933827190835")
+                                        member.removeRole("736222790516211723")
+                                        reaction.users.remove("482162074097549333")
+                    
+                                      }
+                                       })
+                                      }
+                                      
+                                    }});
+
+
+
+                                    /////////////////////////////////////////////////////////////////////////////////
+
+                      //////////////////////////////////////    COLOR REMOVE REACT    ///////////////////////////////////////////
+                      
+                      ////////////////////////////////////////////////////////////////////////////////
+
+                      client.on('messageReactionRemove', (messageReaction, user) => {
+
+                        //blue
+                        
+                          const { message, emoji } = messageReaction;
+                          if(message.channel.id == '736380370651709531'){
+                          if(emoji.name == '🟦') {
+                    
+                           message.guild.fetchMember(user.id).then(member => {
+                            if(user.bot)  return;
+                          else { member.removeRole('615317792677298192')}
+                           })
+                          }}});
+                    
+                    
+                          client.on('messageReactionRemove', (messageReaction, user) => {
+                            //yellow
+                            
+                              const { message, emoji } = messageReaction;
+                              if(message.channel.id == '736380370651709531'){
+                              if(emoji.name == '🟨') {
+                        
+                               message.guild.fetchMember(user.id).then(member => {
+                                if(user.bot)  return;
+                              else { member.removeRole('615317793159512074')}
+                               })
+                              }
+                              
+                            }});
+                          
+                      
+                    
+                              client.on('messageReactionRemove', (messageReaction, user) => {
+                                //orange
+                    
+                                  const { message, emoji } = messageReaction;
+                                  if(message.channel.id == '736380370651709531'){
+                                  if(emoji.name == '🟧') {
+                            
+                                   message.guild.fetchMember(user.id).then(member => {
+                                    if(user.bot)  return;
+                                  else { member.removeRole('615317792756858895')}
+                                   })
+                                  }}});
+                    
+
+
+                                  client.on('messageReactionRemove', (messageReaction, user) => {
+                                    //black
+                        
+                                      const { message, emoji } = messageReaction;
+                                      if(message.channel.id == '736380370651709531'){
+                                      if(emoji.name == '⬛') {
+                                
+                                       message.guild.fetchMember(user.id).then(member => {
+                                        if(user.bot)  return;
+                                      else { member.removeRole('615317792664715306')}
+                                       })
+                                      }}});
+
+
+
+                                      client.on('messageReactionRemove', (messageReaction, user) => {
+                                        //pink
+                            
+                                          const { message, emoji } = messageReaction;
+                                          if(message.channel.id == '736380370651709531'){
+                                          if(emoji.name == '736390846970331296') {
+                                    
+                                           message.guild.fetchMember(user.id).then(member => {
+                                            if(user.bot)  return;
+                                          else { member.removeRole('615317792723304488')}
+                                           })
+                                          }}});
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
