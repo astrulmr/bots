@@ -13,16 +13,175 @@ var xjok = 0
 client.on('ready' , () => {
     console.log("connected as " + client.user.tag)
     
+ /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
+               /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
+               /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let sttius =[
- "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
-  "Brawlball"
-]
-let sttius2 =[
-  "WATCHING",
-   "PLAYING"
- ]
+    client.on('message', message => {
+      if(message.content==="!prole"){
+    let recchannel = client.channels.get("736380370651709531")
+    recchannel.send("!strt")
+      //positins
+      .then(()=>{
+            let embed = new Discord.RichEmbed()
+            .setTitle('These are the positions in Brawlball')
+            .setColor('#FF0000')
+            .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+            .setDescription('**React with your position**')
+            .addField('**Runner** ',' **🏃‍♂️**',false)
+            .addField("**Supporter** "," **🦈**",false)
+            .addField('**Defender** ',' **🛡️**',false)
+            .addField('**Remove Roles (Just incase)**',' **🔴**',false)
+            recchannel.send(embed)
+          
+           .then(function (message) {
+               
+            message.react('🏃‍♂️')
+               .then(()=> message.react('🦈'))
+               .then(()=> message.react('🛡️'))
+               .then(()=> message.react('🔴'))
+    
+                })}).catch(function() {
+                 
+                 })}})
+        
+    
+        
+    
+    
+     
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        ////////////////////////////////////////  POSITION ADD REACT  /////////////////////////////////////////////////////////////////
+        
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        client.on('messageReactionAdd', (messageReaction, user) => {
+    
+        //Runner
+        
+          const { message, emoji } = messageReaction;
+          if(message.channel.id == '736380370651709531'){
+          if(emoji.name == '🏃‍♂️') {
+    
+           message.guild.fetchMember(user.id).then(member => {
+            if(user.bot)  return;
+          else {
+             member.addRole('736222790516211723')}
+           })
+          }}});
+    
+    
+          client.on('messageReactionAdd', (messageReaction, user) => {
+            //Supporter
+            
+              const { message, emoji } = messageReaction;
+              if(message.channel.id == '736380370651709531'){
+              if(emoji.name == '🦈') {
+        
+               message.guild.fetchMember(user.id).then(member => {
+                if(user.bot)  return;
+              else { member.addRole('736222933827190835')}
+               })
+              }
+              
+            }});
+          
+      
+    
+              client.on('messageReactionAdd', (messageReaction, user) => {
+                //Defender
+    
+                  const { message, emoji } = messageReaction;
+                  if(message.channel.id == '736380370651709531'){
+                  if(emoji.name == '🛡️') {
+            
+                   message.guild.fetchMember(user.id).then(member => {
+                    if(user.bot)  return;
+                  else { member.addRole('736222973140402246')}
+                   })
+                  }}});
+    
+    
+                  client.on('messageReactionAdd', (messageReaction, user) => {
+                    //remove role
+                    
+                      const { message, emoji } = messageReaction;
+                      if(message.channel.id == '736380370651709531'){
+                      if(emoji.name == '🔴') {
+                
+                       message.guild.fetchMember(user.id).then(member => {
+                        if(user.bot)  return;
+                      else { 
+                        member.removeRole("736222973140402246")
+                        member.removeRole("736222933827190835")
+                        member.removeRole("736222790516211723")
+    
+                      }
+                       })
+                      }
+                      
+                    }});
+    
+    
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        ////////////////////////////////////////POSITION REMOVE REACT/////////////////////////////////////////////////////////////////
+        
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+                    client.on('messageReactionRemove', (messageReaction, user) => {
+    
+                      //remove Runner
+                      
+                        const { message, emoji } = messageReaction;
+                        if(message.channel.id == '736380370651709531'){
+                        if(emoji.name == '🏃‍♂️') {
+                  
+                         message.guild.fetchMember(user.id).then(member => {
+                          if(user.bot)  return;
+                        else { member.removeRole('736222790516211723')}
+                         })
+                        }}});
+    
+    
+                    client.on('messageReactionRemove', (messageReaction, user) => {
+                    
+                      // remove supporter
+                        const { message, emoji } = messageReaction;
+                        if(message.channel.id == '736380370651709531'){
+                          if(emoji.name == '🦈') {
+                         message.guild.fetchMember(user.id).then(member => {
+                          if(user.bot)  return;
+                        else { member.removeRole('736222933827190835')}
+                         })
+                        }
+                        
+                      }});
+    
+                      client.on('messageReactionRemove', (messageReaction, user) => {
+                        //remove Defender
+            
+                          const { message, emoji } = messageReaction;
+                          if(message.channel.id == '736380370651709531'){
+                          if(emoji.name == '🛡️') {
+                    
+                           message.guild.fetchMember(user.id).then(member => {
+                            if(user.bot)  return;
+                          else { member.removeRole('736222973140402246')}
+                           })
+                          }}});
 
+                          /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
+               /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
+               /////////////////////////////////////////////////////////////////////////////////////////
+              ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -2101,398 +2260,10 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-client.on('ready' , () => {
-client.on('message', message => {
-  if(message.content==="!prole"){
-let recchannel = client.channels.get("736380370651709531")
-recchannel.send("!strt")
-  //positins
-  .then(()=>{
-        let embed = new Discord.RichEmbed()
-        .setTitle('These are the positions in Brawlball')
-        .setColor('#FF0000')
-        .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
-        .setDescription('**React with your position**')
-        .addField('**Runner** ',' **🏃‍♂️**',false)
-        .addField("**Supporter** "," **🦈**",false)
-        .addField('**Defender** ',' **🛡️**',false)
-        .addField('**Remove Roles (Just incase)**',' **🔴**',false)
-        recchannel.send(embed)
-      
-       .then(function (message) {
-           
-        message.react('🏃‍♂️')
-           .then(()=> message.react('🦈'))
-           .then(()=> message.react('🛡️'))
-           .then(()=> message.react('🔴'))
-
-            })}).catch(function() {
-             
-             })}})
-             /*.then(()=> {
-              let embed = new Discord.RichEmbed()
-              .setTitle('These are the positions in Brawlball')
-              .setColor('#FF0000')
-              .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
-              .setDescription('**React with your position**')
-              .addField('**Runner** ',' **🟦**',false)
-              .addField("**Supporter** "," **🟨**",false)
-              .addField('**Defender** ',' **🟧**',false)
-              .addField('**Remove Roles (Just incase)**',' **⬛**',false)
-              recchannel.send(embed)
-                  .then(function (message) {
-                 
-                    message.react('🟦')
-                 .then(()=> message.react('🟨'))
-                 .then(()=> message.react('🟧'))
-                 .then(()=> message.react('⬛'))
-      
-                  }).catch(function() {
-                   
-                   })})
-                   
-             let embed = new Discord.RichEmbed()
-             .setTitle('These are the Colors')
-             .setColor('#FF0000')
-             .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
-             .setDescription('**React with your Color**')
-             .addField('**Blue** ',' **🟦**',false)
-             .addField('**Yellow** ',' **🟨**',false)
-             .addField('**Orange** ',' **🟧**',false)
-             .addField('**Black** ',' **⬛**',false)
-             .addField('**Pink** ',' **🦑**',false)
-             .addField('**Remove Roles (Just incase)**',' **🚫**',false)
-             recchannel.send(embed)
-                 .then(function (message) {
-                
-                   message.react('🟦')
-                   .then(()=> message.react('🟨'))
-                   .then(()=> message.react('🟧'))
-                   .then(()=> message.react('⬛'))
-                   .then(()=> message.react('🦑'))
-                   .then(()=> message.react('🚫'))
-     
-                 }).catch(function() {
-                  
-                  })*/
-
-    
-
-
- 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    ////////////////////////////////////////  POSITION ADD REACT  /////////////////////////////////////////////////////////////////
-    
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    client.on('messageReactionAdd', (messageReaction, user) => {
-
-    //Runner
-    
-      const { message, emoji } = messageReaction;
-      if(message.channel.id == '736380370651709531'){
-      if(emoji.name == '🏃‍♂️') {
-
-       message.guild.fetchMember(user.id).then(member => {
-        if(user.bot)  return;
-      else {
-         member.addRole('736222790516211723')}
-       })
-      }}});
-
-
-      client.on('messageReactionAdd', (messageReaction, user) => {
-        //Supporter
-        
-          const { message, emoji } = messageReaction;
-          if(message.channel.id == '736380370651709531'){
-          if(emoji.name == '🦈') {
-    
-           message.guild.fetchMember(user.id).then(member => {
-            if(user.bot)  return;
-          else { member.addRole('736222933827190835')}
-           })
-          }
-          
-        }});
-      
-  
-
-          client.on('messageReactionAdd', (messageReaction, user) => {
-            //Defender
-
-              const { message, emoji } = messageReaction;
-              if(message.channel.id == '736380370651709531'){
-              if(emoji.name == '🛡️') {
-        
-               message.guild.fetchMember(user.id).then(member => {
-                if(user.bot)  return;
-              else { member.addRole('736222973140402246')}
-               })
-              }}});
-
-
-              client.on('messageReactionAdd', (messageReaction, user) => {
-                //remove role
-                
-                  const { message, emoji } = messageReaction;
-                  if(message.channel.id == '736380370651709531'){
-                  if(emoji.name == '🔴') {
-            
-                   message.guild.fetchMember(user.id).then(member => {
-                    if(user.bot)  return;
-                  else { 
-                    member.removeRole("736222973140402246")
-                    member.removeRole("736222933827190835")
-                    member.removeRole("736222790516211723")
-
-                  }
-                   })
-                  }
-                  
-                }});
-
-
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    ////////////////////////////////////////POSITION REMOVE REACT/////////////////////////////////////////////////////////////////
-    
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-                client.on('messageReactionRemove', (messageReaction, user) => {
-
-                  //remove Runner
-                  
-                    const { message, emoji } = messageReaction;
-                    if(message.channel.id == '736380370651709531'){
-                    if(emoji.name == '🏃‍♂️') {
-              
-                     message.guild.fetchMember(user.id).then(member => {
-                      if(user.bot)  return;
-                    else { member.removeRole('736222790516211723')}
-                     })
-                    }}});
-
-
-                client.on('messageReactionRemove', (messageReaction, user) => {
-                
-                  // remove supporter
-                    const { message, emoji } = messageReaction;
-                    if(message.channel.id == '736380370651709531'){
-                      if(emoji.name == '🦈') {
-                     message.guild.fetchMember(user.id).then(member => {
-                      if(user.bot)  return;
-                    else { member.removeRole('736222933827190835')}
-                     })
-                    }
-                    
-                  }});
-
-                  client.on('messageReactionRemove', (messageReaction, user) => {
-                    //remove Defender
-        
-                      const { message, emoji } = messageReaction;
-                      if(message.channel.id == '736380370651709531'){
-                      if(emoji.name == '🛡️') {
-                
-                       message.guild.fetchMember(user.id).then(member => {
-                        if(user.bot)  return;
-                      else { member.removeRole('736222973140402246')}
-                       })
-                      }}});
-                    })
-
-                      /////////////////////////////////////////////////////////////////////////////////
-
-                      //////////////////////////////////////    COLOR ADD REACT    ///////////////////////////////////////////
-                      
-                      ////////////////////////////////////////////////////////////////////////////////
-/*
-                      client.on('messageReactionAdd', (messageReaction, user) => {
-
-                        //blue
-                        
-                          const { message, emoji } = messageReaction;
-                          if(message.channel.id == '736380370651709531'){
-                          if(emoji.name == '🟦') {
-                    
-                           message.guild.fetchMember(user.id).then(member => {
-                            if(user.bot)  return;
-                          else { member.addRole('615317792677298192')}
-                           })
-                          }}});
-                    
-                    
-                          client.on('messageReactionAdd', (messageReaction, user) => {
-                            //yellow
-                            
-                              const { message, emoji } = messageReaction;
-                              if(message.channel.id == '736380370651709531'){
-                              if(emoji.name == '🟨') {
-                        
-                               message.guild.fetchMember(user.id).then(member => {
-                                if(user.bot)  return;
-                              else { member.addRole('615317793159512074')}
-                               })
-                              }
-                              
-                            }});
-                          
-                      
-                    
-                              client.on('messageReactionAdd', (messageReaction, user) => {
-                                //orange
-                    
-                                  const { message, emoji } = messageReaction;
-                                  if(message.channel.id == '736380370651709531'){
-                                  if(emoji.name == '🟧') {
-                            
-                                   message.guild.fetchMember(user.id).then(member => {
-                                    if(user.bot)  return;
-                                  else { member.addRole('615317792756858895')}
-                                   })
-                                  }}});
-                    
-
-
-                                  client.on('messageReactionAdd', (messageReaction, user) => {
-                                    //black
-                        
-                                      const { message, emoji } = messageReaction;
-                                      if(message.channel.id == '736380370651709531'){
-                                      if(emoji.name == '⬛') {
-                                
-                                       message.guild.fetchMember(user.id).then(member => {
-                                        if(user.bot)  return;
-                                      else { member.addRole('615317792664715306')}
-                                       })
-                                      }}});
-
-
-
-                                      client.on('messageReactionAdd', (messageReaction, user) => {
-                                        //pink
-                            
-                                          const { message, emoji } = messageReaction;
-                                          if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == '🦑') {
-                                    
-                                           message.guild.fetchMember(user.id).then(member => {
-                                            if(user.bot)  return;
-                                          else { member.addRole('615317792723304488')}
-                                           })
-                                          }}});
-
 
 
                     
-                                  client.on('messageReactionAdd', (messageReaction, user) => {
-                                    //remove role
-                                    
-                                      const { message, emoji } = messageReaction;
-                                      if(message.channel.id == '736380370651709531'){
-                                      if(emoji.name == '🚫') {
-                                
-                                       message.guild.fetchMember(user.id).then(member => {
-                                        if(user.bot)  return;
-                                      else { 
-                                        member.removeRole("615317792677298192")
-                                        member.removeRole("615317793159512074")
-                                        member.removeRole("615317792756858895")
-                                        member.removeRole("615317792664715306")
-                                        member.removeRole("615317792723304488")
-                    
-                                      }
-                                       })
-                                      }
-                                      
-                                    }});
 
-
-
-                                    /////////////////////////////////////////////////////////////////////////////////
-
-                      //////////////////////////////////////    COLOR REMOVE REACT    ///////////////////////////////////////////
-                      
-                      ////////////////////////////////////////////////////////////////////////////////
-
-                      client.on('messageReactionRemove', (messageReaction, user) => {
-
-                        //blue
-                        
-                          const { message, emoji } = messageReaction;
-                          if(message.channel.id == '736380370651709531'){
-                          if(emoji.name == '🟦') {
-                    
-                           message.guild.fetchMember(user.id).then(member => {
-                            if(user.bot)  return;
-                          else { member.removeRole('615317792677298192')}
-                           })
-                          }}});
-                    
-                    
-                          client.on('messageReactionRemove', (messageReaction, user) => {
-                            //yellow
-                            
-                              const { message, emoji } = messageReaction;
-                              if(message.channel.id == '736380370651709531'){
-                              if(emoji.name == '🟨') {
-                        
-                               message.guild.fetchMember(user.id).then(member => {
-                                if(user.bot)  return;
-                              else { member.removeRole('615317793159512074')}
-                               })
-                              }
-                              
-                            }});
-                          
-                      
-                    
-                              client.on('messageReactionRemove', (messageReaction, user) => {
-                                //orange
-                    
-                                  const { message, emoji } = messageReaction;
-                                  if(message.channel.id == '736380370651709531'){
-                                  if(emoji.name == '🟧') {
-                            
-                                   message.guild.fetchMember(user.id).then(member => {
-                                    if(user.bot)  return;
-                                  else { member.removeRole('615317792756858895')}
-                                   })
-                                  }}});
-                    
-
-
-                                  client.on('messageReactionRemove', (messageReaction, user) => {
-                                    //black
-                        
-                                      const { message, emoji } = messageReaction;
-                                      if(message.channel.id == '736380370651709531'){
-                                      if(emoji.name == '⬛') {
-                                
-                                       message.guild.fetchMember(user.id).then(member => {
-                                        if(user.bot)  return;
-                                      else { member.removeRole('615317792664715306')}
-                                       })
-                                      }}});
-
-
-
-                                      client.on('messageReactionRemove', (messageReaction, user) => {
-                                        //pink
-                            
-                                          const { message, emoji } = messageReaction;
-                                          if(message.channel.id == '736380370651709531'){
-                                          if(emoji.name == '🦑') {
-                                    
-                                           message.guild.fetchMember(user.id).then(member => {
-                                            if(user.bot)  return;
-                                          else { member.removeRole('615317792723304488')}
-                                           })
-                                          }}});
-*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
