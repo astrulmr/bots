@@ -2129,8 +2129,8 @@ recchannel.send("!strt")
 
             }).catch(function() {
              
-             })
-             
+             })})
+             .then(()=> {
               let embed = new Discord.RichEmbed()
               .setTitle('These are the positions in Brawlball')
               .setColor('#FF0000')
