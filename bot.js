@@ -138,13 +138,13 @@ let descthing = "yes"
                       })*/
                         
     
-   /* client.guilds.forEach((guild) => {
+   client.guilds.forEach((guild) => {
        console.log(guild.name)
         guild.channels.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`)
         })
         // welcome is 535515917518372886
-    })*/
+    })
 
 
    
