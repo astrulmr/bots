@@ -188,7 +188,7 @@ client.on('message', message => {
                 .setDescription('The Ace team in Our Style, they won both of the tourneys they did within the clan')
                 .addField('Astru®', 'He is the perfect Runner and a f*cking good Supporter and Defender', true)
                 .addField('\n Styleken', 'He is the Defender you want behind you but he can also Run and Support like no one else', true)
-                .addField('\n KaeptnKook', ' He is the best in Defence and a 300IQ Runner and Supporter', true)
+                .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
             message.channel.send(embed)
         }
     })
@@ -230,9 +230,9 @@ client.on('message', message => {
 
               .setTitle('Team : Absolute Bangers')
               .setColor(0x55e473)
-              .setDescription('Dan got a great team by his side, they are here to prove their force as a team')
+              .setDescription('That is simple mathematics : old pro def + new pro def + new pro run = dream team')
               .addField('otmanezza', 'He is an unstoppable Runner and unbreakable Defender and Supporter', true)
-              .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
+              .addField('\n KaeptnKook', ' He is the best in Support and Defence and a 300IQ Runner', true)
               .addField('\n JunusBiaz', 'He is just super as Defender and great in Run and Support', true)
           message.channel.send(embed)
       }
