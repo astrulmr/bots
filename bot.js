@@ -2929,7 +2929,9 @@ recchannel.send("!strt")
 
      message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
-    else { member.addRole('615317792677298192')}
+    else { member.addRole('615317792677298192')
+    member.addRole('731432571073986561')
+  }
      })
     }}});
 
@@ -2943,7 +2945,9 @@ recchannel.send("!strt")
   
          message.guild.fetchMember(user.id).then(member => {
           if(user.bot)  return;
-        else { member.addRole('615317793159512074')}
+        else { member.addRole('615317793159512074')
+        member.addRole('731432571073986561')
+      }
          })
         }
         
@@ -2960,7 +2964,9 @@ recchannel.send("!strt")
       
              message.guild.fetchMember(user.id).then(member => {
               if(user.bot)  return;
-            else { member.addRole('615317792756858895')}
+            else { member.addRole('615317792756858895')
+            member.addRole('731432571073986561')
+          }
              })
             }}});
 
@@ -2975,7 +2981,9 @@ recchannel.send("!strt")
           
                  message.guild.fetchMember(user.id).then(member => {
                   if(user.bot)  return;
-                else { member.addRole('615317792664715306')}
+                else { member.addRole('615317792664715306')
+                member.addRole('731432571073986561')
+              }
                  })
                 }}});
 
@@ -2990,7 +2998,9 @@ recchannel.send("!strt")
               
                      message.guild.fetchMember(user.id).then(member => {
                       if(user.bot)  return;
-                    else { member.addRole('615317792723304488')}
+                    else { member.addRole('615317792723304488')
+                    member.addRole('731432571073986561')
+                  }
                      })
                     }}});
 
@@ -3119,7 +3129,8 @@ client.on('messageReactionRemove', (messageReaction, user) => {
                            message.guild.fetchMember(user.id).then(member => {
                             if(user.bot)  return;
                           else {
-                             member.addRole('731528561969856622')}
+                             member.addRole('731528561969856622')
+                             member.addRole('731528037291524158')}
                            })
                           }}});
                     
@@ -3133,7 +3144,8 @@ client.on('messageReactionRemove', (messageReaction, user) => {
                         
                                message.guild.fetchMember(user.id).then(member => {
                                 if(user.bot)  return;
-                              else { member.addRole('731528298445668442')}
+                              else { member.addRole('731528298445668442')
+                              member.addRole('731528037291524158')}
                                })
                               }
                               
@@ -3150,7 +3162,8 @@ client.on('messageReactionRemove', (messageReaction, user) => {
                             
                                    message.guild.fetchMember(user.id).then(member => {
                                     if(user.bot)  return;
-                                  else { member.addRole('738429071222112288')}
+                                  else { member.addRole('738429071222112288')
+                                  member.addRole('731528037291524158')}
                                    })
                                   }}});
                     
