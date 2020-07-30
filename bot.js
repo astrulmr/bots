@@ -2759,7 +2759,7 @@ recchannel.send("!strt")
                  })
 
 
-                 let embed1 = new Discord.RichEmbed()
+                 let embed2 = new Discord.RichEmbed()
             .setTitle('Other games then brawlhalla')
             .setColor('#FF0000')
             .setThumbnail('https://logo-logos.com/wp-content/uploads/2016/11/X_Games_logo_emblem.png')
@@ -2768,7 +2768,7 @@ recchannel.send("!strt")
             .addField('**Minecraft** ',' **⛏️**',false)
             .addField('**GTA V** ',' **🚔**',false)
             .addField('**Remove Roles (Just incase)**',' **🚫**',false)
-            recchannel.send(embed1)
+            recchannel.send(embed2)
                 .then(function (message) {
                
                   message.react('🔫')
