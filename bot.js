@@ -2767,7 +2767,7 @@ recchannel.send("!strt")
             .addField('**Valorant** ',' **🔫**',false)
             .addField('**Minecraft** ',' **⛏️**',false)
             .addField('**GTA V** ',' **🚔**',false)
-            .addField('**Remove Roles (Just incase)**',' **🚫**',false)
+            .addField('**Remove Roles (Just incase)**',' **♻️**',false)
             recchannel.send(embed2)
                 .then(function (message) {
                
