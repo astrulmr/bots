@@ -218,33 +218,7 @@ let descthing = "yes"
 
  
 
- client.on('message', message => {
-   if (message.content === '!birthday') {
-     const embed = new RichEmbed()
-       .setTitle('Here are all Our Style players birthday date')
-       .setColor(0xFFFFFF)
-       .setDescription('Do not forget to wish a happy birthday to everyone of us !')
-       .setThumbnail('https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
-       .addField('Astru®','January 21', false)
-       .addField('\n Spirix','April 7', false)
-       .addField('\n Styleken','April 24', false)
-       .addField('\n DanzoDon','June 1', false)
-       .addField('\n KaeptnKook','June 20', false)
-       .addField('\n Glaedr','June 23', false)
-       .addField('\n CTNS','August 3', false)
-       .addField('\n otmanezza','August 12', false)
-       .addField('\n Kenshiro','August 14 ', false)
-       .addField('\n jimm25','September 30', false)
-       .addField('\n jinleehurb','October 23', false)
-       .addField('\n Kevin1185','November 2', false)
-       .addField('\n LordCroissant','November 12', false)
-       .addField('\n Junusbiaz','December 3', false)
-       .setFooter('There will be a command soon that will send a reminder at the right days','https://i.pinimg.com/originals/8b/de/81/8bde81e36644c034efbbd3c57a474847.png')
-
-
-     message.channel.send(embed)
-   }
-})
+ 
 
 
 
@@ -2623,13 +2597,13 @@ client.on('message', message => {
 
 client.on('ready' , () => {
   var textchennelhaha = client.channels.find(channel => channel.id === '594177565825171457')
-  var text12chennelhaha = client.channels.find(channel => channel.id === '727390897016144012')
+  var text12chennelhaha = client.channels.find(channel => channel.id === '535534516945682462')
 
   var d = new Date();
 
   setInterval(() => {
     textchennelhaha.send("Date is "+d.toLocaleDateString())
-  }, 18000000);
+  }, 10800000);
 
   
 client.on('message', message => {
