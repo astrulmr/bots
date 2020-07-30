@@ -2736,7 +2736,7 @@ recchannel.send("!strt")
             let embed1 = new Discord.RichEmbed()
             .setTitle('These are the Colors')
             .setColor('#FF0000')
-            .setThumbnail('https://i.ibb.co/4tsGqzs/bb.png')
+            .setThumbnail('https://qph.fs.quoracdn.net/main-qimg-5f05f2c594f75f636d5c74d0ac31aaec')
             .setDescription('**React with your Color**')
             .addField('**Blue** ',' **🟦**',false)
             .addField('**Yellow** ',' **🟨**',false)
@@ -2753,6 +2753,28 @@ recchannel.send("!strt")
                   .then(()=> message.react('⬛'))
                   .then(()=> message.react('🦑'))
                   .then(()=> message.react('🚫'))
+    
+                }).catch(function() {
+                 
+                 })
+
+
+                 let embed1 = new Discord.RichEmbed()
+            .setTitle('Other games then brawlhalla')
+            .setColor('#FF0000')
+            .setThumbnail('https://logo-logos.com/wp-content/uploads/2016/11/X_Games_logo_emblem.png')
+            .setDescription('**React with your Color**')
+            .addField('**Valorant** ',' **🔫**',false)
+            .addField('**Minecraft** ',' **⛏️**',false)
+            .addField('**GTA V** ',' **🚔**',false)
+            .addField('**Remove Roles (Just incase)**',' **🚫**',false)
+            recchannel.send(embed1)
+                .then(function (message) {
+               
+                  message.react('🔫')
+                  .then(()=> message.react('⛏️'))
+                  .then(()=> message.react('🚔'))
+                  .then(()=> message.react('♻️'))
     
                 }).catch(function() {
                  
@@ -3080,7 +3102,128 @@ client.on('messageReactionRemove', (messageReaction, user) => {
                      })
                     }}});
 
-                           
+                      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                      
+                      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                      //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                      client.on('messageReactionAdd', (messageReaction, user) => {
+
+                        //valorant
+                        
+                          const { message, emoji } = messageReaction;
+                          if(message.channel.id == '736380370651709531'){
+                          if(emoji.name == '🔫') {
+                    
+                           message.guild.fetchMember(user.id).then(member => {
+                            if(user.bot)  return;
+                          else {
+                             member.addRole('731528561969856622')}
+                           })
+                          }}});
+                    
+                    
+                          client.on('messageReactionAdd', (messageReaction, user) => {
+                            //minecraft
+                            
+                              const { message, emoji } = messageReaction;
+                              if(message.channel.id == '736380370651709531'){
+                              if(emoji.name == '⛏️') {
+                        
+                               message.guild.fetchMember(user.id).then(member => {
+                                if(user.bot)  return;
+                              else { member.addRole('731528298445668442')}
+                               })
+                              }
+                              
+                            }});
+                          
+                      
+                    
+                              client.on('messageReactionAdd', (messageReaction, user) => {
+                                //gta v
+                    
+                                  const { message, emoji } = messageReaction;
+                                  if(message.channel.id == '736380370651709531'){
+                                  if(emoji.name == '🚔') {
+                            
+                                   message.guild.fetchMember(user.id).then(member => {
+                                    if(user.bot)  return;
+                                  else { member.addRole('738429071222112288')}
+                                   })
+                                  }}});
+                    
+                    
+                                  client.on('messageReactionAdd', (messageReaction, user) => {
+                                    //remove role
+                                    
+                                      const { message, emoji } = messageReaction;
+                                      if(message.channel.id == '736380370651709531'){
+                                      if(emoji.name == '♻️') {
+                                
+                                       message.guild.fetchMember(user.id).then(member => {
+                                        if(user.bot)  return;
+                                      else { 
+                                        member.removeRole("731528561969856622")
+                                        member.removeRole("731528298445668442")
+                                        member.removeRole("738429071222112288")
+                    
+                                      }
+                                       })
+                                      }
+                                      
+                                    }});
+                    
+                    
+                                    //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    
+                        ////////////////////////////////////////POSITION REMOVE REACT/////////////////////////////////////////////////////////////////
+                        
+                        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    
+                    
+                                    client.on('messageReactionRemove', (messageReaction, user) => {
+                    
+                                      //remove valorant
+                                      
+                                        const { message, emoji } = messageReaction;
+                                        if(message.channel.id == '736380370651709531'){
+                                        if(emoji.name == '🔫') {
+                                  
+                                         message.guild.fetchMember(user.id).then(member => {
+                                          if(user.bot)  return;
+                                        else { member.removeRole('731528561969856622')}
+                                         })
+                                        }}});
+                    
+                    
+                                    client.on('messageReactionRemove', (messageReaction, user) => {
+                                    
+                                      // remove minecraft
+                                        const { message, emoji } = messageReaction;
+                                        if(message.channel.id == '736380370651709531'){
+                                          if(emoji.name == '⛏️') {
+                                         message.guild.fetchMember(user.id).then(member => {
+                                          if(user.bot)  return;
+                                        else { member.removeRole('731528298445668442')}
+                                         })
+                                        }
+                                        
+                                      }});
+                    
+                                      client.on('messageReactionRemove', (messageReaction, user) => {
+                                        //remove gta v
+                            
+                                          const { message, emoji } = messageReaction;
+                                          if(message.channel.id == '736380370651709531'){
+                                          if(emoji.name == '🚔') {
+                                    
+                                           message.guild.fetchMember(user.id).then(member => {
+                                            if(user.bot)  return;
+                                          else { member.removeRole('738429071222112288')}
+                                           })
+                                          }}});
              
 
 
