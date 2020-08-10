@@ -2490,8 +2490,8 @@ if (message.content === "!ap" ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("message", message => {
-    if (message.content = '!socialmedia') {
-        let embed === new RichEmbed()
+    if (message.content === '!socialmedia') {
+        let embed = new RichEmbed()
           .setTitle('Youtube')
           .setColor('0xc4302b')
           .setThumbnail('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png')
@@ -2531,7 +2531,7 @@ client.on("message", message => {
           .setTitle('Reddit')
           .setColor('0xFF4301')
           .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
-          .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
+          .setDescription('Join our Reddit community to help it grow !')
           .addField('Link :','Coming Soon', true)
         message.channel.send(embed)
     }
