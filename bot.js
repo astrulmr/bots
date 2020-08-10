@@ -2490,64 +2490,64 @@ if (message.content === "!ap" ) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("message", message => {
-  if (message.content = '!socialmedia') {
-    let embed = new RichEmbed()
-      .setTitle('Youtube')
-      .setColor('0xc4302b')
-      .setThumbnail('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png')
-      .setDescription('Subscribe Like and Share !')
-      .addField('Link :','https://www.youtube.com/channel/UCKjydpFBrArBs5SoJnzw-Pg',true)
-    message.channel.send(embed)
-  }
+    if (message.content = '!socialmedia') {
+        let embed === new RichEmbed()
+          .setTitle('Youtube')
+          .setColor('0xc4302b')
+          .setThumbnail('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-512.png')
+          .setDescription('Subscribe Like and Share !')
+          .addField('Link :','https://www.youtube.com/channel/UCKjydpFBrArBs5SoJnzw-Pg',true)
+        message.channel.send(embed)
+    }
 })  
 
 client.on("message", message => {
-  if (message.content = '!socialmedia') {
-    let embed = new RichEmbed()
-      .setTitle('Twitter')
-      .setColor('0x00acee')
-      .setThumbnail('https://pngimg.com/uploads/twitter/twitter_PNG28.png')
-      .setDescription('Follow to get the clan and Brawlball community news')
-      .addField('Link :','https://twitter.com/OurStyle16', true)
-    message.channel.send(embed)
-  }
+    if (message.content === '!socialmedia') {
+        let embed = new RichEmbed()
+          .setTitle('Twitter')
+          .setColor('0x00acee')
+          .setThumbnail('https://pngimg.com/uploads/twitter/twitter_PNG28.png')
+          .setDescription('Follow to get the clan and Brawlball community news')
+          .addField('Link :','https://twitter.com/OurStyle16', true)
+        message.channel.send(embed)
+    }
 })
 
 client.on("message", message => {
-  if (message.content = '!socialmedia') {
-    let embed = new RichEmbed()
-      .setTitle('Twitch')
-      .setColor('0x6441a5')
-      .setThumbnail('https://camo.githubusercontent.com/30dc5f712e26d999df8b1f9263da5933a54e1b08/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f373033333233342f323439313534392f37333333343730632d623166312d313165332d383466382d6234313934396239616132652e706e67')
-      .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
-      .addField('Link :','Coming Soon', true)
-    message.channel.send(embed)
-  }
+    if (message.content === '!socialmedia') {
+        let embed = new RichEmbed()
+          .setTitle('Twitch')
+          .setColor('0x6441a5')
+          .setThumbnail('https://camo.githubusercontent.com/30dc5f712e26d999df8b1f9263da5933a54e1b08/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f373033333233342f323439313534392f37333333343730632d623166312d313165332d383466382d6234313934396239616132652e706e67')
+          .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
+          .addField('Link :','Coming Soon', true)
+        message.channel.send(embed)
+    }
 })
 
 client.on("message", message => {
-  if (message.content = '!socialmedia') {
-    let embed = new RichEmbed()
-      .setTitle('Reddit')
-      .setColor('0xFF4301')
-      .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
-      .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
-      .addField('Link :','Coming Soon', true)
-    message.channel.send(embed)
-  }
+    if (message.content === '!socialmedia') {
+        let embed = new RichEmbed()
+          .setTitle('Reddit')
+          .setColor('0xFF4301')
+          .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
+          .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
+          .addField('Link :','Coming Soon', true)
+        message.channel.send(embed)
+    }
 })
 
-  client.on("message", message => {
-    if (message.content = '!socialmedia') {
-      let embed = new RichEmbed()
-      .setTitle('Discord')
-      .setColor('0x7289d9')
-      .setThumbnail('https://i.pinimg.com/originals/1a/9a/f1/1a9af177bdcd0bd93568e59bb7600cbe.png')
-      .setDescription('Join the clan discord server and find brawlball players')
-      .addField('Link :','https://discord.gg/aMTafbd', true)
-      message.channel.send(embed)
-   }
-  })
+client.on("message", message => {
+    if (message.content === '!socialmedia') {
+        let embed = new RichEmbed()
+          .setTitle('Discord')
+          .setColor('0x7289d9')
+          .setThumbnail('https://i.pinimg.com/originals/1a/9a/f1/1a9af177bdcd0bd93568e59bb7600cbe.png')
+          .setDescription('Join the clan discord server and find brawlball players')
+          .addField('Link :','https://discord.gg/aMTafbd', true)
+        message.channel.send(embed)
+    }
+})
 
 
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
