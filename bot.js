@@ -2548,7 +2548,6 @@
                 .setDescription('Join the clan discord server and find brawlball players')
                 .setImage("https://i.ibb.co/z4f1Z9M/best-os-clan-logo.png")
                 .addField('Link :','https://discord.gg/aMTafbd', true)
-                .setFooter("\n\n Our Style","https://raw.githubusercontent.com/astrulmr/bots/master/best%20os%20clan%20logo.png")
               message.channel.send(embed)
           }
       })
