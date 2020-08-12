@@ -2494,7 +2494,7 @@
               let embed = new RichEmbed()
                 .setTitle('Youtube')
                 .setColor('0xc4302b')
-                .setThumbnail('https://steamuserimages-a.akamaihd.net/ugc/822315038942939968/470B1B82F1F25B645384B209A36777DE98AA6807/')
+                .setThumbnail('https://news.bitcoin.com/wp-content/uploads/2015/10/flat_youtube_wallpaper_by_oscagapotes-d6o637w.png')
                 .setDescription('Subscribe Like and Share !')
                 .addField('Link :','https://www.youtube.com/channel/UCKjydpFBrArBs5SoJnzw-Pg',true)
                 .setFooter("\n\n Our Style - Brawlball ","https://raw.githubusercontent.com/astrulmr/bots/master/best%20os%20clan%20logo.png")
