@@ -2510,7 +2510,7 @@
                 .setThumbnail('https://cdn.iconscout.com/icon/free/png-512/twitter-circle-1868970-1583134.png')
                 .setDescription('Follow to get the clan and Brawlball community news')
                 .addField('Link :','https://twitter.com/OurStyle16', true)
-                .setFooter("\n\n Our Style","https://raw.githubusercontent.com/astrulmr/bots/master/best%20os%20clan%20logo.png")
+                .setFooter("\n\n Our Style - Brawlball","https://raw.githubusercontent.com/astrulmr/bots/master/best%20os%20clan%20logo.png")
               message.channel.send(embed)
           }
       })
