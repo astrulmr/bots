@@ -2520,7 +2520,7 @@
               let embed = new RichEmbed()
                 .setTitle('Twitch')
                 .setColor('0x6441a5')
-                .setThumbnail('https://camo.githubusercontent.com/30dc5f712e26d999df8b1f9263da5933a54e1b08/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f373033333233342f323439313534392f37333333343730632d623166312d313165332d383466382d6234313934396239616132652e706e67')
+                .setThumbnail('https://cdn.vox-cdn.com/thumbor/5Mmq9dFp3rDiqFfAuZGAnx4rZmw=/150x0:1770x1080/1200x800/filters:focal(150x0:1770x1080)/cdn.vox-cdn.com/uploads/chorus_image/image/45224868/twitch.0.0.jpg')
                 .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
                 .addField('Link :','Coming Soon', true)
               message.channel.send(embed)
