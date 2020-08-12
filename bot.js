@@ -2546,7 +2546,7 @@
                 .setColor('0x7289d9')
                 .setThumbnail('https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-512.png')
                 .setDescription('Join the clan discord server and find brawlball players')
-                .setImage("https://i.ibb.co/4fwkMfK/best-os-clan-logo.png")
+                .setImage("https://i.ibb.co/Fmw9wYw/best-os-clan-logo.png")
                 .addField('Link :','https://discord.gg/aMTafbd', true)
               message.channel.send(embed)
           }
