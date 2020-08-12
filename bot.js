@@ -2544,7 +2544,7 @@
               let embed = new RichEmbed()
                 .setTitle('Discord')
                 .setColor('0x7289d9')
-                .setThumbnail('https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-512.png')
+                .setThumbnail('https://i.ibb.co/z4f1Z9M/best-os-clan-logo.png')
                 .setDescription('Join the clan discord server and find brawlball players')
                 .setImage("https://i.ibb.co/mz0P7cF/best-os-clan-logo.png")
                 .addField('Link :','https://discord.gg/aMTafbd', true)
