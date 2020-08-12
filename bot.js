@@ -2520,7 +2520,7 @@
               let embed = new RichEmbed()
                 .setTitle('Twitch')
                 .setColor('0x6441a5')
-                .setThumbnail('https://www.festivalclaca.cat/imgfv/m/3-34390_twitch-round-logo-png.png')
+                .setThumbnail('https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitch-circle-512.png')
                 .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
                 .addField('Link :','Coming Soon', true)
               message.channel.send(embed)
@@ -2532,7 +2532,7 @@
               let embed = new RichEmbed()
                 .setTitle('Reddit')
                 .setColor('0xFF4301')
-                .setThumbnail('https://external-preview.redd.it/iDdntscPf-nfWKqzHRGFmhVxZm4hZgaKe5oyFws-yzA.png?auto=webp&s=38648ef0dc2c3fce76d5e1d8639234d8da0152b2')
+                .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
                 .setDescription('Join our Reddit community to help it grow !')
                 .addField('Link :','Coming Soon', true)
               message.channel.send(embed)
@@ -3345,4 +3345,3 @@
               })
         
       client.login(process.env.BOT_TOKEN)
-
