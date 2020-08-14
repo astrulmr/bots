@@ -2535,6 +2535,7 @@
                 .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
                 .setDescription('Join our Reddit community to help it grow !')
                 .addField('Link :','https://www.reddit.com/user/OurStyle', true)
+                .setFooter("\n\n Our Style - Brawlball","https://raw.githubusercontent.com/astrulmr/bots/master/best%20os%20clan%20logo.png")
               message.channel.send(embed)
           }
       })
