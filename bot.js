@@ -2522,7 +2522,7 @@
                 .setColor('0x6441a5')
                 .setThumbnail('https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitch-circle-512.png')
                 .setDescription('Follow or Subscribe and watch the Brawlball tournament here')
-                .addField('Link :','Coming Soon', true)
+                .addField('Link :','https://www.twitch.tv/ourstyle_brawlball', true)
               message.channel.send(embed)
           }
       })
@@ -2534,7 +2534,7 @@
                 .setColor('0xFF4301')
                 .setThumbnail('https://www.redditinc.com/assets/images/site/reddit-logo.png')
                 .setDescription('Join our Reddit community to help it grow !')
-                .addField('Link :','Coming Soon', true)
+                .addField('Link :','https://www.reddit.com/user/OurStyle', true)
               message.channel.send(embed)
           }
       })
