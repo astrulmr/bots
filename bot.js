@@ -282,170 +282,175 @@
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
           
 
-      client.on('message', message => {
-            if (message.content === '!legends') {
-              let embed = new Discord.RichEmbed()
-            .setColor('#ffffff')
-            .setAuthor("Kenshiro",'https://cdn.discordapp.com/avatars/505751422449614878/e05ec0dc1ce8a30deab6c522cfa9efe2.png?size=2048')
-            .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
-                    message.channel.send(embed)
-
-            }
-          })   
-          client.on('message', message => {
-            if (message.content === '!legends') {
-              let embed = new Discord.RichEmbed()
-            .setColor('#ffffff')
-            .setAuthor("Astru®",'https://cdn.discordapp.com/avatars/482162074097549333/84fb30ce6b998aff09e25a587b92d729.png?size=2048')
-            .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
-
-          message.channel.send(embed)
-
-        }
-      })
+     
       client.on('message', message => {
         if (message.content === '!legends') {
+            let kenid = 505751422449614878
           let embed = new Discord.RichEmbed()
         .setColor('#ffffff')
-        .setAuthor("Styleken",'https://cdn.discordapp.com/avatars/499591499122737153/ba0a096028219a6badb8dfcfbcdf6469.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
+        .setAuthor("Kenshiro", kenid.avatarURL)
+        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Brynn.png')
+                message.channel.send(embed)
+
+        }
+      })   
+      client.on('message', message => {
+        if (message.content === '!legends') {
+            let astruid = 482162074097549333
+          let embed = new Discord.RichEmbed()
+        .setColor('#ffffff')
+        .setAuthor("Astru", astruid.avatarURL)
+        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
 
       message.channel.send(embed)
 
-      }
-      })
+    }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let styleid = 499591499122737153
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Styleken", styleid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
+
+  message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let kevinid = 286208201186213888
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Kevin1185", kevinid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let jimmid = 286209333488910336
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("jimm25", jimmid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Ember.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let danzoid = 320264452874305536
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("DanzoDon", danzoid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let glaedrid = 321188857359892480
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Glaedr", glaedrid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let jinleeid = 504543749293080597
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("jinleehurb", jinleeid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Sir-Roland.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let junusid = 423131212945817620
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Junusbiaz", junusid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Mordex.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let sanmaayid = 666455281596891149
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Sanmaay", sanmaayid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Thatch.png')
+
+    message.channel.send(embed)
+
+  }
+  })
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let kookid = 240226379596038146
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("Kaeptnkook", kookid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Bodvar.png')
+
+    message.channel.send(embed)
+
+  }
+  })
       client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("Kevin1185",'https://cdn.discordapp.com/avatars/286208201186213888/c4138c1f9c1466aa26c3aeac04ff2a9c.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Yumiko.png')
+    if (message.content === '!legends') {
+        let lordid = 314532481519058944
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("!LordCroissant", lordid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
 
-        message.channel.send(embed)
+    message.channel.send(embed)
 
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("jimm25",'https://cdn.discordapp.com/avatars/286209333488910336/d4413ff23ddd4af35898432f6c50381f.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Ember.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("sweetmiguel",'https://discordapp.com/assets/322c936a8c8be1b803cd94861bdfa868.png')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Rayman.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("DanzoDon",'https://discordapp.com/assets/322c936a8c8be1b803cd94861bdfa868.png')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Val.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("Glaedr",'https://cdn.discordapp.com/avatars/365968871326351360/40d4ccf3d9a3bea49594d39e68199b34.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("jinleehurb",'https://discordapp.com/assets/1cbd08c76f8af6dddce02c5138971129.png')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("JunusBiaz",'https://cdn.discordapp.com/avatars/423131212945817620/da50e96172c6666bcd6fb0928ccf3951.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Mordex.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("Sanmaay",client.user.avatarURL)
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Thatch.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("CTNS",client.user.avatarURL)
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Lucien.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("otmanezza",'https://cdn.discordapp.com/avatars/555853237689909344/dd9c4ef66a1a0de62c17586b5f0e9e0f.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-      client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("!kaeptnkook",'https://cdn.discordapp.com/avatars/240226379596038146/c43892dba6796734d7936b39a08a98c9.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Bodvar.png')
-
-        message.channel.send(embed)
-
-      }
-      })
-          client.on('message', message => {
-        if (message.content === '!legends') {
-          let embed = new Discord.RichEmbed()
-        .setColor('#ffffff')
-        .setAuthor("!LordCroissant",'https://cdn.discordapp.com/avatars/314532481519058944/414f704e4f2e39f85df7ca4f04407440.png?size=2048')
-        .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png')
-
-        message.channel.send(embed)
-
-      }
-      })
+  }
+  })
+  
+  client.on('message', message => {
+    if (message.content === '!legends') {
+        let otmanid = 364069557951922176
+      let embed = new Discord.RichEmbed()
+    .setColor('#ffffff')
+    .setAuthor("otmanezza", otmanid.avatarURL)
+    .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+    
+    message.channel.send(embed)
+    
+    }
+    })
+    client.on('message', message => {
+  if (message.content === '!legends') {
+      let ctnsid = 456100864738983957
+    let embed = new Discord.RichEmbed()
+  .setColor('#ffffff')
+  .setAuthor("CTNS", ctnsid.avatarURL)
+  .setThumbnail('https://www.brawlhalla.com/c/uploads/2018/11/Ulgrim.png')
+  
+  message.channel.send(embed)
+  
+  }
+  })
       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
           let bChannel = client.channels.get("613364249615532072")
           client.on('message', message => {
@@ -3335,3 +3340,4 @@
               })
         
       client.login(process.env.BOT_TOKEN)
+
