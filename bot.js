@@ -2843,8 +2843,9 @@
 
             message.guild.fetchMember(user.id).then(member => {
               if(user.bot)  return;
-            else {
-              member.addRole('736222790516211723')}
+            else { 
+          member.addRole('731318841287770124')
+          member.addRole('736222790516211723')}
             })
             }}});
 
@@ -2858,7 +2859,9 @@
           
                 message.guild.fetchMember(user.id).then(member => {
                   if(user.bot)  return;
-                else { member.addRole('736222933827190835')}
+                else { 
+          member.addRole('731318841287770124')
+          member.addRole('736222933827190835')}
                 })
                 }
                 
@@ -2875,7 +2878,9 @@
               
                     message.guild.fetchMember(user.id).then(member => {
                       if(user.bot)  return;
-                    else { member.addRole('736222973140402246')}
+                    else { 
+          member.addRole('731318841287770124')
+          member.addRole('736222973140402246')}
                     })
                     }}});
 
@@ -3340,4 +3345,3 @@
               })
         
       client.login(process.env.BOT_TOKEN)
-
