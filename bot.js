@@ -9,7 +9,7 @@
       client.on('ready' , () => {
           console.log("connected as " + client.user.tag)
 
-          client.user.setActivity(Brawlball , {type: PLAYING})
+          client.user.setActivity("Our Style Youtube Channel" , {type: "WATCHING"})
 
       /*let sttius =[
       "www.youtube.com/watch?v=KV-8PCeqPzg&t=42s",
