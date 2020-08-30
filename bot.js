@@ -247,7 +247,8 @@
                 message.channel.send(embed)
 
         }
-      })   
+      })
+/*
       client.on('message', message => {
         if (message.content === '!legends') {
             let astruid = 482162074097549333
@@ -404,7 +405,7 @@
   message.channel.send(embed)
   
   }
-  })
+  })*/
       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
 
