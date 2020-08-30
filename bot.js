@@ -8,7 +8,7 @@
       client.on('ready' , () => {
           console.log("connected as " + client.user.tag)
 
-          client.user.setActivity("Our Style Youtube Channel")
+          client.user.setActivity("Youtube")
       })
      
         
