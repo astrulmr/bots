@@ -1,6 +1,6 @@
 
 
-
+g
 
 
       const  Discord = require('discord.js');
