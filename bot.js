@@ -1258,7 +1258,7 @@
             .addField('SID_GMRツ','PHB',true)
             .addField('klashmix470','ps clan',true)
             .addField('Pentane',"Our Style",true)
-            
+
       //postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1465,7 +1465,7 @@
         if (message.content === '<@727301310461771797>') { 
         let embed = new Discord.RichEmbed()
           .setTitle('------------PENTANE------------')
-          .setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRIkdoCEFDizT0SCzAk7osZ-Eqo8b03nNklAg&usqp=CAU') 
+          .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Nix.png') 
           .setColor('#275BF0') 
           message.channel.send(embed)
       }})
