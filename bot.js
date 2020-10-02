@@ -1460,6 +1460,38 @@
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      client.on('message', message => { 
+        if (message.content === '<@727301310461771797>') { 
+        let embed = new Discord.RichEmbed()
+          .setTitle('------------PENTANE------------')
+          .setImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRIkdoCEFDizT0SCzAk7osZ-Eqo8b03nNklAg&usqp=CAU') 
+          .setColor('#275BF0') 
+          message.channel.send(embed)
+      }})
+    client.on('message', message => {
+        if (message.content === 'p <@727301310461771797>' ) {
+        const embed = new RichEmbed()
+          .setTitle('Name')
+          .setColor('0x0000ff')
+          .setThumbnail('https://static.wikia.nocookie.net/brawlhalla_gamepedia/images/9/95/SkinIcon_Nix_Grim.png/revision/latest/scale-to-width-down/900?cb=20180708171310')
+          .setDescription('Pentane')
+          .addField('Position','Runner',true)
+          .addField('Clan','Our Style',true)
+          message.channel.send(embed)
+      }})
+    client.on('message', message => {
+        if (message.content === '!ap' ) {
+        const embed = new RichEmbed()
+          .setTitle('Name')
+          .setColor('0x0000ff')
+          .setThumbnail('https://static.wikia.nocookie.net/brawlhalla_gamepedia/images/9/95/SkinIcon_Nix_Grim.png/revision/latest/scale-to-width-down/900?cb=20180708171310')
+          .setDescription('Pentane')
+          .addField('Position','Runner',true)
+          .addField('Clan','Our Style',true)
+          message.channel.send(embed)
+      }})
+
+
 
         client.on('message', message => {
             if (message.content === '<@205466076622880778>') {
