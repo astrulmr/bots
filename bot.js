@@ -1257,7 +1257,8 @@
             .addField('Loay__xdar','ps clan',true)
             .addField('SID_GMRツ','PHB',true)
             .addField('klashmix470','ps clan',true)
-
+            .addField('Pentane',"Our Style",true)
+            
       //postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1346,7 +1347,7 @@
             .addField('Loay__xdar','ps clan',true)
             .addField('SID_GMRツ','PHB',true)
             .addField('klashmix470','ps clan',true)
-            
+            .addField('Pentane',"Our Style",true)
       //postionneverlosehaha747
             .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1698,7 +1699,7 @@
         client.on('message', message => { 
             if (message.content === '<@199353363576389633>') { 
             let embed = new Discord.RichEmbed()
-              .setTitle('------------HELPER------------')
+              .setTitle('------------TYLACTOSASS------------')
               .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Orion.png') 
               .setColor('#275BF0') 
               message.channel.send(embed)
@@ -1709,7 +1710,7 @@
               .setTitle('Name')
               .setColor('0x0000ff')
               .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
-              .setDescription('Helper')
+              .setDescription('TylactosAss')
               .addField('Position','Supporter',true)
               .addField('Clan','Clansanity',true)
               message.channel.send(embed)
@@ -1720,7 +1721,7 @@
               .setTitle('Name')
               .setColor('0x0000ff')
               .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/54/SkinIcon_Orion_Atomic.png/900px-SkinIcon_Orion_Atomic.png?version=66660fd6fc122674636a4d29ba059464')
-            .setDescription('Helper')
+            .setDescription('TylactosAss')
             .addField('Position','Supporter',true)
               .addField('Clan','Clansanity',true)
               message.channel.send(embed)
@@ -1743,7 +1744,7 @@
               .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
               .setDescription('senpai')
               .addField('Position','Defender',true)
-              .addField('Clan','Our Style',true)
+              .addField('Clan','n/a',true)
               message.channel.send(embed)
           }})
         client.on('message', message => {
@@ -1754,7 +1755,7 @@
               .setThumbnail('https://gamepedia.cursecdn.com/brawlhalla_gamepedia/thumb/5/55/SkinIcon_Scarlet_BodyArmor.png/900px-SkinIcon_Scarlet_BodyArmor.png?version=c16443c11b6e620300edbef5c253e1c3')
               .setDescription('senpai')
               .addField('Position','Defender',true)
-              .addField('Clan','Our Style',true)
+              .addField('Clan','n/a',true)
               message.channel.send(embed)
           }})
 
