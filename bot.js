@@ -1964,7 +1964,13 @@ client.on('guildMemberAdd', member => {
           .setDescription(bbchoose)
           .setImage(String([images[image]]))
           
-        channel.send(embed);        
+        channel.send(embed);
+
+
+
+        
+  
+        
         })
         
       client.login(process.env.BOT_TOKEN)
