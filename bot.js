@@ -1926,7 +1926,9 @@
 
       //styleandastrusonub13579
       /////////////////////////////////////////////////////////////////
-
+client.on('guildMemberAdd', member => {
+  member.guild.channels.get('535534516945682462').send("Welcome"); 
+});
 client.on('guildMemberAdd', member => {
   const channel2 = member.guild.channels.get("535540529379672074")
   if (!channel2) return
