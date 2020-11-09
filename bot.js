@@ -604,7 +604,7 @@ client.on('message', message => {
   if (message.content === '<@482162074097549333>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
-  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Artemis.png')
+  .setImage('https://i.ibb.co/m99jcJY/astru-frame-2.png')
   .setColor('#275BF0')
     message.channel.send(embed)
 
@@ -614,7 +614,7 @@ client.on('message', message => {
   if (message.content === '<@499591499122737153>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------STYLEKEN------------')
-  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Scarlet.png')
+  .setImage('https://i.ibb.co/LZkGJBT/styleken-frame.png')
   .setColor('#ffffff')
     message.channel.send(embed)
 
@@ -664,7 +664,7 @@ client.on('message', message => {
   if (message.content === '<@423131212945817620>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------JUNUSBIAZ------------')
-  .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Mordex.png')
+  .setImage('https://i.ibb.co/LZkGJBT/styleken-frame.png')
   .setColor('#ffffff')
     message.channel.send(embed)
 
@@ -1587,7 +1587,7 @@ client.on('message', message => {
       if (message.content === '<@321188857359892480>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------Glaedr------------')
-      .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png')
+      .setImage('https://i.ibb.co/g48PR0X/glaedr-8.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
