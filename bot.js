@@ -664,7 +664,7 @@ client.on('message', message => {
   if (message.content === '<@423131212945817620>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------JUNUSBIAZ------------')
-  .setImage('https://i.ibb.co/LZkGJBT/styleken-frame.png')
+  .setImage('https://i.ibb.co/pPYPLwM/jin-frame-1.png')
   .setColor('#ffffff')
     message.channel.send(embed)
 
