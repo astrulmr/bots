@@ -1466,7 +1466,7 @@ client.on('message', message => {
   if (message.content === '<@727301310461771797>') { 
   let embed = new Discord.RichEmbed()
     .setTitle('------------PENTANE------------')
-    .setImage('https://www.brawlhalla.com/c/uploads/2018/11/Nix.png') 
+    .setImage('https://i.ibb.co/vwx3YRn/penny-frame-5.png') 
     .setColor('#275BF0') 
     message.channel.send(embed)
 }})
