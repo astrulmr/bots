@@ -815,6 +815,7 @@ client.on('message', message => {
   const member = message.guild.member(user)
   if ( member) {
     message.channel.send("<@"+user.id+">")
+    message.channel.send ("Status : "+user.presence.status)
 }}}
 })
 
