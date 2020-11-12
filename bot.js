@@ -808,6 +808,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (!message.guild) return
+  if(message.author.bot) return
   if (message.content.startsWith('<@')) {
   const user = message.mentions.users.first()
   if (user) {
