@@ -806,6 +806,16 @@ client.on('message', message => {
     message.channel.send("p <@"+user.id+">")
 }}}
 })
+client.on('message', message => {
+  if (!message.guild) return
+  if (message.content.startsWith('@')) {
+  const user = message.mentions.users.first()
+  if (user) {
+  const member = message.guild.member(user)
+  if ( member) {
+    message.channel.send("<@"+user.id+">")
+}}}
+})
 
                               client.on('message', message => {
   if (message.content === "p <@184230639086731264>" ) {
