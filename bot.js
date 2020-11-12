@@ -602,7 +602,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '<@482162074097549333>') {
-    if (!message.author.bot || !message.embeds[0]) return;
+    if (!message.embeds[0]) return;
     let embed = new Discord.RichEmbed()
     .setTitle('------------ASTRU------------')
   .setImage('https://i.ibb.co/m99jcJY/astru-frame-2.png')
