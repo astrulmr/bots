@@ -808,7 +808,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (!message.guild) return
-  if (message.content.startsWith('@')) {
+  if (message.content.startsWith('<@')) {
   const user = message.mentions.users.first()
   if (user) {
   const member = message.guild.member(user)
