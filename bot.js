@@ -1600,7 +1600,7 @@ client.on('message', message => {
       if (message.content === '<@321188857359892480>') {
         let embed = new Discord.RichEmbed()
         .setTitle('------------Glaedr------------')
-      .setImage('https://i.ibb.co/g48PR0X/glaedr-8.png')
+      .setImage('https://i.ibb.co/qDXgpd7/glaedr-frame-7.png')
       .setColor('#275BF0')
         message.channel.send(embed)
 
