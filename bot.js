@@ -95,6 +95,7 @@ let descthing = "yes"
                 .addField('Astru®', 'He is the perfect Runner and a f*cking good Supporter and Defender', true)
                 .addField('\n Styleken', 'He is the Defender you want behind you but he can also Run and Support like no one else', true)
                 .addField('\n Kenshiro', ' He is a beast as Supporter and wild in Defence and Run', true)
+                .addField('\n Pentane', ' He is uncatchable Runner and great in Defence and Supporter', true)
             message.channel.send(embed)
         }
     })
@@ -139,6 +140,7 @@ let descthing = "yes"
               .setDescription('That is simple mathematics : old pro def + new pro def + new pro run = dream team')
               .addField('otmanezza', 'He is an unstoppable Runner and unbreakable Defender and Supporter', true)
               .addField('\n KaeptnKook', ' He is the best in Support and Defence and a 300IQ Runner', true)
+              .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
               .addField('\n JunusBiaz', 'He is just super as Defender and great in Run and Support', true)
           message.channel.send(embed)
       }
@@ -153,8 +155,6 @@ let descthing = "yes"
                 .setThumbnail('https://cdn.discordapp.com/icons/535515917518372884/1e076f469ba8e95ffe32620817a98a22.png')
                 .setDescription('These guys are in Our Style for 2 reasons : they are insane brawlball players and they want to become even greater, do not be fools to underestimate us all')
                 .addField('\n jinleehurb', ' He has an unbelievable Defence and is so good in Support and Run', true)
-                .addField('\n SweetMiguel', 'He Runs you cannot catch him and he is fantastic in Defence and Support', true)
-                .addField('\n Sanmaay', ' She is not merciful as Defender and great in Runner and Supporter', true)
                 .setFooter('Everyone in Our Style clan is able to kick you in all positions', 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiR7KXpsrfkAhUl5uAKHf1DCLMQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpaperstock.net%2Fs-logo-design-wallpapers_w35374.html&psig=AOvVaw3rIPgPX0g2OY5GqmOi0ph1&ust=1567694238587809')
 
             message.channel.send(embed)
@@ -746,7 +746,7 @@ client.on('message', message => {
   if (message.content === '<@184230639086731264>') {
     let embed = new Discord.RichEmbed()
     .setTitle('------------THOMASERENA------------')
-  .setImage('https://vignette.wikia.nocookie.net/brawlhalla-game/images/e/e5/DarkMatterVraxx.png/revision/latest/scale-to-width-down/294?cb=20180215181636')
+  .setImage('https://static.wikia.nocookie.net/brawlhalla-game/images/4/4d/GeneralVraxx.png/revision/latest/scale-to-width-down/921?cb=20180215181651')
   .setColor('#275BF0')
     message.channel.send(embed)
     
@@ -807,18 +807,7 @@ client.on('message', message => {
     message.channel.send("p <@"+user.id+">")
 }}}
 })
-client.on('message', message => {
-  if (!message.guild) return
-  if(message.author.bot) return
-  if (message.content.startsWith('<@')) {
-  const user = message.mentions.users.first()
-  if (user) {
-  const member = message.guild.member(user)
-  if ( member) {
-    message.channel.send("<@"+user.id+">")
-    message.channel.send ("Status : "+user.presence.status)
-}}}
-})
+
 
                               client.on('message', message => {
   if (message.content === "p <@184230639086731264>" ) {
@@ -1260,9 +1249,9 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
-      .addField('Astru',"Our Style",true)
+      .addField('@Astru#1813',"Our Style",true)
       .addField('Jimm25',"Our Style",true)
-      .addField('SweetMiguel',"Our Style",true)
+      .addField('SweetMiguel',"N/A",true)
       .addField('DanzoDon',"Our Style",true)
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
@@ -1272,6 +1261,9 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
       .addField('klashmix470','ps clan',true)
       .addField('Pentane',"Our Style",true)
+      .addField('Flexy',"PRS",true)
+      .addField('The Mighty €agle🦅',"Pyrateers",true)
+     
 
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
@@ -1288,15 +1280,17 @@ client.on('message', message => {
             .setColor(0x0000ff)
             .addField('Kenshiro',"Our Style",true)
             .addField('Styleken',"Our Style",true)
-            .addField('|OS| Tmis Kun',"Our Style",true)
+            .addField('Tmis Kun',"PRS",true)
             .addField('ThomaSerena',"NBS",true)
             .addField('LordCroissant',"Our Style",true)
-            .addField('PanosBOA',"Our Style",true)
             .addField('Kevin1185',"Our Style",true)
-                  .addField('Erzinos','La Team Rainbow',true)
-
-      .addField('Helper','Clansanity',true)
-
+            .addField('TylactosAss','Clansanity',true)
+            .addField('Bob','Pyrateers',true)
+            .addField('Bruce Twarze','Pyrateers',true)
+            .addField('Hichou','PRS',true)
+            .addField('Kritoo Þ','vandal crew EU',true)
+            .addField('Christophe','PRS',true)
+            
 //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
     
@@ -1315,12 +1309,15 @@ client.on('message', message => {
                   .addField('Junusbiaz',"Our Style",true)
                   .addField('Glaedr',"Our Style",true)
                   .addField('BlueDragon',"TVS",true)
-                  .addField('senpai','Our Style',true)
-
-      .addField('CTNS','Our Style',true)
-
-      .addField('MineTurtle 🐢','turtle dislike life',true)
-
+                  .addField('CTNS','Our Style',true)
+                  .addField('Rawwal','NBS',true)
+                  .addField('MineTurtle 🐢','turtle dislike life',true)
+                  .addField('Theemok','NBS',true)
+                  .addField('Oswald','Pyrateers',true)
+                  .addField('phileas_freak','PRS',true)
+                  .addField('VenomX','N/A',true)
+                  .addField('Sanmaay','Our Style',true)
+                  
 //dontjokwithmeucantwin545
                   .setThumbnail('https://www.shareicon.net/data/2016/03/22/737658_security_512x512.png')
           
@@ -1349,10 +1346,9 @@ client.on('message', message => {
   if (message.content == '!pall'){          
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
-      .setColor(0xFF0000)
-      .addField('Astru',"Our Style",true)
+      .addField('@Astru#1813',"Our Style",true)
       .addField('Jimm25',"Our Style",true)
-      .addField('SweetMiguel',"Our Style",true)
+      .addField('SweetMiguel',"N/A",true)
       .addField('DanzoDon',"Our Style",true)
       .addField('THE_INSANE_COW',"Pyrateers",true)
       .addField('Eichelb4rt',"Pyrateers",true)
@@ -1362,6 +1358,9 @@ client.on('message', message => {
       .addField('SID_GMRツ','PHB',true)
       .addField('klashmix470','ps clan',true)
       .addField('Pentane',"Our Style",true)
+      .addField('Flexy',"PRS",true)
+      .addField('The Mighty €agle🦅',"Pyrateers",true)
+     
 //postionneverlosehaha747
       .setThumbnail('https://pngimage.net/wp-content/uploads/2018/06/run-logo-png-2.png')
 
@@ -1377,13 +1376,16 @@ client.on('message', message => {
             .setColor(0x0000ff)
             .addField('Kenshiro',"Our Style",true)
             .addField('Styleken',"Our Style",true)
-            .addField('|OS| Tmis Kun',"Our Style",true)
+            .addField('Tmis Kun',"PRS",true)
             .addField('ThomaSerena',"NBS",true)
-            .addField('LordCroissant'," Our Style",true)
-            .addField('PanosBOA',"Our Style",true)
+            .addField('LordCroissant',"Our Style",true)
             .addField('Kevin1185',"Our Style",true)
-            .addField('Erzinos','La Team Rainbow',true)
-            .addField('Helper','Clansanity',true)
+            .addField('TylactosAss','Clansanity',true)
+            .addField('Bob','Pyrateers',true)
+            .addField('Bruce Twarze','Pyrateers',true)
+            .addField('Hichou','PRS',true)
+            .addField('Kritoo Þ','vandal crew EU',true)
+            .addField('Christophe','PRS',true)
 
 //uwilllosenubhahahahahahanub
             .setThumbnail('https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ')
@@ -1401,13 +1403,16 @@ client.on('message', message => {
                   .addField('KaeptnKook',"Our Style",true)
                   .addField('Jinleehurb',"Our Style",true)
                   .addField('Junusbiaz',"Our Style",true)
-                  .addField('BlueDragon',"TVS",true)
                   .addField('Glaedr',"Our Style",true)
-                  .addField('senpai','Our Style',true)
-
-      .addField('CTNS','Our Style',true)
-
-      .addField('MineTurtle 🐢','turtle dislike life',true)
+                  .addField('BlueDragon',"TVS",true)
+                  .addField('CTNS','Our Style',true)
+                  .addField('Rawwal','NBS',true)
+                  .addField('MineTurtle 🐢','turtle dislike life',true)
+                  .addField('Theemok','NBS',true)
+                  .addField('Oswald','Pyrateers',true)
+                  .addField('phileas_freak','PRS',true)
+                  .addField('VenomX','N/A',true)
+                  .addField('Sanmaay','Our Style',true)
 
 //dontjokwithmeucantwin545
                   .setThumbnail('https://www.shareicon.net/data/2016/03/22/737658_security_512x512.png')
@@ -1426,7 +1431,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content == '!codes'){          
       const embed = new RichEmbed()
-      .setTitle('OS|Bot All Codes You Can Use')
+      .setTitle('@Our Style | Brawlball#2101 All Codes You Can Use')
       .setColor(0xffffff)
       .addField('!avatar @anyname',"To see avatar of someone in the server",true)
       .addField('!p @anyname               ',"To see position and clan of someone in the server",true)
@@ -1441,7 +1446,6 @@ client.on('message', message => {
 
       .addField('!def                                ',"To see all defenders in the server",true)
       .addField('!ap                                  ',"To see which position and clan of every one in the server",true)
-      .addField("!colors                               ","To see all color that can change ur name color",true)
 
       .setThumbnail(client.user.avatarURL)
       .setFooter("\n\n OS|BOT Designed And Edited by OS Team",client.user.avatarURL)
@@ -2039,7 +2043,6 @@ message.channel.send(embed)
 })
 
 message.channel.send(avatarList);
-message.author.send(avatarList)
 }
 
 
