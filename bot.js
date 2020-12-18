@@ -1249,7 +1249,7 @@ client.on('message', message => {
       const embed = new RichEmbed()
       .setTitle('------------------ Runner Players ------------------')
       .setColor(0xFF0000)
-      .addField('<@482162074097549333>',"Our Style",true)
+      .addField('Astru',"Our Style",true)
       .addField('Jimm25',"Our Style",true)
       .addField('SweetMiguel',"N/A",true)
       .addField('DanzoDon',"Our Style",true)
