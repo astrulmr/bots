@@ -179,13 +179,11 @@ client.on('message', message => {
       const embed = new RichEmbed()
 
           .setTitle('Our Style Brawlball Clan')
-          .setColor(0xf60af8)
+          .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL)
-          .setDescription("**Our Style is a Brawlhalla clan**, the best and most active Brawlball clan in EU. We play almost everyday and we always send a room number in our discord chat whenever we're playing so feel free to join us! \n We host a lot of brawball tournaments (at least once a month) with big prices for big tourneys, and smaller ones for friendly tourneys.. We also stream every tourney on twitch. Go follow us [@OurStyle_Brawlball](https://www.twitch.tv/ourstyle_brawlball).\n check out our top tier bb montages on [Youtube](https://www.youtube.com/channel/UCKjydpFBrArBs5SoJnzw-Pg), be amazed and depressed about your own nubness \n Our discord is filled with fun and enthusiastic people who love to talk about **brawlhalla** and other stuff like anime..  \n So what are you waiting for? Join **Our Style's** discord now!")
+          .setDescription("**Our Style is a Brawlhalla clan**, the best and most active Brawlball clan in EU. We play almost everyday and we always send a room number in our discord chat whenever we're playing so feel free to join us! \n **We host a lot of brawball tournaments** (at least once a month) with big prices for big tourneys, and smaller ones for friendly tourneys.. We also stream every tourney on twitch. Go follow us [@OurStyle_Brawlball](https://www.twitch.tv/ourstyle_brawlball).\n **check out** our top tier bb montages on [Youtube](https://www.youtube.com/channel/UCKjydpFBrArBs5SoJnzw-Pg), be amazed and depressed about your own nubness \n Our discord is filled with fun and enthusiastic people who love to talk about **brawlhalla** and other stuff like anime..  \n So what are you waiting for? Join **Our Style's** discord now!")
           .setImage("https://i.ibb.co/xM1kGG8/ez.png")
     message.channel.send(embed)
-    message.channel.send("[Youtube](https://www.youtube.com/watch?v=KV-8PCeqPzg&t=13s)")
-    message.channel.send("[Discord](https://discord.gg/aMTafbd)")
   }
 })
 
