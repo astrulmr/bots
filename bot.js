@@ -181,9 +181,8 @@ client.on('message', message => {
           .setTitle('Our Style Brawlball Clan')
           .setColor(0xf60af8)
           .setThumbnail(client.user.avatarURL)
-          .setDescription("**Our Style is a Brawlhalla clan**, the best and most active Brawlball clan in EU. We play almost everyday and we always send a room number in our discord chat whenever we're playing so feel free to join us! We hold tournaments once a month where there are prizes that can be earned for finishing in the top 3 (unless it's a friendly tournament). We also stream every tourney on twitch. Go follow us [@OurStyle_Brawlball](https://www.twitch.tv/ourstyle_brawlball). Our discord is filled with fun and enthusiastic people who love to talk about **brawlhalla** and other stuff like anime..   So what are you waiting for? Join **Our Style's** discord now!")
-          .addField('Link',"https://discord.gg/aMTafbd", false)
-          .setImage("https://i.ibb.co/tLDmm7p/os-bcs-3.png")
+          .setDescription("**Our Style is a Brawlhalla clan**, the best and most active Brawlball clan in EU. We play almost everyday and we always send a room number in our discord chat whenever we're playing so feel free to join us! \n We host a lot of brawball tournaments (at least once a month) with big prices for big tourneys, and smaller ones for friendly tourneys.. We also stream every tourney on twitch. Go follow us [@OurStyle_Brawlball](https://www.twitch.tv/ourstyle_brawlball). \n Our discord is filled with fun and enthusiastic people who love to talk about **brawlhalla** and other stuff like anime..  \n So what are you waiting for? Join **Our Style's** discord now!")
+          .setImage("https://i.ibb.co/xM1kGG8/ez.png")
     message.channel.send(embed)
   }
 })
