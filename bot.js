@@ -2574,7 +2574,6 @@ recchannel.send("!strt")
 
 });
 
-    client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
     
     client.on('messageReactionAdd', (messageReaction, user) => {
 
