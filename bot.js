@@ -2519,7 +2519,7 @@ recchannel.send("!strt")
                 let embed3 = new Discord.RichEmbed()
             .setTitle('Anime Otaku')
             .setColor('#000000')
-            .setThumbnail('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.designiconic.com%2Fmaker%2Fanime-logo%2F&psig=AOvVaw01rhfjCEfQp6hdZPsHd3aT&ust=1609272217564000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCM26u88e0CFQAAAAAdAAAAABAJ')
+            .setThumbnail('https://www.designiconic.com/2K20/images/makers_og/anime.png')
             .setDescription("** if you're an anime fan react with this**")
             .addField('**Anime** ',' **🈂️**',false)
             recchannel.send(embed3)
@@ -2633,7 +2633,7 @@ recchannel.send("!strt")
 
 
 
-              client.on('messageReactionRemove', (messageReaction, user) => {
+              client.on('messageReactionAdd', (messageReaction, user) => {
                 //anime
     
                   const { message, emoji } = messageReaction;
@@ -2646,7 +2646,7 @@ recchannel.send("!strt")
         member.addRole('793151150479114252')}
                   })
                   }}});
-                  client.on('messageReactionAdd', (messageReaction, user) => {
+                  client.on('messageReactionRemove', (messageReaction, user) => {
                     //anime
         
                       const { message, emoji } = messageReaction;
