@@ -1957,14 +1957,14 @@ if (message.content === "!ap" ) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
-  const prefix1 = "_";
+  const prefix5 = "_";
 
 
   if (message.author.bot) return;
   if (!message.guild) return;
-  if (!message.content.startsWith(prefix1)) return;
+  if (!message.content.startsWith(prefix5)) return;
 
-  const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
+  const args1 = message.content.slice(prefix5.length).trim().split(/ +/g);
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "edit") {
@@ -1983,7 +1983,7 @@ messages.first().edit(args.join(" "));
 client.on('message', message => {
   if (message.content ==='!editit') { 
     let targetChannel = client.channels.cache.get("793147387022802994")
-    message.channel.messages.fetch({around: "793181049319456768", limit: 1})
+    message.channel.fetchMessages({around: "793181049319456768", limit: 1})
   .then(messages => {
     let embed = new Discord.MessageEmbed()
     .setTitle("**React if you play brawlball and want to get pinged**")
