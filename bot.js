@@ -1957,24 +1957,24 @@ if (message.content === "!ap" ) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", async message => {
-  const prefix5 = "_";
+  const prefix1 = "_";
 
 
   if (message.author.bot) return;
   if (!message.guild) return;
-  if (!message.content.startsWith(prefix5)) return;
+  if (!message.content.startsWith(prefix1)) return;
 
-  const args1 = message.content.slice(prefix5.length).trim().split(/ +/g);
+  const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "edit") {
       if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
-            message.channel.fetchMessages({around: args1.join(" "), limit: 1})
+            message.channel.fetchMessages({around:args1[0].toLowerCase , limit: 1})
   .then(messages => {
             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
-messages.first().edit(args.join(" "));
+messages.first().edit(args1.slice(1).join(" "));
   })
   }
 });
