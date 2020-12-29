@@ -1970,11 +1970,11 @@ client.on("message", async message => {
   if (cmd === "edit") {
       if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
-            message.channel.fetchMessages({around:args1[0].toLowerCase , limit: 1})
+            message.channel.fetchmessages({around: args[0].toLowerCase(), limit: 1})
   .then(messages => {
             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
-messages.first().edit(args1.slice(1).join(" "));
+messages.first().edit(args.slice(1).join(" "));
   })
   }
 });
@@ -1983,7 +1983,7 @@ messages.first().edit(args1.slice(1).join(" "));
 client.on('message', message => {
   if (message.content ==='!editit') { 
     let targetChannel = client.channels.cache.get("793147387022802994")
-    message.channel.fetchMessages({around: "793181049319456768", limit: 1})
+    message.channel.ffetchMessages({around: "793181049319456768", limit: 1})
   .then(messages => {
     let embed = new Discord.MessageEmbed()
     .setTitle("**React if you play brawlball and want to get pinged**")
