@@ -1968,6 +1968,7 @@ client.on("message", async message => {
   const cmd = args1.shift().toLowerCase();
 
   if (cmd === "edit") {
+    if (message.deletable) message.delete();
       if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
 
             message.channel.fetchMessages({around: args1[0].toLowerCase(), limit: 1})
@@ -1975,6 +1976,7 @@ client.on("message", async message => {
             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
 messages.first().edit(args1.slice(1).join(" "));
+
   })
   }
 });
@@ -2045,6 +2047,7 @@ if (cmd === "ping") {
 
 if (cmd === "say") {
     // Check if you can delete the message
+    if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
     if (message.deletable) message.delete();
 
     if (args.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
