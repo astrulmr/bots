@@ -1,4 +1,6 @@
 
+})
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client()
@@ -2497,7 +2499,7 @@ client.on('message', message => {
 //////////////////////////////////////
 
 
-
+client.on('message', message => {
  if(message.content == `!runners`) {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Users with the go4 role:')
