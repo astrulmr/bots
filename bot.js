@@ -2541,7 +2541,7 @@ client.on('message', message => {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Runners in brawlball:')
             .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
-            .setDescription("**"+message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n :man_running: :man_running: :man_running: :man_running: :man_running: :man_running: :man_running:  \n')+"**")
+            .setDescription("** >"+message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ----------------- :man_running:  \n')+"**")
             message.channel.send(ListEmbed);                    
     }
 });
