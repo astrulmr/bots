@@ -2540,7 +2540,7 @@ client.on('message', message => {
  if(message.content == `!runners`) {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Runners in brawlball:')
-            .setDescription("**"+message.guild.roles.get('736222790516211723').members.map(m=>m.user).join('\n')+"**");
+            .setDescription(message.guild.roles.get('736222790516211723').members.map(m=>m.user).join('\n\n'));
         message.channel.send(ListEmbed);                    
     }
 });
