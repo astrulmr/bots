@@ -1,3 +1,42 @@
+/*client.on('message' , message => {
+const prefix = "#"
+if(message.auther.bot)return
+if(!message.guild)return
+if(message.content.startWith(prefix1))return
+
+const arg = message.content.slice(prefix.length).trim().spilt(/+/g)
+const cmd = args.shift().tolowercase()
+if(cmd === "team"){
+let aa = args[0].toLowerCase()
+let bb = args[1].toLowerCase()
+let cc = args[2].toLowerCase()
+let dd = args[3].toLowerCase()
+let ee = args[4].toLowerCase()
+let ff = args[5].toLowerCase()
+let gg = args[6].toLowerCase()
+let hh = args[7].toLowerCase()
+let ii = args[8].toLowerCase()
+let jj = args[9].toLowerCase()
+let kk = args[10].toLowerCase()
+let ll = args[11].toLowerCase()
+let mm = args[12].toLowerCase()
+let nn = args[13].toLowerCase()
+let oo = args[14].toLowerCase()
+let pp = args[15].toLowerCase()
+let qq = args[16].toLowerCase()
+let rr = args[17].toLowerCase()
+let ss = args[18].toLowerCase()
+let tt = args[19].toLowerCase()
+let uu = args[20].toLowerCase()
+let vv = args[21].toLowerCase()
+let ww = args[22].toLowerCase()
+let xx = args[23].toLowerCase()
+let yy = args[24].toLowerCase()
+let zz = args[25].toLowerCase()
+}
+
+
+})*/
 
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
@@ -2501,7 +2540,7 @@ client.on('message', message => {
  if(message.content == `!runners`) {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Users with the go4 role:')
-            .setDescription(message.guild.roles.get('736222790516211723').members.map(m=>m.user.tag).join('\n'));
+            .setDescription(message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n'));
         message.channel.send(ListEmbed);                    
     }
 });
