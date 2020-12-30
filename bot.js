@@ -2539,8 +2539,8 @@ client.on('message', message => {
 client.on('message', message => {
  if(message.content == `!runners`) {
         const ListEmbed = new Discord.RichEmbed()
-            .setTitle('Users with the go4 role:')
-            .setDescription(message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n'));
+            .setTitle('Runners in brawlball:')
+            .setDescription("**"+message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join(' ')+"**");
         message.channel.send(ListEmbed);                    
     }
 });
