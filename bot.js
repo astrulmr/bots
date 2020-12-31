@@ -2572,7 +2572,7 @@ client.on('message', message => {
          var jjess2=" "
 */
          for (var i = 0; i <= kkoo.length; i++){
-          if (i<23){
+          if (i<22){
           ttess =ttess+kkoo[i]
           }
         
