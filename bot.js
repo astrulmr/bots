@@ -2555,15 +2555,46 @@ client.on('message', message => {
     
          var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
          var kkoo = oknnooo.substring(0).split(":football:")
+
+         var oknnooo1 = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+         var kkoo1 = oknnooo1.substring(0).split(":football:")
+
+         var oknnooo2 = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+         var kkoo2 = oknnooo2.substring(0).split(":football:")
+
          var ttess=" "
          var jjess=" "
+ 
+         var ttess1=" "
+         var jjess1=" "
+
+         var ttess2=" "
+         var jjess2=" "
+
          for (var i = 0; i <= kkoo.length; i++){
-      if (i<10){
-      ttess =ttess+kkoo[i]
+          if (i<10){
+          ttess =ttess+kkoo[i]
+          }
+        
+          if (i>10){
+          jjess = jjess+kkoo[i]
+        }}
+
+        for (var j = 0; j <= kkoo1.length; j++){
+          if (j<10){
+          ttess1 =ttess1+kkoo1[j]
+          }
+        
+          if (j>10){
+          jjess1 = jjess1+kkoo[j]
+        }}
+         for (var k = 0; k <= kkoo2.length; k++){
+      if (k<10){
+      ttess2 =ttess2+kkoo2[k]
       }
     
-      if (i>10){
-      jjess = jjess+kkoo[i]
+      if (k>10){
+      jjess2 = jjess2+kkoo2[k]
     }}
 const ListEmbed = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
@@ -2571,6 +2602,8 @@ const ListEmbed = new Discord.RichEmbed()
     .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
     .setDescription("Here are all players positions")
     .addField("Runners", ttess,true)
+    .addField("Supporters", ttess1,true)
+    .addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed)
 
   }         
