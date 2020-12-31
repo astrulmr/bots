@@ -2572,16 +2572,16 @@ client.on('message', message => {
          var jjess2=" "
 
          for (var i = 0; i <= kkoo.length; i++){
-          if (i<10){
+          if (i<40){
           ttess =ttess+kkoo[i]
           }
         
-          if (i>10){
+          if (i>40){
           jjess = jjess+kkoo[i]
         }}
 
         for (var j = 0; j <= kkoo1.length; j++){
-          if (j<10){
+          if (j<40){
           ttess1 =ttess1+kkoo1[j]
           }
         
