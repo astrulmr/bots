@@ -2542,9 +2542,9 @@ client.on('message', message => {
             .setTitle('Runners in brawlball:')
             .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
             .setDescription("**Here is all players positions**")
-            .addField("Runners",message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ----------------- \n >'),true)
-            .addField("Runners",message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n ----------------- \n >'),true)
-            .addField("defeders",message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n ----------------- \n >'),true)
+            .addField("Runners",message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join(''),true)
+            .addField("Runners",message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join(''),true)
+            .addField("defeders",message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join(''),true)
             message.channel.send(ListEmbed);                    
     }
 });
