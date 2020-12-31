@@ -2537,18 +2537,18 @@ client.on('message', message => {
 
 
 client.on('message', message => {
- if(message.content == `!runners`) {
-        const ListEmbed = new Discord.RichEmbed()
-            .setTitle('Players positions on brawlball:')
-            .setColor('#ff0000')
-            .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
-            .setDescription("Here are all players positions")
-            .addField("Runners",message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('**\n :traffic_light: :traffic_light: :traffic_light: \n**'),true)
-            .addField("Supporters",message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :traffic_light: :traffic_light: \n'),true)
-            .addField("defeders",message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :traffic_light: :traffic_light: :traffic_light: \n'),true)
-            message.channel.send(ListEmbed);                    
-    }
-});
+  if(message.content == `!runners`) {
+         const ListEmbed = new Discord.RichEmbed()
+             .setTitle('Players positions on brawlball:')
+             .setColor('#ff0000')
+             .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
+             .setDescription("Here are all players positions")
+             .addField("Runners",message.guild.roles.get('713487959042687056').members.map(m=>m.user.username).join('**\n :traffic_light: :traffic_light: :traffic_light: \n**'),true)
+             .addField("Supporters",message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :traffic_light: :traffic_light: \n'),true)
+             .addField("defeders",message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :traffic_light: :traffic_light: :traffic_light: \n'),true)
+             message.channel.send(ListEmbed);                    
+     }
+ });
 
 
 
