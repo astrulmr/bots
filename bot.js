@@ -2565,12 +2565,12 @@ client.on('message', message => {
          var ttess=" "
          var jjess=" "
  
-         var ttess1=" "
+       /*  var ttess1=" "
          var jjess1=" "
 
          var ttess2=" "
          var jjess2=" "
-
+*/
          for (var i = 0; i <= kkoo.length; i++){
           if (i<30){
           ttess =ttess+kkoo[i]
@@ -2579,7 +2579,7 @@ client.on('message', message => {
           if (i>30){
           jjess = jjess+kkoo[i]
         }}
-
+/*
         for (var j = 0; j <= kkoo1.length; j++){
           if (j<30){
           ttess1 =ttess1+kkoo1[j]
@@ -2595,15 +2595,15 @@ client.on('message', message => {
     
       if (k>10){
       jjess2 = jjess2+kkoo2[k]
-    }}
+    }}*/
 const ListEmbed = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
     .setColor('#ff0000')
     .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
     .setDescription("Here are all players positions")
     .addField("Runners", ttess,true)
-    .addField("Supporters", ttess1,true)
-    .addField("Defenders", ttess2,true)
+    /*.addField("Supporters", ttess1,true)
+    .addField("Defenders", ttess2,true)*/
     message.channel.send(ListEmbed)
 
   }         
