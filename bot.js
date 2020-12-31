@@ -1,4 +1,4 @@
-/*client.on('message' , message => {
+ /*client.on('message' , message => {
 const prefix = "#"
 if(message.auther.bot)return
 if(!message.guild)return
