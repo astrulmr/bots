@@ -2540,6 +2540,7 @@ client.on('message', message => {
  if(message.content == `!runners`) {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Runners in brawlball:')
+            .setColor('#ff0000')
             .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
             .setDescription("**Here is all players positions**")
             .addField("Runners",message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('**\n ----- :traffic_light: ----- \n**'),true)
