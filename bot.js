@@ -2576,7 +2576,7 @@ client.on('message', message => {
           ttess =ttess+kkoo[i]
           }
         
-          if (i>30){
+          if (i>22){
           jjess = jjess+kkoo[i]
         }}
 /*
@@ -2602,8 +2602,8 @@ const ListEmbed = new Discord.RichEmbed()
     .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
     .setDescription("Here are all players positions")
     .addField("Runners", ttess,true)
-    /*.addField("Supporters", ttess1,true)
-    .addField("Defenders", ttess2,true)*/
+    .addField("Supporters", jjess,true)
+    //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed)
 
   }         
