@@ -2562,14 +2562,14 @@ client.on('message', message => {
          var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
          var kkoo2 = oknnooo2.substring(0).split(":football:")
 
-         var ttess="-"
-         var jjess="-"
+         var ttess=" "
+         var jjess=" "
  
-         var ttess1="-"
-         var jjess1="-"
+         var ttess1=" "
+         var jjess1=" "
 
-         var ttess2="-"
-         var jjess2="-"
+         var ttess2=" "
+         var jjess2=" "
 
          for (var i = 0; i <= kkoo.length-1; i++){
           if (i<22){
