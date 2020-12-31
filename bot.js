@@ -2537,7 +2537,8 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if(message.content == `!runners`) {
+  if(message.content == `!positions`) {
+    let hhhhh = message.guild.roles.get('736222790516211723').members.soly
          const ListEmbed = new Discord.RichEmbed()
              .setTitle('Players positions on brawlball:')
              .setColor('#ff0000')
@@ -2549,6 +2550,31 @@ client.on('message', message => {
              message.channel.send(ListEmbed);                    
      }
  });
+ client.on('message', message => {
+  if(message.content == `!111`) {
+    
+         var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+         var kkoo = oknnooo.substring(0).split(":football:")
+         var ttess=" "
+         var jjess=" "
+         for (var i = 0; i <= kkoo.length; i++){
+      if (i<50){
+      ttess =ttess+kkoo[i]
+      }
+    
+      if (i>50){
+      jjess = jjess+kkoo[i]
+    }}
+const ListEmbed = new Discord.RichEmbed()
+    .setTitle('Players positions on brawlball:')
+    .setColor('#ff0000')
+    .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
+    .setDescription("Here are all players positions")
+    .addField("Runners", ttess,true)
+    message.channel.send(ListEmbed)
+
+  }         
+ })
 
 
 
