@@ -2558,11 +2558,11 @@ client.on('message', message => {
          var ttess=" "
          var jjess=" "
          for (var i = 0; i <= kkoo.length; i++){
-      if (i<50){
+      if (i<10){
       ttess =ttess+kkoo[i]
       }
     
-      if (i>50){
+      if (i>10){
       jjess = jjess+kkoo[i]
     }}
 const ListEmbed = new Discord.RichEmbed()
