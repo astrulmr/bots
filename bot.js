@@ -2602,7 +2602,7 @@ const ListEmbed = new Discord.RichEmbed()
     .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
     .setDescription("There are"+kkoo.length+" Supporter players")
     .addField("Supporters", ttess,true)
-    .addField(" ", jjess,true)
+    .addField("Supporters ", jjess,true)
     //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed)
 
