@@ -2541,7 +2541,10 @@ client.on('message', message => {
         const ListEmbed = new Discord.RichEmbed()
             .setTitle('Runners in brawlball:')
             .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
-            .setDescription("** >"+message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ----------------- :man_running:  \n')+"**")
+            .setDescription("**Here is all players positions**")
+            .addField("Runners",message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ----------------- \n'),true)
+            .addField("Runners",message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n ----------------- \n'),true)
+            .addField("defeders",message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n ----------------- \n'),true)
             message.channel.send(ListEmbed);                    
     }
 });
