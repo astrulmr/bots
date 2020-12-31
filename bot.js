@@ -2593,7 +2593,7 @@ client.on('message', message => {
       ttess2 =ttess2+kkoo2[k]
       }
     
-      if (k>10){
+      if (k>22){
       jjess2 = jjess2+kkoo2[k]
     }}
 const ListEmbed = new Discord.RichEmbed()
