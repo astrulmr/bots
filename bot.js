@@ -2605,13 +2605,14 @@ array.push(args[i]);
 
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
-  const elem = array.splice(ndx, 3)[0];
-  /*var lojok = elem.substring(0).split(" ")
-  for (var j = 0; j <= lojok.length-1; k++){
+  const elem = array.splice(ndx, 1)[0];
+  var lojok = elem.substring(0).split(" ")
+  /*for (var j = 0; j <= lojok.length-1; k++){
     if (j<3){
     ttess2 =ttess2+kkoo2[k]
     }*/
   message.channel.send(elem);
+  message.channel.send(lojok);
 }
   }
 
