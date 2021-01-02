@@ -563,14 +563,13 @@ client.on('message', message => {
 
         if (message.content === '!strt' ) {
             if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.channel.send("You do not have permission to  this")
-
-
-    message.channel.fetchMessages()
+    else{
+            message.channel.fetchMessages()
     .then(function(list){
         message.channel.bulkDelete(list);
     }, function(err){message.channel.send("ERROR: ERROR CLEARING CHANNEL.")})                        
 
-    }})
+    }}})
 
 
 
@@ -1448,9 +1447,8 @@ client.on('message', message => {
       .addField('!p @anyname               ',"To see position and clan of someone in the server",true)
       .addField('!brawlball                      ',"To see hidden tricks and move of brawlball only clan (Our Style) can see it",true)
       .addField('!os clan                          ',"To see info about (Our Style) clan",true)
-      .addField('!legends                         ',"To see every one fav legend in the server",true)
       .addField('! @anyname                      ',"To see fav legend of someone in the server",true)
-      .addField('!pall                                 ',"To see all runners and supporters and defender in the server",true)
+      .addField('!bp                                 ',"To see all runners and supporters and defender in the server",true)
       .addField('!run                                ',"To see all runners the server        \n ",true)
 
       .addField('!sup                               ',"To see all supporters in the server          ",true)
@@ -1982,20 +1980,7 @@ messages.first().edit(args1.slice(1).join(" "));
 });
 
 
-client.on('message', message => {
-  if (message.content ==='!editit') { 
-    let targetChannel = client.channels.cache.get("793147387022802994")
-    message.channel.ffetchMessages({around: "793181049319456768", limit: 1})
-  .then(messages => {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("**React if you play brawlball and want to get pinged**")
-    .setColor("#0000FF")
-    .setDescription("React with this")
-    .addField("**EU**",":flag_eu:",true )
-    .addField("**US-E**",":flag_us: ",true ) 
-    messages.first().edit(embed);
-  });
- }})
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2077,7 +2062,7 @@ if (message.content.startsWith('!avatar')) {
 if (!message.mentions.users.size) {
 
   let embed = new RichEmbed()
-.setTitle(`${message.auth.username}`)
+.setTitle(`${message.author.username}`)
 .setColor('FFFFFF')
 .setDescription("Avatar :")
 .setImage(`${message.author.displayAvatarURL}`)
@@ -2585,7 +2570,7 @@ client.on('message', message => {
 const ListEmbed = new Discord.RichEmbed()
     .setTitle('Supporter players:')
     .setColor('#ff0000')
-    .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
+    .setThumbnail("https://c10.patreonusercontent.com/3/eyJ3Ijo0MDB9/patreon-media/p/reward/2804316/b4c24cc785da44b7bf311749acee46ab/1.gif?token-time=2145916800&token-hash=xlTzbZBw6DPP5oozmI1VAy3PbVGBkwfM-6Eq2oyV-yo%3D ")
     .setDescription("There are "+kkoo.length-1+" Supporter players")
     .addField("Supporters", ttess,true)
     .addField("Supporters ", jjess+"-",true)
@@ -2597,7 +2582,7 @@ const ListEmbed = new Discord.RichEmbed()
     const ListEmbed2 = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
     .setColor('#ff0000')
-    .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
+    .setThumbnail("https://cdn.freebiesupply.com/logos/large/2x/defender-logo-png-transparent.png")
     .setDescription("There are "+kkoo2.length-1+" Defender players")
     .addField("Defenders", ttess2,true)  
     .addField("Defenders ", jjess2+"-",true)
