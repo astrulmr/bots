@@ -2541,11 +2541,11 @@ client.on('message', message => {
           ttess =ttess+kkoo[i]
           }
         
-          if (i>22<44){
+          if (i>22 && i<44){
           jjess = jjess+kkoo[i]
 
         }
-        if (i>22<44){
+        if (i>44){
           rress = rress+kkoo[i]
       }
     }
