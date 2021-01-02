@@ -2598,13 +2598,12 @@ const cmd = args.shift().toLowerCase();
 
 if(cmd === "team"){
 //  const array = ["Teams Are"]
-var lojok = ["Teamsss Are"]
+
  /* for (var i = 0; i <= args.length; i++){
 array.push(args[i]);
 }*/
-
-
-  for (var i = 0; i <= args.length; i++){
+var lojok=new Array(); 
+  for (var i = 1; i <= args.length; i++){
   const ndx = Math.random() * args.length | 0;
     const elem = args.splice(ndx,1)[0];
   lojok.push(elem)
