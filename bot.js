@@ -2624,7 +2624,8 @@ let xx = args[23].toLowerCase()
 let yy = args[24].toLowerCase()
 let zz = args[25].toLowerCase()
 */
-array = array + args[i];
+
+array.push(args[i]);
 }
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
