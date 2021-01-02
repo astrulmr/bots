@@ -2593,7 +2593,7 @@ if (message.author.bot) return;
 if (!message.guild) return;
 if (!message.content.startsWith(prefix)) return;
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
-const cmd = args.shift().tolowercase()
+const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
 let aa = args[0].toLowerCase()
 let bb = args[1].toLowerCase()
