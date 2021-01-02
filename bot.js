@@ -2598,21 +2598,25 @@ const cmd = args.shift().toLowerCase();
 
 if(cmd === "team"){
   const array = ["Teams Are"]
-
+var lojok = ["Teamsss Are"]
   for (var i = 0; i <= args.length; i++){
 array.push(args[i]);
 }
 
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
-  const elem = array.splice(ndx)[0];
-  var lojok = elem;
+  for (var i = 0; i <= args.length; i++){
+    const elem = array.splice(ndx)[i];
+  
+  lojok.push(elem[i])
+    }
+  
   /*for (var j = 0; j <= lojok.length-1; k++){
     if (j<3){
     ttess2 =ttess2+kkoo2[k]
     }*/
-  message.channel.send(elem);
-  //message.channel.send(lojok);
+  //message.channel.send(elem);
+  message.channel.send(lojok);
 }
   }
 
