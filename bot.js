@@ -2595,6 +2595,7 @@ if (!message.content.startsWith(prefix)) return;
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
+  const array = ["Teams Are"]
   for (var i = 0; i <= args.length; i++){
 /*let aa = args[0].toLowerCase()
 let bb = args[1].toLowerCase()
@@ -2623,7 +2624,7 @@ let xx = args[23].toLowerCase()
 let yy = args[24].toLowerCase()
 let zz = args[25].toLowerCase()
 */
-const array = array + args[i];
+array = array + args[i];
 }
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
