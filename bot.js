@@ -2592,44 +2592,25 @@ const prefix = "#"
 if (message.author.bot) return;
 if (!message.guild) return;
 if (!message.content.startsWith(prefix)) return;
+
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const cmd = args.shift().toLowerCase();
+
 if(cmd === "team"){
   const array = ["Teams Are"]
-  for (var i = 0; i <= args.length; i++){
-/*let aa = args[0].toLowerCase()
-let bb = args[1].toLowerCase()
-let cc = args[2].toLowerCase()
-let dd = args[3].toLowerCase()
-let ee = args[4].toLowerCase()
-let ff = args[5].toLowerCase()
-let gg = args[6].toLowerCase()
-let hh = args[7].toLowerCase()
-let ii = args[8].toLowerCase()
-let jj = args[9].toLowerCase()
-let kk = args[10].toLowerCase()
-let ll = args[11].toLowerCase()
-let mm = args[12].toLowerCase()
-let nn = args[13].toLowerCase()
-let oo = args[14].toLowerCase()
-let pp = args[15].toLowerCase()
-let qq = args[16].toLowerCase()
-let rr = args[17].toLowerCase()
-let ss = args[18].toLowerCase()
-let tt = args[19].toLowerCase()
-let uu = args[20].toLowerCase()
-let vv = args[21].toLowerCase()
-let ww = args[22].toLowerCase()
-let xx = args[23].toLowerCase()
-let yy = args[24].toLowerCase()
-let zz = args[25].toLowerCase()
-*/
 
+  for (var i = 0; i <= args.length; i++){
 array.push(args[i]);
 }
+
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
-  const elem = array.splice(ndx, 1)[0];
+  const elem = array.splice(ndx, 3)[0];
+  /*var lojok = elem.substring(0).split(" ")
+  for (var j = 0; j <= lojok.length-1; k++){
+    if (j<3){
+    ttess2 =ttess2+kkoo2[k]
+    }*/
   message.channel.send(elem);
 }
   }
