@@ -2597,15 +2597,15 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const cmd = args.shift().toLowerCase();
 
 if(cmd === "team"){
-  const array = ["Teams Are"]
+//  const array = ["Teams Are"]
 var lojok = ["Teamsss Are"]
-  for (var i = 0; i <= args.length; i++){
+ /* for (var i = 0; i <= args.length; i++){
 array.push(args[i]);
-}
+}*/
 
-while (array.length) {
-  const ndx = Math.random() * array.length | 0;
-    const elem = array.splice(ndx,1)[0];
+while (args.length) {
+  const ndx = Math.random() * args.length | 0;
+    const elem = args.splice(ndx,1)[0];
   lojok.push(elem)
     }
   
