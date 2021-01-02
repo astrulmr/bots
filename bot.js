@@ -2604,10 +2604,8 @@ array.push(args[i]);
 }
 
 while (array.length) {
-  const ndx = Math.random() * array.length | 0;
-  for (var i = 0; i <= args.length; i++){
-    const elem = array.splice(ndx)[i];
-  
+  const ndx = Math.random() * array.length;
+    const elem = array.splice(ndx)[0];
   lojok.push(elem)
     }
   
@@ -2618,7 +2616,7 @@ while (array.length) {
   //message.channel.send(elem);
   message.channel.send(lojok);
 }
-  }
+  
 
 
 })
