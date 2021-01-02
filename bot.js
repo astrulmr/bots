@@ -2267,11 +2267,10 @@ client.on("message", message => {
 client.on("message", message => {
     if (message.content === '!sayit') {
 let embed = new Discord.RichEmbed()
-          .setTitle("Ivo "+"`Has joined to Our Style server`")
+          .setTitle("What "+"`What do u want nub`")
           .setColor("#FF0000")
-          .setThumbnail("https://cdn.discordapp.com/avatars/351084182253862912/dc74e20f29d2ae4ba996c84350601f23.png?size=2048")
           .setDescription("Hey <@351084182253862912> Welcome to Our Style ")
-          .setImage("https://raw.githubusercontent.com/astrulmr/bots/master/1.png")
+          .setImage("https://i.ibb.co/Fmw9wYw/best-os-clan-logo.png")
           
         message.channel.send(embed);
     }})
@@ -2449,7 +2448,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if (message.content === 'gg the date haha1/21/2021' ) {
+  if (message.content === 'Date is 1/21/2021' ) {
     text12chennelhaha.send("Happy birthday <@482162074097549333>")
   }})
 
@@ -2505,7 +2504,7 @@ client.on('message', message => {
          var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :football: -------- :traffic_light: \n')
          var kkoo = oknnooo.substring(0).split(":football:")
 
-         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :football: -------- :fleur_de_lis: \n')
+         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :football: -------- : :shield: \n')
          var kkoo2 = oknnooo2.substring(0).split(":football:")
 
          var ttess=" "
