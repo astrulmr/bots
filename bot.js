@@ -2514,13 +2514,13 @@ client.on('message', message => {
  client.on('message', message => {
   if(message.content == `!pp`) {
 
-    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n :man_running: :football: :man_running: \n')
+    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ------ :football: :man_running: \n')
          var kkoo1 = oknnooo1.substring(0).split(":football:")
         
-         var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+         var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n ------ :football: :traffic_light: \n')
          var kkoo = oknnooo.substring(0).split(":football:")
 
-         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :fleur_de_lis: :football: :fleur_de_lis: \n')
+         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n ------ :football: :fleur_de_lis: \n')
          var kkoo2 = oknnooo2.substring(0).split(":football:")
 
          var ttess=" "
@@ -2579,6 +2579,7 @@ client.on('message', message => {
     .setDescription("There are "+kkoo1.length-1+" Supporter players")
     .addField("Runners", ttess1+"-",true)
     .addField("Runners ", jjess1 + "-",true)
+    .addField("Runners ", rress1 + "-",true)
     //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed1)
 
@@ -2589,6 +2590,7 @@ const ListEmbed = new Discord.RichEmbed()
     .setDescription("There are "+kkoo.length-1+" Supporter players")
     .addField("Supporters", ttess,true)
     .addField("Supporters ", jjess,true)
+    .addField("Supporters ", rress,true)
     //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed)
 
@@ -2601,6 +2603,7 @@ const ListEmbed = new Discord.RichEmbed()
     .setDescription("There are "+kkoo2.length-1+" Defender players")
     .addField("Defenders", ttess2,true)
     .addField("Defenders ", jjess2+"-",true)
+    .addField("Defenders ", rress2+"-",true)
     //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed2)
 
