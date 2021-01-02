@@ -2603,10 +2603,15 @@ var lojok = ["Teamsss Are"]
 array.push(args[i]);
 }*/
 
-while (args.length) {
+
+  for (var i = 0; i <= lojok.length-1; i++){
   const ndx = Math.random() * args.length | 0;
     const elem = args.splice(ndx,1)[0];
   lojok.push(elem)
+  if (i % 3 == 0)
+  {
+      lojok.push("this team is")
+  }
     }
   
   /*for (var j = 0; j <= lojok.length-1; k++){
