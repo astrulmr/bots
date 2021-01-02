@@ -2606,7 +2606,7 @@ array.push(args[i]);
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
   for (var i = 0; i <= args.length; i++){
-    const elem = array.splice(ndx,1)[0];
+    const elem = array.splice(ndx,1)[i];
   
   lojok.push(elem)
     }
