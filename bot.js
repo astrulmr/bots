@@ -2627,7 +2627,7 @@ const array = [aa, bb];
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
   const elem = array.splice(ndx, 1)[0];
-  channel.send(elem);
+  message.channel.send(elem);
 }
 }
 
