@@ -1,42 +1,4 @@
- /*client.on('message' , message => {
-const prefix = "#"
-if(message.auther.bot)return
-if(!message.guild)return
-if(message.content.startWith(prefix1))return
-
-const arg = message.content.slice(prefix.length).trim().spilt(/+/g)
-const cmd = args.shift().tolowercase()
-if(cmd === "team"){
-let aa = args[0].toLowerCase()
-let bb = args[1].toLowerCase()
-let cc = args[2].toLowerCase()
-let dd = args[3].toLowerCase()
-let ee = args[4].toLowerCase()
-let ff = args[5].toLowerCase()
-let gg = args[6].toLowerCase()
-let hh = args[7].toLowerCase()
-let ii = args[8].toLowerCase()
-let jj = args[9].toLowerCase()
-let kk = args[10].toLowerCase()
-let ll = args[11].toLowerCase()
-let mm = args[12].toLowerCase()
-let nn = args[13].toLowerCase()
-let oo = args[14].toLowerCase()
-let pp = args[15].toLowerCase()
-let qq = args[16].toLowerCase()
-let rr = args[17].toLowerCase()
-let ss = args[18].toLowerCase()
-let tt = args[19].toLowerCase()
-let uu = args[20].toLowerCase()
-let vv = args[21].toLowerCase()
-let ww = args[22].toLowerCase()
-let xx = args[23].toLowerCase()
-let yy = args[24].toLowerCase()
-let zz = args[25].toLowerCase()
-}
-
-
-})*/
+w
 
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
@@ -2400,7 +2362,7 @@ client.on("message", async message => {
             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
           bbchannel.send(embed);
-          bbchannel.send("@here")
+          bbchannel.send("@Brawlball Boys")
 
       
   }
@@ -2551,35 +2513,42 @@ client.on('message', message => {
      }
  });
  client.on('message', message => {
-  if(message.content == `!111`) {
+  if(message.content == `!pp`) {
 
-    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n :man_running: :football: :man_running: \n')
          var kkoo1 = oknnooo1.substring(0).split(":football:")
         
          var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
          var kkoo = oknnooo.substring(0).split(":football:")
 
-         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :traffic_light: :football: :traffic_light: \n')
+         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :fleur_de_lis: :football: :fleur_de_lis: \n')
          var kkoo2 = oknnooo2.substring(0).split(":football:")
 
          var ttess=" "
          var jjess=" "
+         var rress=" "
  
          var ttess1=" "
          var jjess1=" "
+         var rress1=" "
 
          var ttess2=" "
          var jjess2=" "
+         var rress2=" "
 
          for (var i = 0; i <= kkoo.length-1; i++){
           if (i<22){
           ttess =ttess+kkoo[i]
           }
         
-          if (i>22){
+          if (i>22<44){
           jjess = jjess+kkoo[i]
-        }}
 
+        }
+        if (i>22<44){
+          rress = rress+kkoo[i]
+      }
+    }
         for (var j = 0; j <= kkoo1.length-1; j++){
           if (j<22){
           ttess1 =ttess1+kkoo1[j]
@@ -2596,16 +2565,6 @@ client.on('message', message => {
       if (k>22){
       jjess2 = jjess2+kkoo2[k]
     }}
-const ListEmbed = new Discord.RichEmbed()
-    .setTitle('Supporter players:')
-    .setColor('#ff0000')
-    .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
-    .setDescription("There are "+kkoo.length-1+" Supporter players")
-    .addField("Supporters", ttess,true)
-    .addField("Supporters ", jjess,true)
-    //.addField("Defenders", ttess2,true)
-    message.channel.send(ListEmbed)
-
     const ListEmbed1 = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
     .setColor('#ff0000')
@@ -2616,11 +2575,23 @@ const ListEmbed = new Discord.RichEmbed()
     //.addField("Defenders", ttess2,true)
     message.channel.send(ListEmbed1)
 
+const ListEmbed = new Discord.RichEmbed()
+    .setTitle('Supporter players:')
+    .setColor('#ff0000')
+    .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
+    .setDescription("There are "+kkoo.length-1+" Supporter players")
+    .addField("Supporters", ttess,true)
+    .addField("Supporters ", jjess,true)
+    //.addField("Defenders", ttess2,true)
+    message.channel.send(ListEmbed)
+
+    
+
     const ListEmbed2 = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
     .setColor('#ff0000')
     .setThumbnail("https://www.esite.co.ke/static/assets/img/run.png")
-    .setDescription("There are "+kkoo2.length-1+" Supporter players")
+    .setDescription("There are "+kkoo2.length-1+" Defender players")
     .addField("Defenders", ttess2,true)
     .addField("Defenders ", jjess2+"-",true)
     //.addField("Defenders", ttess2,true)
