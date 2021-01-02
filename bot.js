@@ -1,4 +1,3 @@
-w
 
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
@@ -2554,17 +2553,25 @@ client.on('message', message => {
           ttess1 =ttess1+kkoo1[j]
           }
         
-          if (j>22){
-          jjess1 = jjess1+kkoo[j]
-        }}
+         else if (j>22 && j<44){
+          jjess1 = jjess1+kkoo1[j]
+        }
+       else if (i>44){
+          rress1 = rress1+kkoo1[i]
+      }
+      }
          for (var k = 0; k <= kkoo2.length-1; k++){
       if (k<22){
       ttess2 =ttess2+kkoo2[k]
       }
     
-      if (k>22){
+      if (k>22 && k<44){
       jjess2 = jjess2+kkoo2[k]
-    }}
+    }
+    if (i>44){
+      rress2 = rress2+kkoo2[i]
+  }
+  }
     const ListEmbed1 = new Discord.RichEmbed()
     .setTitle('Players positions on brawlball:')
     .setColor('#ff0000')
