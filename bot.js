@@ -2514,13 +2514,13 @@ client.on('message', message => {
  client.on('message', message => {
   if(message.content == `!pp`) {
 
-    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n ------ :football: :man_running: \n')
+    var oknnooo1 = message.guild.roles.get('736222790516211723').members.map(m=>m.user.username).join('\n :football: -------- :man_running: \n')
          var kkoo1 = oknnooo1.substring(0).split(":football:")
         
-         var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n ------ :football: :traffic_light: \n')
+         var oknnooo = message.guild.roles.get('736222933827190835').members.map(m=>m.user.username).join('\n :football: -------- :traffic_light: \n')
          var kkoo = oknnooo.substring(0).split(":football:")
 
-         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n ------ :football: :fleur_de_lis: \n')
+         var oknnooo2 = message.guild.roles.get('736222973140402246').members.map(m=>m.user.username).join('\n :football: -------- :fleur_de_lis: \n')
          var kkoo2 = oknnooo2.substring(0).split(":football:")
 
          var ttess=" "
