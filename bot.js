@@ -2599,12 +2599,12 @@ const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
   const array = ["Teams Are"]
 var lojok = ["Teamsss Are"]
-  for (var i = 1; i <= args.length; i++){
+  for (var i = 0; i <= args.length; i++){
 array.push(args[i]);
 }
 
 while (array.length) {
-  const ndx = Math.random() * array.length;
+  const ndx = Math.random() * array.length | 0;
     const elem = array.splice(ndx,1)[0];
   lojok.push(elem)
     }
