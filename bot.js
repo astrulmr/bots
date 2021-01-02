@@ -2595,9 +2595,10 @@ if (!message.content.startsWith(prefix)) return;
 const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
-let aa = args[0].toLowerCase()
+  for (var i = 0; i <= args.length; i++){
+/*let aa = args[0].toLowerCase()
 let bb = args[1].toLowerCase()
-/*let cc = args[2].toLowerCase()
+let cc = args[2].toLowerCase()
 let dd = args[3].toLowerCase()
 let ee = args[4].toLowerCase()
 let ff = args[5].toLowerCase()
@@ -2622,14 +2623,14 @@ let xx = args[23].toLowerCase()
 let yy = args[24].toLowerCase()
 let zz = args[25].toLowerCase()
 */
-const array = [aa, bb];
-
+const array = array + args[i];
+}
 while (array.length) {
   const ndx = Math.random() * array.length | 0;
   const elem = array.splice(ndx, 1)[0];
   message.channel.send(elem);
 }
-}
+  }
 
 
 })
