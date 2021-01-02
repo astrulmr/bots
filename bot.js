@@ -2598,7 +2598,7 @@ const cmd = args.shift().tolowercase()
 if(cmd === "team"){
 let aa = args[0].toLowerCase()
 let bb = args[1].toLowerCase()
-/*let cc = args[2].toLowerCase()
+let cc = args[2].toLowerCase()
 let dd = args[3].toLowerCase()
 let ee = args[4].toLowerCase()
 let ff = args[5].toLowerCase()
@@ -2621,12 +2621,13 @@ let vv = args[21].toLowerCase()
 let ww = args[22].toLowerCase()
 let xx = args[23].toLowerCase()
 let yy = args[24].toLowerCase()
-let zz = args[25].toLowerCase()*/
+let zz = args[25].toLowerCase()
 
+const array = [aa, bb];
 
-while (args.length) {
-  const ndx = Math.random() * args.length | 0;
-  const elem = args.splice(ndx, 1)[0];
+while (array.length) {
+  const ndx = Math.random() * array.length | 0;
+  const elem = array.splice(ndx, 1)[0];
   channel.send(elem);
 }
 }
