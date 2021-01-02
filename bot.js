@@ -2599,7 +2599,7 @@ const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
   const array = ["Teams Are"]
 var lojok = ["Teamsss Are"]
-  for (var i = 0; i <= args.length; i++){
+  for (var i = 1; i <= args.length; i++){
 array.push(args[i]);
 }
 
