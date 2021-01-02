@@ -2608,7 +2608,7 @@ while (array.length) {
   for (var i = 0; i <= args.length; i++){
     const elem = array.splice(ndx,1)[0];
   
-  lojok.push(elem[0])
+  lojok.push(elem)
     }
   
   /*for (var j = 0; j <= lojok.length-1; k++){
