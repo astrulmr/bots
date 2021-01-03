@@ -2602,7 +2602,7 @@ if(cmd === "team"){
 for (var j = 0; j <= args.length; j++){
 array.push(args[j]);
 }
-var nonae = 0
+var nonae = -1
 var lojok=new Array(); 
 while(args.length){
   nonae++
