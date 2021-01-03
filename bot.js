@@ -2620,7 +2620,6 @@ while (args.length) {
 
 
 })
-client.guilds.get('535515917518372884').channels.get('594177565825171457').fetchMessage('795236433920131076');
 
 client.on('messageReactionAdd', (reaction, user) => {
 
@@ -2763,6 +2762,7 @@ recchannel.send("!strt")
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235207712276490');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235208861777920');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235232609271850');
+      client.guilds.get('535515917518372884').channels.get('594177565825171457').fetchMessage('795236433920131076');
 
 });
 
