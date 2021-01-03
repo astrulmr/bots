@@ -2625,9 +2625,9 @@ while(args.length){
     }*/
   //message.channel.send(elem);
   let embed77 = new Discord.RichEmbed()
-    .setTitle('The teams are :')
+    .setTitle("**There are "+nonaeteam+" Teams **")
     .setColor('#ffff00')
-    .setDescription("**There are "+nonaeteam+" Teams **\n"+lojok)
+    .setDescription(lojok)
     .setThumbnail("https://i.ibb.co/fGJLWQX/teams.png")
     
   message.channel.send(embed77);
