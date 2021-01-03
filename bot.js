@@ -2630,7 +2630,7 @@ client.on('messageReactionAdd', (reaction, user) => {
       if(user.bot)  return;
     else { 
          message.channel.send("ez"+reaction.users.map(u => u.user.username))
-         console.log(reaction.users.username);}
+         console.log(reaction.users);}
     })
     }}});
 
