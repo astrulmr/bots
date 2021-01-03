@@ -2641,8 +2641,8 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
-      message.reactions.cache.fetchUser().then((users) =>
-         message.channel.send("ez"+reaction.users.map(u => u.username.toString()))
+      message.reactions.fetchUser(user.id).then((users) =>
+         message.channel.send(reaction.users.map(u => u.username.toString()))
          );
         }
     })
