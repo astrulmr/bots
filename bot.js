@@ -2641,9 +2641,9 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
-      message.reactions.cache.fetchUser(user.id).then((users) =>
+      message.reactions.forEach((reaction) => {
          message.channel.send(reaction.users.map(u => u.username.toString()))
-         );
+      });
         }
     })
     }}});
