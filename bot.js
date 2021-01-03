@@ -2641,8 +2641,10 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
+      message.reactions.fetchUser().then((users) =>
          message.channel.send("ez"+reaction.users.map(u => u.username.toString()))
-         console.log(reaction.users);}
+         );
+        }
     })
     }}});
 
