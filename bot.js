@@ -2629,7 +2629,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
-         message.channel.send("ez"+reaction.users.map(u => u.toString()))
+         message.channel.send("ez"+reaction.users.map(u => u.user.username))
          console.log(reaction.users.username);}
     })
     }}});
