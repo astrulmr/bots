@@ -2632,7 +2632,7 @@ while(args.length){
     
   message.channel.send(embed77);
 }
-
+})
 client.on('messageReactionAdd', (reaction, user) => {
 
     const { message} = reaction;
