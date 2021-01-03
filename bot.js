@@ -2609,9 +2609,10 @@ var lojok=new Array();
     if (i % 3 == 0)
   {
       lojok.push("this team is")
-      message.channel.send(i);
+      
   
   }
+  message.channel.send(i);
   lojok.push(elem)
   
     }
