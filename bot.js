@@ -2638,10 +2638,10 @@ client.on('messageReactionAdd', (reaction, user) => {
     const { message} = reaction;
     if(message.channel.id == '594177565825171457'){
       if(reaction.emoji.name === "✅") {
-    message.guild.cache.fetchMember(user.id).then(member => {
+    message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
-      message.reactions.fetchUser(user.id).then((users) =>
+      message.reactions.cache.fetchUser(user.id).then((users) =>
          message.channel.send(reaction.users.map(u => u.username.toString()))
          );
         }
