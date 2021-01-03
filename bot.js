@@ -2622,7 +2622,7 @@ while (args.length) {
 })
 
 client.on('messageReactionAdd', (reaction, user) => {
-    if(message.channel.id == '594177565825171457'){
+
       if(reaction.emoji.name === "✅") {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
@@ -2630,7 +2630,7 @@ client.on('messageReactionAdd', (reaction, user) => {
          message.channel.send("ez"+reaction.users)
          console.log(reaction.users);}
     })
-    }}});
+    }});
 
     
  
