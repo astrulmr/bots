@@ -2604,7 +2604,7 @@ array.push(args[i]);
 }
 var lojok=new Array(); 
   for (var i = 0; i <= array.length; i++){
-  const ndx = Math.random() * array.length;
+  const ndx = Math.random() * array.length | 0;
     const elem = array.splice(ndx,1)[0];
   /*  if (i % 3 == 0)
   {
