@@ -2640,10 +2640,10 @@ client.on('messageReactionAdd', (reaction, user) => {
       if(reaction.emoji.name === "✅") {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
-    else { 
+    else {  message.guild.fetchMember(user.id).then(member => {
       message.reactions.forEach((reaction) => {
          message.channel.send(reaction.users.map(u => u.username.toString()))
-      });
+      });})
         }
     })
     }}});
