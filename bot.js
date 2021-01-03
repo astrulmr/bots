@@ -2622,7 +2622,12 @@ while(args.length){
     ttess2 =ttess2+kkoo2[k]
     }*/
   //message.channel.send(elem);
-  message.channel.send(lojok);
+  let embed77 = new Discord.RichEmbed()
+    .setTitle('The teams are :')
+    .setColor('#ffff00')
+    .setDescription(lojok)
+    
+  message.channel.send(embed77);
 }
   
 
