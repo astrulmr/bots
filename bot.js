@@ -2612,7 +2612,7 @@ while(args.length){
       
   
   }*/
-  message.channel.send(i);
+  //message.channel.send(i);
   lojok.push(elem)
   
     }
