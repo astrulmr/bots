@@ -2599,8 +2599,8 @@ const cmd = args.shift().toLowerCase();
 if(cmd === "team"){
  const array = ["Teams Are"]
 
-for (var i = 0; i <= args.length; i++){
-array.push(args[i]);
+for (var j = 0; j <= args.length; j++){
+array.push(args[j]);
 }
 var lojok=new Array(); 
   for (var i = 0; i <= array.length; i++){
