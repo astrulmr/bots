@@ -2623,7 +2623,7 @@ while (args.length) {
 
 client.on('messageReactionAdd', (reaction, user) => {
 
-    const { message, emoji } = messageReaction;
+    const { message, emoji } = reaction;
     if(message.channel.id == '594177565825171457'){
       if(reaction.emoji.name === "✅") {
     message.guild.fetchMember(user.id).then(member => {
