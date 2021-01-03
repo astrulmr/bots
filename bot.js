@@ -2603,6 +2603,7 @@ for (var j = 0; j <= args.length; j++){
 array.push(args[j]);
 }
 var nonae = -1
+var nonaeteam = 0
 var lojok=new Array(); 
 while(args.length){
   nonae++
@@ -2611,6 +2612,7 @@ while(args.length){
     if (nonae % 3 == 0)
   {
       lojok.push("**----Team----**")
+      nonaeteam++
   }
   //message.channel.send(i);
   lojok.push(elem)
@@ -2625,7 +2627,8 @@ while(args.length){
   let embed77 = new Discord.RichEmbed()
     .setTitle('The teams are :')
     .setColor('#ffff00')
-    .setDescription(lojok)
+    .setDescription("**There are "+nonae+" Teams **"+lojok)
+    .setThumbnail("https://i.ibb.co/fGJLWQX/teams.png")
     
   message.channel.send(embed77);
 }
