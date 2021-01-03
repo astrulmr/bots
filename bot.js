@@ -2605,7 +2605,7 @@ array.push(args[i]);
 var lojok=new Array(); 
   for (var i = 0; i <= args.length; i++){
   const ndx = Math.random() * args.length | 0;
-    const elem = args.splice(ndx,1)[0];
+    const elem = args.splice(ndx)[0];
   /*  if (i % 3 == 0)
   {
       lojok.push("this team is")
