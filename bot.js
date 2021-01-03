@@ -2602,13 +2602,15 @@ if(cmd === "team"){
 for (var j = 0; j <= args.length; j++){
 array.push(args[j]);
 }
+var nonae = 0
 var lojok=new Array(); 
 while(args.length){
+  nonae++
   const ndx = Math.random() * args.length | 0;
     const elem = args.splice(ndx,1)[0];
-    if (args.length % 3 == 0)
+    if (nonae % 3 == 0)
   {
-      lojok.push("this team is")
+      lojok.push("**----Team----**")
   }
   //message.channel.send(i);
   lojok.push(elem)
