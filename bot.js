@@ -2620,6 +2620,7 @@ while (args.length) {
 
 
 })
+client.guilds.get('535515917518372884').channels.get('594177565825171457').fetchMessage('795236433920131076');
 
 client.on('messageReactionAdd', (reaction, user) => {
 
@@ -2629,7 +2630,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else { 
-         message.channel.send("ez"+reaction.users.map(u => u.username))
+         message.channel.send("ez"+reaction.users.map(u => u.username.toString()))
          console.log(reaction.users);}
     })
     }}});
