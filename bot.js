@@ -2603,8 +2603,8 @@ for (var j = 0; j <= args.length; j++){
 array.push(args[j]);
 }
 var lojok=new Array(); 
-  for (var i = 0; i <= array.length; i++){
-  const ndx = Math.random() * args.length;
+while(args.length){
+  const ndx = Math.random() * args.length | 0;
     const elem = args.splice(ndx,1)[0];
   /*  if (i % 3 == 0)
   {
