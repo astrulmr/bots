@@ -2597,26 +2597,16 @@ const args = message.content.slice(prefix.length).trim().split(/ +/g);
 const cmd = args.shift().toLowerCase();
 
 if(cmd === "team"){
- const array = ["Teams Are"]
+//  const array = ["Teams Are"]
+var lojok = ["Teamsss Are"]
+ /* for (var i = 0; i <= args.length; i++){
+array.push(args[i]);
+}*/
 
-for (var j = 0; j <= args.length; j++){
-array.push(args[j]);
-}
-var nonae = -1
-var nonaeteam = 0
-var lojok=new Array(); 
-while(args.length){
-  nonae++
+while (args.length) {
   const ndx = Math.random() * args.length | 0;
     const elem = args.splice(ndx,1)[0];
-    if (nonae % 3 == 0)
-  {
-      lojok.push("**----Team----**")
-      nonaeteam++
-  }
-  //message.channel.send(i);
   lojok.push(elem)
-  
     }
   
   /*for (var j = 0; j <= lojok.length-1; k++){
@@ -2624,22 +2614,27 @@ while(args.length){
     ttess2 =ttess2+kkoo2[k]
     }*/
   //message.channel.send(elem);
-  let embed77 = new Discord.RichEmbed()
-    .setTitle("**There are "+nonaeteam+" Teams **")
-    .setColor('#ffff00')
-    .setDescription(lojok)
-    .setThumbnail("https://i.ibb.co/fGJLWQX/teams.png")
-    
-  message.channel.send(embed77);
+  message.channel.send(lojok);
 }
   
 
 
 })
 
+client.on('messageReactionAdd', (reaction, user) => {
 
+    const { message, emoji } = messageReaction;
+    if(message.channel.id == '594177565825171457'){
+      if(reaction.emoji.name === "✅") {
+    message.guild.fetchMember(user.id).then(member => {
+      if(user.bot)  return;
+    else { 
+message.channel.send(reaction.users)}
+    })
+    }}});
 
-
+    
+ 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
