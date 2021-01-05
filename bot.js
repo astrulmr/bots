@@ -2634,16 +2634,15 @@ while(args.length){
 }
 })
 client.on('messageReactionAdd', (reaction, user) => {
-
     const { message} = reaction;
     if(message.channel.id == '594177565825171457'){
       if(reaction.emoji.name === "✅") {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
-    else {  message.guild.fetchMember(user.id).then(member => {
-      message.reactions.forEach((reaction) => {
+    else {
+      message.reactions.resolve('✅').fetchUser().then(
          message.channel.send(reaction.users.map(u => u.username.toString()))
-      });})
+      )
         }
     })
     }}});
