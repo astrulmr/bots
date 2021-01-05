@@ -2645,7 +2645,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
       const declaredAsAsync = async () => {
         // code
       };
-      const reaction = message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
+      const reaction = message.reactions.filter(r=> r.emoji.name === '✅').first().fetch();
       message.channel.send(reaction.users.map(u => u.username.toString()))
         }
     })
