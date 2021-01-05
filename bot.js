@@ -2641,10 +2641,12 @@ client.on('messageReactionAdd', (reaction, user) => {
       if(user.bot)  return;
     else 
     {
+      let cacheChannel = message.guild.channels.get("594177565825171457"); 
+      if(cacheChannel){  
       cacheChannel.fetchMessage("795236433920131076").then(reactionMessage => {
       reactionMessage.reactions.resolve("✅").fetchUser().then(
          message.channel.send(reaction.users.map(u => u.username.toString()))
-      )})
+      )})}
         }
     })
     }}});
