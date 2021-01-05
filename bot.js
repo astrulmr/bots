@@ -2633,9 +2633,7 @@ while(args.length){
   message.channel.send(embed77);
 }
 })
-client.on('ready', async () => {
-  const reaction = await message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
-});
+
 client.on('messageReactionAdd', async (reaction, user) => {
     const { message} = reaction;
     if(message.channel.id == '594177565825171457'){
@@ -2643,8 +2641,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else 
-    {
- 
+    {     
       message.channel.send(reaction.users.map(u => u.username.toString()))
         }
     })
@@ -2772,12 +2769,13 @@ recchannel.send("!strt")
     ////////////////////////////////////////  POSITION ADD REACT  /////////////////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
-    client.on('ready', () => {
+    client.on('ready', async () => {
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235206298796043');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235207712276490');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235208861777920');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235232609271850');
       client.guilds.get('535515917518372884').channels.get('594177565825171457').fetchMessage('795236433920131076');
+      const reaction = await message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
 
 });
 
