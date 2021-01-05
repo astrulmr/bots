@@ -2642,6 +2642,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
       if(user.bot)  return;
     else 
     {     
+      const reaction = await message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
       message.channel.send(reaction.users.map(u => u.username.toString()))
         }
     })
@@ -2775,7 +2776,6 @@ recchannel.send("!strt")
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235208861777920');
       client.guilds.get('535515917518372884').channels.get('736380370651709531').fetchMessage('793235232609271850');
       client.guilds.get('535515917518372884').channels.get('594177565825171457').fetchMessage('795236433920131076');
-      const reaction = await message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
 
 });
 
