@@ -2345,7 +2345,7 @@ client.on("message", async message => {
             if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
 else
           bbchannel.send(embed);
-          bbchannel.send("@Brawlball Boys")
+          bbchannel.send("<@&727591689639952434>")
 
       
   }
@@ -2639,10 +2639,12 @@ client.on('messageReactionAdd', (reaction, user) => {
       if(reaction.emoji.name === "✅") {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
-    else {
-      reaction.reactions.resolve('✅').fetchUser().then(
+    else 
+    {
+      cacheChannel.fetchMessage("795236433920131076").then(reactionMessage => {
+      reactionMessage.reactions.resolve("✅").fetchUser().then(
          message.channel.send(reaction.users.map(u => u.username.toString()))
-      )
+      )})
         }
     })
     }}});
