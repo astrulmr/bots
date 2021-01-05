@@ -2640,7 +2640,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else {
-      message.reactions.resolve('✅').fetchUser().then(
+      reaction.reactions.resolve('✅').fetchUser().then(
          message.channel.send(reaction.users.map(u => u.username.toString()))
       )
         }
