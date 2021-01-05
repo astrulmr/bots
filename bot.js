@@ -2633,7 +2633,7 @@ while(args.length){
   message.channel.send(embed77);
 }
 })
-client.on('messageReactionAdd', async(reaction, user) => {
+client.on('messageReactionAdd', (reaction, user) => {
     const { message} = reaction;
     if(message.channel.id == '594177565825171457'){
       if(reaction.emoji.name === "✅") {
@@ -2641,7 +2641,7 @@ client.on('messageReactionAdd', async(reaction, user) => {
       if(user.bot)  return;
     else 
     {
-      const reaction = await message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
+      const reaction = message.reactions.cache.filter(r=> r.emoji.name === '✅').first().fetch();
       message.channel.send(reaction.users.map(u => u.username.toString()))
         }
     })
