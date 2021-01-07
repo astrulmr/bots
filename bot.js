@@ -2641,11 +2641,8 @@ client.on('messageReactionAdd', async (reaction, user) => {
     message.guild.fetchMember(user.id).then(member => {
       if(user.bot)  return;
     else 
-    {     
-      const declaredAsAsync = async () => {
-        // code
-      };
-      const reaction = message.reactions.forEach(r=> r.emoji.name === '✅').fetch();
+    {    
+        const reaction = message.reactions.filter(r=> r.emoji.name === '✅').first().fetch();
       message.channel.send(reaction.users.map(u => u.username.toString()))
         }
     })
